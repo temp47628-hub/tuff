@@ -1,0 +1,1256 @@
+{
+  "audi6_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "74104bd5-9d82-5905-b4da-c138df1b64ae",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.137254998,
+          0.137254998,
+          0.137254998,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.alabasterwhite_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.alabasterwhite_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.alabasterwhite_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "0262dab6-c987-54b6-bd06-2373254d7d5b",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.667797029,
+          0.622663975,
+          0.537750006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.beige_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.beige_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.beige_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "c3d60a23-1c31-5a87-97cc-78d148070ddd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.72507298,
+          0.626478016,
+          0.521578014,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.blue_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.blue_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.blue_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0.425953001,
+          1,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.blue_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.blue_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.blue_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "4fe2a20d-588d-54a9-8e5d-69b3f458bb7e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.brown_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.brown_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.brown_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "a9035ee1-5ea5-5af5-bf58-2a4ace6a4d77",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.581882,
+          0.388000995,
+          0.251933992,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.burgundy_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.burgundy_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.burgundy_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "2ab2f30e-8170-584a-abf9-3a9841b91aef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.341176003,
+          0.149020001,
+          0.149020001,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.chestnutbrown_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.chestnutbrown_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.chestnutbrown_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "85fd4858-6426-59d7-824a-1d7cec6f6da1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.243137002,
+          0.145098001,
+          0.109803997,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.classicred_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.classicred_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.classicred_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "622f1c9c-6fff-5657-a85f-3260e87a8660",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.729412019,
+          0.407842994,
+          0.407842994,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.cocos_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.cocos_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.cocos_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "e3c4b669-7ff8-5934-9484-c2b863345105",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.450980008,
+          0.36470601,
+          0.262744993,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.cognac_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.cognac_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.cognac_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "680ebd49-1f84-50e2-914b-d2c28409b641",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.549019992,
+          0.349020004,
+          0.188235,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.creambeige_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.creambeige_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.creambeige_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "c849e79f-0189-565a-8572-cb7af3f8f273",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.grey_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.grey_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.grey_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "df641a86-25d3-5762-bb45-897266c27c78",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.havannabrown_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.havannabrown_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.havannabrown_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "84f3f462-8a39-53e9-86cd-d0a469939fc4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.352941006,
+          0.290196002,
+          0.231372997,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.jetgrey_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.jetgrey_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.jetgrey_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "755e6fb1-e562-548c-aaff-c1c9d32c022f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.337255001,
+          0.333332986,
+          0.352941006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.linenbeige_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.linenbeige_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.linenbeige_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "201f3f27-8ebb-5860-8c7e-861e195fa5ae",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.magnolia_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.magnolia_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.magnolia_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "516c4921-f144-52cb-adfd-3eb4565f23a6",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.647059023,
+          0.505882025,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.nightblue_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.nightblue_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.nightblue_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "2ab2f30e-8170-584a-abf9-3a9841b91aef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.141176,
+          0.168626994,
+          0.203922004,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.orange_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.orange_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.orange_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "2ab2f30e-8170-584a-abf9-3a9841b91aef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.862537026,
+          0.444626987,
+          0,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.palaceblue_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.palaceblue_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.palaceblue_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.179805994,
+          0.257898003,
+          0.318410993,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.paranutbrown_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.paranutbrown_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.paranutbrown_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "a9035ee1-5ea5-5af5-bf58-2a4ace6a4d77",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.345097989,
+          0.25097999,
+          0.180391997,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.pearlsilver_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.pearlsilver_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.pearlsilver_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "8d51d339-9ee4-53ea-aa0a-a0f0c802f2d0",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.552941024,
+          0.549019992,
+          0.521569014,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.red_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.red_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.red_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "e832df76-23d7-5671-8d07-a06708b51961",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.823529005,
+          0,
+          0,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_b.color.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 10,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.regencygreen_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.regencygreen_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.regencygreen_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "2ab2f30e-8170-584a-abf9-3a9841b91aef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.168626994,
+          0.215685993,
+          0.156863004,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.saddlebrown_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.saddlebrown_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.saddlebrown_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "8d53f483-6ac4-562e-b155-916b7d7136f7",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.36470601,
+          0.227450997,
+          0.133332998,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.sandbeige_ae_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.sandbeige_ae_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.sandbeige_ae_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.643136978,
+          0.552941024,
+          0.423528999,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive.skin_stitching_exclusive.silver_stitching_exclusive": {
+    "name": "audi6_stitching_exclusive.skin_stitching_exclusive.silver_stitching_exclusive",
+    "mapTo": "audi6_stitching_exclusive.skin_stitching_exclusive.silver_stitching_exclusive",
+    "class": "Material",
+    "persistentId": "8d51d339-9ee4-53ea-aa0a-a0f0c802f2d0",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.587610006,
+          0.587610006,
+          0.587610006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c": {
+    "name": "audi6_stitching_exclusive_c",
+    "mapTo": "audi6_stitching_exclusive_c",
+    "class": "Material",
+    "persistentId": "2508e570-0833-5558-9871-bc5b27c392e5",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.137254998,
+          0.137254998,
+          0.137254998,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c.skin_interior.beige2_interior": {
+    "name": "audi6_stitching_exclusive_c.skin_interior.beige2_interior",
+    "mapTo": "audi6_stitching_exclusive_c.skin_interior.beige2_interior",
+    "class": "Material",
+    "persistentId": "39a92328-42ca-5fcd-b7af-3299087857ac",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.337255001,
+          0.309803993,
+          0.286274999,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c.skin_interior.beige_interior": {
+    "name": "audi6_stitching_exclusive_c.skin_interior.beige_interior",
+    "mapTo": "audi6_stitching_exclusive_c.skin_interior.beige_interior",
+    "class": "Material",
+    "persistentId": "39fd4d89-b407-5771-99e8-904727a0490c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.454901993,
+          0.423528999,
+          0.384314001,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c.skin_interior.blue_interior": {
+    "name": "audi6_stitching_exclusive_c.skin_interior.blue_interior",
+    "mapTo": "audi6_stitching_exclusive_c.skin_interior.blue_interior",
+    "class": "Material",
+    "persistentId": "443273c4-1543-5858-afd4-73b55b367938",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c.skin_interior.creambeige_interior": {
+    "name": "audi6_stitching_exclusive_c.skin_interior.creambeige_interior",
+    "mapTo": "audi6_stitching_exclusive_c.skin_interior.creambeige_interior",
+    "class": "Material",
+    "persistentId": "42b4f31b-021a-5c63-bf3c-77394c7a4118",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_stitching_exclusive_c.skin_interior.grey_interior": {
+    "name": "audi6_stitching_exclusive_c.skin_interior.grey_interior",
+    "mapTo": "audi6_stitching_exclusive_c.skin_interior.grey_interior",
+    "class": "Material",
+    "persistentId": "d256cf0d-1724-526b-b11b-13e08f4c92fc",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

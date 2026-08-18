@@ -1,0 +1,688 @@
+{
+"audi6_skin_seat_insert": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : ""
+},
+"audi6_skin_seat_insert_grey_cloth": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_cloth_seat_insert"
+},
+"audi6_skin_seat_insert_blue_cloth": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "blue_cloth_seat_insert"
+},
+"audi6_skin_seat_insert_black_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_cloth2_seat_insert"
+},
+"audi6_skin_seat_insert_grey_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_cloth2_seat_insert"
+},
+"audi6_skin_seat_insert_beige_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_cloth2_seat_insert"
+},
+"audi6_skin_seat_insert_black_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_cloth4_seat_insert"
+},
+"audi6_skin_seat_insert_grey_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_cloth4_seat_insert"
+},
+"audi6_skin_seat_insert_beige_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_cloth4_seat_insert"
+},
+"audi6_skin_seat_insert_blue_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "blue_cloth4_seat_insert"
+},
+"audi6_skin_seat_insert_black_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_leather_seat_insert"
+},
+"audi6_skin_seat_insert_grey_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_leather_seat_insert"
+},
+"audi6_skin_seat_insert_brown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "brown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_black_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_leather_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Linen Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "linenbeige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_brown_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "brown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_black_cloth3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_cloth3_seat_insert"
+},
+"audi6_skin_seat_insert_grey_cloth3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_cloth3_seat_insert"
+},
+"audi6_skin_seat_insert_grey_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_leather3_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Linen Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_paranutbrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Paranut Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "paranutbrown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_grey_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_leather_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_silver_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "silver_leather_seat_insert"
+},
+"audi6_skin_seat_insert_black_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_black_alcantara2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Perforated Alcantara, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_alcantara2_seat_insert"
+},
+"audi6_skin_seat_insert_grey_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_beige_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_pearlsilver_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Pearl Silver (S6)",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "pearlsilver_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_black_cloth7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sprint Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_cloth_seat_insert"
+},
+"audi6_skin_seat_insert_black_leather6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_leather_seat_insert"
+},
+"audi6_skin_seat_insert_grey_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "grey_leather_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_brown_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "brown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_blue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "blue_leather_seat_insert"
+},
+"audi6_skin_seat_insert_black_leather4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silk Nappa Leather, Black (S6)",
+        "value":650,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_leather_seat_insert"
+},
+"audi6_skin_seat_insert_silver_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silk Nappa Leather, Silver (S6)",
+        "value":650,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "silver_leather_seat_insert"
+},
+"audi6_skin_seat_insert_black_leather5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Natural Leather, Black",
+        "value":650,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "black_nleather_seat_insert"
+},
+"audi6_skin_seat_insert_beige_leather5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Natural Leather, Beige",
+        "value":650,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "beige_nleather_seat_insert"
+},
+"audi6_skin_seat_insert_black_cloth5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Speed Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_cloth5_seat_insert"
+},
+"audi6_skin_seat_insert_silver_cloth": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Speed Cloth, Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "silver_cloth_seat_insert"
+},
+"audi6_skin_seat_insert_cream_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cream Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "skinName" : "creambeige_leather_seat_insert"
+},
+
+//audi exclusive
+
+"audi6_skin_seat_insert_blue_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "blue_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_red_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alcantara, Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "red_alcantara_seat_insert"
+},
+"audi6_skin_seat_insert_silver_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Silver [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "silver_leather_seat_insert"
+},
+"audi6_skin_seat_insert_sandbeige_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Sand Beige [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "sandbeige_leather_seat_insert"
+},
+"audi6_skin_seat_insert_nightblue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Night Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "nightblue_leather_seat_insert"
+},
+"audi6_skin_seat_insert_palaceblue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Palace Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "palaceblue_leather_seat_insert"
+},
+"audi6_skin_seat_insert_regencygreen_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Regency Green [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "regencygreen_leather_seat_insert"
+},
+"audi6_skin_seat_insert_chestnutbrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Chestnut Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "chestnutbrown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_classicred_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Classic Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "classicred_leather_seat_insert"
+},
+"audi6_skin_seat_insert_red_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "red_leather_seat_insert"
+},
+"audi6_skin_seat_insert_saddlebrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Saddle Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "saddlebrown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_jetgrey_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Jet Grey [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "jetgrey_leather_seat_insert"
+},
+"audi6_skin_seat_insert_alabasterwhite_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Alabaster White [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "alabasterwhite_leather_seat_insert"
+},
+"audi6_skin_seat_insert_magnolia_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Magnolia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "magnolia_leather_seat_insert"
+},
+"audi6_skin_seat_insert_havannabrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Havanna Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "havannabrown_leather_seat_insert"
+},
+"audi6_skin_seat_insert_cocos_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cocos [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "cocos_leather_seat_insert"
+},
+"audi6_skin_seat_insert_cognac_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cognac [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "cognac_leather_seat_insert"
+},
+"audi6_skin_seat_insert_burgundy_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Burgundy [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "burgundy_leather_seat_insert"
+},
+"audi6_skin_seat_insert_orange_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Orange [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat_insert",
+    "components": {
+        "electrics": {
+            "audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "orange_leather_seat_insert"
+},
+}

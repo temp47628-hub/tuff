@@ -1,0 +1,46 @@
+{
+"audi6_engine_i4_2.0_ecu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"170 ECU",
+        "value":1050,
+    },
+    "slotType" : "audi6_engine_i4_2.0_ecu",
+    "mainEngine":{
+        "$+idleRPM":50,
+        "revLimiterRPM":6500,
+        "$*sustainedAfterFireVolumeCoef": 1.1,
+        "$*instantAfterFireCoef": 1.25,
+        "$*sustainedAfterFireCoef": 1.25,    },
+    "turbocharger": {
+        "$*turboSizeCoef": 0.60,
+        "$*bovSoundVolumeCoef": 0.6,
+        "$*hissVolumePerPSI": 1.0,
+        "$*whineVolumePer10kRPM": 1.0,
+        "$*whinePitchPer10kRPM": 1.0,
+        "wastegateStart":[6.3, 7.4],
+    }
+},
+"audi6_engine_i4_2.0_ecu_stage1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 255 ECU",
+        "value":1050,
+    },
+    "slotType" : "audi6_engine_i4_2.0_ecu",
+    "mainEngine":{
+        "$+idleRPM":50,
+        "revLimiterRPM":6500,
+        "$*sustainedAfterFireVolumeCoef": 1.1,
+        "$*instantAfterFireCoef": 1.25,
+        "$*sustainedAfterFireCoef": 1.25,    },
+    "turbocharger": {
+        "$*turboSizeCoef": 0.60,
+        "$*bovSoundVolumeCoef": 0.6,
+        "$*hissVolumePerPSI": 1.0,
+        "$*whineVolumePer10kRPM": 1.0,
+        "$*whinePitchPer10kRPM": 1.0,
+        "wastegateStart":[6.3, 33.0],
+    }
+},
+}

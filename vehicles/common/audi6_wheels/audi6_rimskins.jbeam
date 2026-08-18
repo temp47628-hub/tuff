@@ -1,0 +1,38 @@
+{
+"audi6_skin_rimdesign_alu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Aluminium",
+        "value":150,
+    },
+    "slotType" : "skin_rimdesign",
+	"skinName" : "rimdesign_alu",
+},
+"audi6_skin_rimdesign_titan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Titanium",
+        "value":150,
+    },
+    "slotType" : "skin_rimdesign",
+	"skinName" : "rimdesign_titan",
+},
+"audi6_skin_rimdesign_black": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black (Addon)",
+        "value":150,
+    },
+    "slotType" : "skin_rimdesign",
+	"skinName" : "rimdesign_black",
+},
+"audi6_skin_rimdesign_carbon": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Carbon (Addon)",
+        "value":150,
+    },
+    "slotType" : "skin_rimdesign",
+	"skinName" : "rimdesign_carbon",
+},
+}

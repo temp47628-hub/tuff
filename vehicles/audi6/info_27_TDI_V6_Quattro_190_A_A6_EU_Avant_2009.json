@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.7L TDI V6 Quattro [190] (Tiptronic) A6 (EU) [Avant] 2009",
+      "Description":"2009 Avant 2.7L TDI V6 (190 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 40/60 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, lane-assist package, key-less system, start-stop system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with HDD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, lighting package, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, DSP audio system, black interior, brown walnut inlay finish, black milano leather seats. Exterior painted in Polar Blue",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Tiptronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":190,
+      "Torque":400,
+      "Top Speed":62.95264623955432,
+      "Weight":1830,
+      "Value":45220,
+      "0-100 km/h":8.4,
+      "0-60 mph":8.0,
+	  "defaultPaintName1":"Polar Blue [A6]",
+}

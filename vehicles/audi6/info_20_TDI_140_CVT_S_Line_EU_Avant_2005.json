@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TDI [140] (Multitronic) S-Line (EU) [Avant] 2005",
+      "Description":"2005 Avant 2.0L TDI (140 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, basic halogen lights, power folding mirrors, 18-inch alloys, basic infotainment system with a CD player, base climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Avus Silver",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":140,
+      "Torque":320,
+      "Top Speed":55.98885793871866,
+      "Weight":1635,
+      "Value":21070,
+      "0-100 km/h":	10.4,
+      "0-60 mph":9.9,
+	  "defaultPaintName1":"Avus Silver [S-Line]",
+}

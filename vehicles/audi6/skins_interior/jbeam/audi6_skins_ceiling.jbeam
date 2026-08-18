@@ -1,0 +1,74 @@
+{
+"audi6_skin_ceiling": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : ""
+},
+"audi6_skin_ceiling_darkgrey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "darkgrey_ceiling"
+},
+"audi6_skin_ceiling_darkgrey_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Nardia Microfiber",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "darkgrey_alcantara_ceiling"
+},
+"audi6_skin_ceiling_silver_alcantara": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver Nardia Microfiber",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "silver_alcantara_ceiling"
+},
+"audi6_skin_ceiling_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "beige_ceiling"
+},
+"audi6_skin_ceiling_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "linenbeige_ceiling"
+},
+"audi6_skin_ceiling_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "creambeige_ceiling"
+},
+"audi6_skin_ceiling_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown Cloth",
+        "value":500,
+    },
+    "slotType" : "skin_ceiling",
+    "skinName" : "brown_ceiling"
+},
+}

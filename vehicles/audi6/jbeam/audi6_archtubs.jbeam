@@ -1,0 +1,604 @@
+{
+"audi6_archtubs_F_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Front Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_FL_a6", ["audi6_archtub_FL"]],
+         ["audi6_archtub_FR_a6", ["audi6_archtub_FR"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--arch tubs--
+         {"nodeWeight":1.0},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_archtub_FL"},
+         {"collision":true},
+         {"selfCollision":true},
+         //left
+         ["at1l", 0.5312, -1.935, 0.2153],
+         ["at1ll", 0.6578, -1.855, 0.2091],
+         ["at2l", 0.5659, -1.6424, 0.1994],
+         ["at2ll", 0.769, -1.6705, 0.2044],
+
+         ["at3l", 0.531, -1.4269, 0.55],
+         ["at3ll", 0.8526, -1.5719, 0.57],
+         ["at3lll", 0.854, -1.2989, 0.6739],
+
+         ["at4l", 0.5142, -1.1326, 0.55],
+         ["at4ll", 0.874, -1.0095, 0.57],
+
+         ["at5l", 0.5155, -0.919, 0.22],
+         ["at5ll", 0.83, -0.9192, 0.22],
+
+         //right
+         {"group":"audi6_archtub_FR"},
+         ["at1r", -0.5312, -1.935, 0.2153],
+         ["at1rr", -0.6578, -1.855, 0.2091],
+         ["at2r", -0.5659, -1.6424, 0.1994],
+         ["at2rr", -0.769, -1.6705, 0.2044],
+
+         ["at3r", -0.531, -1.4269, 0.55],
+         ["at3rr", -0.8526, -1.5719, 0.57],
+         ["at3rrr", -0.854, -1.2989, 0.6739],
+
+         ["at4r", -0.5142, -1.1326, 0.55],
+         ["at4rr", -0.874, -1.0095, 0.57],
+
+         ["at5r", -0.5155, -0.919, 0.22],
+         ["at5rr", -0.83, -0.9192, 0.22],
+         {"collision":false},
+         {"selfCollision":false},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--front arch tubs--
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":301000,"beamDamp":100},
+          {"beamDeform":10000,"beamStrength":16700},
+          //front arch tub main shape
+          //widthwise
+          //left
+          ["at1l","at1ll"],
+          ["at2l","at2ll"],
+          ["at3l","at3ll"],
+          ["at4l","at4ll"],
+          ["at5l","at5ll"],
+          
+          //right
+          ["at1r","at1rr"],
+          ["at2r","at2rr"],
+          ["at3r","at3rr"],
+          ["at4r","at4rr"],
+          ["at5r","at5rr"],
+
+          //lengthwise/heightwise
+          //left
+          ["at1l","at2l"],
+          ["at2l","at3l"],
+          ["at3ll","at4l"],
+          ["at4l","at5l"],
+
+          //right
+          ["at1r","at2r"],
+          ["at2r","at3r"],
+          ["at3rr","at4r"],
+          ["at4r","at5r"],
+
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":10000,"beamStrength":76700},
+          //left
+          ["at1l","at2ll"],
+          ["at1ll","at2l"],
+          ["at2l","at3ll"],
+          ["at2ll","at3l"],
+          ["at3l","at3lll"],
+          ["at3ll","at3lll"],
+          ["at3lll","at4l"],
+          ["at3lll","at4ll"],
+          ["at4l","at5ll"],
+          ["at4ll","at5l"],
+          
+          //right
+          ["at1r","at2rr"],
+          ["at1rr","at2r"],
+          ["at2r","at3rr"],
+          ["at2rr","at3r"],
+          ["at3r","at3rrr"],
+          ["at3rr","at3rrr"],
+          ["at3rrr","at4r"],
+          ["at3rrr","at4rr"],
+          ["at4r","at5rr"],
+          ["at4rr","at5r"],
+          
+          //rigids
+          {"beamDeform":3500,"beamStrength":76700},
+          {"beamSpring":188250,"beamDamp":87.6},
+          //height/lengthwise
+          ["at1ll","at3l"],
+          ["at1l","at3ll"],
+
+          ["at1l","at3l"],
+          ["at2l","at4l"],
+          ["at3l","at4l"],
+          ["at3l","at5l"],
+          ["at1ll","at3ll"],
+          ["at2ll","at4ll"],
+          ["at3ll","at5ll"],
+
+          ["at1rr","at3r"],
+          ["at1r","at3rr"],
+
+          ["at1r","at3r"],
+          ["at2r","at4r"],
+          ["at3r","at4r"],
+          ["at3r","at5r"],
+          ["at1rr","at3rr"],
+          ["at2rr","at4rr"],
+          ["at3rr","at5rr"],
+          
+          //attach
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":201000,"beamDamp":120},
+          {"disableTriangleBreaking":true},
+          {"optional":true},
+          //body (left)
+          {"beamDeform":8820,"beamStrength":"FLT_MAX"},
+          ["at5ll","f1ll"],
+          ["at5l","f1l"],
+          ["at4ll","f1ll"],
+          ["at4l","f1l"],
+          
+          ["at4l","f5l"],
+          ["at4ll","f5ll"],
+
+          ["at4l","f12ll"],
+          ["at4l","f10ll"],
+
+          //right
+          ["at5rr","f1rr"],
+          ["at5r","f1r"],
+          ["at4rr","f1rr"],
+          ["at4r","f1r"],
+          
+          ["at4r","f5r"],
+          ["at4rr","f5rr"],
+
+          ["at4r","f12rr"],
+          ["at4r","f10rr"],
+
+          //detachable
+          {"beamDeform":8820,"beamStrength":8000},
+          {"breakGroup":"archtub_F_body_L1"},
+          ["at3l","f10ll"],
+          ["at3l","f12ll"],
+          ["at2l","f10ll"],
+          ["at2l","f12ll"],
+
+          ["at3l","f14l"],
+          ["at3ll","f14l"],
+          ["at3ll","f14ll"],
+          ["at3lll","f14l"],
+          ["at3lll","f14ll"],
+          
+          {"breakGroup":"archtub_F_body_R1"},
+          ["at3r","f10rr"],
+          ["at3r","f12rr"],
+          ["at2r","f10rr"],
+          ["at2r","f12rr"],
+
+          ["at3r","f14r"],
+          ["at3rr","f14r"],
+          ["at3rr","f14rr"],
+          ["at3rrr","f14r"],
+          ["at3rrr","f14rr"],
+
+          {"beamDeform":8820,"beamStrength":12450},
+          {"breakGroup":"archtub_F_wing_L1"},
+          //wing
+          ["at3lll","fe5l"],
+          ["at3ll","fe6l"],
+          ["at4ll","fe4l"],
+          
+          {"breakGroup":"archtub_F_wing_R1"},
+          ["at3rrr","fe5r"],
+          ["at3rr","fe6r"],
+          ["at4rr","fe4r"],
+          {"breakGroup":""},
+
+          //front bumper
+          {"breakGroup":"archtub_F_bumper_L1"},
+          ["at1l","fb3l"],
+          ["at1ll","fb3l"],
+          ["at1l","fb3ll"],
+          ["at1ll","fb3ll"],
+          ["at2ll","fb3lll"],
+          ["at2l","fb3lll"],
+
+          ["at3ll","fb2lll"],
+          ["at3l","fb2lll"],
+
+          {"breakGroup":"archtub_F_bumper_R1"},
+          ["at1r","fb3r"],
+          ["at1rr","fb3r"],
+          ["at1r","fb3rr"],
+          ["at1rr","fb3rr"],
+          ["at2rr","fb3rrr"],
+          ["at2r","fb3rrr"],
+
+          ["at3rr","fb2rrr"],
+          ["at3r","fb2rrr"],
+
+          //front arch tub support beams
+          {"beamType":"|SUPPORT", "beamLongBound":4},
+          {"beamSpring":201000,"beamDamp":50},
+          {"beamDeform":15140,"beamStrength":299000},
+          {"optional":true},
+          //to bumper
+          //left
+          ["at2l","fb3l"],
+          ["at2l","fb2l"],
+          ["at3l","fb3l"],
+          ["at3l","fb2l"],
+          
+          ["at2l","fb3ll"],
+          ["at3l","fb2ll"],
+
+          ["at3l","fb3lll"],
+
+          //right
+          ["at2r","fb3r"],
+          ["at2r","fb2r"],
+          ["at3r","fb3r"],
+          ["at3r","fb2r"],
+          
+          ["at2r","fb3rr"],
+          ["at3r","fb2rr"],
+
+          ["at3r","fb3rrr"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+},
+"audi6_archtubs_F_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Front Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_FL_rs6", ["audi6_archtub_FL"]],
+         ["audi6_archtub_FR_rs6", ["audi6_archtub_FR"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--arch tubs--
+         {"nodeWeight":1.0},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_archtub_FL"},
+         {"collision":true},
+         {"selfCollision":true},
+         //left
+         ["at1l", 0.5312, -1.935, 0.2153],
+         ["at1ll", 0.6578, -1.855, 0.2091],
+         ["at2l", 0.5659, -1.6424, 0.1994],
+         ["at2ll", 0.769, -1.6705, 0.2044],
+
+         ["at3l", 0.531, -1.4269, 0.55],
+         ["at3ll", 0.8526, -1.5719, 0.57],
+         ["at3lll", 0.854, -1.2989, 0.6739],
+
+         ["at4l", 0.5142, -1.1326, 0.55],
+         ["at4ll", 0.874, -1.0095, 0.57],
+
+         ["at5l", 0.5155, -0.919, 0.22],
+         ["at5ll", 0.83, -0.9192, 0.22],
+
+         //right
+         {"group":"audi6_archtub_FR"},
+         ["at1r", -0.5312, -1.935, 0.2153],
+         ["at1rr", -0.6578, -1.855, 0.2091],
+         ["at2r", -0.5659, -1.6424, 0.1994],
+         ["at2rr", -0.769, -1.6705, 0.2044],
+
+         ["at3r", -0.531, -1.4269, 0.55],
+         ["at3rr", -0.8526, -1.5719, 0.57],
+         ["at3rrr", -0.854, -1.2989, 0.6739],
+
+         ["at4r", -0.5142, -1.1326, 0.55],
+         ["at4rr", -0.874, -1.0095, 0.57],
+
+         ["at5r", -0.5155, -0.919, 0.22],
+         ["at5rr", -0.83, -0.9192, 0.22],
+         {"collision":false},
+         {"selfCollision":false},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--front arch tubs--
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":301000,"beamDamp":100},
+          {"beamDeform":10000,"beamStrength":16700},
+          //front arch tub main shape
+          //widthwise
+          //left
+          ["at1l","at1ll"],
+          ["at2l","at2ll"],
+          ["at3l","at3ll"],
+          ["at4l","at4ll"],
+          ["at5l","at5ll"],
+          
+          //right
+          ["at1r","at1rr"],
+          ["at2r","at2rr"],
+          ["at3r","at3rr"],
+          ["at4r","at4rr"],
+          ["at5r","at5rr"],
+
+          //lengthwise/heightwise
+          //left
+          ["at1l","at2l"],
+          ["at2l","at3l"],
+          ["at3ll","at4l"],
+          ["at4l","at5l"],
+
+          //right
+          ["at1r","at2r"],
+          ["at2r","at3r"],
+          ["at3rr","at4r"],
+          ["at4r","at5r"],
+
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":10000,"beamStrength":76700},
+          //left
+          ["at1l","at2ll"],
+          ["at1ll","at2l"],
+          ["at2l","at3ll"],
+          ["at2ll","at3l"],
+          ["at3l","at3lll"],
+          ["at3ll","at3lll"],
+          ["at3lll","at4l"],
+          ["at3lll","at4ll"],
+          ["at4l","at5ll"],
+          ["at4ll","at5l"],
+          
+          //right
+          ["at1r","at2rr"],
+          ["at1rr","at2r"],
+          ["at2r","at3rr"],
+          ["at2rr","at3r"],
+          ["at3r","at3rrr"],
+          ["at3rr","at3rrr"],
+          ["at3rrr","at4r"],
+          ["at3rrr","at4rr"],
+          ["at4r","at5rr"],
+          ["at4rr","at5r"],
+          
+          //rigids
+          {"beamDeform":3500,"beamStrength":76700},
+          {"beamSpring":188250,"beamDamp":87.6},
+          //height/lengthwise
+          ["at1ll","at3l"],
+          ["at1l","at3ll"],
+
+          ["at1l","at3l"],
+          ["at2l","at4l"],
+          ["at3l","at4l"],
+          ["at3l","at5l"],
+          ["at1ll","at3ll"],
+          ["at2ll","at4ll"],
+          ["at3ll","at5ll"],
+
+          ["at1rr","at3r"],
+          ["at1r","at3rr"],
+
+          ["at1r","at3r"],
+          ["at2r","at4r"],
+          ["at3r","at4r"],
+          ["at3r","at5r"],
+          ["at1rr","at3rr"],
+          ["at2rr","at4rr"],
+          ["at3rr","at5rr"],
+          
+          //attach
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":201000,"beamDamp":120},
+          {"disableTriangleBreaking":true},
+          {"optional":true},
+          //body (left)
+          {"beamDeform":8820,"beamStrength":"FLT_MAX"},
+          ["at5ll","f1ll"],
+          ["at5l","f1l"],
+          ["at4ll","f1ll"],
+          ["at4l","f1l"],
+          
+          ["at4l","f5l"],
+          ["at4ll","f5ll"],
+
+          ["at4l","f12ll"],
+          ["at4l","f10ll"],
+
+          //right
+          ["at5rr","f1rr"],
+          ["at5r","f1r"],
+          ["at4rr","f1rr"],
+          ["at4r","f1r"],
+          
+          ["at4r","f5r"],
+          ["at4rr","f5rr"],
+
+          ["at4r","f12rr"],
+          ["at4r","f10rr"],
+
+          //detachable
+          {"beamDeform":8820,"beamStrength":8000},
+          {"breakGroup":"archtub_F_body_L1"},
+          ["at3l","f10ll"],
+          ["at3l","f12ll"],
+          ["at2l","f10ll"],
+          ["at2l","f12ll"],
+
+          ["at3l","f14l"],
+          ["at3ll","f14l"],
+          ["at3ll","f14ll"],
+          ["at3lll","f14l"],
+          ["at3lll","f14ll"],
+          
+          {"breakGroup":"archtub_F_body_R1"},
+          ["at3r","f10rr"],
+          ["at3r","f12rr"],
+          ["at2r","f10rr"],
+          ["at2r","f12rr"],
+
+          ["at3r","f14r"],
+          ["at3rr","f14r"],
+          ["at3rr","f14rr"],
+          ["at3rrr","f14r"],
+          ["at3rrr","f14rr"],
+
+          {"beamDeform":8820,"beamStrength":12450},
+          {"breakGroup":"archtub_F_wing_L1"},
+          //wing
+          ["at3lll","fe5l"],
+          ["at3ll","fe6l"],
+          ["at4ll","fe4l"],
+          
+          {"breakGroup":"archtub_F_wing_R1"},
+          ["at3rrr","fe5r"],
+          ["at3rr","fe6r"],
+          ["at4rr","fe4r"],
+          {"breakGroup":""},
+
+          //front bumper
+          {"breakGroup":"archtub_F_bumper_L1"},
+          ["at1l","fb3l"],
+          ["at1ll","fb3l"],
+          ["at1l","fb3ll"],
+          ["at1ll","fb3ll"],
+          ["at2ll","fb3lll"],
+          ["at2l","fb3lll"],
+
+          ["at3ll","fb2lll"],
+          ["at3l","fb2lll"],
+
+          {"breakGroup":"archtub_F_bumper_R1"},
+          ["at1r","fb3r"],
+          ["at1rr","fb3r"],
+          ["at1r","fb3rr"],
+          ["at1rr","fb3rr"],
+          ["at2rr","fb3rrr"],
+          ["at2r","fb3rrr"],
+
+          ["at3rr","fb2rrr"],
+          ["at3r","fb2rrr"],
+
+          //front arch tub support beams
+          {"beamType":"|SUPPORT", "beamLongBound":4},
+          {"beamSpring":201000,"beamDamp":50},
+          {"beamDeform":15140,"beamStrength":299000},
+          {"optional":true},
+          //to bumper
+          //left
+          ["at2l","fb3l"],
+          ["at2l","fb2l"],
+          ["at3l","fb3l"],
+          ["at3l","fb2l"],
+          
+          ["at2l","fb3ll"],
+          ["at3l","fb2ll"],
+
+          ["at3l","fb3lll"],
+
+          //right
+          ["at2r","fb3r"],
+          ["at2r","fb2r"],
+          ["at3r","fb3r"],
+          ["at3r","fb2r"],
+          
+          ["at2r","fb3rr"],
+          ["at3r","fb2rr"],
+
+          ["at3r","fb3rrr"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+},
+"audi6_archtubs_R_rs6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_R_rs6_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_RL_rs6_sedan", ["audi6_body"]],
+         ["audi6_archtub_RR_rs6_sedan", ["audi6_body"]],
+    ],
+},
+"audi6_archtubs_R_a6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_R_a6_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_RL_a6_sedan", ["audi6_body"]],
+         ["audi6_archtub_RR_a6_sedan", ["audi6_body"]],
+    ],
+},
+"audi6_archtubs_R_rs6_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_R_rs6_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_RL_rs6_avant", ["audi6_body"]],
+         ["audi6_archtub_RR_rs6_avant", ["audi6_body"]],
+    ],
+},
+"audi6_archtubs_R_a6_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Arch Tubs",
+        "value":180,
+    },
+    "slotType" : "audi6_archtubs_R_a6_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_archtub_RL_a6_avant", ["audi6_body"]],
+         ["audi6_archtub_RR_a6_avant", ["audi6_body"]],
+    ],
+},
+}

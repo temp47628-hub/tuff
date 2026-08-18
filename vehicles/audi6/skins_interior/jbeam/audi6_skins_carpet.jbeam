@@ -1,0 +1,200 @@
+{
+"audi6_skin_carpet": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : ""
+},
+"audi6_skin_carpet_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Beige",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "beige_carpet"
+},
+"audi6_skin_carpet_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "blue_carpet"
+},
+"audi6_skin_carpet_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "creambeige_carpet"
+},
+"audi6_skin_carpet_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "grey_carpet"
+},
+"audi6_skin_carpet_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "orange_ae_carpet"
+},
+"audi6_skin_carpet_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "burgundy_ae_carpet"
+},
+"audi6_skin_carpet_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "nightblue_ae_carpet"
+},
+"audi6_skin_carpet_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "regencygreen_ae_carpet"
+},
+"audi6_skin_carpet_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "red_ae_carpet"
+},
+"audi6_skin_carpet_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "classicred_ae_carpet"
+},
+"audi6_skin_carpet_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "blue_ae_carpet"
+},
+"audi6_skin_carpet_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "saddlebrown_ae_carpet"
+},
+"audi6_skin_carpet_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "chestnutbrown_ae_carpet"
+},
+"audi6_skin_carpet_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "jetgrey_ae_carpet"
+},
+"audi6_skin_carpet_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "palaceblue_ae_carpet"
+},
+"audi6_skin_carpet_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "alabasterwhite_ae_carpet"
+},
+"audi6_skin_carpet_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "magnolia_ae_carpet"
+},
+"audi6_skin_carpet_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "sandbeige_ae_carpet"
+},
+"audi6_skin_carpet_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "havannabrown_ae_carpet"
+},
+"audi6_skin_carpet_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "cocos_ae_carpet"
+},
+"audi6_skin_carpet_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_carpet",
+    "skinName" : "cognac_ae_carpet"
+},
+}

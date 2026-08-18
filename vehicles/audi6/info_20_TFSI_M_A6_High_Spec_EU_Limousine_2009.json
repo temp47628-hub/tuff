@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (M) A6 High-Spec (EU) [Limousine] 2009",
+      "Description":"2009 Limousine 2.0L TFSI (170 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, start-stop system, power folding mirrors, 16-inch alloys, basic infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, luggage compartment package, climate control, DSP audio system, graphite and light grey interior, brown walnut inlay finish, light grey arkana cloth seats. Exterior painted in Garnet Red",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Manual",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":63.50974930362117,
+      "Weight":1520,
+      "Value":29210,
+      "0-100 km/h":8.2,
+      "0-60 mph":7.8,
+	  "defaultPaintName1":"Garnet Red [A6]",
+}

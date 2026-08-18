@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (M) A6 High-Spec (EU) [Avant] 2005",
+      "Description":"2005 Avant 2.0L TFSI (170 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, power folding mirrors, 17-inch alloys, basic infotainment system with CD-ROM based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, automatically actuated tailgate, climate control, DSP audio system, deep blue interior, brown walnut inlay finish, deep blue mondial cloth seats. Exterior painted in Quartz Grey",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Manual",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":62.11699164345404,
+      "Weight":1590,
+      "Value":29020,
+      "0-100 km/h":8.7,
+      "0-60 mph":8.3,
+	  "defaultPaintName1":"Quartz Grey",
+}

@@ -1,0 +1,362 @@
+{
+"audi6_intmirror_compass": {
+    "information":{
+        "authors":"FastLane",
+        "name":"Auto-Dimming Interior Mirror (w/ Compass)",
+        "value":350,
+    },
+    "slotType" : "audi6_intmirror", 
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_intmirror_frame", ["audi6_windshield"]],
+        ["audi6_intmirror_main", ["audi6_intmirror"]],
+        ["audi6_intmirror_main", ["audi6_intmirror"], [],{"materialOverride":[["mirror","audi6_mirror_dimming"]], "pos":{"x": 0.0, "y":0.0001, "z":0.0}}],
+        ["audi6_intmirror_compass", ["audi6_intmirror"]],
+        ["audi6_intmirror", ["audi6_intmirror"]],
+   ],
+   "glowMap":{
+        "audi6_mirror_compass":{"simpleFunction":{"ignitionLevel2":1}, "off":"invis", "on":"audi6_mirror_compass", "on_intense":"audi6_mirror_compass"},
+        "audi6_mirror_dimming":{"simpleFunction":{"mirror_dimming":1}, "off":"invis", "on":"audi6_mirror_dimming", "on_intense":"audi6_mirror_dimming"},
+        "audi6_button_mirror_dimming":{"simpleFunction":{"mirror_dimming":1}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+    },
+   "mirrors": [
+		["mesh", "idRef:", "id1:", "id2:"],
+		["audi6_intmirror_main","mic3","mic4","mic1",{"refBaseTranslation":{"x":0.314,"y":0.241,"z":0.0},"baseRotationGlobal":{"x":0.0,"y":0.0,"z":0.0}}],
+   ],
+  "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+	    ["mirror_dimming", "mic3","mic4","mic1", "box", {"x":0.0165, "y":0.0071, "z":0.0069}, {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1064, "y":-0.0116, "z":-0.0084}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["mirror_dimming",           "action0", "mirror_dimming"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["mirror_dimming"],
+   ],
+    "controller": [
+        ["fileName"],
+
+        ["gauges/genericGauges", {"name":"mirror_compass" }],
+    ],
+	"mirror_compass": {
+        "configuration": {
+            "materialName": "@audi6_mirror_compass",
+            "htmlPath": "local://local/vehicles/audi6/mirror_compass/mirror_compass.html",
+            "displayWidth":64,
+            "displayHeight":64,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+        }
+		
+        "displayData": {
+			"electrics": [
+			  "vehicleYaw",
+			]
+
+            "customModules": [
+                ["moduleName", "property"]
+
+            ]
+        }
+    },
+  "nodes": [
+       ["id", "posX", "posY", "posZ"],
+       {"selfCollision":true},
+       {"collision":true},
+       {"nodeMaterial":"|NM_PLASTIC"},
+       {"frictionCoef":0.5},
+       {"nodeWeight":0.6},
+       {"group":"audi6_intmirror"},
+       ["mic1", -0.1139, -0.4179, 1.3141],
+       ["mic2",  0.1245, -0.4179, 1.3141],
+       ["mic3", -0.1139, -0.4179, 1.2582],
+       ["mic4",  0.1245, -0.4179, 1.2582],
+       {"group":""},
+       ["mic5",  0.0    ,-0.4464, 1.2866],
+    
+  ],
+  "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"beamSpring":1001000,"beamDamp":60},
+        {"beamDeform":1552000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["mic1","mic2"],
+        ["mic2","mic3"],
+        ["mic3","mic4"],
+        ["mic4","mic1"],
+        ["mic1","mic5"],
+        ["mic2","mic5"],
+        ["mic3","mic5"],
+        ["mic4","mic5"],
+
+        ["mic1","mic3"],
+        ["mic2","mic4"],
+
+        //attach
+        {"deformLimitExpansion":""},
+        {"beamSpring":1000000,"beamDamp":140},
+        {"beamDeform":41000,"beamStrength":5000},
+        {"breakGroup":"centremirror"},
+        ["rf2","mic5"],
+        ["rf1","mic5"],
+        ["rf1l","mic5"],
+        ["rf1r","mic5"],
+        ["rf2l","mic5"],
+        ["rf2r","mic5"],
+
+        ["wi1","mic5"],
+
+        {"beamDeform":250,"beamStrength":25000},
+        {"beamSpring":155000,"beamDamp":140},
+        ["wi1","mic4"],
+        ["wi1","mic3"],
+        ["wi1","mic2"],
+        ["wi1","mic1"],
+
+        ["rf1","mic4"],
+        ["rf1","mic3"],
+        ["rf1","mic2"],
+        ["rf1","mic1"],
+
+        {"optional":false},
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"deformLimitExpansion":1.1},
+  ],
+  "triangles": [
+          ["id1:","id2:","id3:"],
+          //right headlight
+          {"groundModel":"plastic"},
+          {"group":"audi6_intmirror"},
+          {"dragCoef":0},
+          ["mic4","mic3","mic1"],
+          ["mic1","mic2","mic4"],
+          {"group":""},
+  ],
+},
+"audi6_intmirror": {
+    "information":{
+        "authors":"FastLane",
+        "name":"Auto-Dimming Interior Mirror",
+        "value":350,
+    },
+    "slotType" : "audi6_intmirror", 
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_intmirror_frame", ["audi6_windshield"]],
+        ["audi6_intmirror_main", ["audi6_intmirror"]],
+        ["audi6_intmirror_main", ["audi6_intmirror"], [],{"materialOverride":[["mirror","audi6_mirror_dimming"]], "pos":{"x": 0.0, "y":0.0001, "z":0.0}}],
+        ["audi6_intmirror", ["audi6_intmirror"]],
+   ],
+   "glowMap":{
+        "audi6_mirror_dimming":{"simpleFunction":{"mirror_dimming":1}, "off":"invis", "on":"audi6_mirror_dimming", "on_intense":"audi6_mirror_dimming"},
+        "audi6_button_mirror_dimming":{"simpleFunction":{"mirror_dimming":1}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+    },
+   "mirrors": [
+		["mesh", "idRef:", "id1:", "id2:"],
+		["audi6_intmirror_main","mic3","mic4","mic1",{"refBaseTranslation":{"x":0.314,"y":0.241,"z":0.0},"baseRotationGlobal":{"x":0.0,"y":0.0,"z":0.0}}],
+   ],
+  "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+	    ["mirror_dimming", "mic3","mic4","mic1", "box", {"x":0.0165, "y":0.0071, "z":0.0069}, {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1064, "y":-0.0116, "z":-0.0084}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["mirror_dimming",           "action0", "mirror_dimming"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["mirror_dimming"],
+   ],
+  "nodes": [
+       ["id", "posX", "posY", "posZ"],
+       {"selfCollision":true},
+       {"collision":true},
+       {"nodeMaterial":"|NM_PLASTIC"},
+       {"frictionCoef":0.5},
+       {"nodeWeight":0.6},
+       {"group":"audi6_intmirror"},
+       ["mic1", -0.1139, -0.4179, 1.3141],
+       ["mic2",  0.1245, -0.4179, 1.3141],
+       ["mic3", -0.1139, -0.4179, 1.2582],
+       ["mic4",  0.1245, -0.4179, 1.2582],
+       {"group":""},
+       ["mic5",  0.0    ,-0.4464, 1.2866],
+    
+  ],
+  "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"beamSpring":1001000,"beamDamp":60},
+        {"beamDeform":1552000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["mic1","mic2"],
+        ["mic2","mic3"],
+        ["mic3","mic4"],
+        ["mic4","mic1"],
+        ["mic1","mic5"],
+        ["mic2","mic5"],
+        ["mic3","mic5"],
+        ["mic4","mic5"],
+
+        ["mic1","mic3"],
+        ["mic2","mic4"],
+
+        //attach
+        {"deformLimitExpansion":""},
+        {"beamSpring":1000000,"beamDamp":140},
+        {"beamDeform":41000,"beamStrength":5000},
+        {"breakGroup":"centremirror"},
+        ["rf2","mic5"],
+        ["rf1","mic5"],
+        ["rf1l","mic5"],
+        ["rf1r","mic5"],
+        ["rf2l","mic5"],
+        ["rf2r","mic5"],
+
+        ["wi1","mic5"],
+
+        {"beamDeform":250,"beamStrength":25000},
+        {"beamSpring":155000,"beamDamp":140},
+        ["wi1","mic4"],
+        ["wi1","mic3"],
+        ["wi1","mic2"],
+        ["wi1","mic1"],
+
+        ["rf1","mic4"],
+        ["rf1","mic3"],
+        ["rf1","mic2"],
+        ["rf1","mic1"],
+
+        {"optional":false},
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"deformLimitExpansion":1.1},
+  ],
+  "triangles": [
+          ["id1:","id2:","id3:"],
+          //right headlight
+          {"groundModel":"plastic"},
+          {"group":"audi6_intmirror"},
+          {"dragCoef":0},
+          ["mic4","mic3","mic1"],
+          ["mic1","mic2","mic4"],
+          {"group":""},
+  ],
+},
+"audi6_intmirror_base": {
+    "information":{
+        "authors":"FastLane",
+        "name":"Interior Mirror",
+        "value":350,
+    },
+    "slotType" : "audi6_intmirror", 
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_intmirror_frame", ["audi6_windshield"]],
+        ["audi6_intmirror_main", ["audi6_intmirror"]],
+        ["audi6_intmirror_base", ["audi6_intmirror"]]
+   ],
+   "mirrors": [
+		["mesh", "idRef:", "id1:", "id2:"],
+		["audi6_intmirror_main","mic3","mic4","mic1",{"refBaseTranslation":{"x":0.314,"y":0.241,"z":0.0},"baseRotationGlobal":{"x":0.0,"y":0.0,"z":0.0}}],
+   ],
+  "nodes": [
+       ["id", "posX", "posY", "posZ"],
+       {"selfCollision":true},
+       {"collision":true},
+       {"nodeMaterial":"|NM_PLASTIC"},
+       {"frictionCoef":0.5},
+       {"nodeWeight":0.6},
+       {"group":"audi6_intmirror"},
+       ["mic1", -0.1139, -0.4179, 1.3141],
+       ["mic2",  0.1245, -0.4179, 1.3141],
+       ["mic3", -0.1139, -0.4179, 1.2582],
+       ["mic4",  0.1245, -0.4179, 1.2582],
+       {"group":""},
+       ["mic5",  0.0    ,-0.4464, 1.2866],
+    
+  ],
+  "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"beamSpring":1001000,"beamDamp":60},
+        {"beamDeform":1552000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["mic1","mic2"],
+        ["mic2","mic3"],
+        ["mic3","mic4"],
+        ["mic4","mic1"],
+        ["mic1","mic5"],
+        ["mic2","mic5"],
+        ["mic3","mic5"],
+        ["mic4","mic5"],
+
+        ["mic1","mic3"],
+        ["mic2","mic4"],
+
+        //attach
+        {"deformLimitExpansion":""},
+        {"beamSpring":1000000,"beamDamp":140},
+        {"beamDeform":41000,"beamStrength":5000},
+        {"breakGroup":"centremirror"},
+        ["rf2","mic5"],
+        ["rf1","mic5"],
+        ["rf1l","mic5"],
+        ["rf1r","mic5"],
+        ["rf2l","mic5"],
+        ["rf2r","mic5"],
+
+        ["wi1","mic5"],
+
+        {"beamDeform":250,"beamStrength":25000},
+        {"beamSpring":155000,"beamDamp":140},
+        ["wi1","mic4"],
+        ["wi1","mic3"],
+        ["wi1","mic2"],
+        ["wi1","mic1"],
+
+        ["rf1","mic4"],
+        ["rf1","mic3"],
+        ["rf1","mic2"],
+        ["rf1","mic1"],
+
+        {"optional":false},
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+        {"breakGroup":""},
+        {"deformGroup":""},
+        {"deformLimitExpansion":1.1},
+  ],
+  "triangles": [
+          ["id1:","id2:","id3:"],
+          //right headlight
+          {"groundModel":"plastic"},
+          {"group":"audi6_intmirror"},
+          {"dragCoef":0},
+          ["mic4","mic3","mic1"],
+          ["mic1","mic2","mic4"],
+          {"group":""},
+  ],
+},
+}

@@ -1,0 +1,42 @@
+{
+"audi6_engine_v10_5.0_petrol_ecu_580": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"580 ECU",
+        "value":500,
+    },
+    "slotType" : "audi6_engine_v10_5.0_petrol_ecu",
+    "mainEngine":{
+        "revLimiterRPM":6700,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+    },
+"turbocharger": {
+        "wastegateStart": 8.0,
+        "wastegateRange": 2.5,
+        "engineDef":[
+            //engineRPM, efficiency, exhaustFactor
+            [0,      0.0,    0.2],
+            [650,    0.65,   0.2],
+            [1000,   1.0,    0.45],
+            [1500,   0.90,   0.8],
+            [2000,   0.75,   1.0],
+            [2500,   0.64,   1.0],
+            [3000,   0.56,   1.0],
+            [3500,   0.50,   1.0],
+            [4000,   0.52,   1.0],
+            [4500,   0.53,   1.0],
+            [5000,   0.53,   1.0],
+            [5500,   0.555,  1.0],
+            [6000,   0.525,  1.0],
+            [6500,   0.435,  1.0],
+            [7000,   0.285,  1.0],
+            [7500,   0.15,   1.0],
+            [8000,   0.04,   1.0],
+            [8500,   0.01,   1.0],
+            [9000,   0.00,   1.0],
+            [10000,  0.00,   1.0],
+        ],
+    }
+},
+}

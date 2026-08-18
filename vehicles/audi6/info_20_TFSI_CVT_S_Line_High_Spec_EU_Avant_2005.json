@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (Multitronic) S-Line High-Spec (EU) [Avant] 2005",
+      "Description":"2005 Avant 2.0L TFSI (170 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, power folding mirrors, 18-inch alloys, basic infotainment system with CD-ROM based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, lighting pacakge, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black volterra leather seats. Exterior painted in Avus Silver",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":60.16713091922006,
+      "Weight":1620,
+      "Value":30070,
+      "0-100 km/h":9.0,
+      "0-60 mph":8.6,
+	  "defaultPaintName1":"Avus Silver [S-Line]",
+}

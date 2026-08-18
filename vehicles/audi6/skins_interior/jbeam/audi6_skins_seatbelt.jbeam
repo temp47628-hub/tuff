@@ -1,0 +1,227 @@
+{
+"audi6_skin_seatbelt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : ""
+},
+"audi6_skin_seatbelt_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "beige_seatbelt"
+},
+"audi6_skin_seatbelt_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "linenbeige_seatbelt"
+},
+"audi6_skin_seatbelt_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "brown_seatbelt"
+},
+"audi6_skin_seatbelt_paranutbrown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Paranut Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "paranutbrown_seatbelt"
+},
+"audi6_skin_seatbelt_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "blue_seatbelt"
+},
+"audi6_skin_seatbelt_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "creambeige_seatbelt"
+},
+"audi6_skin_seatbelt_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "silver_seatbelt"
+},
+"audi6_skin_seatbelt_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "red_ae_seatbelt"
+},
+"audi6_skin_seatbelt_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "classicred_ae_seatbelt"
+},
+"audi6_skin_seatbelt_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "burgundy_ae_seatbelt"
+},
+"audi6_skin_seatbelt_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "nightblue_ae_seatbelt"
+},
+"audi6_skin_seatbelt_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "regencygreen_ae_seatbelt"
+},
+"audi6_skin_seatbelt_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "blue_ae_seatbelt"
+},
+"audi6_skin_seatbelt_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "saddlebrown_ae_seatbelt"
+},
+"audi6_skin_seatbelt_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "chestnutbrown_ae_seatbelt"
+},
+"audi6_skin_seatbelt_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "jetgrey_ae_seatbelt"
+},
+"audi6_skin_seatbelt_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "palaceblue_ae_seatbelt"
+},
+"audi6_skin_seatbelt_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "alabasterwhite_ae_seatbelt"
+},
+"audi6_skin_seatbelt_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "magnolia_ae_seatbelt"
+},
+"audi6_skin_seatbelt_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "sandbeige_ae_seatbelt"
+},
+"audi6_skin_seatbelt_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "havannabrown_ae_seatbelt"
+},
+"audi6_skin_seatbelt_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "cocos_ae_seatbelt"
+},
+"audi6_skin_seatbelt_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "cognac_ae_seatbelt"
+},
+"audi6_skin_seatbelt_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatbelt",
+    "skinName" : "orange_ae_seatbelt"
+},
+}

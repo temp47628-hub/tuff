@@ -1,0 +1,15 @@
+{
+"audi6_engine_v10_5.2_petrol_ecu_350": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock ECU",
+        "value":500,
+    },
+    "slotType" : "audi6_engine_v10_5.2_petrol_ecu",
+    "mainEngine":{
+        "revLimiterRPM":7000,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+    },
+},
+}

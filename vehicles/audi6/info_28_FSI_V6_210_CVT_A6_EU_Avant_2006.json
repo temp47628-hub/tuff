@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.8L FSI V6 [210] (Multitronic) A6 (EU) [Avant] 2006",
+      "Description": "2006 Avant 2.8L FSI V6 (210 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding mirrors, 17-inch alloys, basic infotainment system with a 6-disc CD changer, auto-dimming rear view mirror, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, brown walnut inlay finish, black meridian cloth seats. Exterior painted in Aero Blue",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 210,
+      "Torque": 280,
+      "Top Speed": 64.463168,
+      "Weight": 1630,
+      "Value": 53070,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 8.0,
+      "defaultPaintName1": "Aero Blue [A6]"
+}

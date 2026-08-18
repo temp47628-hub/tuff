@@ -1,0 +1,181 @@
+@font-face {
+  font-family: AUDImmiBasic;
+  src: url(/vehicles/audi6/fonts/AUDImmiBasic.ttf);
+}
+
+body {
+  margin: 0;
+  padding-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: AUDImmiBasic;
+  font-size: 35px;
+  overflow: hidden;
+  background-image: url("ui.png");
+  background-size: 100% 100%;
+}
+
+.interface-root {
+  width: 100%;
+}
+
+#bootscreen {
+  background-image: url("/vehicles/audi6/mmi_2g_basic/bootscreen.png");
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  z-index: 100;
+  transition: opacity 0.8s ease, transform 1.2s ease;
+}
+
+.fadeout {
+  opacity: 0;
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+.fadein {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.center-container {
+  position: absolute;
+  right: 64px;
+  bottom: 87px;
+  width: 384px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:38px;
+  text-align: center;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.center-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: #ff0000;
+}
+
+.scroll-text {
+  animation-name: slide-text;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-text {
+  0%, 30% { transform: translateX(0); }   /* pause at start */
+  100% { transform: translateX(-100%); }
+}
+
+#volume_icon {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+.time-display {
+  position: absolute;
+  left: 5px;
+  bottom: 4px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:38px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.text-0 {
+  position: absolute;
+  right: 0px;
+  bottom: 163px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-size:38px;
+  text-align: center;
+  line-height: 25px;
+  white-space: nowrap
+}
+
+.text-1 {
+  position: absolute;
+  left: 5px;
+  bottom: 163px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-size:38px;
+  text-align: left;
+  line-height: 25px;
+  white-space: nowrap
+}
+
+.text-2 {
+  position: absolute;
+  right: 5px;
+  bottom: 163px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-size:38px;
+  text-align: right;
+  line-height: 25px;
+  white-space: nowrap
+}
+
+.text-3 {
+  position: absolute;
+  left: 5px;
+  bottom: 4px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-size:38px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.text-4 {
+  position: absolute;
+  right: 5px;
+  bottom: 4px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-size:38px;
+  text-align: right;
+  line-height: 25px;
+}
+
+/* ── Parking sensor overlay ── */
+.parking-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 101;
+  pointer-events: none;
+}
+
+.proximity-indicator {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}

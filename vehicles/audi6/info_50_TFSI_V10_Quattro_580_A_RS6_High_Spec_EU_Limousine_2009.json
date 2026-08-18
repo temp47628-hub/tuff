@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "5.0L TFSI V10 Quattro (Tiptronic) RS6 High-Spec (EU) [Limousine] 2009",
+      "Description": "2009 Limousine 5.0L TFSI V10 (580 HP) with 6-Speed Tiptronic Transmission, Quattro permanent 40/60 four-wheel-drive and RS6 plus sport suspension. This model is equipped with RS6 package, xenon headlights, LED taillights, adaptive lights, audi advanced parking system, insulated and acoustic glass, side-assist package, lane-assist package, high-beam assistant, start-stop system, key-less system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 19-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, DAB digital radio module, high mobile phone preparation, auto-dimming rear view mirror, electrically adjustable seats, luggage compartment package, storage package, smoker package, premium lighting package, rear electric and side manual window blind, climate control, BOSE surround sound audio system, black interior, fine-grain nutmeg myrtle inlay finish, black silk nappa leather seats. Exterior painted in Monterey Green",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 580,
+      "Torque": 650,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1910,
+      "Value":101310,
+      "0-100 km/h": 4.5,
+      "0-60 mph": 4.3,
+      "defaultPaintName1": "Monterey Green [RS6]"
+}

@@ -1,0 +1,150 @@
+{
+"audi6_licenseplate_F_EU": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front EU License Plate",
+        "value":0,
+    },
+    "slotType" : "audi6_licenseplate_F",
+    "licenseplateFormat": "52-11",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 //rs6
+		{"disable":"$=$components.bodySpecifics.grilleType == 1 or $components.bodySpecifics.grilleType == 2"},
+         ["licenseplate-52-11-r2", ["audi6_licenseplateholder_F"],[],{"pos":{"x":0.0, "y":-2.39, "z":0.493}, "rot":{"x":-8, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+		 //facelift a6
+		{"disable":"$=$components.bodySpecifics.grilleType == 0 or $components.bodySpecifics.grilleType == 2"},
+         ["licenseplate-52-11-r2", ["audi6_licenseplateholder_F"],[],{"pos":{"x":0.0, "y":-2.375, "z":0.493}, "rot":{"x":-8, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+		 //pre-facelift s6
+		{"disable":"$=$components.bodySpecifics.grilleType == 0 or $components.bodySpecifics.grilleType == 1"},
+         ["licenseplate-52-11-r2", ["audi6_licenseplateholder_F"],[],{"pos":{"x":0.0, "y":-2.392, "z":0.497}, "rot":{"x":-5, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+	     {"disable":""}
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_PLASTIC"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.45},
+        {"group":"audi6_licenseplateholder_F"},
+        ["lph1lf", 0.2589,-2.3938,0.555],
+        ["lph2lf", 0.2589,-2.406,0.4449],
+        ["lph3f", 0,-2.3938,0.555],
+        ["lph4f", 0.0,-2.406,0.4449],
+        ["lph1rf", -0.2589,-2.3938,0.555],
+        ["lph2rf", -0.2589,-2.406,0.4449],
+ 
+        //rigidifier
+        {"group":""},
+        ["lph5f", 0,-2.2917,0.4993, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //License Plate Holder
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":1000,"beamStrength":"FLT_MAX"},
+          //main shape left
+          ["lph3f", "lph1lf"],
+          ["lph1lf", "lph2lf"],
+          ["lph2lf", "lph4f"],
+
+          //main shape left
+          ["lph3f", "lph1rf"],
+          ["lph1rf", "lph2rf"],
+          ["lph2rf", "lph4f"],
+
+          //crossing
+          ["lph1lf", "lph4f"],
+          ["lph2lf", "lph3f"],
+
+          ["lph1rf", "lph4f"],
+          ["lph2rf", "lph3f"],
+
+          ["lph3f", "lph4f"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":5000,"beamStrength":"FLT_MAX"},
+          ["lph5f", "lph1lf"],
+          ["lph5f", "lph2lf"],
+
+          ["lph5f", "lph3f"],
+          ["lph5f", "lph4f"],
+
+          ["lph5f", "lph2rf"],
+          ["lph5f", "lph1rf"],
+
+          //attach
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":130000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":2300},
+          {"deformGroup":""}
+          {"breakGroup":"licenseplateholder_F"},
+          //to bumper
+          ["lph3f", "gri_2"],
+          ["lph3f", "gri_1"],
+          ["lph4f", "gri_2"],
+          ["lph4f", "gri_1"],
+
+          ["lph1lf", "gri_1l"],
+          ["lph1rf", "gri_1r"],
+          ["lph2lf", "gri_1l"],
+          ["lph2rf", "gri_1r"],
+
+          ["lph1lf", "gri_2l"],
+          ["lph1rf", "gri_2r"],
+          ["lph2lf", "gri_2l"],
+          ["lph2rf", "gri_2r"],
+
+          ["lph5f", "gri_2"],
+          ["lph5f", "gri_1"],
+          ["lph5f", "gri_2l"],
+          ["lph5f", "gri_1l"],
+          ["lph5f", "gri_2r"],
+          ["lph5f", "gri_1r"],
+
+          {"deformGroup":""}
+          {"breakGroup":""},
+          //support beams to body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"plastic"},
+            {"group":"audi6_licenseplateholder_F"},
+
+            ["lph4f", "lph2lf", "lph1lf"],
+            ["lph1lf", "lph3f", "lph4f"],
+
+            ["lph1rf", "lph2rf", "lph4f"],
+            ["lph4f", "lph3f", "lph1rf"],
+    ],
+},
+"audi6_licenseplate_R_EU": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear EU License Plate",
+        "value":0,
+    },
+    "slotType" : "audi6_licenseplate_R_EU",
+    "licenseplateFormat": "52-11",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 //facelift sedan
+		 {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+         ["licenseplate-52-11-r4", ["audi6_trunk"],[],{"pos":{"x":0.0, "y":2.38, "z":0.895}, "rot":{"x":16, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+		 //pre-facelift sedan
+		 {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+		 ["licenseplate-52-11-r4", ["audi6_trunk"],[],{"pos":{"x":0.0, "y":2.38, "z":0.895}, "rot":{"x":14, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+		 //avant
+		 {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+		 ["licenseplate-52-11-r4", ["audi6_trunk"],[],{"pos":{"x":0.0, "y":2.406, "z":0.805}, "rot":{"x":14, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+		 {"disable":""}
+    ],
+},
+}

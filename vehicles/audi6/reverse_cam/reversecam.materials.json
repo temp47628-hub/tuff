@@ -1,0 +1,118 @@
+{
+  "audi6_zeit_reversecam": {
+    "name": "audi6_zeit_reversecam",
+    "mapTo": "audi6_zeit_reversecam",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.0901959985,
+          0.0901959985,
+          0.0901959985,
+          1
+        ],
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "@audi6_zeit_reversecam",
+        "metallicFactor": 0.519999981,
+        "roughnessFactor": 0.109999999
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_reversecam": {
+    "name": "audi6_reversecam",
+    "mapTo": "audi6_reversecam",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "audi6_zeit_reversecam_overlay": {
+    "name": "audi6_zeit_reversecam_overlay",
+    "mapTo": "audi6_zeit_reversecam_overlay",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "@audi6_zeit_reversecam_overlay",
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "@audi6_zeit_reversecam_overlay",
+        "roughnessFactor": 0.109999999
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentZWrite": true
+  }
+}

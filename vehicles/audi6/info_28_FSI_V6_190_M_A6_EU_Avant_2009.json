@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.8L FSI V6 [190] (M) A6 (EU) [Avant] 2009",
+      "Description": "2009 Avant 2.8L FSI V6 (190 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, start-stop system, power folding mirrors, 17-inch alloys, high infotainment system with HDD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, graphite and light grey interior, mid-brown walnut inlay finish, light grey milano leather seats. Exterior painted in Quartz Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Petrol",
+      "Induction Type": "Naturally Aspirated",
+      "Propulsion": "ICE",
+      "Power": 190,
+      "Torque": 280,
+      "Top Speed": 64.463168,
+      "Weight": 1695,
+      "Value": 53220,
+      "0-100 km/h": 8.5,
+      "0-60 mph": 8.2,
+      "defaultPaintName1": "Quartz Grey"
+}

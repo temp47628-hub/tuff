@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (M) S-Line (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.7L TDI V6 (180 HP) with 6-Speed Manual Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Brilliant Blue",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 62.13856,
+      "Weight": 1710,
+      "Value": 40020,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 7.9,
+      "defaultPaintName1": "Brilliant Blue"
+}

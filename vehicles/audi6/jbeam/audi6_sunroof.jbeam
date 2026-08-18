@@ -1,0 +1,443 @@
+{
+"audi6_glass_sunroof": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sunroof Glass",
+        "value":400,
+    },
+    "slotType" : "audi6_glass_sunroof",
+    "controller": [
+        ["fileName"],
+        ["sunroofGlass"]
+    ],
+	"props": [
+        ["func", "mesh", "idRef:","idX:","idY:", "baseRotationGlobal", "rotationGlobal", "translationGlobal", "min", "max", "offset", "multiplier"],
+        //["", "audi6_intceiling_sedan_sunroof.006", "sunroof_main1l","sunroof_main1r","sunroof_main2l",  {"x":88, "y":0, "z":0}, {"x":0, "y":0, "z":0}    , {"x":0.0, "y":0.0, "z":0.0}, -1, 1, 0, 1],      
+	],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_sunroof_glass", ["audi6_sunroof_tilt"]],
+        {"disable":"$=$components.electrics.solarMesh ~= 1"},
+        ["audi6_sunroof_solar", ["audi6_sunroof_tilt"]],
+        {"disable":""},
+        ["audi6_sunroof_glass_frame", ["audi6_sunroof_tilt"]],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+        ["sunroof_slide", "rf1", "rf1r", "rf2", "box", {"x":0.0171, "y":0.0196, "z":0.0376},  {"x":5, "y":355, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0073, "y":0.0459, "z":-0.0769}],
+        ["sunroof_tilt", "rf1", "rf1l", "rf2", "box", {"x":0.0171, "y":-0.0196, "z":0.0376},  {"x":355, "y":355, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0073, "y":0.0459, "z":0.0769}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["sunroof_slide", "action0", "sunroof_slide"],
+        ["sunroof_tilt", "action0", "sunroof_tilt"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["sunroof_slide"],
+		["sunroof_tilt"],
+    ],
+    "rails": {
+        "sunroof_1_L":{
+                "links:":["sunroof_rail1l", "sunroof_rail2l"], "broken:":[], "looped":false, "capped":true,
+            },
+            "sunroof_1_R":{
+                "links:":["sunroof_rail1r", "sunroof_rail2r"], "broken:":[], "looped":false, "capped":true,  
+        },    
+    },
+    "slidenodes": [
+            ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+            ["sunroof_main1l", "sunroof_1_L", true, true, 0.0, 400000, "FLT_MAX", "FLT_MAX"],
+            ["sunroof_main2l", "sunroof_1_L", true, true, 0.0, 400000, "FLT_MAX", "FLT_MAX"],
+            
+            ["sunroof_main1r", "sunroof_1_R", true, true, 0.0, 400000, "FLT_MAX", "FLT_MAX"],
+            ["sunroof_main2r", "sunroof_1_R", true, true, 0.0, 400000, "FLT_MAX", "FLT_MAX"],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.4},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"collision":false},
+         {"selfCollision":false},
+
+         //------ RAILS (fixed to body) ------
+         {"group":"audi6_sunroof_glass_rail"},
+         ["sunroof_rail1l", -0.3673, -0.1439, 1.426],	 
+         ["sunroof_rail2l", -0.3673, 0.647, 1.4497],	
+         ["sunroof_rail1r", 0.3673, -0.1439, 1.426],	 
+         ["sunroof_rail2r", 0.3673, 0.647, 1.4497],	     
+
+         //------ MAIN SLIDE NODES (ride on rails) ------
+         {"group":"audi6_sunroof_glass"},
+         ["sunroof_main1l", -0.3673, -0.1404, 1.4261],	 
+         ["sunroof_main2l", -0.3673, 0.3108, 1.4393],	
+         ["sunroof_main1r", 0.3673, -0.1404, 1.4261],	 
+         ["sunroof_main2r", 0.3673, 0.3108, 1.4393],	      
+         {"nodeWeight":0.4},
+         ["sunroof_rigid", -0.0000, 0.0995, 1.4851],
+
+         //------ TILT SURFACE (glass/frame flex to these) ------
+         //front pair — hinge, beamed stiffly to main1 slide nodes
+         {"group":"audi6_sunroof_tilt"},
+         {"nodeWeight":0.3},
+         ["sf_fl", -0.3673, -0.1404, 1.4291],
+         ["sf_fr",  0.3673, -0.1404, 1.4291],
+         //rear pair — lifted by tilt hydro
+         ["sf_rl", -0.3673, 0.3108, 1.4423],
+         ["sf_rr",  0.3673, 0.3108, 1.4423],
+         //rigidifier
+         ["sf_rig", 0.0, 0.10, 1.488],
+
+         //------ TILT PUSH REFS (below rear, hydro base) ------
+         //Z=1.408: above the roof panel (~1.40) but below the glass (1.4393)
+         //gives ~0.031m of hydro travel before hitting glass rest position
+         {"group":""},
+         {"nodeWeight":0.3},
+         ["sf_pbl", -0.3673, 0.3108, 1.408],
+         ["sf_pbr",  0.3673, 0.3108, 1.408],
+
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":151000,"beamDamp":50},
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.1},
+          {"deformationTriggerRatio":0.01},
+
+          //====== RAIL SHAPE ======
+          ["sunroof_rail1l","sunroof_rail2l"],
+          ["sunroof_rail1r","sunroof_rail2r"],
+          ["sunroof_rail2l","sunroof_rail2r"],
+          ["sunroof_rail1l","sunroof_rail1r"],
+          ["sunroof_rail1l","sunroof_rail2r"],
+          ["sunroof_rail2l","sunroof_rail1r"],
+
+          //====== MAIN SLIDE SHAPE ======
+          ["sunroof_main1l","sunroof_main2l"],
+          ["sunroof_main1l","sunroof_main1r"],
+          ["sunroof_main1r","sunroof_main2r"],
+          ["sunroof_main2l","sunroof_main2r"],
+          ["sunroof_main2l","sunroof_main1r"],
+          ["sunroof_main1l","sunroof_main2r"],
+          
+          //rigidifier
+          {"beamSpring":121000,"beamDamp":100},
+          {"beamDeform":248000,"beamStrength":"FLT_MAX"},
+          ["sunroof_main1l","sunroof_rigid"],
+          ["sunroof_main2l","sunroof_rigid"],
+          ["sunroof_main2r","sunroof_rigid"],
+          ["sunroof_main1r","sunroof_rigid"],
+
+          //====== TILT SURFACE STRUCTURE ======
+          {"beamSpring":151000,"beamDamp":50},
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          //panel shape
+          ["sf_fl","sf_fr"],
+          ["sf_rl","sf_rr"],
+          ["sf_fl","sf_rl"],
+          ["sf_fr","sf_rr"],
+          ["sf_fl","sf_rr"],
+          ["sf_fr","sf_rl"],
+          //rigidifier
+          {"beamSpring":121000,"beamDamp":100},
+          {"beamDeform":248000,"beamStrength":"FLT_MAX"},
+          ["sf_fl","sf_rig"],
+          ["sf_fr","sf_rig"],
+          ["sf_rl","sf_rig"],
+          ["sf_rr","sf_rig"],
+
+          //====== TILT HINGE — front tilt nodes follow front slide nodes ======
+          {"beamSpring":301000,"beamDamp":80},
+          {"beamDeform":48000,"beamStrength":"FLT_MAX"},
+          ["sf_fl","sunroof_main1l"],
+          ["sf_fr","sunroof_main1r"],
+          ["sf_fl","sunroof_main1r"],
+          ["sf_fr","sunroof_main1l"],
+          ["sf_fl","sunroof_main2l"],
+          ["sf_fr","sunroof_main2r"],
+
+          //====== TILT PUSH REFS — follow slide, stay low ======
+          {"beamSpring":251000,"beamDamp":80},
+          {"beamDeform":48000,"beamStrength":"FLT_MAX"},
+          //attach to main2 slide nodes (follows slide along rail)
+          ["sf_pbl","sunroof_main2l"],
+          ["sf_pbr","sunroof_main2r"],
+          ["sf_pbl","sunroof_main2r"],
+          ["sf_pbr","sunroof_main2l"],
+          //attach to main1 for triangulation
+          ["sf_pbl","sunroof_main1l"],
+          ["sf_pbr","sunroof_main1r"],
+          //cross between push refs
+          ["sf_pbl","sf_pbr"],
+
+          //====== RAIL → BODY ======
+          {"beamSpring":151000,"beamDamp":50},
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          ["sunroof_rail1l","rf1r"],	  
+          ["sunroof_rail1l","rf2r"],	  
+          ["sunroof_rail1l","rf1"],	  
+          ["sunroof_rail1l","rf2"],	  
+          ["sunroof_rail1l","rf7"],	  
+
+          ["sunroof_rail2l","rf2r"],	  
+          ["sunroof_rail2l","rf3r"],	  
+          ["sunroof_rail2l","rf4r"],	  
+          ["sunroof_rail2l","rf2"],	  
+          ["sunroof_rail2l","rf3"],	  
+          ["sunroof_rail2l","rf4"],	
+          ["sunroof_rail2l","rf7"],	
+          
+          ["sunroof_rail1r","rf1l"],	  
+          ["sunroof_rail1r","rf2l"],	  
+          ["sunroof_rail1r","rf1"],	  
+          ["sunroof_rail1r","rf2"],	  
+          ["sunroof_rail1r","rf7"],	  
+	 
+          ["sunroof_rail2r","rf2l"],	  
+          ["sunroof_rail2r","rf3l"],	  
+          ["sunroof_rail2r","rf4l"],	  
+          ["sunroof_rail2r","rf2"],	  
+          ["sunroof_rail2r","rf3"],	  
+          ["sunroof_rail2r","rf4"],	 
+          ["sunroof_rail2r","rf7"],	 
+
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "hydros": [
+            ["id1:","id2:"],
+            //------ SLIDE HYDROS (existing) ------
+            {"beamDeform":25500,"beamStrength":14500},
+            {"beamSpring":101000,"beamDamp":100},
+            ["sunroof_rail1l", "sunroof_main2l", {"inputSource":"sunroof_slide","inLimit":0,"outLimit":1.71,"inRate":0.45,"outRate":0.42,"inputFactor":1}],
+            ["sunroof_rail1r", "sunroof_main2r", {"inputSource":"sunroof_slide","inLimit":0,"outLimit":1.71,"inRate":0.45,"outRate":0.42,"inputFactor":1}],
+
+            //------ TILT UP HYDROS — driven by sunroof_tilt_up (0 to 1) ------
+            {"beamDeform":25500,"beamStrength":"FLT_MAX"},
+            {"beamSpring":151000,"beamDamp":100},
+            ["sf_pbl", "sf_rl", {"inputSource":"sunroof_tilt_up","inLimit":0,"outLimit":4.0,"inRate":2.0,"outRate":2.0,"inputFactor":1}],
+            ["sf_pbr", "sf_rr", {"inputSource":"sunroof_tilt_up","inLimit":0,"outLimit":4.0,"inRate":2.0,"outRate":2.0,"inputFactor":1}],
+
+            //------ TILT DIP HYDROS — driven by sunroof_tilt_dip (0 to 1) ------
+            //outLimit negative = compresses piston = rear dips during slide
+            {"beamDeform":25500,"beamStrength":"FLT_MAX"},
+            {"beamSpring":151000,"beamDamp":100},
+            ["sf_pbl", "sf_rl", {"inputSource":"sunroof_tilt_dip","inLimit":0,"outLimit":-0.25,"inRate":4.0,"outRate":1.5,"inputFactor":1}],
+            ["sf_pbr", "sf_rr", {"inputSource":"sunroof_tilt_dip","inLimit":0,"outLimit":-0.25,"inRate":4.0,"outRate":1.5,"inputFactor":1}],
+    ],
+},
+"audi6_sunroof_shade": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sunroof Shade",
+        "value":400,
+    },
+    "slotType" : "audi6_sunroof_shade",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_sunroof_shade", ["audi6_sunroof"]],
+	],
+    "nodes": [
+		 //redefine roof node heavier to simulate sunroof weight
+         ["id", "posX", "posY", "posZ"],
+         {"group":"audi6_nil"},
+         {"selfCollision":false},
+         {"collision":false},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":0.4},
+         //rails
+		["rnl0",0.355,-0.0571,1.4233],
+		["rnl1",0.355,-0.0457,1.4111],
+		["rnl2",0.355,0.2791,1.4342],
+		["rnl3",0.355,0.2824,1.422],
+		["rnl4",0.355,0.6537,1.4512],
+
+		["rnr0",-0.355,-0.0571,1.4233],
+		["rnr1",-0.355,-0.0457,1.4111],
+		["rnr2",-0.355,0.2791,1.4342],
+		["rnr3",-0.355,0.2824,1.422],
+		["rnr4",-0.355,0.6537,1.4512],
+
+        {"group":"audi6_sunroof"},
+		["srl0",0.355,-0.0571,1.4233],
+		["srr0",-0.355,-0.0571,1.4233],
+		["srl1",0.355,0.2791,1.4342],
+		["srr1",-0.355,0.2791,1.4342],
+         {"group":""},
+	],
+
+    "triggers2":[
+        ["id",					"label", "idRef:", "idX:", "idY:", "type", "size",											"baseRotation",					"rotation",							"translation",			"baseTranslation"],
+        ["toggle_sunroof_shade", "srl0","srr0","srl1", "box", {"x":0.1, "y":0.0200, "z":0.0265}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0},{"x":0.3052, "y":0.0135, "z":0.0075}],	    	    
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["toggle_sunroof_shade", "action0", "toggle_sunroof_shade"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["toggle_sunroof_shade"],
+    ],
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+		{"beamSpring":40100,"beamDamp":40},
+        {"beamPrecompression":1.0},
+        {"breakGroupType":1},
+        {"breakGroup":"main_slide"},
+        ["rnr4","srr1", {"inputSource":"movr","inLimit":0,"outLimit":2.06,"inRate":20,"outRate":20,"inputFactor":-1}],
+        ["rnl4","srl1", {"inputSource":"movr","inLimit":0,"outLimit":2.06,"inRate":20,"outRate":20,"inputFactor":-1}],
+		//front
+        ["rnr4","srr1", {"inputSource":"movf","inLimit":1,"outLimit":-1,"inRate":20,"outRate":20,"inputFactor":0.85}],
+        ["rnl4","srl1", {"inputSource":"movf","inLimit":1,"outLimit":-1,"inRate":20,"outRate":20,"inputFactor":0.85}],
+        {"beamPrecompression":1.0},
+        {"breakGroupType":0},
+        {"breakGroup":""},
+    ],
+    //roof slider rails
+	"rails": {
+        "roofl1":{"links:":["rnl0", "rnl2",  "rnl4"], "broken:":[], "looped":false, "capped":true},
+        "roofr1":{"links:":["rnr0", "rnr2",  "rnr4"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["srl0", "roofl1", true, true, 0, 40100, "FLT_MAX", "FLT_MAX"],
+        ["srl1", "roofl2", true, true, 0, 40100, "FLT_MAX", "FLT_MAX"],
+        ["srr0", "roofr1", true, true, 0, 40100, "FLT_MAX", "FLT_MAX"],
+        ["srr1", "roofr2", true, true, 0, 40100, "FLT_MAX", "FLT_MAX"],
+    ],
+
+	"beams":[
+		["id1:", "id2:"],
+		{"beamSpring":40100,"beamDamp":40},
+		{"beamDeform":4000,"beamStrength":"FLT_MAX"},
+		["rnr0","rnl0"],
+		["rnr1","rnr0"],
+		["rnl0","rnl1"],
+		["rnr3","rnr1"],
+		["rnl3","rnr3"],
+		["rnr4","rnr3"],
+		["rnl4","rnr4"],
+		["rnr3","rnr2"],
+		["rnl2","rnr2"],
+		["rnl3","rnl4"],
+		["rnl2","rnl3"],
+		["rnr4","rnr2"],
+		["rnr0","rnl3"],
+		["rnl0","rnr3"],
+		["rnr4","rnl2"],
+		["rnl1","rnr2"],
+		["rnl1","rnr1"],
+		["rnl4","rnr2"],
+		["rnl3","rnr4"],
+		["rnl4","rnl2"],
+		["rnr0","rnr2"],
+		["rnr1","rnl3"],
+		["rnr1","rnr4"],
+		["rnl1","rnr3"],
+		["rnr0","rnl2"],
+		["rnl0","rnr2"],
+		["rnl1","rnl3"],
+		["rnl0","rnl2"],
+		["rnl1","rnl4"],
+		["rnr1","rnl2"],
+		["rnr0","rnl1"],
+		["rnl0","rnr1"],
+		["rnr3","rnl4"],
+		["rnl3","rnr2"],
+		["rnr3","rnl2"],
+		
+		["srl0","srl1"],
+		["srl0","srr1"],
+		["srl0","srr0"],
+		["srl1","srr0"],
+		["srl1","srr1"],
+		["srr1","srr0"],
+
+		//body connections
+        {"beamSpring":5100,"beamDamp":50},
+        {"beamDeform":5500,"beamStrength":18000},
+		["rnr1","rf1r"],
+		["rnr1","rf1"],
+		["rnr1","rf2"],
+		["rnr1","rf2r"],
+		["rnr1","rf7"],
+		["rnr1","p2rr"],
+		["rnr1","p2ll"],
+		["rnr1","f2l"],
+		["rnr1","f2r"],
+		["rnr1","f1ll"],
+		["rnr1","f1rr"],
+		["rnr1","f3ll"],
+		["rnr1","f3rr"],
+
+		["rnl1","rf1l"],
+		["rnl1","rf1"],
+		["rnl1","rf2"],
+		["rnl1","rf2l"],
+		["rnl1","rf7"],
+		["rnl1","p2rr"],
+		["rnl1","p2ll"],
+		["rnl1","f2l"],
+		["rnl1","f2r"],
+		["rnl1","f1ll"],
+		["rnl1","f1rr"],
+		["rnl1","f3ll"],
+		["rnl1","f3rr"],
+	
+		["rnr4","rf2"],
+		["rnr4","rf2r"],
+		["rnr4","rf3r"],
+		["rnr4","rf3"],
+		["rnr4","rf7"],
+		["rnr4","p2rr"],
+		["rnr4","p2ll"],
+	
+		["rnl4","rf2"],
+		["rnl4","rf2l"],
+		["rnl4","rf3l"],
+		["rnl4","rf3"],
+		["rnl4","rf7"],
+		["rnl4","p2rr"],
+		["rnl4","p2ll"],
+	
+		["rnl3","rf2"],
+		["rnl3","rf2l"],
+		["rnl3","rf1l"],
+		["rnl3","rf1"],
+		["rnl3","rf3l"],
+		["rnl3","rf3"],
+		["rnl3","rf7"],
+		["rnl3","p2rr"],
+		["rnl3","p2ll"],
+		["rnl3","f8l"],
+		["rnl3","f8r"],
+	
+		["rnr3","rf2"],
+		["rnr3","rf2r"],
+		["rnr3","rf1r"],
+		["rnr3","rf1"],
+		["rnr3","rf3r"],
+		["rnr3","rf3"],
+		["rnr3","rf7"],
+		["rnr3","p2rr"],
+		["rnr3","p2ll"],
+		["rnr3","f8l"],
+		["rnr3","f8r"],
+	
+		["rnl3","f9l"],
+		["rnl3","f9r"],
+		["rnr3","f9l"],
+		["rnr3","f9r"],
+		["rnr4","f9l"],
+		["rnr4","f9r"],
+		["rnl4","f9l"],
+		["rnl4","f9r"],
+	],
+},
+}

@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TDIe [136] (Multitronic) A6 (EU) [Avant] 2009",
+      "Description":"2009 Avant 2.0L TDIe (136 HP) with 7-Speed Multitronic Transmission. This model is equipped with halogen headlights, LED taillights, 16-inch alloys, basic infotainment system with CD player, base climate control, DSP audio system, black interior, radial aluminuim inlay finish, black meridian cloth seats. Exterior painted in Oyster Grey",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":136,
+      "Torque":320,
+      "Top Speed":55.71030640668524,
+      "Weight":1660,
+      "Value":20270,
+      "0-100 km/h":10.2,
+      "0-60 mph":9.7,
+	  "defaultPaintName1":"Oyster Grey [A6]",
+}

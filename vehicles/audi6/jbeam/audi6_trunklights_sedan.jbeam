@@ -1,0 +1,287 @@
+{
+"audi6_trunklight_R_fl_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Trunk Light",
+        "value":40,
+    },
+    "slotType" : "audi6_trunklight_R_fl_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_trunklightframe_R_fl", ["audi6_trunklight_R"]],
+		 
+         {"deformGroup":"trunklight_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_trunklightglass_R_fl", ["audi6_trunklight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         //["audi6_trunklightinnerglass_R_fl", ["audi6_trunklight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 
+         {"deformGroup":"trunklight_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_trunklight_R_fl", ["audi6_trunklight_R"]],
+         ["audi6_trunklight_reflectorframe_R_fl", ["audi6_trunklight_R"]],
+         ["audi6_trunklight_reflector_R_fl", ["audi6_trunklight_R"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+        ["audi6_trunklight_taillight_R_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Taillight R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighBrake",
+          "$nodeRef":"trl2r", "$nodeX":"trl4r", "$nodeY":"trl1r",
+          "$deformGroup":"trunklight_R_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.475, "$posY":2.352, "$posZ":0.918,
+          "$rotX":0, "$rotY":0, "$rotZ":0
+        }
+        }],
+        ["audi6_trunklight_fog_R_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Rear Fog R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"trl2r", "$nodeX":"trl4r", "$nodeY":"trl1r",
+          "$deformGroup":"trunklight_R_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_fog.color.png",
+          "$posX":-0.475, "$posY":2.352, "$posZ":0.918,
+          "$rotX":0, "$rotY":0, "$rotZ":0
+        }
+        }],
+    ],	
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--trunklight--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.2},
+         {"group":"audi6_trunklight_R"},
+         ["trl1r", -0.545, 2.348, 0.99],
+         ["trl2r", -0.51, 2.392, 0.855],
+         ["trl3r", -0.43, 2.38, 0.99],
+         ["trl4r", -0.38, 2.408, 0.9],
+         ["trl5r", -0.43, 2.308, 0.91, {"collision":false}],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--trunklight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":301000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":60000},
+          //trunklight main shape
+          {"deformGroup":"trunklight_R_break", "deformationTriggerRatio":0.05},
+          {"deformLimitExpansion":1.1},
+          ["trl4r", "trl3r"],
+          ["trl2r", "trl1r"],
+          ["trl1r", "trl3r"],
+          ["trl4r", "trl2r"],
+          ["trl2r", "trl3r"],
+          ["trl1r", "trl4r"],
+          ["trl5r", "trl2r"],
+          ["trl5r", "trl1r"],
+          ["trl5r", "trl4r"],
+          ["trl5r", "trl3r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":20},
+          {"beamDeform":2500,"beamStrength":10000},
+          {"breakGroup":"trunklight_R"},
+          ["trl1r", "t3rr"],
+          ["trl1r", "t3r"],
+          ["trl1r", "t4rr"],
+          ["trl1r", "t4r"],
+          ["trl1r", "t5"],
+
+          ["trl2r", "t3rr"],
+          ["trl2r", "t3r"],
+          ["trl2r", "t4rr"],
+          ["trl2r", "t4r"],
+          ["trl2r", "t5"],
+
+          ["trl3r", "t3rr"],
+          ["trl3r", "t3r"],
+          ["trl3r", "t4rr"],
+          ["trl3r", "t4r"],
+          ["trl3r", "t5"],
+
+          ["trl4r", "t3rr"],
+          ["trl4r", "t3r"],
+          ["trl4r", "t4rr"],
+          ["trl4r", "t4r"],
+          ["trl4r", "t5"],
+
+          ["trl5r", "t3rr"],
+          ["trl5r", "t3r"],
+          ["trl5r", "t4rr"],
+          ["trl5r", "t4r"],
+          ["trl5r", "t5"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right trunklight
+            {"groundModel":"plastic"},
+            {"group":"audi6_trunklight_R"},
+            {"dragCoef":10.25},
+            ["trl3r", "trl4r", "trl2r"],
+            ["trl2r", "trl1r", "trl3r"],
+            ["trl1r", "trl2r", "trl5r"],
+            ["trl5r", "trl2r", "trl4r"],
+            ["trl4r", "trl3r", "trl5r"],
+            ["trl1r", "trl5r", "trl3r"],
+            {"group":""},
+    ],
+},
+"audi6_trunklight_L_fl_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Trunk Light",
+        "value":40,
+    },
+    "slotType" : "audi6_trunklight_L_fl_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_trunklightframe_L_fl", ["audi6_trunklight_L"]],
+		 
+         {"deformGroup":"trunklight_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_trunklightglass_L_fl", ["audi6_trunklight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         //["audi6_trunklightinnerglass_L_fl", ["audi6_trunklight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"trunklight_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_trunklight_L_fl", ["audi6_trunklight_L"]],
+         ["audi6_trunklight_reflectorframe_L_fl", ["audi6_trunklight_L"]],
+         ["audi6_trunklight_reflector_L_fl", ["audi6_trunklight_L"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+        ["audi6_trunklight_taillight_L_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Taillight L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighBrake",
+          "$nodeRef":"trl2l", "$nodeX":"trl4l", "$nodeY":"trl1l",
+          "$deformGroup":"trunklight_L_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.475, "$posY":2.352, "$posZ":0.918,
+          "$rotX":0, "$rotY":0, "$rotZ":0
+        }
+        }],
+        ["audi6_trunklight_fog_L_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Rear Fog L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"trl2l", "$nodeX":"trl4l", "$nodeY":"trl1l",
+          "$deformGroup":"trunklight_L_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_fog.color.png",
+          "$posX":0.475, "$posY":2.352, "$posZ":0.918,
+          "$rotX":0, "$rotY":0, "$rotZ":0
+        }
+        }],
+    ],	
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--trunklight--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.2},
+         {"group":"audi6_trunklight_L"},
+         ["trl1l", 0.545, 2.348, 0.99],
+         ["trl2l", 0.51, 2.392, 0.855],
+         ["trl3l", 0.43, 2.38, 0.99],
+         ["trl4l", 0.38, 2.408, 0.9],
+         ["trl5l", 0.43, 2.308, 0.91, {"collision":false}],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--trunklight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":301000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":60000},
+          //trunklight main shape
+          {"deformGroup":"trunklight_L_break", "deformationTriggerRatio":0.05},
+          {"deformLimitExpansion":1.1},
+          ["trl4l", "trl3l"],
+          ["trl2l", "trl1l"],
+          ["trl1l", "trl3l"],
+          ["trl4l", "trl2l"],
+          ["trl2l", "trl3l"],
+          ["trl1l", "trl4l"],
+          ["trl5l", "trl2l"],
+          ["trl5l", "trl1l"],
+          ["trl5l", "trl4l"],
+          ["trl5l", "trl3l"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":20},
+          {"beamDeform":2500,"beamStrength":10000},
+          {"breakGroup":"trunklight_L"},
+          ["trl1l", "t3ll"],
+          ["trl1l", "t3l"],
+          ["trl1l", "t4ll"],
+          ["trl1l", "t4l"],
+          ["trl1l", "t5"],
+
+          ["trl2l", "t3ll"],
+          ["trl2l", "t3l"],
+          ["trl2l", "t4ll"],
+          ["trl2l", "t4l"],
+          ["trl2l", "t5"],
+
+          ["trl3l", "t3ll"],
+          ["trl3l", "t3l"],
+          ["trl3l", "t4ll"],
+          ["trl3l", "t4l"],
+          ["trl3l", "t5"],
+
+          ["trl4l", "t3ll"],
+          ["trl4l", "t3l"],
+          ["trl4l", "t4ll"],
+          ["trl4l", "t4l"],
+          ["trl4l", "t5"],
+
+          ["trl5l", "t3ll"],
+          ["trl5l", "t3l"],
+          ["trl5l", "t4ll"],
+          ["trl5l", "t4l"],
+          ["trl5l", "t5"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left trunklight
+            {"groundModel":"plastic"},
+            {"group":"audi6_trunklight_L"},
+            {"dragCoef":10.25},
+            ["trl4l", "trl3l", "trl2l"],
+            ["trl1l", "trl2l", "trl3l"],
+            ["trl2l", "trl1l", "trl5l"],
+            ["trl2l", "trl5l", "trl4l"],
+            ["trl3l", "trl4l", "trl5l"],
+            ["trl5l", "trl1l", "trl3l"],
+            {"group":""},
+    ],
+},
+}

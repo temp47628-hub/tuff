@@ -1,0 +1,227 @@
+{
+"audi6_finaldrive_R_2888": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.888:1 Rear Final Drive (2.7 TDI/3.0 TDI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":2.888,
+    },
+},
+"audi6_finaldrive_R_3197": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.197:1 Rear Final Drive (5.0 TFSI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.197,
+    },
+},
+"audi6_finaldrive_R_3309": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.309:1 Rear Final Drive (4.2 FSI/MPI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.309,
+    },
+},
+"audi6_finaldrive_R_3400": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.400:1 Rear Final Drive (2.0 TFSI, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.400,
+    },
+},
+"audi6_finaldrive_R_3539": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.539:1 Rear Final Drive (3.0 TFSI/3.2 FSI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.539,
+    },
+},
+"audi6_finaldrive_R_3556": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.556:1 Rear Final Drive (2.0 TDI, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.556,
+    },
+},
+"audi6_finaldrive_R_3625": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.625:1 Rear Final Drive (2.7 TDI, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.625,
+    },
+},"audi6_finaldrive_R_3682": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.682:1 Rear Final Drive (2.8 FSI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.682,
+    },
+},
+"audi6_finaldrive_R_3700": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.700:1 Rear Final Drive (3.0 TDI, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.700,
+    },
+},
+"audi6_finaldrive_R_3750": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.750:1 Rear Final Drive (2.8 FSI/3.2 FSI, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.750,
+    },
+},
+"audi6_finaldrive_R_3801": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.801:1 Rear Final Drive (5.2 FSI, Tiptronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":3.801,
+    },
+},
+"audi6_finaldrive_R_4125": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4.125:1 Rear Final Drive (2.4i, Manual)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":4.125,
+    },
+},
+"audi6_finaldrive_R_4778": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4.778:1 Rear Final Drive (2.8 FSI, Multitronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":4.778,
+    },
+},
+"audi6_finaldrive_R_5297": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"5.297:1 Rear Final Drive (2.8 FSI, Multitronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":5.297,
+    },
+},
+"audi6_finaldrive_R_5299": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"5.299:1 Rear Final Drive (2.0 TDI/2.0 TFSI/2.7 TDI, Multitronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":5.299,
+    },
+},
+"audi6_finaldrive_R_6001": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6.001:1 Rear Final Drive (2.4i, Multitronic)",
+        "value":150,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "differential_R" : {
+        "gearRatio":6.001,
+    },
+},
+"audi6_finaldrive_R_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Adjustable Rear Final Drive",
+        "value":950,
+    },
+
+    "slotType" : "audi6_finaldrive_R",
+
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$finaldrive_R", "range", ":1", "Differentials", 3.23, 2.0, 6.0, "Final Drive Gear Ratio", "Torque multiplication ratio", {"subCategory":"Rear", "stepDis":0.01}],
+    ],
+
+    "differential_R" : {
+        "gearRatio":"$finaldrive_R",
+    },
+},
+}

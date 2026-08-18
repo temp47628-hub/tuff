@@ -1,0 +1,364 @@
+{
+"audi6_differential_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Open Rear Differential",
+        "value":1100,
+    },
+    "slotType" : "audi6_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_driveshaft_R","audi6_driveshaft_R", "Rear Driveshaft"],
+        ["audi6_halfshafts_R","audi6_halfshafts_R", "Rear Halfshafts"],
+        ["audi6_finaldrive_R","audi6_finaldrive_R_3556", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["drivingDynamics/actuators/electronicDiffLock" {"name":"lockRear", "differentialName":"differential_R"}]
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "differential_R", "driveshaft", 1, {"deformGroups":["differential_R"], "diffType":"open", "uiName":"Rear Differential","defaultVirtualInertia":0.25}],
+    ],
+    "differential_R": {
+        "friction": 3.92,
+        "dynamicFriction": 0.00184,
+        "torqueLossCoef": 0.03,
+        "visualPositionRelativeChildren":[[-0.6,0,0]]
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_diff", ["audi6_subframe_R","audi6_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_diff_R"},
+         {"nodeWeight":40},
+         ["rdiff", 0, 1.39, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":138},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"differential_R", "deformationTriggerRatio":0.001}
+          ["rdiff","rx2r"],
+          ["rdiff","rx2l"],
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","rx4r"],
+          ["rdiff","rx4l"],
+          ["rdiff","rx5r"],
+          ["rdiff","rx5l"],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_differential_R_active_LSD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Active Limited Slip Rear Differential",
+        "value":3000,
+    },
+    "slotType" : "audi6_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_driveshaft_R","audi6_driveshaft_R", "Rear Driveshaft"],
+        ["audi6_halfshafts_R","audi6_halfshafts_R", "Rear Halfshafts"],
+        ["audi6_finaldrive_R","audi6_finaldrive_R_3556", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["drivingDynamics/actuators/activeDiffLock" {"name":"lockRear", "differentialName":"differential_R"}]
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "differential_R", "driveshaft", 1, {"deformGroups":["differential_R"], "diffType":"activeLock", "uiName":"Rear Differential","defaultVirtualInertia":0.25}],
+    ],
+    "differential_R": {
+        "friction": 3.92,
+        "dynamicFriction": 0.00184,
+        "torqueLossCoef": 0.03,
+        "visualPositionRelativeChildren":[[-0.6,0,0]]
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_diff", ["audi6_subframe_R","audi6_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_diff_R"},
+         {"nodeWeight":45},
+         ["rdiff", 0, 1.39, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":138},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"differential_R", "deformationTriggerRatio":0.001}
+          ["rdiff","rx2r"],
+          ["rdiff","rx2l"],
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","rx4r"],
+          ["rdiff","rx4l"],
+          ["rdiff","rx5r"],
+          ["rdiff","rx5l"],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_differential_R_welded": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Welded Rear Differential",
+        "value":1550,
+    },
+    "slotType" : "audi6_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_driveshaft_R","audi6_driveshaft_R", "Rear Driveshaft"],
+        ["audi6_halfshafts_R","audi6_halfshafts_R", "Rear Halfshafts"],
+        ["audi6_finaldrive_R","audi6_finaldrive_R_3556", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "differential_R", "driveshaft", 1, {"deformGroups":["differential_R"], "diffType":"locked", "lockTorque":10000, "uiName":"Rear Differential","defaultVirtualInertia":0.25}],
+    ],
+    "differential_R": {
+        "friction": 3.92,
+        "dynamicFriction": 0.00184,
+        "torqueLossCoef": 0.03,
+        "visualPositionRelativeChildren":[[-0.6,0,0]]
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_diff", ["audi6_subframe_R","audi6_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_diff_R"},
+         {"nodeWeight":40},
+         ["rdiff", 0, 1.39, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":138},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"differential_R", "deformationTriggerRatio":0.001}
+          ["rdiff","rx2r"],
+          ["rdiff","rx2l"],
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","rx4r"],
+          ["rdiff","rx4l"],
+          ["rdiff","rx5r"],
+          ["rdiff","rx5l"],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_differential_R_LSD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Limited Slip Rear Differential",
+        "value":2400,
+    },
+    "slotType" : "audi6_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_driveshaft_R","audi6_driveshaft_R", "Rear Driveshaft"],
+        ["audi6_halfshafts_R","audi6_halfshafts_R", "Rear Halfshafts"],
+        ["audi6_finaldrive_R","audi6_finaldrive_R_3556", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "differential_R", "driveshaft", 1, {"deformGroups":["differential_R"], "diffType":"lsd", "lsdPreload":75, "lsdLockCoef":0.15, "lsdRevLockCoef":0.03, "uiName":"Rear Differential","defaultVirtualInertia":0.25}],
+    ],
+    "differential_R": {
+        "friction": 3.92,
+        "dynamicFriction": 0.00184,
+        "torqueLossCoef": 0.03,
+        "visualPositionRelativeChildren":[[-0.6,0,0]]
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_diff", ["audi6_subframe_R","audi6_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_diff_R"},
+         {"nodeWeight":45},
+         ["rdiff", 0, 1.39, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":138},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"differential_R", "deformationTriggerRatio":0.001}
+          ["rdiff","rx2r"],
+          ["rdiff","rx2l"],
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","rx4r"],
+          ["rdiff","rx4l"],
+          ["rdiff","rx5r"],
+          ["rdiff","rx5l"],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_differential_R_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Limited Slip Rear Differential",
+        "value":4000,
+    },
+    "slotType" : "audi6_differential_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_driveshaft_R","audi6_driveshaft_R", "Rear Driveshaft"],
+        ["audi6_halfshafts_R","audi6_halfshafts_R", "Rear Halfshafts"],
+        ["audi6_finaldrive_R","audi6_finaldrive_R_race", "Rear Final Drive", {"coreSlot":true}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$lsdpreload_R", "range", "N/m", "Differentials", 80, 0, 500, "Pre-load Torque", "Initial locking torque between left and right wheels", {"subCategory":"Rear"}]
+        ["$lsdlockcoef_R", "range", "", "Differentials", 0.15, 0, 0.5, "Power Lock Rate", "Additional locking torque proportional to engine torque", {"minDis":0, "maxDis":100, "subCategory":"Rear"}],
+        ["$lsdlockcoefrev_R", "range", "", "Differentials", 0.01, 0, 0.5, "Coast Lock Rate", "Additional locking torque proportional to engine braking", {"minDis":0, "maxDis":100, "subCategory":"Rear"}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "differential_R", "driveshaft", 1, {"deformGroups":["differential_R"], "diffType":"lsd", "gearRatio":1, "lsdPreload":"$lsdpreload_R", "lsdLockCoef":"$lsdlockcoef_R", "lsdRevLockCoef":"$lsdlockcoefrev_R", "uiName":"Rear Differential","defaultVirtualInertia":0.25}],
+    ],
+    "differential_R": {
+        "friction": 3.92,
+        "dynamicFriction": 0.00184,
+        "torqueLossCoef": 0.03,
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_diff", ["audi6_subframe_R","audi6_body"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_diff_R"},
+         {"nodeWeight":45},
+         ["rdiff", 0, 1.39, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":138},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"differential_R", "deformationTriggerRatio":0.001}
+          ["rdiff","rx2r"],
+          ["rdiff","rx2l"],
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","rx4r"],
+          ["rdiff","rx4l"],
+          ["rdiff","rx5r"],
+          ["rdiff","rx5l"],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_driveshaft_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Driveshaft",
+        "value":300,
+    },
+    "slotType" : "audi6_driveshaft_R",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear driveshaft
+        ["torsionReactor", "torsionReactorR", "transfercase", 1, {"visualPositionRelativeParent":[0,0.4,0]}],
+        ["shaft", "driveshaft", "torsionReactorR", 1, {"deformGroups":["driveshaft"], "breakTriggerBeam":"driveshaft", "uiName":"Rear Driveshaft", "electricsName":"driveshaft", "friction":0.374, "dynamicFriction": 0.00081}],
+    ],
+    "torsionReactorR": {
+        "torqueReactionNodes:":["e3r","e4r","e2l"],
+    },
+	"props": [
+		["func"      , "mesh"           , "idRef:", "idX:", "idY:", "baseRotation"        , "rotation"            , "translation"        , "min", "max", "offset", "multiplier",],
+		["driveshaft", "audi6_driveshaft", "f4r", "f4l", "tra1",    {"x":-89.4, "y":0, "z":0}, {"x":0, "y":1, "z":0} , {"x":0, "y":0, "z":0}, -360, 360, 0, 1,{"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],		
+	],
+    "beams": [
+          ["id1:", "id2:"],
+          //rear driveshaft
+          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.01, "beamShortBound":0.01},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":1500,"beamStrength":3500},
+          {"beamLimitSpring":10001000,"beamLimitDamp":250},
+          ["rdiff","tra1", {"name":"driveshaft","breakGroup":"driveshaft","optional":true,"deformGroup":"driveshaft"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_halfshafts_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Halfshafts",
+        "value":300,
+    },
+    "slotType" : "audi6_halfshafts_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_halfshaft_R", ["audi6_hub_R","audi6_lowerarm_R","audi6_diff_R"]],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //halfshafts
+          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.02, "beamShortBound":0.02},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3600,"beamStrength":9500},
+          {"beamLimitSpring":7501000,"beamLimitDamp":230},
+          ["rw1r","rdiff", {"name":"halfshaft_RR", "breakGroup":"wheel_RR", "breakGroupType":1, "deformGroup":"wheelaxleRR", "deformationTriggerRatio":0.001, "optional":true}],
+          ["rw1l","rdiff", {"name":"halfshaft_RL", "breakGroup":"wheel_RL", "breakGroupType":1, "deformGroup":"wheelaxleRL", "deformationTriggerRatio":0.001, "optional":true}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "wheelaxleRL", "differential_R", 1, {"deformGroups":["wheelaxleRL"], "breakTriggerBeam":"halfshaft_RL", "uiName":"Rear Left Halfshaft", "friction":1.57, "dynamicFriction": 0.0037, "visualPositionRelativeChildren":[[-0.3,0,0]]}],
+        ["shaft", "wheelaxleRR", "differential_R", 2, {"deformGroups":["wheelaxleRR"], "breakTriggerBeam":"halfshaft_RR", "uiName":"Rear Right Halfshaft", "friction":1.57, "dynamicFriction": 0.0037, "visualPositionRelativeChildren":[[0.3,0,0]]}],
+    ],
+},
+}

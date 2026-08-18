@@ -1,0 +1,375 @@
+{
+  "audi6_ceiling": {
+    "name": "audi6_ceiling",
+    "mapTo": "audi6_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/textures/ceiling_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.beige_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.beige_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.beige_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.brown_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.brown_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.brown_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.581882,
+          0.388000995,
+          0.251933992,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.creambeige_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.creambeige_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.creambeige_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.darkgrey_alcantara_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.darkgrey_alcantara_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.darkgrey_alcantara_ceiling",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.darkgrey_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.darkgrey_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.darkgrey_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/ceiling_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.linenbeige_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.linenbeige_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.linenbeige_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/ceiling_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling.skin_ceiling.silver_alcantara_ceiling": {
+    "name": "audi6_ceiling.skin_ceiling.silver_alcantara_ceiling",
+    "mapTo": "audi6_ceiling.skin_ceiling.silver_alcantara_ceiling",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.862537026,
+          0.862537026,
+          0.862537026,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling_lines": {
+    "name": "audi6_ceiling_lines",
+    "mapTo": "audi6_ceiling_lines",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/textures/ceiling_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/plastic_lines_nm.normal.png",
+        "normalMapStrength": 5,
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling_lines.skin_ceiling.beige_ceiling": {
+    "name": "audi6_ceiling_lines.skin_ceiling.beige_ceiling",
+    "mapTo": "audi6_ceiling_lines.skin_ceiling.beige_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/plastic_lines_nm.normal.png",
+        "normalMapStrength": 5,
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_ceiling_lines.skin_ceiling.darkgrey_ceiling": {
+    "name": "audi6_ceiling_lines.skin_ceiling.darkgrey_ceiling",
+    "mapTo": "audi6_ceiling_lines.skin_ceiling.darkgrey_ceiling",
+    "class": "Material",
+    "persistentId": "68d66b55-47fe-4e96-bfc0-6bec3bb51ea7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/ceiling_ao.data.png",
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/ceiling_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/plastic_lines_nm.normal.png",
+        "normalMapStrength": 5,
+        "roughnessMap": "/vehicles/audi6/textures/ceiling_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

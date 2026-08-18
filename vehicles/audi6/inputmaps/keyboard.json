@@ -1,0 +1,30 @@
+{
+  "devicetype":"keyboard",
+  "guid":"{6F1D2B61-D5A0-11CF-BFC7-444553540000}",
+  "name":"Keyboard",
+  "version":1,
+  "vidpid":"6F1D2B61",
+  "bindings":[    
+    {"control":"alt l", "action":"laneAssistSwitch"},  
+    {"control":"alt w", "action":"wipers_F"},  
+    {"control":"alt q", "action":"wiper_R"},  
+    {"control":"alt g", "action":"gauges_screen_menu"},    
+    {"control":"alt ,", "action":"screen2_state"},    
+    {"control":"shift right", "action":"musicSkipNext"},    
+    {"control":"shift left", "action":"musicSkipPrevious"},    
+    {"control":"shift up", "action":"musicVolume_up"},    
+    {"control":"shift down", "action":"musicVolume_down"},  
+    {"control":"shift p", "action":"musicPause_state"},    	
+    {"control":"shift m", "action":"musicVolume_mute"},    	
+    {"control":"shift =", "action":"tiltDown"},   
+    {"control":"shift -", "action":"tiltUp"},   
+    {"control":"shift [", "action":"reclineDown"},   
+    {"control":"shift ]", "action":"reclineUp"},   
+    {"control":"alt =", "action":"tiltDowna"},   
+    {"control":"alt -", "action":"tiltUpa"},   
+    {"control":"alt [", "action":"reclineDowna"},   
+    {"control":"alt ]", "action":"reclineUpa"},            
+    {"control":"alt t", "action":"taxi_light_R"},  
+  ]
+
+}

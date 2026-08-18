@@ -1,0 +1,542 @@
+{
+//1
+"audi6_badge_rs6plus_1_0": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"0",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_0", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+	],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_0", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_1_1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"1",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_1", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_1", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_1_2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_2", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_2", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_1_3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_3", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_3", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_1_4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_4", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_4", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_1_5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"5",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_1",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_1_5", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_1_5", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+//2
+"audi6_badge_rs6plus_2_0": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"0",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_0", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_0", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"1",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_1", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_1", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_2", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_2", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_3", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_3", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_4", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_4", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"5",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_5", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_5", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_6", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_6", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"7",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_7", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_7", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_8": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"8",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_8", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_8", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_2_9": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"9",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_2",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_2_9", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_2_9", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+//3
+"audi6_badge_rs6plus_3_0": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"0",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_0", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_0", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"1",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_1", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_1", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_2", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_2", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_3", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_3", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_4", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_4", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"5",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_5", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_5", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_6", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_6", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"7",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_7", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_7", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_8": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"8",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_8", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_8", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_badge_rs6plus_3_9": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"9",
+        "value":80,
+    },
+    "slotType" : "audi6_badge_rs6plus_3",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.rs6plusBadge ~= 1"},
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus_3_9", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.rs6plusFloormats ~= 1"},
+         ["audi6_floormats_badge_rs6plus_3_9", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_cupholder_door_badge_rs6plus": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Plus Badge",
+        "value":80,
+    },
+    "slotType" : "audi6_cupholder_door_badge",
+	"components": {
+        "electrics": {
+			"rs6plusBadge": 1,
+        },
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["cupholder_door_s","audi6_cupholder_door_badge_rs6plus", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+},
+}

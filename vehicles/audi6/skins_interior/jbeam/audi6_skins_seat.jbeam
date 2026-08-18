@@ -1,0 +1,1031 @@
+{
+"audi6_skin_seat": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_side", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : ""
+},
+"audi6_skin_seat_grey_cloth": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_cloth", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_grey_cloth", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_cloth_seat"
+},
+"audi6_skin_seat_blue_cloth": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Meridian Cloth, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_blue_cloth", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_blue", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_blue", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_blue", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_blue", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_blue_cloth", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "blue_cloth_seat"
+},
+"audi6_skin_seat_black_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_cloth2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_black_cloth2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : ""
+},
+"audi6_skin_seat_grey_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_cloth2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_grey_cloth2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_cloth_seat"
+},
+"audi6_skin_seat_beige_cloth2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Arkana Cloth, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_cloth2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_beige_cloth2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_cloth_seat"
+},
+"audi6_skin_seat_black_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_cloth4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_black_cloth4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : ""
+},
+"audi6_skin_seat_grey_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_cloth4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_grey_cloth4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_cloth_seat"
+},
+"audi6_skin_seat_beige_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_cloth4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_beige_cloth4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_cloth_seat"
+},
+"audi6_skin_seat_blue_cloth4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mondial Cloth, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_blue_cloth4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_blue", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_blue", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_blue", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_blue", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_blue_cloth4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "blue_cloth_seat"
+},
+"audi6_skin_seat_black_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_black_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_leather_seat"
+},
+"audi6_skin_seat_grey_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_grey_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_leather_seat"
+},
+"audi6_skin_seat_brown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_brown_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_brown", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_brown", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_brown", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_brown", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_brown_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "brown_leather_seat"
+},
+"audi6_skin_seat_beige_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_leather6", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_beige_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_leather_seat"
+},
+"audi6_skin_seat_black_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_leather2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_black_leather2", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"seatBadgeMesh": 1,
+        },
+    },
+    "skinName" : "black_leather_seat"
+},
+"audi6_skin_seat_beige_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Linen Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_leather2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_linenbeige", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_linenbeige", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_linenbeige", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_linenbeige", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_beige_leather2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "linenbeige_leather_seat"
+},
+"audi6_skin_seat_brown_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_brown_leather2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_brown", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_brown", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_brown", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_brown", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_brown_leather2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "brown_leather_seat"
+},
+"audi6_skin_seat_grey_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_grey_leather2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_leather_seat"
+},
+"audi6_skin_seat_beige_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_beige_leather3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_leather_seat"
+},
+"audi6_skin_seat_black_cloth3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Cloth, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_cloth3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_black_cloth3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : ""
+},
+"audi6_skin_seat_grey_cloth3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Cloth, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_cloth3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_grey_cloth3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_cloth_seat"
+},
+"audi6_skin_seat_black_leather7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_cloth3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_black_leather7", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "black_leather_seat"
+},
+"audi6_skin_seat_grey_leather4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mistral Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_cloth3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_grey_leather4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_leather_seat"
+},
+"audi6_skin_seat_paranutbrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Paranut Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_paranutbrown_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_paranutbrown", "Seat Stitching", {"coreSlot":true}],
+        ["skin_seatbelt","audi6_skin_seatbelt_paranutbrown", "Seatbelts", {"coreSlot":true}],
+        ["skin_seatback","audi6_skin_seatback_paranutbrown", "Seat Back Side", {"coreSlot":true}],
+        ["skin_seatcontrols","audi6_skin_seatcontrols_paranutbrown", "Seat Controls", {"coreSlot":true}],
+        ["skin_seat_side","audi6_skin_seat_side_paranutbrown_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "paranutbrown_leather_seat"
+},
+"audi6_skin_seat_silver_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Milano Leather, Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_silver_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_silver", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_silver_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "silver_leather_seat"
+},
+"audi6_skin_seat_pearlsilver_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silk Nappa Leather, Pearl Silver (S6)",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_pearlsilver_alcantara", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_pearlsilver", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_pearlsilver_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "pearlsilver_leather_seat"
+},
+"audi6_skin_seat_black_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Black",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_leather6", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_black_leather3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "black_leather_seat"
+},
+"audi6_skin_seat_grey_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_grey_leather3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_grey", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_grey", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_grey", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_grey_leather3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "grey_leather_seat"
+},
+"audi6_skin_seat_beige_leather4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_leather4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_beige_leather4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_leather_seat"
+},
+"audi6_skin_seat_brown_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_brown_leather3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_brown", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_brown", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_brown", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_brown", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_brown_leather3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "brown_leather_seat"
+},
+"audi6_skin_seat_blue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Volterra Leather, Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_blue_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_blue", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_blue", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_blue", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_blue", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_blue_leather", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "blue_leather_seat"
+},
+"audi6_skin_seat_black_leather4": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silk Nappa Leather, Black (S6)",
+        "value":650,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_leather4", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_black_leather4", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "black_leather_seat"
+},
+"audi6_skin_seat_silver_leather2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silk Nappa Leather, Silver (S6)",
+        "value":650,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_silver_leather2", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_silver", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_silver_leather2", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "silver_leather_seat"
+},
+"audi6_skin_seat_black_leather5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Natural Leather, Black",
+        "value":650,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_black_leather5", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_black_leather5", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "black_nleather_seat"
+},
+"audi6_skin_seat_beige_leather5": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Natural Leather, Beige",
+        "value":650,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_beige_leather5", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_beige", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_beige", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_beige", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_beige", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_beige_leather5", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "beige_nleather_seat"
+},
+"audi6_skin_seat_cream_leather3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cream Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_cream_leather3", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_creambeige", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt_creambeige", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback_creambeige", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols_creambeige", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_cream_leather3", "Seat Side", {"coreSlot":true}],
+    ],
+    "skinName" : "creambeige_leather_seat"
+},
+
+//audi exclusive
+
+"audi6_skin_seat_sandbeige_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Sand Beige [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_sandbeige_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_sandbeige_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_sandbeige_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "sandbeige_leather_seat"
+},
+"audi6_skin_seat_nightblue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Night Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_nightblue_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_nightblue_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_nightblue_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "nightblue_leather_seat"
+},
+"audi6_skin_seat_palaceblue_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Palace Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_palaceblue_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_palaceblue_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_palaceblue_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "palaceblue_leather_seat"
+},
+"audi6_skin_seat_regencygreen_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Regency Green [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_regencygreen_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_regencygreen_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_regencygreen_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "regencygreen_leather_seat"
+},
+"audi6_skin_seat_chestnutbrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Chestnut Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_chestnutbrown_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_chestnutbrown_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_chestnutbrown_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "chestnutbrown_leather_seat"
+},
+"audi6_skin_seat_classicred_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Classic Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_classicred_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_classicred_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_classicred_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "classicred_leather_seat"
+},
+"audi6_skin_seat_red_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_red_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_red_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_red_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "red_leather_seat"
+},
+"audi6_skin_seat_saddlebrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Saddle Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_saddlebrown_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_saddlebrown_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_saddlebrown_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "saddlebrown_leather_seat"
+},
+"audi6_skin_seat_jetgrey_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Jet Grey [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_jetgrey_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_jetgrey_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_jetgrey_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "jetgrey_leather_seat"
+},
+"audi6_skin_seat_alabasterwhite_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Alabaster White [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_alabasterwhite_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_alabasterwhite_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_alabasterwhite_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "alabasterwhite_leather_seat"
+},
+"audi6_skin_seat_magnolia_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Magnolia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_magnolia_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_magnolia_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_magnolia_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "magnolia_leather_seat"
+},
+"audi6_skin_seat_havannabrown_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Havanna Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_havannabrown_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_havannabrown_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_havannabrown_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "havannabrown_leather_seat"
+},
+"audi6_skin_seat_cocos_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cocos [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_cocos_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_cocos_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_cocos_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "cocos_leather_seat"
+},
+"audi6_skin_seat_cognac_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Cognac [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_cognac_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_cognac_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_cognac_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "cognac_leather_seat"
+},
+"audi6_skin_seat_burgundy_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Burgundy [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_burgundy_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_silver", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_burgundy_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "burgundy_leather_seat"
+},
+"audi6_skin_seat_orange_leather": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Valcona Leather, Orange [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seat",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_seat_insert","audi6_skin_seat_insert_orange_leather", "Seat Center Section", {"coreSlot":true}],
+        ["skin_stitching","audi6_skin_stitching_orange_ae", "Seat Stitching", {"coreSlot":true}],
+		["skin_seatbelt","audi6_skin_seatbelt", "Seatbelts", {"coreSlot":true}],
+		["skin_seatback","audi6_skin_seatback", "Seat Back Side", {"coreSlot":true}],
+		["skin_seatcontrols","audi6_skin_seatcontrols", "Seat Controls", {"coreSlot":true}],
+		["skin_seat_side","audi6_skin_seat_side_orange_leather", "Seat Side", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "orange_leather_seat"
+},
+}

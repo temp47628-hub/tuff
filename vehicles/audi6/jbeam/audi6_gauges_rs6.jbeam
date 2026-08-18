@@ -1,0 +1,35 @@
+{
+"audi6_gauges_metric_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Metric Gauges",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_gauges_screen_rs6","audi6_gauges_screen_pfl", "Gauge Screen", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_gauges", ["audi6_dash"], [],{"materialOverride":[["audi6_gauges","audi6_gauges_rs6"]]}],
+        ["audi6_decals_gauges", ["audi6_dash"]],
+
+
+
+    ],
+    "glowMap":{
+        "audi6_gauges_rs6":{"simpleFunction":{"lowhighbeam_auto":1}, "off":"audi6_gauges_rs6", "on":"audi6_gauges_rs6_on", "on_intense":"audi6_gauges_rs6_on"},
+		"audi6_needles":{"simpleFunction":{"ignitionLevel":1}, "off":"audi6_gauges_rs6", "on":"audi6_gauges_rs6_on", "on_intense":"audi6_gauges_rs6_on"},
+
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed_sweep_kmh2", "audi6_needle_speedo_fl", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":-5}, {"x":0, "y":0, "z":-3.24}     , {"x":0, "y":0, "z":0}, 0, 91.66, -0.7, 0.8,{"materialOverride":[["audi6_gauges","audi6_gauges_rs6"]]}],
+        ["rpm_sweep",         "audi6_needle_tacho_fl", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":5}, {"x":0, "y":0, "z":-0.032}     , {"x":0, "y":0, "z":0}, 0, 8000, 0, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_rs6"]]}],
+        ["fuel",         "audi6_needle_fuel_fl", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":-95}     , {"x":0, "y":0, "z":0}, 0, 1, 0.17, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_rs6"]]}],
+        ["watertemp",      "audi6_needle_temp_fl", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":1.1}     , {"x":0, "y":0, "z":0}, 50, 130, -90, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_rs6"]]}],
+    ],
+},
+}

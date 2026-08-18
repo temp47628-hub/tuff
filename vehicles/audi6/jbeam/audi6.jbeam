@@ -1,0 +1,330 @@
+{
+"audi6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Audi A6 C6",
+    },
+    "slotType" : "main",
+    "scaledragCoef":1,
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_body","audi6_body_sedan", "Body", {"coreSlot":true}],
+        ["paint_design","", "Paint Design"],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["audi6_mod", "", "Additional Modification"],
+    ],
+    "components": {
+        "electrics": {
+            "customValues": [
+                ["electricsName", "electricsFunction","electricsDefault"],
+				["ignitionLevel_s","electrics.ignitionLevel * electrics.electricalLoadCoef",0],
+				["ignitionLevel2_s","electrics.ignitionLevel2 * electrics.electricalLoadCoef",0],
+                ["lowhighbeam_s","electrics.lowhighbeam * electrics.electricalLoadCoef",0],
+                ["lowbeam_s","electrics.lowbeam * electrics.electricalLoadCoef",0],
+                ["highbeam_s","electrics.highbeam * electrics.electricalLoadCoef",0],
+				["lowhighBrake_s","(electrics.brakelights + electrics.lowhighbeam * 0.5 - electrics.brakelights * electrics.lowhighbeam * 0.5) * electrics.electricalLoadCoef",0],
+				["lowhighBrake","(electrics.brakelights + electrics.lowhighbeam * 0.5 - electrics.brakelights * electrics.lowhighbeam * 0.5) * electrics.electricalLoadCoef",0],
+                ["foglight_s","electrics.fog * electrics.electricalLoadCoef",0],
+                ["highbeam_s","electrics.highbeam * electrics.electricalLoadCoef",0],
+                ["signal_L_s","electrics.signal_L * electrics.electricalLoadCoef",0],
+                ["signal_R_s","electrics.signal_R * electrics.electricalLoadCoef",0],
+                ["reverse_s","electrics.reverse * electrics.electricalLoadCoef",0],
+                ["domelight_FR_s","electrics.domelight_FR",0],
+                ["domelight_FL_s","electrics.domelight_FL",0],
+                ["domelight_RL_s","electrics.domelight_RL",0],
+                ["domelight_RR_s","electrics.domelight_RR",0],
+                ["domelight_R_s","electrics.domelight_R",0],
+				
+				["audi6_drl_s","electrics.audi6_drl",0],
+                ["audi6_drl_L_s","electrics.audi6_drl_L",0],
+                ["audi6_drl_R_s","electrics.audi6_drl_R",0],              
+				["audi6_drl_alt_L_s","electrics.audi6_drl_alt_L",0],
+                ["audi6_drl_alt_R_s","electrics.audi6_drl_alt_R",0],
+				
+                ["doorlight_FL_s","electrics.door_FL_coupler_notAttached",0],
+                ["doorlight_FR_s","electrics.door_FR_coupler_notAttached",0],
+                ["doorlight_RL_s","electrics.door_RL_coupler_notAttached",0],
+                ["doorlight_RR_s","electrics.door_RR_coupler_notAttached",0],
+                ["doorlight_trunk_s","electrics.trunkCoupler_notAttached",0],
+				
+                ["hazardbutton_s","electrics.hazardbutton",0],
+                ["parkingbrakebutton_s","electrics.parkingbrakebutton",0],
+                ["armrest_door_s","electrics.armrest_door",0],
+                ["armrest_r_s","electrics.armrest_r",0],
+                ["ashtray_door_s","electrics.ashtray_door",0],
+                ["ashtray_door_RL_s","electrics.ashtray_door_RL",0],
+                ["ashtray_door_RR_s","electrics.ashtray_door_RR",0],
+                ["cupholder_door_s","electrics.cupholder_door",0],
+                ["glovebox_door_s","electrics.glovebox_door",0],
+                ["lightbutton_s","electrics.lightbutton",0],
+                ["sunroof_tilt_s","electrics.sunroof_tilt",0],
+				
+				//auto lights
+				
+				["lowhighbeam_auto","(electrics.lowhighbeam * 0.5 + electrics.button_auto_lights * 0.5) * electrics.electricalLoadCoef",0],
+				
+				//mmi buttons
+				
+                ["mmi_isNAV","electrics.mmiMenu == 1",0],
+                ["mmi_isCD","electrics.mmiMenu == 2",0],
+                ["button_isSETUP","electrics.mmiMenu == 4",0],
+                ["mmi_isCAR","electrics.mmiMenu == 5",0],
+                ["mmi_isNAME","electrics.mmiMenu == 6",0],
+                ["mmi_isTEL","electrics.mmiMenu == 7",0],
+
+				//mmi submenu
+				
+                ["mmi_isSUBMENU1","electrics.submenu == 1",0],
+                ["mmi_isSUBMENU2","electrics.submenu == 2",0],
+                ["mmi_isSUBMENU3","electrics.submenu == 3",0],
+                ["mmi_isSUBMENU4","electrics.submenu == 4",0],
+				
+				//hvac
+				
+                ["hvac_context1","electrics.hvac_context == 1",0],
+                ["hvac_context2","electrics.hvac_context == 2",0],
+                ["hvac_context3","electrics.hvac_context == 3",0],
+                ["hvac_context4","electrics.hvac_context == 4",0],
+                ["hvac_context5","electrics.hvac_context == 5",0],
+				
+				//window lock
+				
+                ["windowRL_isLOCKED","electrics.window_lock_RL == 1",0],
+                ["windowRR_isLOCKED","electrics.window_lock_RR == 1",0],
+				
+				//rear sunshade
+				
+                ["curtain_RL_s","electrics.curtain_RL",0],
+                ["curtain_RR_s","electrics.curtain_RR",0],
+				
+                ["sunvisor_mirrorcover_L_s","electrics.sunvisor_mirrorcover_L",0],
+                ["sunvisor_mirrorcover_R_s","electrics.sunvisor_mirrorcover_R",0],
+				
+                ["mmi_bgLightingLevel_s","electrics.mmi_bgLightingLevel",0],
+				
+				//climate control buttons
+				
+                ["button_isMEMSEATS","electrics.button_memseats == 0",0],
+                ["button_isMEMSEATS_ALT","electrics.button_memseats_alt == 0",0],
+                ["button_isBLIS","electrics.button_blis == 1",0],
+                ["button_isAUTO1","electrics.button_auto1 == 1",0],
+                ["button_isAUTO2","electrics.button_auto2 == 1",0],
+                ["button_isECON","electrics.button_econ > 0",0],
+                ["button_isFAN","electrics.button_fan > 0",0],
+                ["button_isAIRFLOW1","electrics.button_airflow1 > 0",0],
+                ["button_isAIRFLOW2","electrics.button_airflow2 > 0",0],
+                ["button_isHEATEDSEAT1","electrics.button_heatedseat1 > 0",0],
+                ["button_isHEATEDSEAT2","electrics.button_heatedseat2 > 0",0],
+                ["button_isFRONTDEMISTER","electrics.button_frontdemister == 1",0],
+                ["button_isREARDEMISTER","electrics.button_reardemister == 1",0],
+                ["button_isRECIRCULATION","electrics.button_recirculation == 1",0],
+                ["button_isONOFF","electrics.button_onoff == 1",0],
+				["button_isPARKINGSENSORS","electrics.button_parkingsensors == 1",0],
+				
+				["wipers_F_s","electrics.wipers_F",0],
+            ],
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+				["ignitionLevel_s","temporalNonLinear", [15,15]],
+				["ignitionLevel2_s","temporalNonLinear", [15,15]],
+                ["lowhighbeam_s","temporalNonLinear", [10,10]],
+                ["lowbeam_s","temporalNonLinear", [10,10]],
+                ["highbeam_s","temporalNonLinear", [10,10]],
+                ["lowhighBrake_s","temporalNonLinear", [25,25]],
+                ["foglight_s","temporalNonLinear", [10,10]],
+                ["highbeam_s","temporalNonLinear", [10,10]],
+                ["signal_L_s","temporalNonLinear", [17,17]],
+                ["signal_R_s","temporalNonLinear", [17,17]],
+                ["reverse_s","temporalNonLinear", [17,17]],
+				
+                ["domelight_F_s","temporalNonLinear", [15,15]],
+                ["domelight_FR_s","temporalNonLinear", [15,15]],
+                ["domelight_FL_s","temporalNonLinear", [15,15]],
+                ["domelight_RL_s","temporalNonLinear", [15,15]],
+                ["domelight_RR_s","temporalNonLinear", [15,15]],
+                ["domelight_R_s","temporalNonLinear", [15,15]],
+                ["domelight_trunk_s","temporalNonLinear", [15,15]],
+				
+                ["doorlight_FL_s","temporalNonLinear", [15,15]],
+                ["doorlight_FR_s","temporalNonLinear", [15,15]],
+                ["doorlight_RL_s","temporalNonLinear", [15,15]],
+                ["doorlight_RR_s","temporalNonLinear", [15,15]],
+                ["doorlight_trunk_s","temporalNonLinear", [15,15]],              
+
+				["audi6_drl_s","temporalNonLinear", [15,15]],
+                ["audi6_drl_L_s","temporalNonLinear", [15,15]],
+                ["audi6_drl_R_s","temporalNonLinear", [15,15]],                
+				["audi6_drl_alt_L_s","temporalNonLinear", [15,15]],
+                ["audi6_drl_alt_R_s","temporalNonLinear", [15,15]],
+				
+			    ["sunvisor_mirrorcover_L_s","temporal", [3,3]],
+                ["sunvisor_mirrorcover_R_s","temporal", [3,3]],
+				
+                ["mmi_bgLightingLevel_s","temporal", [3,3]],
+				
+                ["hazardbutton_s","temporal", [100,100]],
+                ["parkingbrakebutton_s","temporal", [100,100]],
+				["curtain_RL_s","temporal", [2,2]],
+				["curtain_RR_s","temporal", [2,2]],
+                ["armrest_door_s","temporal", [2,2]],
+                ["armrest_r_s","temporal", [1,1]],
+                ["ashtray_door_s","temporal", [3,3]],
+                ["ashtray_door_RL_s","temporal", [3,3]],
+                ["ashtray_door_RR_s","temporal", [3,3]],
+                ["cupholder_door_s","temporal", [3,3]],
+                ["glovebox_door_s","temporal", [2,1]],
+                ["lightbutton_s","temporal", [10,10]],
+                ["sunroof_tilt_s","temporal", [1,1]],
+				
+                ["wipers_F_s","temporal", [3,3]],
+
+            ],
+        },
+    },
+	"controller": [
+		["fileName"],
+		["audi6_animatedTriggers", {
+			"animatedTriggers": {
+				"armrest_door": {
+					"pos": [0, 1, -0.26],
+					"rot": [99, 0, 0]
+				},				
+				"ashtray_door": {
+					"pos": [0, -0.09, 0],
+				},					
+				"ashtray_door_RL": {
+					"pos": [0.01, -0.055, -0.025],
+					"rot": [-90, 0, 0]
+				},								
+				"ashtray_door_RR": {
+					"pos": [0.01, -0.055, 0.025],
+					"rot": [90, 0, 0]
+				},				
+				"cupholder_door": {
+					"pos": [0, -0.13, -0.0],
+					"rot": [90, 0, 0]
+				},
+				"glovebox_door": {
+					"pos": [0, 0.06, -0.155],
+					"rot": [30, 0, 0]
+				},				
+				"glovebox_door_int": {
+					"pos": [0, 0.06, -0.155],
+					"rot": [30, 0, 0]
+				},								
+				"armrest_r": {
+					"pos": [0.01, 0.93, -0.37],
+					"rot": [-116, 0, 0]
+				},								
+				"sunvisor_mirrorcover_L": {
+					"pos": [-0.375, 0.335, 0.0],
+					"rot": [0, 2, 0]
+				},								
+				"sunvisor_mirrorcover_R": {
+					"pos": [-0.375, 0.335, 0.0],
+					"rot": [0, 2, 0]
+				},			
+				"wipers_F": {
+					"mode": "continuous",
+					"electricName": "wiperstalk",
+					"pos": [-0.019, 0.019, 0.019],
+				},	
+				"wiper_R": {
+					"mode": "continuous",
+					"electricName": "wiperstalk",
+					"pos": [-0.024, 0.024, 0.024],
+				},		
+				"gauges_screen_menu": {
+					"mode": "continuous",
+					"electricName": "wiperstalk",
+					"pos": [-0.027, 0.027, 0.027],
+				},	
+				"signalstalk": {
+					"mode": "continuous",
+					"electricName": "signalstalk",
+					"pos": [0.016, 0.016, 0.016],
+				},
+				"parcelshelf": {
+					"mode": "timerHide",
+					"hideTime": 1.5,
+					"pos": [0, -1.5, -0.017],
+					"rot": [-30, 0, 0]
+				}				
+			}
+		}],		
+		["audi6_workingWipers", {"audi6_workingWipers": {}}],
+	],
+    "glowMap":{
+			//TEST LIGHTS
+			
+            "audi6_lights": {"simpleFunction":"lowhighbeam"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_lights_orange": {"simpleFunction":"lowhighbeam"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_lights_red": {"simpleFunction":"lowhighbeam"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+			
+			//SMOOTH
+			
+            "audi6_lowbeam": {"simpleFunction":"lowhighbeam_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_highbeam": {"simpleFunction":"highbeam_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_highbeam_L": {"simpleFunction":{"audi6_drl_L_s":1}    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_highbeam_R": {"simpleFunction":{"audi6_drl_R_s":1}    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+			"audi6_runninglight":{"simpleFunction":{"audi6_drl_strip":1},"off":"audi6_lights","on":"audi6_lights_on_intense","materialEmissiveScaling":{"on_max":1.00}},
+			"audi6_highbeam_running":{"simpleFunction":{"audi6_drl_s":1},"off":"audi6_lights","on":"audi6_lights_on_intense","materialEmissiveScaling":{"on_max":1.00}},
+			"audi6_highbeam_running_L":{"simpleFunction":{"audi6_drl_alt_L_s":1},"off":"audi6_lights","on":"audi6_lights_on_intense","materialEmissiveScaling":{"on_max":1.00}},
+			"audi6_highbeam_running_R":{"simpleFunction":{"audi6_drl_alt_R_s":1},"off":"audi6_lights","on":"audi6_lights_on_intense","materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_signal_L": {"simpleFunction":"signal_L_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_signal_R": {"simpleFunction":"signal_R_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_foglight": {"simpleFunction":"foglight_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_taillight":{"simpleFunction":"lowhighBrake_s","off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_reverselight":{"simpleFunction":"reverse_s","off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_blislight_L":{"simpleFunction":"leftAudiSideAssistLevel","off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_blislight_R":{"simpleFunction":"rightAudiSideAssistLevel","off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+			
+			//ALT SMOOTH
+			
+            "audi6_signal_L_alt": {"simpleFunction":"signal_L_s"    ,"off":"audi6_lights_alt", "on":"audi6_lights_alt_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_signal_R_alt": {"simpleFunction":"signal_R_s"    ,"off":"audi6_lights_alt", "on":"audi6_lights_alt_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_foglight_alt": {"simpleFunction":"foglight_s"    ,"off":"audi6_lights_alt", "on":"audi6_lights_alt_on_intense", "materialEmissiveScaling":{"on_max":1.00}},			
+			
+			//INSTANT
+
+            "audi6_chmsl_inst":{"simpleFunction":{"brakelights":100}, "off":"audi6_lights", "on":"audi6_lights_on_intense", "on_intense":"audi6_lights_on_intense"},
+            "audi6_taillight_inst":{"simpleFunction":{"lowhighbeam":0.49,"brakelights":1}, "off":"audi6_lights", "on":"audi6_lights_on_mid", "on_intense":"audi6_lights_on_intense"},
+            "audi6_signal_L_inst":{"simpleFunction":{"signal_L":0.49}, "off":"audi6_lights", "on":"audi6_lights_on_intense", "on_intense":"audi6_lights_on_intense"},
+            "audi6_signal_R_inst":{"simpleFunction":{"signal_R":0.49}, "off":"audi6_lights", "on":"audi6_lights_on_intense", "on_intense":"audi6_lights_on_intense"},
+            "audi6_headlight_inst":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"audi6_lights", "on":"audi6_lights_on", "on_intense":"audi6_lights_on_intense"},
+            "audi6_headlight_s6_inst":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"audi6_lights_s6", "on":"audi6_lights_s6_on", "on_intense":"audi6_lights_s6_on_intense"},
+            "audi6_lowbeam_inst": {"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+
+            //gauge lights
+            "audi6_gauges_seatbelt":{"simpleFunction":"nop", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_laneassist":{"simpleFunction":{"laneAssistAmber":0.49,"laneAssistGreen":1}, "off":"invis", "on":"audi6_decals_gauges", "on_intense":"audi6_decals_gauges_b"},
+            "audi6_gauges_signal_L":{"simpleFunction":"signal_L", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_signal_R":{"simpleFunction":"signal_R", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_checkengine":{"simpleFunction":{"checkengine":0.1,"decals_gauges_timer":0.1,"decals_gauges_accessorymode":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_battery":{"simpleFunction":{"battery":0.1,"decals_gauges_timer":0.1,"decals_gauges_accessorymode":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_parkingbrake":{"simpleFunction":"parkingbrakelight", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_lowfuel":{"simpleFunction":"lowfuel", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_lowpressure":{"simpleFunction":{"lowpressure":0.1,"decals_gauges_timer":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_abs":{"simpleFunction":{"abswarn":0.1,"decals_gauges_timer":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_tcs":{"simpleFunction":{"tcs":0.1,"decals_gauges_timer":0.1,"tcsoff":-0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_tcsoff":{"simpleFunction":{"tcsoff":0.1,"decals_gauges_timer":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_foglight":{"simpleFunction":"fog", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_rearfog":{"simpleFunction":"rearfog", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_oil":{"simpleFunction":{"oil":0.1,"decals_gauges_timer":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_lowbeam":{"simpleFunction":"lowhighbeam", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_highbeam":{"simpleFunction":"highbeam", "off":"invis", "on":"audi6_decals_gauges"},
+            "audi6_gauges_otherlights":{"simpleFunction":{"otherlights":0.1,"decals_gauges_timer":0.1}, "off":"invis", "on":"audi6_decals_gauges"},
+    },
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$brakestrength", "range", "", "Brakes", 1, 0.6, 1.0, "Brake Force Multiplier", "Scales the overall brake torque for this setup", {"minDis":60, "maxDis":100}],
+        ["$ffbstrength", "range", "", "Chassis", 1, 0.5, 1.5, "Setup-Specific Force Feedback Multiplier", "Scales the force feedback strength for THIS SETUP ONLY", {"minDis":50, "maxDis":150}],
+		
+		["$bodyStyle", "range", "",     "Body Style",  0,         0,     2,     "",      ""],
+		["$sunroofMesh", "range", "",     "Sunroof Mesh",  0,         0,     1,     "",      ""],
+		["$lightingPackage", "range", "",     "Lighting Package",  0,         0,     1,     "",      ""],
+		["$puddleLights", "range", "",     "Puddle Lights",  0,         0,     1,     "",      ""],
+		["$ambientLights", "range", "",     "Ambient Lights",  0,         0,     1,     "",      ""],
+   ],
+},
+}

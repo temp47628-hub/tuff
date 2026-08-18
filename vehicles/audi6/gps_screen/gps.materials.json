@@ -1,0 +1,44 @@
+{
+  "audi6_gps_screen": {
+    "name": "audi6_gps_screen",
+    "mapTo": "audi6_gps_screen",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "@audi6_gps_screen",
+        "diffuseColor": [
+          1.96078396,
+          1.96078396,
+          1.96078396,
+          1
+        ],
+        "emissive": true,
+        "roughnessFactor": 0.607767701,
+        "specularMap": "vehicles/common/null.dds",
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      }
+    ],
+    "alphaRef": 0,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None"
+  }
+}

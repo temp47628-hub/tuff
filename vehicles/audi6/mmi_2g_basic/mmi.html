@@ -1,0 +1,95 @@
+<html ng-app="gaugesScreen">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if(typeof beamng !== 'undefined') {
+    }
+    else{ //for vueService
+      var beamng = {}
+      beamng.sendEngineLua = function(){}
+    }
+  </script>
+  <!-- Vue START -->
+  <script src="/ui/lib/ext/vue3/vue.global.prod.js"></script>
+  <script src="/ui/lib/ext/vue-i18n-next/vue-i18n.global.prod.js"></script>
+  <script src="/ui/lib/ext/tiny-emitter/tinyemitter.js"></script>
+  <script type="module" src="/ui/lib/int/vueService_mod.js"></script>
+  <!-- Vue END -->
+  <script src="/ui/lib/ext/angular/angular.js"></script>
+  <script src="mmi.js"></script>
+  <link type="text/css" rel="stylesheet" href="mmi.css">
+</head>
+
+<body ng-controller="GaugesScreenController as gaugeCtrl">
+  <div class="interface-root">
+    <div id="bootscreen"></div>
+    <div class="time-display">{{display.timestamp | date:'HH:mm'}}</div>
+	<div class="center-container">
+	  <span class="center-text">
+	  </span>
+	</div>
+    <div class="text-0">{{display.text_0}}</div>
+    <div class="text-1">{{display.text_1}}</div>
+    <div class="text-2">{{display.text_2}}</div>
+    <div class="text-3">{{display.text_3}}</div>
+    <div class="text-4">{{display.text_4}}</div>
+	
+	<div id="volume_icon"></div>
+
+	<!-- Parking sensor overlay -->
+	<div class="parking-overlay" ng-show="display.isParkingVisible">
+	  <!--REAR-->
+	  <img class="proximity-indicator" src="rear_1_1.png" ng-show="display.proximity1 == 'level1'">
+	  <img class="proximity-indicator" src="rear_1_2.png" ng-show="display.proximity1 == 'level2'">
+	  <img class="proximity-indicator" src="rear_1_3.png" ng-show="display.proximity1 == 'level3'">
+
+	  <img class="proximity-indicator" src="rear_2_1.png" ng-show="display.proximity2 == 'level1'">
+	  <img class="proximity-indicator" src="rear_2_2.png" ng-show="display.proximity2 == 'level2'">
+	  <img class="proximity-indicator" src="rear_2_3.png" ng-show="display.proximity2 == 'level3'">
+	  <img class="proximity-indicator" src="rear_2_4.png" ng-show="display.proximity2 == 'level4'">
+	  <img class="proximity-indicator" src="rear_2_5.png" ng-show="display.proximity2 == 'level5'">
+	  <img class="proximity-indicator" src="rear_2_6.png" ng-show="display.proximity2 == 'level6'">
+	  <img class="proximity-indicator" src="rear_2_7.png" ng-show="display.proximity2 == 'level7'">
+
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_1.png" ng-show="display.proximity3 == 'level1'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_2.png" ng-show="display.proximity3 == 'level2'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_3.png" ng-show="display.proximity3 == 'level3'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_4.png" ng-show="display.proximity3 == 'level4'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_5.png" ng-show="display.proximity3 == 'level5'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_6.png" ng-show="display.proximity3 == 'level6'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_2_7.png" ng-show="display.proximity3 == 'level7'">
+
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_1_1.png" ng-show="display.proximity4 == 'level1'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_1_2.png" ng-show="display.proximity4 == 'level2'">
+	  <img class="proximity-indicator" style="transform: scaleY(-1)" src="rear_1_3.png" ng-show="display.proximity4 == 'level3'">
+
+	  <!--FRONT-->
+	  <div id="front-sensors-group" style="position:absolute;inset:0;width:100%;height:100%;">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_1_1.png" ng-show="display.proximity5 == 'level1'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_1_2.png" ng-show="display.proximity5 == 'level2'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_1_3.png" ng-show="display.proximity5 == 'level3'">
+
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_1.png" ng-show="display.proximity6 == 'level1'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_2.png" ng-show="display.proximity6 == 'level2'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_3.png" ng-show="display.proximity6 == 'level3'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_4.png" ng-show="display.proximity6 == 'level4'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_5.png" ng-show="display.proximity6 == 'level5'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_6.png" ng-show="display.proximity6 == 'level6'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1)" src="rear_2_7.png" ng-show="display.proximity6 == 'level7'">
+
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_1.png" ng-show="display.proximity7 == 'level1'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_2.png" ng-show="display.proximity7 == 'level2'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_3.png" ng-show="display.proximity7 == 'level3'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_4.png" ng-show="display.proximity7 == 'level4'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_5.png" ng-show="display.proximity7 == 'level5'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_6.png" ng-show="display.proximity7 == 'level6'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_2_7.png" ng-show="display.proximity7 == 'level7'">
+
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_1_1.png" ng-show="display.proximity8 == 'level1'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_1_2.png" ng-show="display.proximity8 == 'level2'">
+	    <img class="proximity-indicator" style="transform: scaleX(-1) scaleY(-1)" src="rear_1_3.png" ng-show="display.proximity8 == 'level3'">
+	  </div><!-- /front-sensors-group -->
+	</div>
+</body>
+
+</html>

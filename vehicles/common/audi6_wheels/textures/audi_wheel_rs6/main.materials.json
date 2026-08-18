@@ -1,0 +1,158 @@
+{
+  "audi6_rim_rs6": {
+    "name": "audi6_rim_rs6",
+    "mapTo": "audi6_rim_rs6",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "baseColorMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_m.data.png",
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png",
+        "roughnessMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_rim_rs6_black": {
+    "name": "audi6_rim_rs6_black",
+    "mapTo": "audi6_rim_rs6_black",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "baseColorMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_black_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_black_m.data.png",
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png",
+        "roughnessMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_black_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_rim_rs6_carbon": {
+    "name": "audi6_rim_rs6_carbon",
+    "mapTo": "audi6_rim_rs6_carbon",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_ao.data.png",
+        "baseColorMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_cc.data.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_m.data.png",
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_nm.normal.png",
+        "roughnessMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_cc.data.png",
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_carbon_nm.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_rim_rs6_titan": {
+    "name": "audi6_rim_rs6_titan",
+    "mapTo": "audi6_rim_rs6_titan",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "baseColorMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_titan_b.color.png",
+        "clearCoatFactor": null,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_titan_m.data.png",
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png",
+        "roughnessMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_cc.data.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheel_rs6/audi6_rim_rs6_nm.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

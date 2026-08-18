@@ -1,0 +1,290 @@
+{
+	  "audi6_alcantara_color": {
+    "name": "audi6_alcantara_color",
+    "mapTo": "audi6_alcantara_color",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },	  
+  "audi6_alcantara_color.skin_interior.beige2_interior": {
+    "name": "audi6_alcantara_color.skin_interior.beige2_interior",
+    "mapTo": "audi6_alcantara_color.skin_interior.beige2_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.337255001,
+          0.309803993,
+          0.286274999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },  
+  "audi6_alcantara_color.skin_interior.beige_interior": {
+    "name": "audi6_alcantara_color.skin_interior.beige_interior",
+    "mapTo": "audi6_alcantara_color.skin_interior.beige_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.454901993,
+          0.423528999,
+          0.384314001,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }, 
+  "audi6_alcantara_color.skin_interior.blue_interior": {
+    "name": "audi6_alcantara_color.skin_interior.blue_interior",
+    "mapTo": "audi6_alcantara_color.skin_interior.blue_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },  
+  "audi6_alcantara_color.skin_interior.creambeige_interior": {
+    "name": "audi6_alcantara_color.skin_interior.creambeige_interior",
+    "mapTo": "audi6_alcantara_color.skin_interior.creambeige_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_alcantara_color.skin_interior.grey_interior": {
+    "name": "audi6_alcantara_color.skin_interior.grey_interior",
+    "mapTo": "audi6_alcantara_color.skin_interior.grey_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+}

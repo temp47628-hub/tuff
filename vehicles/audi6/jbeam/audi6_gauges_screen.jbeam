@@ -1,0 +1,470 @@
+{
+"audi6_gauges_screen_basic_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Monochrome Pre-Facelift Gauge Screen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_screen_pfl",
+	"components": {
+        "electrics": {
+			"adaptiveCruiseControl": 0,
+        },
+    },
+    "controller": [
+        ["fileName"],
+
+        ["gauges/genericGauges", {"name":"gauge" }],
+		["gauges/customModules/environmentData"],
+		["gauges/customModules/combustionEngineData"],
+    ],
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+        }
+        "displayData": {
+            "electrics": [
+                "ignitionLevel",
+                "battery",
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",//
+                "fuel",
+                "wheelspeed",//
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsoff",
+                "tcsActive"
+				"audi6_odo",
+				"odometer",
+				"throttle",
+				"gMenu",
+				"high_watertemp",
+				"tempLeft",
+				"tempRight",
+				"gaugesMenu",
+				"resetTrip",
+				"manualShifterEnabled",
+				"door_FL_coupler_notAttached",
+				"door_FR_coupler_notAttached",
+				"door_RL_coupler_notAttached",
+				"door_RR_coupler_notAttached",
+				"hoodLatchCoupler_notAttached",
+				"trunkCoupler_notAttached",
+                "trip",
+				"button_econ",
+				"button_fan",
+				"button_heatedseat1",
+				"button_heatedseat2",
+				"button_airflow1",
+				"button_airflow2",
+				"audi6_currentSongName"
+				"hvac_context",
+            ]
+			"customModules": [
+                ["moduleName", "property"]
+                ["combustionEngineData", "remainingRange"]
+                ["combustionEngineData", "fuelConsumption"]
+                ["environmentData", "temperatureEnv"]
+                ["environmentData", "time"]
+            ]
+        }
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"deformGroup":"display_break", "deformMaterialBase":"audi6_screen", "deformMaterialDamaged":"screen_off"},
+        ["audi6_gauges_screen", ["audi6_dash"]],
+        {"deformGroup":""},
+    ],
+    "glowMap":{
+        "audi6_gauges_screen":{"simpleFunction":{"ignitionLevel2":0.5}, "off":"screen_off", "on":"audi6_gauges_screen", "on_intense":"audi6_gauges_screen"},
+    },
+},
+"audi6_gauges_screen_basic_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Monochrome Facelift Gauge Screen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_screen_fl",
+	"components": {
+        "electrics": {
+			"adaptiveCruiseControl": 0,
+        },
+    },
+    "controller": [
+        ["fileName"],
+
+        ["gauges/genericGauges", {"name":"gauge" }],
+		["gauges/customModules/environmentData"],
+		["gauges/customModules/combustionEngineData"],
+    ],
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen_fl/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+        }
+        "displayData": {
+            "electrics": [
+                "ignitionLevel",
+                "battery",
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",//
+                "fuel",
+                "wheelspeed",//
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsoff",
+                "tcsActive"
+				"audi6_odo",
+				"odometer",
+				"throttle",
+				"gMenu",
+				"high_watertemp",
+				"tempLeft",
+				"tempRight",
+				"gaugesMenu",
+				"resetTrip",
+				"manualShifterEnabled",
+				"door_FL_coupler_notAttached",
+				"door_FR_coupler_notAttached",
+				"door_RL_coupler_notAttached",
+				"door_RR_coupler_notAttached",
+				"hoodLatchCoupler_notAttached",
+				"trunkCoupler_notAttached",
+                "trip",
+				"button_econ",
+				"button_fan",
+				"button_heatedseat1",
+				"button_heatedseat2",
+				"button_airflow1",
+				"button_airflow2",
+				"audi6_currentSongName"
+				"hvac_context",
+            ]
+			"customModules": [
+                ["moduleName", "property"]
+                ["combustionEngineData", "remainingRange"]
+                ["combustionEngineData", "fuelConsumption"]
+                ["environmentData", "temperatureEnv"]
+                ["environmentData", "time"]
+            ]
+        }
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"deformGroup":"display_break", "deformMaterialBase":"audi6_screen", "deformMaterialDamaged":"screen_off"},
+        ["audi6_gauges_screen", ["audi6_dash"]],
+        {"deformGroup":""},
+    ],
+    "glowMap":{
+        "audi6_gauges_screen":{"simpleFunction":{"ignitionLevel2":0.5}, "off":"screen_off", "on":"audi6_gauges_screen", "on_intense":"audi6_gauges_screen"},
+    },
+},
+"audi6_gauges_bootscreen_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Bootscreen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_bootscreen_pfl",
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen_color/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+			"bootscreenImage": "/vehicles/audi6/gauges_screen_color/bootscreen.png",
+        }
+    },
+},
+"audi6_gauges_bootscreen_rs6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Bootscreen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_bootscreen_pfl",
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen_color/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+            "bootscreenImage": "/vehicles/audi6/gauges_screen_color/bootscreen_rs6.png",
+        }
+    },
+},
+"audi6_gauges_bootscreen_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Bootscreen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_bootscreen_fl",
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen_color_fl/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+			"bootscreenImage": "/vehicles/audi6/gauges_screen_color/bootscreen.png",
+        }
+    },
+},
+"audi6_gauges_bootscreen_rs6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Bootscreen",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges_bootscreen_fl",
+    "gauge": {
+        "configuration": {
+            "materialName": "@audi6_gauges_screen",
+            "htmlPath": "local://local/vehicles/audi6/gauges_screen_color_fl/gauges_screen.html",
+            "displayWidth":512,
+            "displayHeight":512,
+            "bodyStyle":{
+                "background": "#050000",
+                "font-family": "OpenSans",
+                "font-size": "37px",
+                "color": "#ffffff"
+            },
+            "bootscreenImage": "/vehicles/audi6/gauges_screen_color/bootscreen_rs6.png",
+        }
+    },
+},
+"audi6_gauges_screen_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Multicolor Pre-Facelift Gauge Screen",
+        "value":200,
+    },
+    "slotType" : ["audi6_gauges_screen_pfl","audi6_gauges_screen_rs6"],
+	"components": {
+        "electrics": {
+			"adaptiveCruiseControl": 1,
+        },
+    },
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_gauges_bootscreen_pfl","audi6_gauges_bootscreen_pfl", "Gauge Bootscreen", {"coreSlot":true}],
+    ],
+    "controller": [
+        ["fileName"],
+
+        ["gauges/genericGauges", {"name":"gauge" }],
+		["gauges/customModules/environmentData"],
+		["gauges/customModules/combustionEngineData"],
+    ],
+    "gauge": {
+        "displayData": {
+            "electrics": [
+                "ignitionLevel",
+                "battery",
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",//
+                "fuel",
+                "wheelspeed",//
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsoff",
+                "tcsActive"
+				"audi6_odo",
+				"odometer",
+				"throttle",
+				"gMenu",
+				"high_watertemp",
+				"tempLeft",
+				"tempRight",
+				"gaugesMenu",
+				"resetTrip",
+				"manualShifterEnabled",
+				"door_FL_coupler_notAttached",
+				"door_FR_coupler_notAttached",
+				"door_RL_coupler_notAttached",
+				"door_RR_coupler_notAttached",
+				"hoodLatchCoupler_notAttached",
+				"trunkCoupler_notAttached",
+                "trip",
+				"button_econ",
+				"button_fan",
+				"button_heatedseat1",
+				"button_heatedseat2",
+				"button_airflow1",
+				"button_airflow2",
+				"audi6_currentSongName"
+				"hvac_context",
+            ]
+			"customModules": [
+                ["moduleName", "property"]
+                ["combustionEngineData", "remainingRange"]
+                ["combustionEngineData", "fuelConsumption"]
+                ["environmentData", "temperatureEnv"]
+                ["environmentData", "time"]
+            ]
+        }
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"deformGroup":"display_break", "deformMaterialBase":"audi6_screen", "deformMaterialDamaged":"screen_off"},
+        ["audi6_gauges_screen", ["audi6_dash"]],
+        {"deformGroup":""},
+    ],
+    "glowMap":{
+        "audi6_gauges_screen":{"simpleFunction":{"ignitionLevel2":0.5}, "off":"screen_off", "on":"audi6_gauges_screen", "on_intense":"audi6_gauges_screen"},
+    },
+},
+"audi6_gauges_screen_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Multicolor Facelift Gauge Screen",
+        "value":200,
+    },
+    "slotType" : ["audi6_gauges_screen_fl","audi6_gauges_screen_rs6"],
+	"components": {
+        "electrics": {
+			"adaptiveCruiseControl": 2,
+        },
+    },
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_gauges_bootscreen_fl","audi6_gauges_bootscreen_fl", "Gauge Bootscreen", {"coreSlot":true}],
+    ],
+    "controller": [
+        ["fileName"],
+
+        ["gauges/genericGauges", {"name":"gauge" }],
+		["gauges/customModules/environmentData"],
+		["gauges/customModules/combustionEngineData"],
+    ],
+    "gauge": {
+        "displayData": {
+            "electrics": [
+                "ignitionLevel",
+                "battery",
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",//
+                "fuel",
+                "wheelspeed",//
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsoff",
+                "tcsActive"
+				"audi6_odo",
+				"odometer",
+				"throttle",
+				"gMenu",
+				"high_watertemp",
+				"tempLeft",
+				"tempRight",
+				"gaugesMenu",
+				"resetTrip",
+				"manualShifterEnabled",
+				"door_FL_coupler_notAttached",
+				"door_FR_coupler_notAttached",
+				"door_RL_coupler_notAttached",
+				"door_RR_coupler_notAttached",
+				"hoodLatchCoupler_notAttached",
+				"trunkCoupler_notAttached",
+                "trip",
+				"button_econ",
+				"button_fan",
+				"button_heatedseat1",
+				"button_heatedseat2",
+				"button_airflow1",
+				"button_airflow2",
+				"audi6_currentSongName"
+				"hvac_context",
+            ]
+			"customModules": [
+                ["moduleName", "property"]
+                ["combustionEngineData", "remainingRange"]
+                ["combustionEngineData", "fuelConsumption"]
+                ["environmentData", "temperatureEnv"]
+                ["environmentData", "time"]
+            ]
+        }
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"deformGroup":"display_break", "deformMaterialBase":"audi6_screen", "deformMaterialDamaged":"screen_off"},
+        ["audi6_gauges_screen", ["audi6_dash"]],
+        {"deformGroup":""},
+    ],
+    "glowMap":{
+        "audi6_gauges_screen":{"simpleFunction":{"ignitionLevel2":0.5}, "off":"screen_off", "on":"audi6_gauges_screen", "on_intense":"audi6_gauges_screen"},
+    },
+},
+}

@@ -1,0 +1,398 @@
+{
+"audi6_fogvent_L_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left RS6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_rs6",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_rs6", ["audi6_bumper_F"]],
+    ],
+},
+"audi6_fogvent_R_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right RS6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_rs6",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_rs6", ["audi6_bumper_F"]],
+    ],
+},
+"audi6_fogvent_L_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Facelift A6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_a6_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_a6_fl", ["audi6_bumper_F"]],
+         ["audi6_fogvent_trim_L_a6_fl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_a6_fl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_a6_fl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+	    ["audi6_fog_L_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3l", "$nodeX":"fb3ll", "$nodeY":"fb2l",
+          "$deformGroup":"foglightglass_L_break",
+          "$shadowEnable":1,
+          "$posX":0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_R_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Facelift A6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_a6_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_a6_fl", ["audi6_bumper_F"]],
+         ["audi6_fogvent_trim_R_a6_fl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_a6_fl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_a6_fl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+        ["audi6_fog_R_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3r", "$nodeX":"fb3rr", "$nodeY":"fb2r",
+          "$deformGroup":"foglightglass_R_break",
+          "$shadowEnable":1,
+          "$posX":-0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_L_a6s_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Facelift A6 S-Line Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_a6s_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_a6s_fl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_a6s_fl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_a6s_fl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+	    ["audi6_fog_L_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3l", "$nodeX":"fb3ll", "$nodeY":"fb2l",
+          "$deformGroup":"foglightglass_L_break",
+          "$shadowEnable":1,
+          "$posX":0.679, "$posY":-2.146, "$posZ":0.388,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_R_a6s_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Facelift A6 S-Line Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_a6s_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_a6s_fl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_a6s_fl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_a6s_fl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+        ["audi6_fog_R_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3r", "$nodeX":"fb3rr", "$nodeY":"fb2r",
+          "$deformGroup":"foglightglass_R_break",
+          "$shadowEnable":1,
+          "$posX":-0.679, "$posY":-2.146, "$posZ":0.388,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_L_s6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift S6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_s6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_s6_pfl", ["audi6_bumper_F"]],
+
+         ["audi6_foglight_frame_L_s6_pfl", ["audi6_bumper_F"]],
+		 
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_s6_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_s6_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+},
+"audi6_fogvent_R_s6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift S6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_s6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_s6_pfl", ["audi6_bumper_F"]],
+
+         ["audi6_foglight_frame_R_s6_pfl", ["audi6_bumper_F"]],
+		 
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_s6_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_s6_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+},
+"audi6_fogvent_L_a6s_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift A6 S-Line Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_a6s_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_a6s_pfl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_a6s_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_a6s_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+	    ["audi6_fog_L_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3l", "$nodeX":"fb3ll", "$nodeY":"fb2l",
+          "$deformGroup":"foglightglass_L_break",
+          "$shadowEnable":1,
+          "$posX":0.661, "$posY":-2.136, "$posZ":0.389,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_R_a6s_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift A6 S-Line Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_a6s_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_a6s_pfl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_a6s_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_a6s_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+        ["audi6_fog_R_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3r", "$nodeX":"fb3rr", "$nodeY":"fb2r",
+          "$deformGroup":"foglightglass_R_break",
+          "$shadowEnable":1,
+          "$posX":-0.661, "$posY":-2.136, "$posZ":0.389,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_L_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift A6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_a6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_a6_pfl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_a6_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_a6_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+	    ["audi6_fog_L_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3l", "$nodeX":"fb3ll", "$nodeY":"fb2l",
+          "$deformGroup":"foglightglass_L_break",
+          "$shadowEnable":1,
+          "$posX":0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_R_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift A6 Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_a6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_a6_pfl", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_a6_pfl", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_a6_pfl", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+        ["audi6_fog_R_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3r", "$nodeX":"fb3rr", "$nodeY":"fb2r",
+          "$deformGroup":"foglightglass_R_break",
+          "$shadowEnable":1,
+          "$posX":-0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_L_a6_allroad": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift A6 Allroad Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_L_a6_allroad",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_L_a6_allroad", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_L_a6_allroad", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_L_a6_allroad", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+	    ["audi6_fog_L_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3l", "$nodeX":"fb3ll", "$nodeY":"fb2l",
+          "$deformGroup":"foglightglass_L_break",
+          "$shadowEnable":1,
+          "$posX":0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+"audi6_fogvent_R_a6_allroad": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift A6 Allroad Fog Vent",
+        "value":10,
+    },
+    "slotType" : "audi6_fogvent_R_a6_allroad",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_fogvent_R_a6_allroad", ["audi6_bumper_F"]],
+
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_foglightglass_R_a6_allroad", ["audi6_bumper_F"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":"foglightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_foglight_R_a6_allroad", ["audi6_bumper_F"]],
+		 {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                     "allowTypes",                 "denyTypes", "default",       "description"],
+        ["audi6_fog_R_bulb", ["foglightBulb_halogen_55W"], [], "foglightBulb_halogen_55W", "Fog Light R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "foglight_s",
+          "$nodeRef":"fb3r", "$nodeX":"fb3rr", "$nodeY":"fb2r",
+          "$deformGroup":"foglightglass_R_break",
+          "$shadowEnable":1,
+          "$posX":-0.668, "$posY":-2.116, "$posZ":0.391,
+          "$rotX":-5, "$rotY":0, "$rotZ":180
+        }
+        }],
+    ],
+},
+}

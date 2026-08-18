@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.7L TDI V6 [190] (Multitronic) A6 High-Spec (EU) [Avant] 2009",
+      "Description":"2009 Avant 2.7L TDI V6 (190 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, audi advanced parking system, lane-assist package, start-stop system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, auto-dimming rear view mirror, lighting package, electrically adjustable seats, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, DSP audio system, black and amaretto brown interior, mid-brown walnut inlay finish, amaretto brown milano leather seats. Exterior painted in Garnet Red",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":190,
+      "Torque":400,
+      "Top Speed":62.11699164345404,
+      "Weight":1735,
+      "Value":42270,
+      "0-100 km/h":8.2,
+      "0-60 mph":7.8,
+	  "defaultPaintName1":"Garnet Red [A6]",
+}

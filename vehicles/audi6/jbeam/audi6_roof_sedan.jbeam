@@ -1,0 +1,102 @@
+{
+"audi6_roof_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Plain Roof",
+        "value":400,
+    },
+    "slotType" : "audi6_roof_sedan",
+    "slots2": [
+        ["name",                       "allowTypes",                   "denyTypes", "default",                 "description"],
+        ["audi6_antennafin_sedan",     ["audi6_antennafin_sedan"],     [],          "audi6_antennafin_sedan",  "Antenna Fin"],
+        ["audi6_roof_accessory_sedan", ["audi6_roof_accessory_sedan"], [],          "",                        "Roof Accessory"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_roof_plain_sedan", ["audi6_body"]],
+    ],
+},
+"audi6_roof_sun_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Electric Slide-And-Tilt Glass Sunroof",
+        "value":400,
+    },
+    "slotType" : "audi6_roof_sedan",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+		["$sunroofMesh", "range", "",     "Sunroof Mesh",  1,         0,     1,     "",      ""],
+   ],
+	"components": {
+        "electrics": {
+			"sunroofMesh": 1,
+        },
+    },
+    "slots2": [
+        ["name",                   "allowTypes",               "denyTypes", "default",                "description"],
+        ["audi6_glass_sunroof",    ["audi6_glass_sunroof"],    [],          "audi6_glass_sunroof",    "Sunroof Glass"],
+        ["audi6_sunroof_shade",    ["audi6_sunroof_shade"],    [],          "audi6_sunroof_shade",    "Sunroof Shade"],
+        ["audi6_antennafin_sedan", ["audi6_antennafin_sedan"], [],          "audi6_antennafin_sedan", "Antenna Fin"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_roof_sun_sedan", ["audi6_body"]],
+         ["audi6_roof_sun_frame", ["audi6_body"]],
+    ],
+    "nodes": [
+         //redefine roof node
+         ["id", "posX", "posY", "posZ"],
+         {"group":"audi6_body"},
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeWeight":2.0},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         ["rf2r", -0.56, 0.375, 1.46, {"group":["audi6_body","audi6_roof"]}],
+         ["rf2", 0, 0.34, 1.49, {"nodeWeight":1.5,"group":["audi6_body","audi6_roof"]}],
+         ["rf2l", 0.56, 0.375, 1.46, {"group":["audi6_body","audi6_roof"]}],
+    ],
+},
+"audi6_roof_sun_sedan_solar": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Electric Slide-And-Tilt Solar-Panel Sunroof",
+        "value":400,
+    },
+    "slotType" : "audi6_roof_sedan",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+		["$sunroofMesh", "range", "",     "Sunroof Mesh",  1,         0,     1,     "",      ""],
+   ],
+	"components": {
+        "electrics": {
+			"sunroofMesh": 1,
+			"solarMesh": 1,
+        },
+    },
+    "slots2": [
+        ["name",                   "allowTypes",               "denyTypes", "default",                "description"],
+        ["audi6_glass_sunroof",    ["audi6_glass_sunroof"],    [],          "audi6_glass_sunroof",    "Sunroof Glass"],
+        ["audi6_sunroof_shade",    ["audi6_sunroof_shade"],    [],          "audi6_sunroof_shade",    "Sunroof Shade"],
+        ["audi6_antennafin_sedan", ["audi6_antennafin_sedan"], [],          "audi6_antennafin_sedan", "Antenna Fin"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_roof_sun_sedan", ["audi6_body"]],
+         ["audi6_roof_sun_frame", ["audi6_body"]],
+    ],
+    "nodes": [
+         //redefine roof node
+         ["id", "posX", "posY", "posZ"],
+         {"group":"audi6_body"},
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeWeight":2.0},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         ["rf2r", -0.56, 0.375, 1.46, {"group":["audi6_body","audi6_roof"]}],
+         ["rf2", 0, 0.34, 1.49, {"nodeWeight":1.5,"group":["audi6_body","audi6_roof"]}],
+         ["rf2l", 0.56, 0.375, 1.46, {"group":["audi6_body","audi6_roof"]}],
+    ],
+},
+}

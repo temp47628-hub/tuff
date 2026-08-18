@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TFSI V6 Quattro [290] (Tiptronic) S-Line (EU) [Limousine] 2009",
+      "Description": "2009 Limousine 3.0L TFSI V6 (290 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 40/60 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, lane-assist package, start-stop system, key-less system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with HDD based satellite navigation and a 6-disc CD changer, electrically adjustable seats with memory, lighting package, luggage compartment package, rear electric window blind, climate control, DSP audio system, black interior, fine-grain grey birch inlay finish, black milano leather seats. Exterior painted in Ice Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Petrol",
+      "Induction Type": "Supercharged",
+      "Propulsion": "ICE",
+      "Power": 290,
+      "Torque": 420,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1725,
+      "Value": 72010,
+      "0-100 km/h": 5.9,
+      "0-60 mph": 5.6,
+      "defaultPaintName1": "Ice Silver"
+}

@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [240] (Tiptronic) A6 High-Spec (EU) [Limousine] 2009",
+      "Description": "2009 Limousine 3.0L TDI V6 (240 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 40/60 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, audi advanced parking system, side-assist package, lane-assist package, high-beam assistant, start-stop system, key-less system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, lighting package, storage package, electrically adjustable seats with memory, luggage compartment package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, black and amaretto brown interior, mid-brown walnut inlay finish, amaretto brown valcona leather seats. Exterior painted in Ice Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbocharged",
+      "Propulsion": "ICE",
+      "Power": 240,
+      "Torque": 500,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1785,
+      "Value": 68460,
+      "0-100 km/h": 6.8,
+      "0-60 mph": 6.5,
+      "defaultPaintName1": "Ice Silver"
+}

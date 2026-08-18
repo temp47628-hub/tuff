@@ -1,0 +1,74 @@
+{
+  "audi6_tire_255_40_michelin4b": {
+    "name": "audi6_tire_255_40_michelin4b",
+    "mapTo": "audi6_tire_255_40_michelin4b",
+    "class": "Material",
+    "persistentId": "89e09c65-f7ce-4d39-9b8d-77948e108920",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/common/audi6_tires/txt/audi6_tire_255_40_michelin4_b.color.png",
+        "normalDetailMapUseUV": 1,
+        "normalMap": "/vehicles/common/audi6_tires/txt/audi6_tire_255_40_michelin4_nm.normal.png",
+        "normalMapStrength": -2,
+        "roughnessFactor": 0.499000013
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_tire_265_35_michelin4": {
+    "name": "audi6_tire_265_35_michelin4",
+    "mapTo": "audi6_tire_265_35_michelin4",
+    "class": "Material",
+    "persistentId": "89e09c65-f7ce-4d39-9b8d-77948e108920",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/common/audi6_tires/txt/audi6_tire_265_35_michelin4_b.color.png",
+        "normalDetailMapUseUV": 1,
+        "normalMap": "/vehicles/common/audi6_tires/txt/audi6_tire_265_35_michelin4_nm.normal.png",
+        "normalMapStrength": -2,
+        "roughnessFactor": 0.499000013
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "normalDetailMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

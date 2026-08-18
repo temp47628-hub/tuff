@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [233] (M) S-Line (EU) [Avant] 2006",
+      "Description": "2006 Avant 3.0L TDI (233 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, start-stop system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather. Exterior painted in Avus Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 233,
+      "Torque": 500,
+      "Top Speed": 68.88888888888889,
+      "Weight": 1810,
+      "Value": 65220,
+      "0-100 km/h": 6.8,
+      "0-60 mph": 6.4,
+      "defaultPaintName1": "Avus Silver [S-Line]"
+}

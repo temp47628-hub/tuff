@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TFSI V6 Quattro [290] (Tiptronic) A6 High-Spec (EU) [Limousine] 2009",
+      "Description": "2009 Limousine 3.0L TFSI V6 (290 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 40/60 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, audi advanced parking system, side-assist package, lane-assist package, high-beam assistant, start-stop system, key-less system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 19-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, lighting package, storage package, electrically adjustable seats with memory, luggage compartment package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, black and linen beige interior, fine-grain beige birch inlay finish, linen beige valcona leather seats. Exterior painted in Ibis White",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Petrol",
+      "Induction Type": "Supercharged",
+      "Propulsion": "ICE",
+      "Power": 290,
+      "Torque": 420,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1725,
+      "Value": 75010,
+      "0-100 km/h": 5.9,
+      "0-60 mph": 5.6,
+      "defaultPaintName1": "Ibis White"
+}

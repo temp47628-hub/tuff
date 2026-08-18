@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.8L FSI V6 [190] (Multitronic) S-Line High-Spec (EU) [Avant] 2009",
+      "Description": "2009 Avant 2.8L FSI V6 (190 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, audi advanced parking system, lane-assist package, key-less system, start-stop system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, lighting package, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, BOSE surround sound audio system, black interior, piano black inlay finish, black perforated alcantara and leather seats with silver stitching. Exterior painted in Ice Silver",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Petrol",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 190,
+      "Torque": 280,
+      "Top Speed": 63.077344,
+      "Weight": 1715,
+      "Value": 57270,
+      "0-100 km/h": 8.6,
+      "0-60 mph": 8.3,
+      "defaultPaintName1": "Ice Silver"
+}

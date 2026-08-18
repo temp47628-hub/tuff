@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (M) A6 High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.7L TDI V6 (180 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, rear electric window blind, climate control, DSP audio system, tan and cardamom beige interior, fine-grain beige birch inlay finish, cardamom beige mondial cloth seats. Exterior painted in Akoya Silver",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 63.926719999999996,
+      "Weight": 1640,
+      "Value": 42010,
+      "0-100 km/h": 8.1,
+      "0-60 mph": 7.7,
+      "defaultPaintName1": "Akoya Silver [A6]"
+}

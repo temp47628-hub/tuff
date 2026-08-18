@@ -1,0 +1,444 @@
+{
+"audi6_airfilter": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Air Filter",
+        "value":350,
+    },
+    "slotType" : "audi6_airfilter",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_airfilter", ["audi6_airfilter"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_airfilter"},
+         ["airf1r",-0.2439, -2.0369, 0.796],
+         ["airf3r",-0.37, -2.0957, 0.796],
+         ["airf2r",-0.4391, -1.6818, 0.796],
+         ["airf4r",-0.5652, -1.7406, 0.796],
+         //{"selfCollision":false}
+         ["airf5r",-0.3686, -1.9604, 0.7076],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          //r
+          {"deformLimitExpansion":1.1},
+          ["airf1r","airf2r"],
+          ["airf3r","airf4r"],
+          ["airf1r","airf3r"],
+          ["airf2r","airf4r"],
+
+          ["airf1r","airf4r"],
+          ["airf2r","airf3r"],
+
+          ["airf1r","airf5r"],
+          ["airf2r","airf5r"],
+          ["airf3r","airf5r"],
+          ["airf4r","airf5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"airfilter"},
+          ["airf5r","f14rr"],
+          ["airf5r","f14r"],
+          ["airf2r","f14rr"],
+          ["airf2r","f14r"],
+          ["airf4r","f14rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"airfilter"},
+          ["airf1r","f14r"],
+          ["airf1r","f14rr"],
+          ["airf3r","f14r"],
+          ["airf3r","f13rr"],
+          //["airf1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["airf2r","f6rr"],
+          ["airf4r","f6rr"],
+          ["airf3r","f6r"],
+          {"breakGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_airfilter"},
+            {"dragCoef":8.75},
+            ["airf3r","airf1r","airf4r"],
+            ["airf4r","airf1r","airf2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["airf4r","airf2r","airf5r"],
+            ["airf1r","airf5r","airf2r"],
+            ["airf3r","airf5r","airf1r"],
+            ["airf4r","airf5r","airf3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_airfilter_v10": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Air Filter",
+        "value":350,
+    },
+    "slotType" : "audi6_airfilter_v10",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_airfilter_v10", ["audi6_airfilter"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_airfilter"},
+         ["airf1r",-0.2439, -2.0369, 0.796],
+         ["airf3r",-0.37, -2.0957, 0.796],
+         ["airf2r",-0.4391, -1.6818, 0.796],
+         ["airf4r",-0.5652, -1.7406, 0.796],
+         //{"selfCollision":false}
+         ["airf5r",-0.3686, -1.9604, 0.7076],
+
+         //left
+         ["airf1l", 0.2439, -2.0369, 0.796],
+         ["airf3l", 0.37, -2.0957, 0.796],
+         ["airf2l", 0.4391, -1.6818, 0.796],
+         ["airf4l", 0.5652, -1.7406, 0.796],
+         //{"selfCollision":false}
+         ["airf5l", 0.3686, -1.9604, 0.7076],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          //r
+          {"deformLimitExpansion":1.1},
+          ["airf1r","airf2r"],
+          ["airf3r","airf4r"],
+          ["airf1r","airf3r"],
+          ["airf2r","airf4r"],
+          ["airf1r","airf4r"],
+          ["airf2r","airf3r"],
+          ["airf1r","airf5r"],
+          ["airf2r","airf5r"],
+          ["airf3r","airf5r"],
+          ["airf4r","airf5r"],
+
+          //l
+          ["airf1l","airf2l"],
+          ["airf3l","airf4l"],
+          ["airf1l","airf3l"],
+          ["airf2l","airf4l"],
+          ["airf1l","airf4l"],
+          ["airf2l","airf3l"],
+          ["airf1l","airf5l"],
+          ["airf2l","airf5l"],
+          ["airf3l","airf5l"],
+          ["airf4l","airf5l"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"airfilter_R"},
+          ["airf5r","f14rr"],
+          ["airf5r","f14r"],
+          ["airf2r","f14rr"],
+          ["airf2r","f14r"],
+          ["airf4r","f14rr"],
+          {"beamDeform":3000,"beamStrength":24000},
+          ["airf1r","f14r"],
+          ["airf1r","f14rr"],
+          ["airf3r","f14r"],
+          ["airf3r","f13rr"],
+          //["airf1r","f13rr"],
+          {"beamDeform":1500,"beamStrength":46000},
+          ["airf2r","f6rr"],
+          ["airf4r","f6rr"],
+          ["airf3r","f6r"],
+          {"breakGroup":""},
+
+          //l
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          {"deformLimitExpansion":""},
+          {"breakGroup":"airfilter_L"},
+          ["airf5l","f14ll"],
+          ["airf5l","f14l"],
+          ["airf2l","f14ll"],
+          ["airf2l","f14l"],
+          ["airf4l","f14ll"],
+          {"beamDeform":3000,"beamStrength":24000},
+          ["airf1l","f14l"],
+          ["airf1l","f14ll"],
+          ["airf3l","f14l"],
+          ["airf3l","f13ll"],
+          //["airf1l","f13ll"],
+          {"beamDeform":1500,"beamStrength":46000},
+          ["airf2l","f6ll"],
+          ["airf4l","f6ll"],
+          ["airf3l","f6l"],
+          {"breakGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_airfilter"},
+            {"dragCoef":8.75},
+            ["airf3r","airf1r","airf4r"],
+            ["airf4r","airf1r","airf2r"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["airf4r","airf2r","airf5r"],
+            ["airf1r","airf5r","airf2r"],
+            ["airf3r","airf5r","airf1r"],
+            ["airf4r","airf5r","airf3r"],
+            {"triangleType":"NORMALTYPE"},
+
+            //left headlight
+            {"dragCoef":8.75},
+            ["airf1l","airf3l","airf4l"],
+            ["airf1l","airf4l","airf2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["airf2l","airf4l","airf5l"],
+            ["airf5l","airf1l","airf2l"],
+            ["airf5l","airf3l","airf1l"],
+            ["airf5l","airf4l","airf3l"],
+            {"triangleType":"NORMALTYPE"},
+
+            {"group":""},
+    ],
+},
+"audi6_coolant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Coolant",
+        "value":350,
+    },
+    "slotType" : "audi6_coolant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_coolant", ["audi6_coolant"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_coolant"},
+         ["clnt1l",0.2519, -1.4942, 0.846],
+         ["clnt3l",0.2519, -1.6333, 0.846],
+         ["clnt2l",0.5072, -1.4942, 0.846],
+         ["clnt4l",0.5072, -1.6333, 0.846],
+         //{"selfCollision":false}
+         ["clnt5l",0.3871, -1.5509, 0.7676],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          //r
+          {"deformLimitExpansion":1.1},
+          ["clnt1l","clnt2l"],
+          ["clnt3l","clnt4l"],
+          ["clnt1l","clnt3l"],
+          ["clnt2l","clnt4l"],
+
+          ["clnt1l","clnt4l"],
+          ["clnt2l","clnt3l"],
+
+          ["clnt1l","clnt5l"],
+          ["clnt2l","clnt5l"],
+          ["clnt3l","clnt5l"],
+          ["clnt4l","clnt5l"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"coolant"},
+          ["clnt5l","f14ll"],
+          ["clnt5l","f14l"],
+          ["clnt2l","f14ll"],
+          ["clnt2l","f14l"],
+          ["clnt4l","f14ll"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"coolant"},
+          ["clnt1l","f14l"],
+          ["clnt1l","f14ll"],
+          ["clnt3l","f14l"],
+          ["clnt3l","f13ll"],
+          //["clnt1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["clnt2l","f6ll"],
+          ["clnt4l","f6ll"],
+          ["clnt3l","f6l"],
+          {"breakGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_coolant"},
+            {"dragCoef":8.75},
+            ["clnt1l","clnt3l","clnt4l"],
+            ["clnt1l","clnt4l","clnt2l"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["clnt2l","clnt4l","clnt5l"],
+            ["clnt5l","clnt1l","clnt2l"],
+            ["clnt5l","clnt3l","clnt1l"],
+            ["clnt5l","clnt4l","clnt3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_coolant_v10": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Coolant",
+        "value":350,
+    },
+    "slotType" : "audi6_coolant_v10",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_coolant_v10", ["audi6_coolant"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_coolant"},
+         ["clnt1r",-0.3319, -1.4742, 0.846],
+         ["clnt3r",-0.3319, -1.6133, 0.846],
+         ["clnt2r",-0.5572, -1.4742, 0.846],
+         ["clnt4r",-0.5572, -1.6133, 0.846],
+         //{"selfCollision":false}
+         ["clnt5r",-0.3871, -1.5309, 0.7676],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          //r
+          {"deformLimitExpansion":1.1},
+          ["clnt1r","clnt2r"],
+          ["clnt3r","clnt4r"],
+          ["clnt1r","clnt3r"],
+          ["clnt2r","clnt4r"],
+
+          ["clnt1r","clnt4r"],
+          ["clnt2r","clnt3r"],
+
+          ["clnt1r","clnt5r"],
+          ["clnt2r","clnt5r"],
+          ["clnt3r","clnt5r"],
+          ["clnt4r","clnt5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"coolant"},
+          ["clnt5r","f14rr"],
+          ["clnt5r","f14r"],
+          ["clnt2r","f14rr"],
+          ["clnt2r","f14r"],
+          ["clnt4r","f14rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"coolant"},
+          ["clnt1r","f14r"],
+          ["clnt1r","f14rr"],
+          ["clnt3r","f14r"],
+          ["clnt3r","f13rr"],
+          //["clnt1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["clnt2r","f6rr"],
+          ["clnt4r","f6rr"],
+          ["clnt3r","f6r"],
+          {"breakGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_coolant"},
+            {"dragCoef":8.75},
+            ["clnt3r","clnt1r","clnt4r"],
+            ["clnt4r","clnt1r","clnt2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["clnt4r","clnt2r","clnt5r"],
+            ["clnt1r","clnt5r","clnt2r"],
+            ["clnt3r","clnt5r","clnt1r"],
+            ["clnt4r","clnt5r","clnt3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+}

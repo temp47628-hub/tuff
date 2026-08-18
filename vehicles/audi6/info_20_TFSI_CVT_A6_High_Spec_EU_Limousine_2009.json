@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (Multitronic) A6 High-Spec (EU) [Limousine] 2009",
+      "Description":"2009 Limousine 2.0L TFSI (170 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, start-stop system, power folding mirrors, 16-inch alloys, basic infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, luggage compartment package, climate control, DSP audio system, taupe and cardamom beige interior, mid-brown walnut inlay finish, cardamom beige arkana cloth seats. Exterior painted in Ibis White",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":62.39554317548747,
+      "Weight":1550,
+      "Value":29260,
+      "0-100 km/h":8.5,
+      "0-60 mph":8.1,
+	  "defaultPaintName1":"Ibis White",
+}

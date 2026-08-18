@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 (Multitronic) A6 (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.4L V6 (177 HP) with 7-Speed Multitronic Transmission. This model is equipped with basic halogen lights, acoustic rear parking system, power folding mirrors, 16-inch alloys, basic infotainment system with a 6-disc CD changer, auto-dimming rear view mirror, base climate control, DSP audio system, black interior, grey inlay finish, black meridian cloth seats. Exterior painted in Light Silver",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":62.95264623955432,
+      "Weight":1555,
+      "Value":33060,
+      "0-100 km/h":9.2,
+      "0-60 mph":8.7,
+      "defaultPaintName1": "Light Silver"
+}

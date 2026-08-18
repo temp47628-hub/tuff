@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 (M) S-Line (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.4L V6 (177 HP) with 6-Speed Manual Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, power folding mirrors, 18-inch alloys, basic infotainment system with a 6-disc CD changer, auto-dimming rear view mirror, base climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":64.34540389972145,
+      "Weight":1525,
+      "Value":33510,
+      "0-100 km/h":8.9,
+      "0-60 mph":8.5,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

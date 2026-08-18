@@ -1,0 +1,323 @@
+{
+"audi6_doorhandle": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Door Handles",
+        "value":340,
+    },
+    "slotType" : "audi6_doorhandle",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_doorhandle_trim","audi6_doorhandle_trim", "Door Handle Trims"],
+    ],
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 // front door handles - always present
+		 ["audi6_doorhandle_FL", ["audi6_door_FL"]],
+		 ["audi6_doorhandle_FR", ["audi6_door_FR"]],
+		 // rear door handles - standard (no keyless)
+		 {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 1"},
+		 ["audi6_doorhandle_RL_a6", ["audi6_door_RL"]],
+		 {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 1"},
+		 ["audi6_doorhandle_RR_a6", ["audi6_door_RR"]],
+		 {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 2"},
+		 ["audi6_doorhandle_RL_rs6", ["audi6_door_RL"]],
+		 {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 2"},
+		 ["audi6_doorhandle_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+		 // front door handles - keyless
+		 {"disable":"$=($components.electrics.startStopMesh or 0) == 0"},
+		 ["audi6_doorhandle_keyless_FL", ["audi6_door_FL"]],
+		 ["audi6_doorhandle_keyless_FR", ["audi6_door_FR"]],
+		 {"disable":""},
+		 // rear door handles - keyless a6
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RLDoorMesh or 0) ~= 1)"},
+		 ["audi6_doorhandle_keyless_RL_a6", ["audi6_door_RL"]],
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RRDoorMesh or 0) ~= 1)"},
+		 ["audi6_doorhandle_keyless_RR_a6", ["audi6_door_RR"]],
+		 // rear door handles - keyless rs6
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RLDoorMesh or 0) ~= 2)"},
+		 ["audi6_doorhandle_keyless_RL_rs6", ["audi6_door_RL"]],
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RRDoorMesh or 0) ~= 2)"},
+		 ["audi6_doorhandle_keyless_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+	],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["door_FL", "d9l","d8l","d6l", "box", {"x":0.2000, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0769, "y":0.1363, "z":-0.0087}],
+        ["door_FR", "d9r","d8r","d6r", "box", {"x":0.2000, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":-1}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0769, "y":0.1363, "z":0.0087}],
+		
+        ["audi6_lock_FL", "d9l","d8l","d6l", "sphere", 0.01, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0868, "y":0.1209, "z":-0.0091}],
+
+        {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 2"},//rs6
+        ["door_RL", "d21l","d20l","d18l", "box", {"x":0.1400, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":9, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":-0.0017}],
+		{"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 1"},//a6
+        ["door_RL", "d21l","d20l","d18l", "box", {"x":0.1400, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":3, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":-0.0017}],
+
+        {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 2"},//rs6
+        ["door_RR", "d21r","d20r","d18r", "box", {"x":0.1400, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":-9, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":0.0017}],
+		{"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 1"},//a6
+        ["door_RR", "d21r","d20r","d18r", "box", {"x":0.1400, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":-3, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":0.0017}],
+        {"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+
+        ["audi6_door_FL"],
+        ["audi6_door_FR"],
+        ["audi6_door_RL"],
+        ["audi6_door_RR"],
+
+        ["audi6_lock_FL"],
+        ["audi6_lock_FR"],
+        ["audi6_lock_RL"],
+        ["audi6_lock_RR"],
+		
+        ["audi6_toggleLock"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["door_FL", "action0", "audi6_door_FL"],
+        ["door_FR", "action0", "audi6_door_FR"],
+        ["door_RL", "action0", "audi6_door_RL"],
+        ["door_RR", "action0", "audi6_door_RR"],
+		
+        ["audi6_lock_FL", "action0", "audi6_toggleLock"],
+    ],
+},
+"audi6_doorhandle_rhd": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[RHD] Door Handles",
+        "value":340,
+    },
+    "slotType" : "audi6_doorhandle",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_doorhandle_trim","audi6_doorhandle_trim", "Door Handle Trims"],
+    ],
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 // front door handles - always present
+		 ["audi6_doorhandle_FL_rhd", ["audi6_door_FL"]],
+		 ["audi6_doorhandle_FR_rhd", ["audi6_door_FR"]],
+		 // rear door handles - standard (no keyless)
+		 {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 1"},
+		 ["audi6_doorhandle_RL_a6", ["audi6_door_RL"]],
+		 {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 1"},
+		 ["audi6_doorhandle_RR_a6", ["audi6_door_RR"]],
+		 {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 2"},
+		 ["audi6_doorhandle_RL_rs6", ["audi6_door_RL"]],
+		 {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 2"},
+		 ["audi6_doorhandle_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+		 // front door handles - keyless
+		 {"disable":"$=($components.electrics.startStopMesh or 0) == 0"},
+		 ["audi6_doorhandle_keyless_FL", ["audi6_door_FL"]],
+		 ["audi6_doorhandle_keyless_FR", ["audi6_door_FR"]],
+		 {"disable":""},
+		 // rear door handles - keyless a6
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RLDoorMesh or 0) ~= 1)"},
+		 ["audi6_doorhandle_keyless_RL_a6", ["audi6_door_RL"]],
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RRDoorMesh or 0) ~= 1)"},
+		 ["audi6_doorhandle_keyless_RR_a6", ["audi6_door_RR"]],
+		 // rear door handles - keyless rs6
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RLDoorMesh or 0) ~= 2)"},
+		 ["audi6_doorhandle_keyless_RL_rs6", ["audi6_door_RL"]],
+		 {"disable":"$=(($components.electrics.startStopMesh or 0) == 0) or (($components.electrics.RRDoorMesh or 0) ~= 2)"},
+		 ["audi6_doorhandle_keyless_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+	],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["door_FL", "d9l","d8l","d6l", "box", {"x":0.2000, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0769, "y":0.1363, "z":-0.0087}],
+        ["door_FR", "d9r","d8r","d6r", "box", {"x":0.2000, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":-1}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0769, "y":0.1363, "z":0.0087}],
+		
+        ["audi6_lock_FR", "d9r","d8r","d6r", "sphere", 0.01, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0868, "y":0.1209, "z":0.0091}],
+
+        {"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 2"},//rs6
+        ["door_RL", "d21l","d20l","d18l", "box", {"x":0.1400, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":9, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":-0.0017}],
+		{"disable":"$=($components.electrics.RLDoorMesh or 0) ~= 1"},//a6
+        ["door_RL", "d21l","d20l","d18l", "box", {"x":0.1400, "y":0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":3, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":-0.0017}],
+
+        {"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 2"},//rs6
+        ["door_RR", "d21r","d20r","d18r", "box", {"x":0.1400, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":-9, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":0.0017}],
+		{"disable":"$=($components.electrics.RRDoorMesh or 0) ~= 1"},//a6
+        ["door_RR", "d21r","d20r","d18r", "box", {"x":0.1400, "y":-0.0200, "z":0.0645}, {"x":0, "y":0, "z":0}, {"x":-3, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0604, "y":0.1425, "z":0.0017}],
+        {"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+
+        ["audi6_door_FL"],
+        ["audi6_door_FR"],
+        ["audi6_door_RL"],
+        ["audi6_door_RR"],
+
+        ["audi6_lock_FL"],
+        ["audi6_lock_FR"],
+        ["audi6_lock_RL"],
+        ["audi6_lock_RR"],
+		
+        ["audi6_toggleLock"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["door_FL", "action0", "audi6_door_FL"],
+        ["door_FR", "action0", "audi6_door_FR"],
+        ["door_RL", "action0", "audi6_door_RL"],
+        ["door_RR", "action0", "audi6_door_RR"],
+		
+        ["audi6_lock_FR", "action0", "audi6_toggleLock"],
+    ],
+},
+"audi6_doorhandle_int_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Door Panel RS6 Handles",
+        "value":90,
+    },
+    "slotType" : "audi6_doorhandle_int",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"disable":"$=$components.electrics.FLDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_FL_rs6", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.FRDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_FR_rs6", ["audi6_door_FR"]],
+		 {"disable":"$=$components.electrics.RLDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_RL_rs6", ["audi6_door_RL"]],
+		 {"disable":"$=$components.electrics.RRDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		{"disable":"$=$components.electrics.FLDoorPanelMesh ~= 1"},
+        ["door_FL_int", "d7l","d8l","d4l", "box", {"x":0.15, "y":-0.05, "z":0.06}, {"x":12, "y":0, "z":3}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3651, "y":0.0175, "z":-0.1101}],
+		{"disable":"$=$components.electrics.FRDoorPanelMesh ~= 1"},
+        ["door_FR_int", "d7r","d8r","d4r", "box", {"x":0.15, "y":0.05, "z":0.06}, {"x":-12, "y":0, "z":-3}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3651, "y":0.0175, "z":0.1101}],
+		{"disable":"$=$components.electrics.RLDoorPanelMesh ~= 1"},
+        ["door_RL_int", "d21l","d20l","d18l", "box", {"x":0.15, "y":-0.05, "z":0.06}, {"x":-12, "y":0, "z":-0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6000, "y":0.0900, "z":0.1488}],
+		{"disable":"$=$components.electrics.RRDoorPanelMesh ~= 1"},
+        ["door_RR_int", "d21r","d20r","d18r", "box", {"x":0.15, "y":0.05, "z":0.06}, {"x":12, "y":0, "z":-0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6000, "y":0.0900, "z":-0.1488}],
+		{"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["door_FL_int", "action0", "door_FL"],
+        ["door_FR_int", "action0", "door_FR"],
+        ["door_RL_int", "action0", "door_RL"],
+        ["door_RR_int", "action0", "door_RR"],
+    ],
+},
+"audi6_doorhandle_int_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Door Panel A6 Handles",
+        "value":90,
+    },
+    "slotType" : "audi6_doorhandle_int",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"disable":"$=$components.electrics.FLDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_FL_a6", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.FRDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_FR_a6", ["audi6_door_FR"]],
+		 {"disable":"$=$components.electrics.RLDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_RL_a6", ["audi6_door_RL"]],
+		 {"disable":"$=$components.electrics.RRDoorPanelMesh ~= 1"},
+         ["audi6_doorhandle_int_RR_a6", ["audi6_door_RR"]],
+		 {"disable":""},
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		{"disable":"$=$components.electrics.FLDoorPanelMesh ~= 1"},
+        ["door_FL_int", "d7l","d8l","d4l", "box", {"x":0.15, "y":-0.05, "z":0.06}, {"x":12, "y":0, "z":3}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3651, "y":0.0175, "z":-0.1101}],
+		{"disable":"$=$components.electrics.FRDoorPanelMesh ~= 1"},
+        ["door_FR_int", "d7r","d8r","d4r", "box", {"x":0.15, "y":0.05, "z":0.06}, {"x":-12, "y":0, "z":-3}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3651, "y":0.0175, "z":0.1101}],
+		{"disable":"$=$components.electrics.RLDoorPanelMesh ~= 1"},
+        ["door_RL_int", "d21l","d20l","d18l", "box", {"x":0.15, "y":-0.05, "z":0.06}, {"x":-12, "y":0, "z":-0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6000, "y":0.0900, "z":0.1488}],
+		{"disable":"$=$components.electrics.RRDoorPanelMesh ~= 1"},
+        ["door_RR_int", "d21r","d20r","d18r", "box", {"x":0.15, "y":0.05, "z":0.06}, {"x":12, "y":0, "z":-0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6000, "y":0.0900, "z":-0.1488}],
+		{"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["door_FL_int", "action0", "door_FL"],
+        ["door_FR_int", "action0", "door_FR"],
+        ["door_RL_int", "action0", "door_RL"],
+        ["door_RR_int", "action0", "door_RR"],
+    ],
+},
+"audi6_doorhandle_trim": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Door Handle Trims",
+        "value":340,
+    },
+    "slotType" : "audi6_doorhandle_trim",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+
+         {"disable":"$=$components.electrics.paintedExteriorDoorHandles ~= 1"},
+         ["audi6_doorhandle_trim_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=$components.electrics.paintedExteriorDoorHandles == 1"},
+         ["audi6_doorhandle_trim_FL", ["audi6_door_FL"]],
+
+         {"disable":"$=$components.electrics.paintedExteriorDoorHandles ~= 1"},
+         ["audi6_doorhandle_trim_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=$components.electrics.paintedExteriorDoorHandles == 1"},
+         ["audi6_doorhandle_trim_FR", ["audi6_door_FR"]],
+
+         {"disable":"$=($components.electrics.RLDoorMesh ~= 1 or $components.electrics.paintedExteriorDoorHandles ~= 1)"},
+         ["audi6_doorhandle_trim_RL_a6", ["audi6_door_RL"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=($components.electrics.RLDoorMesh ~= 1 or $components.electrics.paintedExteriorDoorHandles == 1)"},
+         ["audi6_doorhandle_trim_RL_a6", ["audi6_door_RL"]],
+
+         {"disable":"$=($components.electrics.RRDoorMesh ~= 1 or $components.electrics.paintedExteriorDoorHandles ~= 1)"},
+         ["audi6_doorhandle_trim_RR_a6", ["audi6_door_RR"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=($components.electrics.RRDoorMesh ~= 1 or $components.electrics.paintedExteriorDoorHandles == 1)"},
+         ["audi6_doorhandle_trim_RR_a6", ["audi6_door_RR"]],
+
+         {"disable":"$=($components.electrics.RLDoorMesh ~= 2 or $components.electrics.paintedExteriorDoorHandles ~= 1)"},
+         ["audi6_doorhandle_trim_RL_rs6", ["audi6_door_RL"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=($components.electrics.RLDoorMesh ~= 2 or $components.electrics.paintedExteriorDoorHandles == 1)"},
+         ["audi6_doorhandle_trim_RL_rs6", ["audi6_door_RL"]],
+
+         {"disable":"$=($components.electrics.RRDoorMesh ~= 2 or $components.electrics.paintedExteriorDoorHandles ~= 1)"},
+         ["audi6_doorhandle_trim_RR_rs6", ["audi6_door_RR"], [],{"materialOverride":[["audi6_chrome","audi6_paint"]]}],
+         {"disable":"$=($components.electrics.RRDoorMesh ~= 2 or $components.electrics.paintedExteriorDoorHandles == 1)"},
+         ["audi6_doorhandle_trim_RR_rs6", ["audi6_door_RR"]],
+
+         {"disable":""},
+    ],
+},
+"audi6_doorhandle_keyless": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Door Handle Key-Less Sensors (Facelift)",
+        "value":340,
+    },
+    "slotType" : "audi6_doorhandle_keyless",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorhandle_keyless_FL", ["audi6_door_FL"]],
+         ["audi6_doorhandle_keyless_FR", ["audi6_door_FR"]],
+         {"disable":"$=$components.electrics.RLDoorMesh ~= 1"},
+         ["audi6_doorhandle_keyless_RL_a6", ["audi6_door_RL"]],
+         {"disable":"$=$components.electrics.RRDoorMesh ~= 1"},
+         ["audi6_doorhandle_keyless_RR_a6", ["audi6_door_RR"]],
+         {"disable":"$=$components.electrics.RLDoorMesh ~= 2"},
+         ["audi6_doorhandle_keyless_RL_rs6", ["audi6_door_RL"]],
+         {"disable":"$=$components.electrics.RRDoorMesh ~= 2"},
+         ["audi6_doorhandle_keyless_RR_rs6", ["audi6_door_RR"]],
+		 {"disable":""},
+    ],
+},
+}

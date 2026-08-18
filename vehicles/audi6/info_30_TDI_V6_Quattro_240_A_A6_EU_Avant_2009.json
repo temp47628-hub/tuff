@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [240] (Tiptronic) A6 (EU) [Avant] 2009",
+      "Description": "2009 Avant 3.0L TDI V6 (240 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 40/60 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, lane-assist package, start-stop system, key-less system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with HDD based satellite navigation and a 6-disc CD changer, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, DSP audio system, black interior, brown walnut inlay finish, black milano leather seats. Exterior painted in Oyster Grey",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbocharged",
+      "Propulsion": "ICE",
+      "Power": 240,
+      "Torque": 500,
+      "Top Speed": 68.05555555555556,
+      "Weight": 1895,
+      "Value": 64470,
+      "0-100 km/h": 6.8,
+      "0-60 mph": 6.6,
+      "defaultPaintName1": "Oyster Grey [A6]"
+}

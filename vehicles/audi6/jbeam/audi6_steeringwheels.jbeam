@@ -1,0 +1,407 @@
+{
+"audi6_steer_buttons_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Steering Wheel Buttons",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_buttons",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_buttons_pfl", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_buttons_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Steering Wheel Buttons",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_buttons",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_buttons_fl", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_paddles": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel Black Paddle Shifters",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_paddles",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_paddles", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_paddles_alu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel Aluminium Paddle Shifters",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_paddles",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_paddles", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_plastic_detailed2","audi6_aluminium_b"],["audi6_interior_symbs","audi6_interior_symbs_black"]]}],   
+     ],
+},
+"audi6_steer_paddles_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel Black Paddle Shifters",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_paddles_rs6",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_paddles_rs6", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],   
+     ],
+},
+"audi6_steer_paddles_rs6_alu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel Aluminium Paddle Shifters",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_paddles_rs6",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_paddles_rs6", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_plastic_detailed2","audi6_aluminium_b"],["audi6_interior_symbs","audi6_interior_symbs_black"]]}],
+     ],
+},
+"audi6_steer_heating": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Heated Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer_heating",
+},
+"audi6_steer_4spoke_base": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 4-Spoke Base Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+		["audi6_steer_heating","", "Heated Steering Wheel"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_4spoke_base", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive == 1"},
+        ["steering", "audi6_steer_4spoke_base", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+		
+		{"disable":""},
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_4spoke": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 4-Spoke Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+        ["audi6_steer_heating","", "Heated Steering Wheel"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_4spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive == 1"},
+        ["steering", "audi6_steer_4spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+		
+		{"disable":""},
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_4spoke_inlay": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Inlay 4-Spoke Steering Wheel [Exclusive]",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+		["audi6_steer_heating","", "Heated Steering Wheel"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_4spoke_inlay", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top_inlay", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 3-Spoke Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+		
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 2"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive ~= nil"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_bottom_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+		
+		{"disable":""},
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_inlay": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Inlay 3-Spoke Steering Wheel [Exclusive]",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "audi6_steer_3spoke_inlay", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_ring_inlay", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_sline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 S-Line Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+		
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 2"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive ~= nil"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+		
+		{"disable":""},
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_badge_sline", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S6 Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_buttons","audi6_steer_buttons_pfl", "Steering Wheel Buttons", {"coreSlot":true}],
+        ["audi6_steer_paddles","", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 2"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive ~= nil"},
+        ["steering", "audi6_steer_3spoke", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_bottom_3spoke_s6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_top", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+		
+		{"disable":""},
+        ["steering", "audi6_steer_bag", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_badge_s6", "f5l","f5r","dsh5",        {"x":-5, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"audi6_steer_sline_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 High-Spec S-Line Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_paddles_rs6","", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 3"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],      
+
+		// custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 2"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive ~= nil"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+
+        {"disable":""},
+        ["steering", "audi6_steer_bag_rs6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_badge_sline_fl", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+    ],
+},
+"audi6_steer_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_paddles_rs6","audi6_steer_paddles_rs6_alu", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 3"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],     
+
+		// custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 2"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // custom leather + custom stitching
+        {"disable":"$=$components.electrics.steerExclusive ~= 1"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],
+
+        // default
+        {"disable":"$=$components.electrics.steerExclusive ~= nil"},
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+
+        {"disable":""},
+        ["steering", "audi6_steer_bag_rs6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_badge_rs6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+    ],
+},
+"audi6_steer_rs6_suede": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Suede Steering Wheel",
+        "value":600,
+    },
+    "slotType" : "audi6_steer",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_steer_paddles_rs6","audi6_steer_paddles_rs6_alu", "Steering Wheel Paddle Shifters"],
+    ],
+    "props": [
+        ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+        ["steering", "audi6_steer_rs6_top", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_alcantara_color"]]}],
+        ["steering", "audi6_steer_rs6_bottom", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_alcantara_color"]]}],
+        ["steering", "audi6_steer_rs6_sides", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1, {"materialOverride":[["audi6_leather_color2","audi6_alcantara_color"]]}],
+        ["steering", "audi6_steer_bag_rs6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+        ["steering", "audi6_steer_badge_rs6", "f5l","f5r","dsh5", {"x":-5,"y":0,"z":180}, {"x":0,"y":0,"z":1}, {"x":0,"y":0,"z":0}, -1000, 1000, 0, 1],
+    ],
+},
+}

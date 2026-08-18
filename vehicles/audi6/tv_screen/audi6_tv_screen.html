@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+    video.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const sources = ['video1.webm', 'video2.webm', 'video3.webm', 'video4.webm', 'video5.webm'];
+    let current = 0;
+
+    const video = document.createElement('video');
+    video.muted = true;
+    video.playsInline = true;
+    video.classList.add('active');
+    document.body.appendChild(video);
+
+    function playNext() {
+      video.src = sources[current];
+      video.load();
+      video.play().catch(err => console.warn('Play failed:', err));
+      current = (current + 1) % sources.length;
+    }
+
+    video.addEventListener('ended', playNext);
+
+    playNext();
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (M) S-Line (EU) [Limousine] 2005",
+      "Description":"2005 Limousine 2.0L TFSI (170 HP) with 6-Speed Manual Transmission. This model is equipped with S-Line package, basic halogen lights, power folding mirrors, 18-inch alloys, basic infotainment system with a CD player, base climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Brilliant Blue",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Manual",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":63.23119777158774,
+      "Weight":1520,
+      "Value":27010,
+      "0-100 km/h":8.4,
+      "0-60 mph":8.0,
+	  "defaultPaintName1":"Brilliant Blue",
+}

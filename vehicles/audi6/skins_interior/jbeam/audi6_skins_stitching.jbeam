@@ -1,0 +1,245 @@
+{
+"audi6_skin_stitching": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : ""
+},
+"audi6_skin_stitching_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Light Grey",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "grey_stitching"
+},
+"audi6_skin_stitching_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "blue_stitching"
+},
+"audi6_skin_stitching_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "beige_stitching"
+},
+"audi6_skin_stitching_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "linenbeige_stitching"
+},
+"audi6_skin_stitching_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "brown_stitching"
+},
+"audi6_skin_stitching_paranutbrown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Paranut Brown",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "paranutbrown_stitching"
+},
+"audi6_skin_stitching_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "silver_stitching"
+},
+"audi6_skin_stitching_pearlsilver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pearl Silver",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "pearlsilver_stitching"
+},
+"audi6_skin_stitching_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "creambeige_stitching"
+},
+"audi6_skin_stitching_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "blue_ae_stitching"
+},
+"audi6_skin_stitching_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "burgundy_ae_stitching"
+},
+"audi6_skin_stitching_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "palaceblue_ae_stitching"
+},
+"audi6_skin_stitching_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "nightblue_ae_stitching"
+},
+"audi6_skin_stitching_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "regencygreen_ae_stitching"
+},
+"audi6_skin_stitching_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "sandbeige_ae_stitching"
+},
+"audi6_skin_stitching_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "chestnutbrown_ae_stitching"
+},
+"audi6_skin_stitching_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "classicred_ae_stitching"
+},
+"audi6_skin_stitching_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "red_ae_stitching"
+},
+"audi6_skin_stitching_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "saddlebrown_ae_stitching"
+},
+"audi6_skin_stitching_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "jetgrey_ae_stitching"
+},
+"audi6_skin_stitching_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "alabasterwhite_ae_stitching"
+},
+"audi6_skin_stitching_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "magnolia_ae_stitching"
+},
+"audi6_skin_stitching_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "havannabrown_ae_stitching"
+},
+"audi6_skin_stitching_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "cocos_ae_stitching"
+},
+"audi6_skin_stitching_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "cognac_ae_stitching"
+},
+"audi6_skin_stitching_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_stitching",
+    "skinName" : "orange_ae_stitching"
+},
+}

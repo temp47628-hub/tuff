@@ -1,0 +1,1361 @@
+{
+"audi6_suspension_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Independent Front Suspension",
+        "value":800,
+    },
+    "slotType" : "audi6_suspension_F",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_brake_F","audi6_brake_F", "Front Brakes"],
+        ["audi6_differential_F","none", "Front Differential"],
+        //The case() is for backwards compatibility for old configs that use "trackwidth_F" variable.
+        //To change the base track width, edit the trackoffset_F offset in the expression.
+        ["wheel_F_5","audi6_wheel_rs6_20x9_F", "Front Wheels", {"nodeOffset":{"x":"$=case($trackwidth_F == nil, $trackoffset_F+0.29, $trackwidth_F)", "y":-1.405, "z":0.33}}],
+        ["audi6_wheeldata_F","audi6_wheeldata_F", "Front Spindles", {"coreSlot":true}],
+        ["audi6_strut_F","audi6_strut_F", "Front Struts"],
+        ["audi6_swaybar_F","audi6_swaybar_F", "Front Sway Bar"],
+        ["audi6_steering","audi6_steering", "Steering"],
+        ["audi6_undertray","audi6_undertray", "Undertray"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$camber_FR", "range", "", "Wheel Alignment", 1.002, 0.95, 1.05, "Camber Adjust", "Adjusts the wheel camber angle", {"subCategory":"Front"}],
+        ["$caster_FR", "range", "", "Wheel Alignment", 1, 1.02, 0.98, "Caster Adjust", "Adjusts forward rake of the steering axis", {"subCategory":"Front"}],
+        ["$trackoffset_F", "range", "+m", "Wheels", 0.0, -0.02, 0.05, "Wheel Offset", "Spacing of the wheel from the hub", {"stepDis":0.001,"subCategory":"Front"}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //front running gear
+        ["audi6_lowerarm_F_a", ["audi6_lowerarm_F_a"]],
+        ["audi6_lowerarm_F_b", ["audi6_lowerarm_F_b"]],
+        ["audi6_hub_FR", ["audi6_hub_FR","audi6_strut_F"]],
+        ["audi6_hub_FL", ["audi6_hub_FL","audi6_strut_F"]],
+        ["audi6_subframe_F", ["audi6_subframe_F"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--FRONT SUBFRAME--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"collision":true},
+         {"selfCollision":true},
+         //strut suspension
+         //front suspension axis points
+         //lower
+         {"group":"audi6_subframe_F"},
+         {"nodeWeight":7.79},
+         ["fx1r", -0.3918, -1.6716, 0.2613, {"tag":"rideheight_FR", "group":["audi6_lowerarm_F_b","audi6_tierod_F","audi6_subframe_F"]}],
+         ["fx1l",  0.3918, -1.6716, 0.2613, {"tag":"rideheight_FL", "group":["audi6_lowerarm_F_b","audi6_tierod_F","audi6_subframe_F"]}],
+         ["fx2r", -0.3963, -1.3525, 0.2074, {"group":["audi6_lowerarm_F_a","audi6_subframe_F"]}],
+         ["fx2l",  0.3963, -1.3525, 0.2074, {"group":["audi6_lowerarm_F_a","audi6_subframe_F"]}],
+         {"nodeWeight":4.5},
+         ["fx4r", -0.4, -0.9, 0.22],
+         ["fx4l",  0.4, -0.9, 0.22],
+         {"nodeWeight":6.0},
+         ["fx6r", -0.4, -1.4, 0.46, {"selfCollision":false}],
+         ["fx6l",  0.4, -1.4, 0.46, {"selfCollision":false}],
+         //steering box/tie rod end
+         {"nodeWeight":6.84},
+         {"group":"audi6_steeringbox"},
+         ["fx5r", -0.23, -1.496, 0.240, {"group":["audi6_lowerarm_F_a","audi6_steeringbox"]}],
+         ["fx5l",  0.23, -1.496, 0.240, {"group":["audi6_lowerarm_F_a","audi6_steeringbox"]}],
+         {"selfCollision":true},
+
+         //--FRONT INDEPENDENT SUSPENSION--
+         {"collision":true},
+         {"selfCollision":true},
+         //front hub
+         {"nodeWeight":6.75},
+         {"selfCollision":true},
+         ["fh1r",-0.6938, -1.3958, 0.1819, {"group":["audi6_lowerarm_F_a","audi6_tierod_F","audi6_hub_FR"]}],
+         ["fh1l", 0.6938, -1.3958, 0.1819, {"group":["audi6_lowerarm_F_a","audi6_tierod_F","audi6_hub_FL"]}],
+         {"selfCollision":false},
+         {"nodeWeight":4.25},
+         ["fh4r",-0.6144, -1.3428, 0.62, {"group":["audi6_strut_F","audi6_hub_FR","audi6_swaybar_F"]}],
+         ["fh4l", 0.6144, -1.3428, 0.62, {"group":["audi6_strut_F","audi6_hub_FL","audi6_swaybar_F"]}],
+         {"nodeWeight":4.5},
+         ["fh5r",-0.72,  -1.205,  0.33, {"group":["audi6_caliper_F","audi6_hub_FR"]}],
+         ["fh5l", 0.72,  -1.205,  0.33, {"group":["audi6_caliper_F","audi6_hub_FL"]}],
+         {"selfCollision":true},
+         {"nodeWeight":5.0},
+         ["fw2r",-0.6898, -1.4160, 0.2538, {"group":["audi6_wheelarm_F","audi6_lowerarm_F_b","audi6_hub_FR"]}],
+         ["fw2l", 0.6898, -1.4160, 0.2538, {"group":["audi6_wheelarm_F","audi6_lowerarm_F_b","audi6_hub_FL"]}],
+         {"selfCollision":false},
+         //tie rod end (gets overwritten by drift steer)
+         {"nodeWeight":5.6},
+         ["fh3r",-0.70, -1.537, 0.215, {"group":["audi6_tierod_F","audi6_hub_FR"]}],
+         ["fh3l", 0.70, -1.537, 0.215, {"group":["audi6_tierod_F","audi6_hub_FL"]}],
+         //strut flexbody help
+         {"nodeWeight":0.55},
+         {"group":"audi6_strut_F"},
+         ["fs2l", 0.63, -1.38, 0.37],
+         ["fs2r",-0.63, -1.38, 0.37],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+    ],
+    "rails": {
+        "strut_FR":{"links:":["fh1r", "fs1r"], "broken:":[], "looped":false, "capped":true},
+        "strut_FL":{"links:":["fh1l", "fs1l"], "broken:":[], "looped":false, "capped":true},
+        //"hub_FR":{"links:":["fh3r", "fh5r"], "broken:":[], "looped":false, "capped":true},
+        //"hub_FL":{"links:":["fh3l", "fh5l"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["fh4r", "strut_FR", true, true, 0.0, 20001000, 500000, 500000],
+        ["fh4l", "strut_FL", true, true, 0.0, 20001000, 500000, 500000],
+        //["fw2r", "hub_FR", true, true, 0.0, 1001000, 500000, 500000],
+        //["fw2l", "hub_FL", true, true, 0.0, 1001000, 500000, 500000],
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        {"spring":300000, "damp":0, "deform":25000, "strength":100000},
+        //rigidify steering arm
+        ["fw1rr", "fh4r", "fh1r", "fh3r"],
+        ["fw1ll", "fh4l", "fh1l", "fh3l"],
+
+        //["fw1rr", "fw1r", "fh1r", "fh5r"],
+        //["fw1ll", "fw1l", "fh1l", "fh5l"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT SUBFRAME--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":7501000,"beamDamp":180},
+          {"beamDeform":25000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.1},
+          //main shape length
+          ["fx1r", "fx2r"],
+          ["fx1l", "fx2l"],
+          {"beamDeform":19000,"beamStrength":"FLT_MAX"},
+          ["fx2r", "fx4r"],
+          ["fx2l", "fx4l"],
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          {"beamSpring":10001000,"beamDamp":140},
+          ["fx1r", "fx1l"],
+          ["fx2r", "fx2l"],
+          {"beamSpring":6501000,"beamDamp":140},
+          //center mount
+          ["fx2r", "fx6r"],
+          ["fx1r", "fx6r"],
+          ["fx2l", "fx6l"],
+          ["fx1l", "fx6l"],
+
+          //crossing
+          {"beamSpring":6501000,"beamDamp":140},
+          {"deformLimitExpansion":""},
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          ["fx6r", "fx2l"],
+          ["fx6r", "fx1l"],
+          ["fx6l", "fx2r"],
+          ["fx6l", "fx1r"],
+          ["fx1r", "fx2l"],
+          ["fx2r", "fx1l"],
+          {"beamDeform":9000,"beamStrength":"FLT_MAX"},
+          ["fx2r", "fx4l"],
+          ["fx4r", "fx2l"],
+
+          //rigids
+          {"beamDeform":12000,"beamStrength":"FLT_MAX"},
+          ["fx6r", "fx6l"],
+          {"beamDeform":11500,"beamStrength":"FLT_MAX"},
+          ["fx6r", "fx4r"],
+          ["fx6l", "fx4l"],
+          {"beamDeform":7500,"beamStrength":"FLT_MAX"},
+          ["fx4l", "fx1l"],
+          ["fx4r", "fx1r"],
+
+          //steering box
+          {"beamSpring":6501000,"beamDamp":180},
+          {"beamDeform":45000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.1},
+          ["fx5r","fx5l"],
+
+          {"beamDeform":25000,"beamStrength":"FLT_MAX"},
+          ["fx5r","fx1r"],
+          ["fx5l","fx1l"],
+          ["fx5r","fx2r"],
+          ["fx5l","fx2l"],
+          {"deformLimitExpansion":""},
+          ["fx5r","fx1l"],
+          ["fx5l","fx1r"],
+          ["fx5r","fx2l"],
+          ["fx5l","fx2r"],
+          ["fx5r", "fx6r"],
+          ["fx5r", "fx6l"],
+          ["fx5l", "fx6r"],
+          ["fx5l", "fx6l"],
+
+          //attach to body
+          //front
+          {"beamSpring":7001000,"beamDamp":50},
+          {"beamDeform":45000,"beamStrength":450000},
+          {"breakGroup":"subframemount_FFR"},
+          ["fx1r", "f11rr"],
+          ["fx1r", "f10rr"],
+          ["fx1r", "f13rr"],
+          ["fx1r", "f12rr"],
+          ["fx1l", "f12rr"],
+          ["fx1l", "f13rr"],
+          ["fx1l", "f11rr"],
+          ["fx1l", "f10rr"],
+          ["fx1r", "f18r", {"beamSpring":3001000,"beamDamp":20, "beamDeform":12000,"beamStrength":280000}],
+          ["fx1l", "f18r", {"beamSpring":3001000,"beamDamp":20, "beamDeform":12000,"beamStrength":280000}],
+          {"breakGroup":"subframemount_FFL"},
+          ["fx1l", "f11ll"],
+          ["fx1l", "f10ll"],
+          ["fx1l", "f13ll"],
+          ["fx1l", "f12ll"],
+          ["fx1r", "f12ll"],
+          ["fx1r", "f13ll"],
+          ["fx1r", "f11ll"],
+          ["fx1r", "f10ll"],
+          ["fx1l", "f18l", {"beamSpring":3001000,"beamDamp":20, "beamDeform":12000,"beamStrength":280000}],
+          ["fx1r", "f18l", {"beamSpring":3001000,"beamDamp":20, "beamDeform":12000,"beamStrength":280000}],
+
+          //mid
+          {"breakGroup":"subframemount_FMR"},
+          ["fx6r", "f10rr"],
+          ["fx6r", "f12rr"],
+          ["fx6r", "f5r"],
+          ["fx6l", "f10rr"],
+          ["fx6l", "f12rr"],
+          ["fx6l", "f5r"],
+          ["fx2r", "f13rr", {"beamDeform":12000,"beamStrength":280000}],
+          ["fx2r", "f10rr", {"beamDeform":12000,"beamStrength":280000}],
+          {"breakGroup":"subframemount_FML"},
+          ["fx6l", "f10ll"],
+          ["fx6l", "f12ll"],
+          ["fx6l", "f5l"],
+          ["fx6r", "f10ll"],
+          ["fx6r", "f12ll"],
+          ["fx6r", "f5l"],
+          ["fx2l", "f13ll", {"beamDeform":12000,"beamStrength":280000}],
+          ["fx2l", "f10ll", {"beamDeform":12000,"beamStrength":280000}],
+
+          //rear
+          {"beamSpring":7001000,"beamDamp":200},
+          {"beamDeform":45000,"beamStrength":450000},
+          {"breakGroup":"subframemount_FRR"},
+          ["fx4r", "f1r"],
+          ["fx4r", "f1rr"],
+          ["fx4r", "f5r"],
+          ["fx4r", "f2r"],
+          ["fx4r", "f7r"],
+          {"breakGroup":"subframemount_FRL"},
+          ["fx4l", "f1l"],
+          ["fx4l", "f1ll"],
+          ["fx4l", "f5l"],
+          ["fx4l", "f2l"],
+          ["fx4l", "f7l"],
+          {"breakGroup":""},
+
+          //crunchiness beams
+          {"beamSpring":501000,"beamDamp":100},
+          {"beamDeform":4000,"beamStrength":250000},
+          ["fx2l", "f2l"],
+          ["fx2r", "f2r"],
+          ["fx2l", "f2r"],
+          ["fx2r", "f2l"],
+          ["fx2r", "f2rr"],
+          ["fx2l", "f2ll"],
+          ["fx2l", "f6l"],
+          ["fx2r", "f6r"],
+
+          //limiter
+          {"beamPrecompression":1.0, "beamType":"|SUPPORT", "beamLongBound":2},
+          {"beamSpring":4001000,"beamDamp":180},
+          {"beamDeform":9000,"beamStrength":80000},
+          ["fx2r", "f6rr"],
+          ["fx2l", "f6ll"],
+          ["fx4r", "f6r"],
+          ["fx4l", "f6l"],
+          {"beamPrecompression":0.7},
+          ["f18r", "fx2r"],
+          ["f18l", "fx2l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //--FRONT RUNNING GEAR--
+          //double wishbone suspension
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamDeform":95000,"beamStrength":350000},
+          {"beamSpring":7901000,"beamDamp":100},
+          //front hub
+          {"deformLimitExpansion":1.1},
+          ["fh1r","fh3r"],
+          ["fh1l","fh3l"],
+          ["fh3r","fh4r"],
+          ["fh3l","fh4l"],
+          ["fh1r","fh4r"],
+          ["fh1l","fh4l"],
+          ["fh1r","fh5r"],
+          ["fh1l","fh5l"],
+          ["fh3r","fh5r"],
+          ["fh3l","fh5l"],
+          ["fh4r","fh5r"],
+          ["fh4l","fh5l"],
+          ["fw2r","fh1r", {"beamSpring":4901000,"beamDamp":60}],
+          ["fw2r","fh3r"],
+          ["fw2r","fh4r"],
+          ["fw2r","fh5r"],
+          ["fw2l","fh1l", {"beamSpring":4901000,"beamDamp":60}],
+          ["fw2l","fh3l"],
+          ["fw2l","fh4l"],
+          ["fw2l","fh5l"],
+          {"beamSpring":7901000,"beamDamp":125},
+          {"optional":true},
+          //attach to wheel
+          {"breakGroup":"wheel_FR"},
+          ["fh1r","fw1r", {"name":"axle_FR"}],
+          ["fh3r","fw1r", {"beamSpring":11001000,"beamDamp":20}],
+          ["fh4r","fw1r"],
+          ["fh5r","fw1r"],
+          ["fw2r","fw1r"],
+          ["fh1r","fw1rr"],
+          ["fh3r","fw1rr", {"beamSpring":11001000,"beamDamp":20}],
+          ["fh5r","fw1rr"],
+          ["fw2r","fw1rr"],
+          {"breakGroup":"wheel_FL"},
+          ["fh1l","fw1l", {"name":"axle_FL"}],
+          ["fh3l","fw1l", {"beamSpring":11001000,"beamDamp":20}],
+          ["fh4l","fw1l"],
+          ["fh5l","fw1l"],
+          ["fw2l","fw1l"],
+          ["fh1l","fw1ll"],
+          ["fh3l","fw1ll", {"beamSpring":11001000,"beamDamp":20}],
+          ["fh5l","fw1ll"],
+          ["fw2l","fw1ll"],
+          //camber
+          {"breakGroup":"wheel_FR"},
+          ["fh4r","fw1rr", {"beamPrecompression":"$camber_FR","beamPrecompressionTime":0.5}],
+          {"breakGroup":"wheel_FL"},
+          ["fh4l","fw1ll", {"beamPrecompression":"$camber_FR","beamPrecompressionTime":0.5}],
+          {"breakGroup":""},
+          {"optional":false},
+          //lower arm
+          {"deformGroup":"suspensionF", "deformationTriggerRatio":0.01}
+          {"beamDeform":55000,"beamStrength":550000},
+          {"beamSpring":20001000,"beamDamp":2000},
+          ["fx2r","fh1r", {"dampCutoffHz":500}],
+          ["fx2l","fh1l", {"dampCutoffHz":500}],
+
+          {"beamDeform":85000,"beamStrength":750000},
+          {"beamSpring":12001000,"beamDamp":4000},
+          ["fx1r","fw2r", {"beamPrecompression":"$caster_FR","beamPrecompressionTime":0.5,"dampCutoffHz":500}],
+          ["fx1l","fw2l", {"beamPrecompression":"$caster_FR","beamPrecompressionTime":0.5,"dampCutoffHz":500}],
+          {"deformGroup":"", "deformationTriggerRatio":""}
+
+          //strut structure stuff
+          {"beamSpring":1501000,"beamDamp":125,"beamDeform":37500,"beamStrength":127500},
+          {"breakGroup":"strut_antiflap_FR"},
+          ["fh4r","fs2r"],
+          ["fh3r","fs2r"],
+          ["fh5r","fs2r"],
+          {"breakGroup":"strut_antiflap_FR"},
+          ["fh4l","fs2l"],
+          ["fh3l","fs2l"],
+          ["fh5l","fs2l"],
+          {"breakGroup":""},
+
+          //damper
+          {"beamSpring":0,"beamDamp":5000},
+          ["f1rr","fh1r", {"dampCutoffHz":250}],
+          ["f1ll","fh1l", {"dampCutoffHz":250}],
+          ["f5rr","fh4r", {"dampCutoffHz":250}],
+          ["f5ll","fh4l", {"dampCutoffHz":250}],
+
+
+          //front limiters
+          {"deformLimitExpansion":""},
+          {"beamPrecompression":0.7, "beamType":"|SUPPORT", "beamLongBound":3},
+          {"beamSpring":8001000,"beamDamp":600,"beamDeform":65000,"beamStrength":"FLT_MAX"},
+          //firewall
+          {"optional":true},
+          //{"breakGroupType":1},
+          //{"breakGroup":"wheel_FR"},
+          ["fw1rr","f19rr", {"beamPrecompression":0.65}],
+          ["fw1rr","f1rr"],
+          ["fw1rr","f1r"],
+          ["fw1rr","f5r"],
+          ["fw1r","f1rr"],
+          ["fw1r","f5r"],
+          //{"breakGroup":"wheel_FL"},
+          ["fw1ll","f19ll", {"beamPrecompression":0.65}],
+          ["fw1ll","f1ll"],
+          ["fw1ll","f1l"],
+          ["fw1ll","f5l"],
+          ["fw1l","f1ll"],
+          ["fw1l","f5l"],
+          //{"breakGroup":""},
+          //{"breakGroupType":0},
+          {"optional":false},
+
+          {"beamPrecompression":0.7},
+          ["fh1r","f5r"],
+          ["fh1l","f5l"],
+          ["fh1r","f6r"],
+          ["fh1l","f6l"],
+          ["fh1r","f6rr"],
+          ["fh1l","f6ll"],
+          ["fh3r","f5r"],
+          ["fh3l","f5l"],
+          ["fh3r","f1r"],
+          ["fh3l","f1l"],
+          ["fh4r","f1r"],
+          ["fh4l","f1l"],
+          ["fh4r","f1rr"],
+          ["fh4l","f1ll"],
+
+          //steering limit
+          {"beamPrecompression":1, "beamType":"|SUPPORT", "beamLongBound":3},
+          {"beamSpring":5001000,"beamDamp":250,"beamDeform":120000,"beamStrength":600000},
+          {"beamPrecompression":0.58},
+          ["fh3r","fx2r"],
+          ["fh3l","fx2l"],
+          {"beamPrecompression":0.74},
+          ["fh5r","fx1r"],
+          ["fh5l","fx1l"],
+          {"beamPrecompression":1},
+
+          //suspension travel hard limit
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":0,"beamDamp":100,"beamDeform":15000,"beamStrength":150000},
+          {"beamLimitSpring":1001000,"beamLimitDamp":1000},
+          ["fh1r","fs1r", {"longBoundRange":0.10,"shortBoundRange":0.10,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"longBoundRange":0.10,"shortBoundRange":0.10,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+
+    ],
+    "triangles": [
+          ["id1:","id2:","id3:"],
+          //front subframe
+          ["fx2r", "fx2l", "fx1l"],
+          ["fx1l", "fx1r", "fx2r"],
+          ["fx2r", "fx4r", "fx4l"],
+          ["fx4l", "fx2l", "fx2r"],
+          //front suspension
+          {"triangleType":"NONCOLLIDABLE"},
+          ["fh3r", "fh1r", "fh5r"],
+          ["fh5r", "fh4r", "fh3r"],
+          ["fh1r", "fx2r", "fx1r"],
+          ["fw2r", "fx2r", "fx1r"],
+
+          ["fh1l", "fh3l", "fh5l"],
+          ["fh4l", "fh5l", "fh3l"],
+          ["fx2l", "fh1l", "fx1l"],
+          ["fx2l", "fw2l", "fx1l"],
+          {"triangleType":"NORMALTYPE"},
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //cancel out brake properties
+            {"brakeTorque":0},
+            {"parkingTorque":0},
+            {"enableBrakeThermals":false},
+            {"brakeDiameter":false},
+            {"brakeMass":false},
+            {"brakeType":false},
+            {"rotorMaterial":false},
+            {"brakeVentingCoef":false},
+    ],
+},
+"audi6_wheeldata_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Spindles",
+        "value":0,
+    },
+    "slotType" : "audi6_wheeldata_F",
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //front
+        {"selfCollision":false},
+        {"collision":true},
+        {"hubcapBreakGroup":"hubcap_FR"},
+        {"hubcapGroup":"hubcap_FR"},
+        {"axleBeams":["axle_FR"]},
+        ["FR", "wheel_FR", "tire_FR", "fw1rr", "fw1r", 9999, "fh5r", 1, {"torqueCoupling:":"fh1r", "torqueArm:":"fh4r", "torqueArm2:":"fw1rr"}],
+        {"hubcapBreakGroup":"hubcap_FL"},
+        {"hubcapGroup":"hubcap_FL"},
+        {"axleBeams":["axle_FL"]},
+        ["FL", "wheel_FL", "tire_FL",  "fw1ll", "fw1l", 9999, "fh5l", -1, {"torqueCoupling:":"fh1l", "torqueArm:":"fh4l", "torqueArm2:":"fw1ll"}],
+        {"selfCollision":true},
+        {"axleBeams":[]}, {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+        {"hubcapBreakGroup":""},
+        {"hubcapGroup":""},
+        {"enableHubcaps":false},
+        {"enableTireLbeams":false},
+        {"enableTireSideReinfBeams":false},
+        {"enableTireReinfBeams":false},
+        {"enableTreadReinfBeams":false},
+        {"enableTirePeripheryReinfBeams":false},
+        {"loadSensitivitySlope":""},
+        {"noLoadCoef":""},
+        {"fullLoadCoef":""},
+        {"frictionCoef":""},
+        {"slidingFrictionCoef":""},
+        {"softnessCoef":0.5},
+        {"treadCoef":1.0},
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "spindleFL", "wheelaxleFL", 1, {"connectedWheel":"FL", "breakTriggerBeam":"axle_FL", "uiName":"Front Left Axle", "friction":1.26, "dynamicFriction":0.0034}],
+        ["shaft", "spindleFR", "wheelaxleFR", 1, {"connectedWheel":"FR", "breakTriggerBeam":"axle_FR", "uiName":"Front Right Axle", "friction":1.26, "dynamicFriction":0.0034}],
+    ],
+},
+"audi6_strut_F_adaptive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Adaptive Front Air Struts",
+        "value":680,
+    },
+    "slotType" : "audi6_strut_F",
+    "components": {
+        "electrics": {
+            "customValues": [
+                ["electricsName", "electricsFunction","electricsDefault"],
+                ["adaptiveStrutsFront","electrics.adaptiveStrutsFront",1],
+            ],
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+            ],
+        },
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["drivingDynamics/actuators/adaptiveDampers", {"name":"adaptiveFrontDamper", "dampBeamNames":["shock_FR", "shock_FL"]}],
+        ["activeSprings", {"name":"activeFrontSpring", "springHydro":"springHydroF", "springBeamNames":["spring_FR", "spring_FL"]}],
+    ],
+    "adaptiveFrontDamper": {
+        "modes": [
+            ["name",    "beamDampCoef", "beamDampFastCoef", "beamDampReboundCoef", "beamDampReboundFastCoef", "beamDampVelocitySplitCoef"],
+            ["soft",    0.70,           1.0,                0.65,                  1.0,                      0.70],
+            ["regular", 1.00,           1.0,                1.00,                  1.0,                      1.00],
+            ["hard",    1.45,           1.0,                1.35,                  1.0,                      1.15],
+        ]
+    },
+    "activeFrontSpring": {
+        "modes": [
+            ["name",    "springLengthCoef", "beamSpringCoef"],
+            ["low",     0.10,               1.35],
+            ["regular", 0.40,               1.00],
+            ["high",    1.00,               0.65],
+        ]
+    },
+    "beams": [
+          ["id1:", "id2:"],
+          //dampers - adaptive air suspension
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":0,"beamDamp":4000},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1600,"beamDampRebound":6900,"beamDampReboundFast":2300,"beamDampVelocitySplit":0.2,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1600,"beamDampRebound":6900,"beamDampReboundFast":2300,"beamDampVelocitySplit":0.2,"dampCutoffHz":500}],
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":51000,"beamLimitDamp":1000},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":251000,"beamLimitDamp":10000},
+          ["fh4r","fs1r", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "hydros": [
+          ["id1:", "id2:"],
+          //front air springs - height adjustable
+          {"beamPrecompression":1, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":26000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.05,"inputSource":"springHydroF","inRate":3,"outRate":5,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":30,"volumeFactor":1.9,"decayFactor":6,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":5300}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.05,"inputSource":"springHydroF","inRate":3,"outRate":5,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":30,"volumeFactor":1.9,"decayFactor":6,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":5300}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F_adaptive_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 DRC Front Struts",
+        "value":900,
+    },
+    "slotType" : "audi6_strut_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["drivingDynamics/actuators/adaptiveDampers", {"name":"adaptiveFrontDamper", "dampBeamNames":["shock_FR", "shock_FL"]}],
+    ],
+    "adaptiveFrontDamper": {
+        "modes": [
+            ["name",    "beamDampCoef", "beamDampFastCoef", "beamDampReboundCoef", "beamDampReboundFastCoef", "beamDampVelocitySplitCoef"],
+            ["soft",    1.05,           1.0,                1.00,                  1.0,                      0.90],
+            ["regular", 1.25,           1.0,                1.25,                  1.0,                      1.00],
+            ["hard",    1.60,           1.1,                1.55,                  1.1,                      1.20],
+        ]
+    },
+    "beams": [
+          ["id1:", "id2:"],
+
+          //dampers - RS6 DRC style, fixed ride height, adaptive damping only
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":0,"beamDamp":5200},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1950,"beamDampRebound":8200,"beamDampReboundFast":2700,"beamDampVelocitySplit":0.23,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1950,"beamDampRebound":8200,"beamDampReboundFast":2700,"beamDampVelocitySplit":0.23,"dampCutoffHz":500}],
+
+          //fixed RS6 front coil springs - no height adjustment
+          {"beamPrecompression":1.0, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":42000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":45,"volumeFactor":2.2,"decayFactor":35,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":5800}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":45,"volumeFactor":2.2,"decayFactor":35,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":5800}],
+
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":65000,"beamLimitDamp":1200},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":280000,"beamLimitDamp":12000},
+          ["fh4r","fs1r", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F_adaptive_rs6_plus": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 DRC (Sports Suspension Plus) Front Struts",
+        "value":900,
+    },
+    "slotType" : "audi6_strut_F",
+    "components": {
+        "electrics": {
+            "customValues": [
+                ["electricsName", "electricsFunction","electricsDefault"],
+                ["adaptiveStrutsFront","electrics.adaptiveStrutsFront",1],
+            ],
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+            ],
+        },
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["drivingDynamics/actuators/adaptiveDampers", {"name":"adaptiveFrontDamper", "dampBeamNames":["shock_FR", "shock_FL"]}],
+    ],
+	"adaptiveFrontDamper": {
+		"modes": [
+			["name",    "beamDampCoef", "beamDampFastCoef", "beamDampReboundCoef", "beamDampReboundFastCoef", "beamDampVelocitySplitCoef"],
+			["soft",    0.85,           0.90,               0.85,                  0.90,                     0.85],
+			["regular", 1.15,           1.00,               1.18,                  1.00,                     1.00],
+			["hard",    1.65,           1.15,               1.75,                  1.15,                     1.18]
+		]
+	},
+    "beams": [
+          ["id1:", "id2:"],
+
+          //dampers - RS6 DRC style, fixed ride height, adaptive damping only
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":0,"beamDamp":5200},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1950,"beamDampRebound":8200,"beamDampReboundFast":2700,"beamDampVelocitySplit":0.23,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1950,"beamDampRebound":8200,"beamDampReboundFast":2700,"beamDampVelocitySplit":0.23,"dampCutoffHz":500}],
+
+          //fixed RS6 front coil springs - no height adjustment
+          {"beamPrecompression":1.0, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":42000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":45,"volumeFactor":2.2,"decayFactor":35,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":5800}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":45,"volumeFactor":2.2,"decayFactor":35,"noiseFactor":0.01,"pitchFactor":0.5,"maxStress":5800}],
+
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":65000,"beamLimitDamp":1200},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":280000,"beamLimitDamp":12000},
+          ["fh4r","fs1r", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Struts",
+        "value":380,
+    },
+    "slotType" : "audi6_strut_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //front springs
+          {"beamPrecompression":1, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":28000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.12,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":30,"volumeFactor":1.9,"decayFactor":6,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":5300}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.12,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":30,"volumeFactor":1.9,"decayFactor":6,"noiseFactor":0.01,"pitchFactor":0.2,"maxStress":5300}],
+          //dampers
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":0,"beamDamp":4000},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1600,"beamDampRebound":6900,"beamDampReboundFast":2300,"beamDampVelocitySplit":0.2,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1600,"beamDampRebound":6900,"beamDampReboundFast":2300,"beamDampVelocitySplit":0.2,"dampCutoffHz":500}],
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":51000,"beamLimitDamp":1000},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.045,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":251000,"beamLimitDamp":10000},
+          ["fh4r","fs1r", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.08,"shortBoundRange":0.075,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F_sport": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sport Front Struts",
+        "value":1450,
+    },
+    "slotType" : "audi6_strut_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //front springs
+          {"beamPrecompression":1, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":35000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.065,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":40,"volumeFactor":2.1,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":5600}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.065,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":40,"volumeFactor":2.1,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":5600}],
+          //dampers
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":0,"beamDamp":7000},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1750,"beamDampRebound":9000,"beamDampReboundFast":3000,"beamDampVelocitySplit":0.25,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1750,"beamDampRebound":9000,"beamDampReboundFast":3000,"beamDampVelocitySplit":0.25,"dampCutoffHz":500}],
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":51000,"beamLimitDamp":1000},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.06,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.06,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":251000,"beamLimitDamp":10000},
+          ["fh4r","fs1r", {"longBoundRange":0.06,"shortBoundRange":0.08,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.06,"shortBoundRange":0.08,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F_sport_s": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S-Line Sport Front Struts",
+        "value":1550,
+    },
+    "slotType" : "audi6_strut_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //front springs
+          {"beamPrecompression":1, "beamType":"|NORMAL"},
+          {"beamDeform":15000,"beamStrength":150000},
+          {"beamSpring":37000,"beamDamp":0},
+          ["fh4r","fs1r", {"name":"spring_FR", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":40,"volumeFactor":2.1,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":5600}],
+          ["fh4l","fs1l", {"name":"spring_FL", "precompressionRange":0.055,"soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":40,"volumeFactor":2.1,"decayFactor":20,"noiseFactor":0.01,"pitchFactor":0.4,"maxStress":5600}],
+          //dampers
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":0,"beamDamp":7500},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          ["fh1r","fs1r", {"name":"shock_FR", "beamDampFast":1850,"beamDampRebound":9500,"beamDampReboundFast":3150,"beamDampVelocitySplit":0.25,"dampCutoffHz":500}],
+          ["fh1l","fs1l", {"name":"shock_FL", "beamDampFast":1850,"beamDampRebound":9500,"beamDampReboundFast":3150,"beamDampVelocitySplit":0.25,"dampCutoffHz":500}],
+          //soft initial bumpstop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":51000,"beamLimitDamp":1000},
+          ["fh4r","fs1r", {"longBoundRange":1,"shortBoundRange":0.06,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":1,"shortBoundRange":0.06,"boundZone":0.1,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          //hard bump stop
+          {"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":251000,"beamLimitDamp":10000},
+          ["fh4r","fs1r", {"longBoundRange":0.06,"shortBoundRange":0.08,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          ["fh4l","fs1l", {"longBoundRange":0.06,"shortBoundRange":0.08,"boundZone":0.05,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_strut_F_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Front Coilovers",
+        "value":3300,
+    },
+    "slotType" : "audi6_strut_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_strut_F", ["audi6_strut_F"]],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$springheight_F", "range", "+m", "Suspension", 0, -0.06, 0.04, "Spring Height", "Raise or lower the suspension height", {"stepDis":0.005, "subCategory":"Front"}],
+        ["$spring_F", "range", "N/m", "Suspension", 80000, 15000, 160000, "Spring Rate", "Spring stiffness", {"stepDis":500, "subCategory":"Front"}],
+        ["$damp_bump_F", "range", "N/m/s", "Suspension", 6000, 500, 12500, "Bump Damping", "Damper rate in compression", {"stepDis":100, "subCategory":"Front"}],
+        ["$damp_rebound_F", "range", "N/m/s", "Suspension", 18000, 500, 25000, "Rebound Damping", "Damper rate in extension", {"stepDis":100, "subCategory":"Front"}]
+    ],
+    "beams": [
+         ["id1:", "id2:"],
+         //front springs without soft bump stop
+         {"beamType":"|NORMAL"},
+         {"beamDeform":15000,"beamStrength":150000},
+         {"beamSpring":"$spring_F","beamDamp":0},
+         //{"beamSpring":0,"beamDamp":0},
+         //IMPORTANT: if precompressionRange is ~= nil then it supersedes beamPrecompression.
+         //The case() is for backwards compatibility for old configs containing the "rideheight_F" variable.
+         //To change the base ride height, edit the springheight_F offset in the expression.
+         ["fh4r","fs1r", {"name":"spring_FR", "beamPrecompression":"$=$rideheight_F", "precompressionRange":"$=case($rideheight_F == nil, $springheight_F + 0.005, '')",
+             "soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":50,"volumeFactor":2.3,"decayFactor":50,"noiseFactor":0.01,"pitchFactor":1.0,"maxStress":4500}],
+         ["fh4l","fs1l", {"name":"spring_FL", "beamPrecompression":"$=$rideheight_F", "precompressionRange":"$=case($rideheight_F == nil, $springheight_F + 0.000, '')",
+             "soundFile":"event:>Vehicle>Suspension>car_modn_med_01>spring_compress_01","colorFactor":0.4,"attackFactor":50,"volumeFactor":2.3,"decayFactor":50,"noiseFactor":0.01,"pitchFactor":1.0,"maxStress":4500}],
+         //dampers
+         {"beamPrecompression":1.0, "beamType":"|BOUNDED","beamLongBound":1.0,"beamShortBound":1.0},
+         {"beamLimitSpring":0,"beamLimitDamp":0},
+         {"beamSpring":0,"beamDamp":"$damp_bump_F"},
+         ["fh1r","fs1r", {"name":"shock_FR", "beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.3,"beamDampFast":"$=$damp_bump_F / 3","beamDampReboundFast":"$=$damp_rebound_F / 3","dampCutoffHz":500}],
+         ["fh1l","fs1l", {"name":"shock_FL", "beamDampRebound":"$damp_rebound_F","beamDampVelocitySplit":0.3,"beamDampFast":"$=$damp_bump_F / 3","beamDampReboundFast":"$=$damp_rebound_F / 3","dampCutoffHz":500}],
+         //harder bump stop
+         {"beamType":"|BOUNDED"},
+         {"beamSpring":0,"beamDamp":0},
+         {"beamLimitSpring":251000,"beamLimitDamp":10000},
+         ["fh4r","fs1r", {"longBoundRange":0.04,"shortBoundRange":0.09,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+         ["fh4l","fs1l", {"longBoundRange":0.04,"shortBoundRange":0.09,"boundZone":0.025,"beamLimitDampRebound":0,"dampCutoffHz":500}],
+         {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_swaybar_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Sway Bar",
+        "value":125,
+    },
+    "slotType" : "audi6_swaybar_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_swaybar_F", ["audi6_body","audi6_subframe_F","audi6_swaybar_F"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //anti-roll
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":""},
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeWeight":2.0},
+         //front anti-roll
+         ["arbfr", -0.58, -1.35, 0.3],
+         ["arbfl",  0.58, -1.35, 0.3],
+         {"group":""},
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        //24mm 2543
+        //25mm 2994
+        //26mm 3502
+        //27mm 4073
+        //28mm 4710
+        //29mm 5420
+        {"spring":4073, "damp":10, "deform":10000, "strength":9999999},
+        ["arbfr", "fx1r", "fx1l", "arbfl"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--ANTI-ROLL--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2501000,"beamDamp":100},
+          {"beamDeform":15000,"beamStrength":350000},
+          //end links
+          ["arbfr","fh4r"],
+          ["arbfl","fh4l"],
+          //rigids
+          ["arbfr","fx1r"],
+          ["arbfl","fx1l"],
+          ["arbfr","fx1l"],
+          ["arbfl","fx1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_swaybar_F_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S6 Front Sway Bar",
+        "value":650,
+    },
+    "slotType" : "audi6_swaybar_F",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_swaybar_F", ["audi6_body","audi6_subframe_F","audi6_swaybar_F"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //anti-roll
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":""},
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeWeight":2.5},
+         //front anti-roll
+         ["arbfr", -0.58, -1.35, 0.3],
+         ["arbfl",  0.58, -1.35, 0.3],
+         {"group":""},
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        //24mm 2543
+        //25mm 2994
+        //26mm 3502
+        //27mm 4073
+        //28mm 4710
+        //29mm 5420
+        {"spring":4710, "damp":10, "deform":10000, "strength":9999999},
+        ["arbfr", "fx1r", "fx1l", "arbfl"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--ANTI-ROLL--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2501000,"beamDamp":100},
+          {"beamDeform":15000,"beamStrength":350000},
+          //end links
+          ["arbfr","fh4r"],
+          ["arbfl","fh4l"],
+          //rigids
+          ["arbfr","fx1r"],
+          ["arbfl","fx1l"],
+          ["arbfr","fx1l"],
+          ["arbfl","fx1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_swaybar_F_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Front Sway Bar",
+        "value":1000,
+    },
+    "slotType" : "audi6_swaybar_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_swaybar_F", ["audi6_body","audi6_subframe_F","audi6_swaybar_F"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //anti-roll
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":""},
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeWeight":3.0},
+         //front anti-roll
+         ["arbfr", -0.58, -1.35, 0.3],
+         ["arbfl",  0.58, -1.35, 0.3],
+         {"group":""},
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        //motion ratio 1 (difference between real and jbeam sway bar)
+        //arm length 0.321
+        {"spring":5420, "damp":10, "deform":10000, "strength":9999999},
+        ["arbfr", "fx1r", "fx1l", "arbfl"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--ANTI-ROLL--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2501000,"beamDamp":100},
+          {"beamDeform":15000,"beamStrength":350000},
+          //end links
+          ["arbfr","fh4r"],
+          ["arbfl","fh4l"],
+          //rigids
+          ["arbfr","fx1r"],
+          ["arbfl","fx1l"],
+          ["arbfr","fx1l"],
+          ["arbfl","fx1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_swaybar_F_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Front Sway Bar",
+        "value":1000,
+    },
+    "slotType" : "audi6_swaybar_F",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_swaybar_F", ["audi6_body","audi6_subframe_F","audi6_swaybar_F"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //anti-roll
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":""},
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeWeight":3.5},
+         //front anti-roll
+         ["arbfr", -0.58, -1.35, 0.3],
+         ["arbfl",  0.58, -1.35, 0.3],
+         {"group":""},
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$arb_spring_F", "range", "N/m", "Suspension", 45000, 5000, 100000, "Anti-Roll Spring Rate", "Stiffness of the anti-roll bar, defined at the end links", {"stepDis":1000,"subCategory":"Front"}]
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        //motion ratio 1 (difference between real and jbeam sway bar)
+        //arm length 0.321
+        {"spring":"$=$arb_spring_F*0.321*0.321", "damp":10, "deform":10000, "strength":9999999},
+        ["arbfr", "fx1r", "fx1l", "arbfl"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--ANTI-ROLL--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2501000,"beamDamp":100},
+          {"beamDeform":15000,"beamStrength":350000},
+          //end links
+          ["arbfr","fh4r"],
+          ["arbfl","fh4l"],
+          //rigids
+          ["arbfr","fx1r"],
+          ["arbfl","fx1l"],
+          ["arbfr","fx1l"],
+          ["arbfl","fx1r"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_steering": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering",
+        "value":330,
+    },
+    "slotType" : "audi6_steering",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_power_steering","audi6_power_steering", "Power Steering"],
+    ],
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_steeringbox", ["audi6_steeringbox","audi6_subframe_F"]],
+        ["audi6_tierod_F", ["audi6_tierod_F","audi6_steeringbox"]],
+    ],
+    "rails": {"steeringrack":{"links:":["fh6r", "fh6l"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["fx5r", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+        ["fx5l", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--steering rod--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_tierod_F"},
+         {"nodeWeight":6},
+         ["fh6r", -0.363, -1.496, 0.240],
+         ["fh6l",  0.363, -1.496, 0.240],
+         {"group":""},
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$toe_FR", "range", "", "Wheel Alignment", 0.9997, 1.02, 0.98, "Toe Adjust", "Adjusts the wheel toe-in angle", {"subCategory":"Front"}],
+        ["$steer_center_F", "range", "", "Wheel Alignment", 0, -0.002, 0.002, "Toe Left/Right Trim", "Fine tunes the centerpoint of the steering", {"subCategory":"Front"}]
+    ],
+    "beams": [
+          ["id1:","id2:"],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":10001000,"beamDamp":1500,"beamDeform":65000,"beamStrength":275000},
+          ["fh6r","fh6l", {"dampCutoffHz":500,"deformGroup":"steeringF", "deformationTriggerRatio":0.005}],
+          //toe out
+          {"beamSpring":22001000,"beamDamp":150,"beamDeform":55000,"beamStrength":275000},
+          ["fh3r","fh6r", {"beamPrecompression":"$=$toe_FR+$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          ["fh3l","fh6l", {"beamPrecompression":"$=$toe_FR-$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          {"deformLimitExpansion":""},
+          //steering damper
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":0,"beamDeform":15120,"beamStrength":37800},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamDamp":200},
+          ["fh3r","fx2r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh3l","fx2l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5r","fx1r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5l","fx1l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          //extra damper for high angle
+          {"beamSpring":0,"beamDamp":1500,"beamDeform":65000,"beamStrength":275000},
+          ["fh5l","fx5l", {"dampCutoffHz":500}],
+          ["fh5r","fx5r", {"dampCutoffHz":500}],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+          ["id1:","id2:","id3:"],
+          {"triangleType":"NONCOLLIDABLE"},
+          ["fx2r", "fx5r", "fx2l"],
+          ["fx5r", "fx5l", "fx2l"],
+          ["fh6l", "fx2l", "fx5l"],
+          ["fx5r", "fx2r", "fh6r"],
+          {"triangleType":"NORMALTYPE"},
+    ],
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":12001000,"beamDamp":60,"beamDeform":"FLT_MAX","beamStrength":125000},
+        ["fh6r","fx5l", {"factor": 0.14,"steeringWheelLock":510,"inRate":1.25,"outRate":1.25}],
+        ["fh6l","fx5r", {"factor":-0.14,"steeringWheelLock":510,"inRate":1.25,"outRate":1.25}],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "input": {
+        "FFBcoef":"$=$ffbstrength*10",
+    },
+},
+"audi6_steering_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quick Ratio Race Steering",
+        "value":730,
+    },
+    "slotType" : "audi6_steering",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_power_steering","audi6_power_steering", "Power Steering"],
+    ],
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_steeringbox", ["audi6_steeringbox","audi6_subframe_F"]],
+        ["audi6_tierod_F", ["audi6_tierod_F","audi6_steeringbox"]],
+    ],
+    "rails": {"steeringrack":{"links:":["fh6r", "fh6l"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["fx5r", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+        ["fx5l", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--steering rod--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_tierod_F"},
+         {"nodeWeight":6},
+         ["fh6r", -0.363, -1.496, 0.240],
+         ["fh6l",  0.363, -1.496, 0.240],
+         {"group":""},
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$toe_FR", "range", "", "Wheel Alignment", 0.9995, 1.02, 0.98, "Toe Adjust", "Adjusts the wheel toe-in angle", {"subCategory":"Front"}],
+        ["$steer_center_F", "range", "", "Wheel Alignment", 0, -0.002, 0.002, "Toe Left/Right Trim", "Fine tunes the centerpoint of the steering", {"subCategory":"Front"}]
+    ],
+    "beams": [
+          ["id1:","id2:"],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":10001000,"beamDamp":1500,"beamDeform":65000,"beamStrength":275000},
+          ["fh6r","fh6l", {"dampCutoffHz":500,"deformGroup":"steeringF", "deformationTriggerRatio":0.005}],
+          //toe out
+          {"beamSpring":22001000,"beamDamp":250,"beamDeform":55000,"beamStrength":275000},
+          ["fh3r","fh6r", {"beamPrecompression":"$=$toe_FR+$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          ["fh3l","fh6l", {"beamPrecompression":"$=$toe_FR-$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          {"deformLimitExpansion":""},
+          //steering damper
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":0,"beamDeform":15120,"beamStrength":37800},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamDamp":200},
+          ["fh3r","fx2r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh3l","fx2l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5r","fx1r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5l","fx1l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          //extra damper for high angle
+          {"beamSpring":0,"beamDamp":1500,"beamDeform":65000,"beamStrength":275000},
+          ["fh5l","fx5l", {"dampCutoffHz":500}],
+          ["fh5r","fx5r", {"dampCutoffHz":500}],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+          ["id1:","id2:","id3:"],
+          {"triangleType":"NONCOLLIDABLE"},
+          ["fx2r", "fx5r", "fx2l"],
+          ["fx5r", "fx5l", "fx2l"],
+          ["fh6l", "fx2l", "fx5l"],
+          ["fx5r", "fx2r", "fh6r"],
+          {"triangleType":"NORMALTYPE"},
+    ],
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":12001000,"beamDamp":60,"beamDeform":"FLT_MAX","beamStrength":125000},
+        ["fh6r","fx5l", {"factor": 0.137,"steeringWheelLock":275,"inRate":1.25,"outRate":1.25}],
+        ["fh6l","fx5r", {"factor":-0.137,"steeringWheelLock":275,"inRate":1.25,"outRate":1.25}],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "input": {
+        "FFBcoef":"$=$ffbstrength*9.5",
+    },
+},
+"audi6_steering_drift": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quick Ratio Drift Steering",
+        "value":700,
+    },
+    "slotType" : "audi6_steering",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_power_steering","audi6_power_steering", "Power Steering"],
+    ],
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_steeringbox", ["audi6_steeringbox","audi6_subframe_F"]],
+        ["audi6_tierod_F", ["audi6_tierod_F","audi6_steeringbox"]],
+    ],
+    "rails": {"steeringrack":{"links:":["fh6r", "fh6l"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["fx5r", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+        ["fx5l", "steeringrack", true, true, 0.0, 12001000, 350000, 350000],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--steering rod--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_tierod_F"},
+         {"nodeWeight":6.5},
+         ["fh6r", -0.363, -1.496, 0.240],
+         ["fh6l",  0.363, -1.496, 0.240],
+         {"group":""},
+         //tie rod end
+         {"nodeWeight":6.25},
+         ["fh3r",-0.70, -1.537, 0.215, {"group":["audi6_tierod_F","audi6_hub_F"]}],
+         ["fh3l", 0.70, -1.537, 0.215, {"group":["audi6_tierod_F","audi6_hub_F"]}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$toe_FR", "range", "", "Wheel Alignment", 1, 1.02, 0.98, "Toe Adjust", "Adjusts the wheel toe-in angle", {"subCategory":"Front"}],
+        ["$steer_center_F", "range", "", "Wheel Alignment", 0, -0.002, 0.002, "Toe Left/Right Trim", "Fine tunes the centerpoint of the steering", {"subCategory":"Front"}]
+    ],
+    "beams": [
+          ["id1:","id2:"],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":10001000,"beamDamp":1500,"beamDeform":65000,"beamStrength":275000},
+          ["fh6r","fh6l", {"dampCutoffHz":500,"deformGroup":"steeringF", "deformationTriggerRatio":0.005}],
+          //toe out
+          {"beamSpring":22001000,"beamDamp":250,"beamDeform":55000,"beamStrength":275000},
+          ["fh3r","fh6r", {"beamPrecompression":"$=$toe_FR+$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          ["fh3l","fh6l", {"beamPrecompression":"$=$toe_FR-$steer_center_F","beamPrecompressionTime":0.5, "deformGroup":"steeringF", "deformationTriggerRatio":0.01}],
+          {"deformLimitExpansion":""},
+          //steering damper
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":0,"beamDeform":15120,"beamStrength":37800},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamDamp":200},
+          ["fh3r","fx2r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh3l","fx2l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5r","fx1r", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          ["fh5l","fx1l", {"beamDampVelocitySplit":0.1,"beamDampFast":3500,"dampCutoffHz":800}],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+          ["id1:","id2:","id3:"],
+          {"triangleType":"NONCOLLIDABLE"},
+          ["fx2r", "fx5r", "fx2l"],
+          ["fx5r", "fx5l", "fx2l"],
+          ["fh6l", "fx2l", "fx5l"],
+          ["fx5r", "fx2r", "fh6r"],
+          {"triangleType":"NORMALTYPE"},
+    ],
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":12001000,"beamDamp":60,"beamDeform":"FLT_MAX","beamStrength":125000},
+        ["fh6r","fx5l", {"factor": 0.165,"steeringWheelLock":450,"inRate":1.25,"outRate":1.25}],
+        ["fh6l","fx5r", {"factor":-0.165,"steeringWheelLock":450,"inRate":1.25,"outRate":1.25}],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "input": {
+        "FFBcoef":"$=$ffbstrength*11",
+    },
+},
+"audi6_power_steering": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Servotronic Power Steering",
+        "value":600,
+    },
+    "slotType" : "audi6_power_steering",
+    "controller": [
+        ["fileName"],
+        ["powerSteering", {"strengthFast":1, "strengthSlow": 0.12, "speedSlow": 2, "speedFast": 20, "constantOffset":-0.05}],
+    ],
+},
+}

@@ -1,0 +1,157 @@
+{
+"audi6_body_sedan_trims_chrome": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Body Trims",
+        "value":400,
+    },
+    "slotType" : "audi6_body_trim_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 
+		 {"disable":"$=$components.electrics.blackBodyTrim ~= 1"},
+         ["audi6_quarterpanel_sedan_trims_chrome", ["audi6_body"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_RR_sedan", ["audi6_door_RR"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_RL_sedan", ["audi6_door_RL"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+		 
+		 {"disable":"$=$components.electrics.blackBodyTrim == 1"},
+         ["audi6_quarterpanel_sedan_trims_chrome", ["audi6_body"]],
+         ["audi6_doorglass_trim_FR", ["audi6_door_FR"]],
+         ["audi6_doorglass_trim_FL", ["audi6_door_FL"]],
+         ["audi6_doorglass_trim_RR_sedan", ["audi6_door_RR"]],
+         ["audi6_doorglass_trim_RL_sedan", ["audi6_door_RL"]],		 
+		 
+		 {"disable":""},
+    ],
+},
+"audi6_body_avant_trims_chrome": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Body Trims",
+        "value":400,
+    },
+    "slotType" : "audi6_body_trim_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 
+		 {"disable":"$=$components.electrics.blackBodyTrim ~= 1"},
+         ["audi6_quarterpanel_avant_trims_chrome", ["audi6_body"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_RR_avant", ["audi6_door_RR"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+         ["audi6_doorglass_trim_RL_avant", ["audi6_door_RL"], [],{"materialOverride":[["audi6_chrome","audi6_mattblack"]]}],
+		 
+		 {"disable":"$=$components.electrics.blackBodyTrim == 1"},
+         ["audi6_quarterpanel_avant_trims_chrome", ["audi6_body"]],
+         ["audi6_doorglass_trim_FR", ["audi6_door_FR"]],
+         ["audi6_doorglass_trim_FL", ["audi6_door_FL"]],
+         ["audi6_doorglass_trim_RR_avant", ["audi6_door_RR"]],
+         ["audi6_doorglass_trim_RL_avant", ["audi6_door_RL"]],		 
+		 
+		 {"disable":""},
+    ],
+},
+"audi6_quarterpanels_rs6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Quarter Panels",
+        "value":400,
+    },
+    "slotType" : "audi6_quarterpanels_sedan",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_body_trim_sedan","audi6_body_sedan_trims_chrome", "Body Trims", {"coreSlot":true}],
+        ["audi6_quarterglass_L_sedan","audi6_quarterglass_L_sedan", "Left Quarter Glass"],
+        ["audi6_quarterglass_R_sedan","audi6_quarterglass_R_sedan", "Right Quarter Glass"],
+        ["audi6_sideskirt_R","audi6_sideskirt_R_rs6", "Right Side Skirt"],
+        ["audi6_sideskirt_L","audi6_sideskirt_L_rs6", "Left Side Skirt"],
+        ["audi6_archtubs_R_rs6_sedan","audi6_archtubs_R_rs6_sedan", "Rear Wheel Arch Tubs"],
+		["audi6_fueldoor_rs6_sedan","audi6_fueldoor_rs6_sedan", "Fuel Door"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_quarterpanel_L_rs6_sedan", ["audi6_body"]],
+         ["audi6_quarterpanel_R_rs6_sedan", ["audi6_body"]],
+         ["audi6_quarterpanel_glassframes_sedan", ["audi6_body"]],
+         ["audi6_doorframes_sedan", ["audi6_body"]],
+         ["audi6_doorframes_stickers", ["audi6_body"]],
+    ],
+},
+"audi6_quarterpanels_a6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Quarter Panels",
+        "value":400,
+    },
+    "slotType" : "audi6_quarterpanels_sedan",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_body_trim_sedan","audi6_body_sedan_trims_chrome", "Body Trims", {"coreSlot":true}],
+        ["audi6_quarterglass_L_sedan","audi6_quarterglass_L_sedan", "Left Quarter Glass"],
+        ["audi6_quarterglass_R_sedan","audi6_quarterglass_R_sedan", "Right Quarter Glass"],
+        ["audi6_archtubs_R_a6_sedan","audi6_archtubs_R_a6_sedan", "Rear Wheel Arch Tubs"],
+		["audi6_fueldoor_a6_sedan","audi6_fueldoor_a6_sedan", "Fuel Door"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_quarterpanel_L_a6_sedan", ["audi6_body"]],
+         ["audi6_quarterpanel_R_a6_sedan", ["audi6_body"]],
+         ["audi6_quarterpanel_glassframes_sedan", ["audi6_body"]],
+         ["audi6_doorframes_sedan", ["audi6_body"]],
+         ["audi6_doorframes_stickers", ["audi6_body"]],
+    ],
+},
+"audi6_quarterpanels_rs6_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Quarter Panels",
+        "value":400,
+    },
+    "slotType" : "audi6_quarterpanels_avant",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_body_trim_avant","audi6_body_avant_trims_chrome", "Body Trims", {"coreSlot":true}],
+        ["audi6_quarterglass_R_avant","audi6_quarterglass_R_avant", "Right Quarter Glass"],
+        ["audi6_quarterglass_L_avant","audi6_quarterglass_L_avant", "Left Quarter Glass"],
+        ["audi6_sideskirt_R","audi6_sideskirt_R_rs6", "Right Side Skirt"],
+        ["audi6_sideskirt_L","audi6_sideskirt_L_rs6", "Left Side Skirt"],
+        ["audi6_archtubs_R_rs6_avant","audi6_archtubs_R_rs6_avant", "Rear Wheel Arch Tubs"],
+		["audi6_fueldoor_rs6_avant","audi6_fueldoor_rs6_avant", "Fuel Door"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_quarterpanel_L_rs6_avant", ["audi6_body"]],
+         ["audi6_quarterpanel_R_rs6_avant", ["audi6_body"]],
+         ["audi6_quarterpanel_glassframes_avant", ["audi6_body"]],
+         ["audi6_doorframes_avant", ["audi6_body"]],
+         ["audi6_doorframes_stickers", ["audi6_body"]],
+    ],
+},
+"audi6_quarterpanels_a6_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Quarter Panels",
+        "value":400,
+    },
+    "slotType" : "audi6_quarterpanels_avant",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_body_trim_avant","audi6_body_avant_trims_chrome", "Body Trims", {"coreSlot":true}],
+        ["audi6_quarterglass_R_avant","audi6_quarterglass_R_avant", "Right Quarter Glass"],
+        ["audi6_quarterglass_L_avant","audi6_quarterglass_L_avant", "Left Quarter Glass"],
+        ["audi6_archtubs_R_a6_avant","audi6_archtubs_R_a6_avant", "Rear Wheel Arch Tubs"],
+		["audi6_fueldoor_a6_avant","audi6_fueldoor_a6_avant", "Fuel Door"],
+		["audi6_cladding","", "Cladding"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_quarterpanel_L_a6_avant", ["audi6_body"]],
+         ["audi6_quarterpanel_R_a6_avant", ["audi6_body"]],
+         ["audi6_quarterpanel_glassframes_avant", ["audi6_body"]],
+         ["audi6_doorframes_avant", ["audi6_body"]],
+         ["audi6_doorframes_stickers", ["audi6_body"]],
+    ],
+},
+}

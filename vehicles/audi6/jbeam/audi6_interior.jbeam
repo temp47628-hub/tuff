@@ -1,0 +1,2663 @@
+{
+"audi6_armrest": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Armrest",
+        "value":40,
+    },
+    "slotType" : "audi6_armrest",
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_armrest_door","audi6_armrest_door", "Front Armrest Door"],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_armrest",["audi6_armrest"]],
+		{"disable":"$=$components.electrics.phoneMesh ~= 1"},
+        ["audi6_armrest_int_audiphone",["audi6_armrest"]],
+        ["audi6_audiphone",["audi6_armrest"]],
+		{"disable":"$=$components.electrics.phoneMesh == 1"},
+		["audi6_armrest_int",["audi6_armrest"]],
+		{"disable":""},
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+	    ["armrest",  "arm_1r","arm_1l","arm_2r", "box", {"x":0.105, "y":0.025, "z":0.01}, {"x":25.665, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0420, "y":-0.0026, "z":0.0023}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["armrest",           "action0", "armrest"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["armrest"],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.3},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":"audi6_armrest"},
+         ["arm_1l", 0.0908, -0.1243, 0.705],
+         ["arm_2l", 0.0993, 0.2319, 0.7543],
+         ["arm_1r", -0.0908, -0.1243, 0.705],
+         ["arm_2r", -0.0993, 0.2319, 0.7543],  
+         
+         ["arm_hinge_l", 0.0993, 0.2092, 0.6658],
+         ["arm_hinge_r", -0.0993, 0.2092, 0.6658],  
+         
+         //main rigidifier
+         {"nodeWeight":0.4},
+         ["arm_rigid", -0.0000, 0.0154, 0.6554],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":101000,"beamDamp":50},
+          {"beamDeform":18000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.1},
+          {"deformationTriggerRatio":0.01},
+          
+          ["arm_1l","arm_1r"],
+          ["arm_1r","arm_2r"],
+          ["arm_2l","arm_2r"],
+          ["arm_1l","arm_2l"],
+          ["arm_1l","arm_2r"],
+          ["arm_2l","arm_1r"],
+          ["arm_2l","arm_hinge_l"],
+          ["arm_hinge_l","arm_hinge_r"],
+          ["arm_2r","arm_hinge_r"],
+          ["arm_2r","arm_hinge_l"],
+          ["arm_2l","arm_hinge_r"],
+          ["arm_1r","arm_hinge_r"],
+          ["arm_1l","arm_hinge_l"],
+          ["arm_1r","arm_hinge_l"],
+          ["arm_1l","arm_hinge_r"],
+          ["arm_1r","arm_rigid"],
+          ["arm_1l","arm_rigid"],
+          ["arm_hinge_r","arm_rigid"],
+          ["arm_2r","arm_rigid"],
+          ["arm_hinge_l","arm_rigid"],
+          ["arm_2l","arm_rigid"],
+
+          {"beamSpring":121000,"beamDamp":100},
+          {"beamDeform":248000,"beamStrength":"FLT_MAX"},
+
+          ["arm_hinge_l","arm_hinge_r"],
+		  
+          ["arm_hinge_l","dsh3"],
+          ["arm_hinge_l","dsh4"],
+          ["arm_hinge_l","f7l"],
+          ["arm_hinge_l","f8l"],
+          ["arm_hinge_l","f9l"],
+          ["arm_hinge_l","f7r"],
+          ["arm_hinge_l","f8r"],
+          ["arm_hinge_l","f9r"],
+		  
+          ["arm_hinge_r","dsh3"],
+          ["arm_hinge_r","dsh4"],
+          ["arm_hinge_r","f7r"],
+          ["arm_hinge_r","f8r"],
+          ["arm_hinge_r","f9r"],
+          ["arm_hinge_r","f7l"],
+          ["arm_hinge_r","f8l"],
+          ["arm_hinge_r","f9l"],
+  
+
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "hydros": [
+            ["id1:","id2:"],
+            {"beamDeform":25500,"beamStrength":14500},
+            {"beamSpring":101000,"beamDamp":100},
+            
+            ["dsh3", "arm_1l", {"inputSource":"armrest","inLimit":0,"outLimit":2.5,"inRate":2.5,"outRate":2.5,"inputFactor":1}],
+            ["dsh3", "arm_1r", {"inputSource":"armrest","inLimit":0,"outLimit":2.5,"inRate":2.5,"outRate":2.5,"inputFactor":1}],
+    ],
+},
+"audi6_armrest_door": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Armrest Door",
+        "value":80,
+    },
+    "slotType" : "audi6_armrest_door",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["armrest_door_s","audi6_armrest_door", "arm_1r","arm_1l","arm_2r",  {"x":81, "y":0, "z":0}, {"x":-99, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.08,"z":0.0}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["armrest_door",  "arm_1r","arm_1l","arm_2r", "box", {"x":0.105, "y":0.025, "z":0.01}, {"x":337.512, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0421, "y":0.0016, "z":-0.0444}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["armrest_door", "action0", "armrest_door"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["armrest_door"],
+    ],
+},
+"audi6_startstop_button_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Round Start/Stop Button",
+        "value":80,
+    },
+    "slotType" : "audi6_startstop_button",
+	"components": {
+        "electrics": {
+			"startStopMesh": 2,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.centerFinish ~= 1"},
+         ["audi6_centerconsole_startstop_frame_rs6", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 {"disable":""},
+		 {"disable":"$=$components.electrics.centerFinish == 1"},
+         ["audi6_centerconsole_startstop_frame_rs6", ["audi6_dash"]],
+		 {"disable":""},
+         ["audi6_centerconsole_startstop_button_rs6", ["audi6_dash"]],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["startEngine",  "f7r","f7l","f8r", "sphere", 0.012, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4063, "y":-0.0730, "z":-0.2510}],
+	    ["stopEngine",  "f7r","f7l","f8r", "box", {"x":0.0200, "y":0.0100, "z":0.0144}, {"x":0, "y":0, "z":7}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3959, "y":-0.1064, "z":-0.2616}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["startEngine", "action0", "audi6_startEngine"],
+        ["stopEngine", "action0", "audi6_stopEngine"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_startEngine"],
+        ["audi6_stopEngine"],
+    ],
+},
+"audi6_startstop_button_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Square Start/Stop Button",
+        "value":80,
+    },
+    "slotType" : "audi6_startstop_button",
+	"components": {
+        "electrics": {
+			"startStopMesh": 1,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.centerFinish ~= 1"},
+         ["audi6_centerconsole_startstop_frame_a6", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 {"disable":""},
+		 {"disable":"$=$components.electrics.centerFinish == 1"},
+         ["audi6_centerconsole_startstop_frame_a6", ["audi6_dash"]],
+		 {"disable":""},
+         ["audi6_centerconsole_startstop_button_a6", ["audi6_dash"]],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["startEngine",  "f7r","f7l","f8r", "box", {"x":0.0229, "y":0.0100, "z":0.0212}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3935, "y":-0.0819, "z":-0.2560}],
+	    ["stopEngine",  "f7r","f7l","f8r", "box", {"x":0.0200, "y":0.0100, "z":0.0144}, {"x":0, "y":0, "z":7}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3959, "y":-0.1019, "z":-0.2616}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["startEngine", "action0", "audi6_startEngine"],
+        ["stopEngine", "action0", "audi6_stopEngine"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_startEngine"],
+        ["audi6_stopEngine"],
+    ],
+},
+"audi6_centerconsole": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Center Console",
+        "value":80,
+    },
+    "slotType" : "audi6_centerconsole",
+	"components": {
+        "electrics": {
+			"startStopMesh": 0,
+        },
+    },
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_ashtray","audi6_ashtray", "Ash Tray", {"coreSlot":true}],
+        ["audi6_cupholder","audi6_cupholder", "Cup Holder", {"coreSlot":true}],
+        ["audi6_shifter","audi6_shifter_M", "Shifter"],
+        ["audi6_startstop_button","", "Start-Stop Button"],
+        ["audi6_parkingbrake_button","audi6_parkingbrake_button_pfl", "Parking Brake Button", {"coreSlot":true}],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		//key
+		{"disable":"$=$components.electrics.startStopMesh ~= 0"},
+        ["ignitionLevel_s", "audi6_key", "f5l","f5r","dsh5",       {"x":93, "y":0, "z":0},    {"x":0, "y":-30, "z":0}, {"x":0, "y":0, "z":0}, 0, 140, -80, 1],		
+		{"disable":"$=$components.electrics.startStopMesh == 0"},
+        ["", "audi6_key", "f5l","f5r","dsh5",       {"x":93, "y":0, "z":0},    {"x":0, "y":-30, "z":0}, {"x":0, "y":0, "z":0}, 0, 140, -80, 1],
+		{"disable":""},
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		{"disable":"$=$components.electrics.startStopMesh ~= 0"},
+        ["ignition",  "f5l","f5r","dsh5", "box", {"x":0.0486, "y":0.0500, "z":0.1000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1870, "y":0.5052, "z":0.0441}],
+		{"disable":""},
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["ignition", "action0", "common:activateStarterMotor"],
+    ],
+},
+"audi6_parkingbrake_button_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Parking Brake Button",
+        "value":80,
+    },
+    "slotType" : "audi6_parkingbrake_button",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["parkingbrakebutton_s","audi6_parkingbrake", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":-15, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, -1, 1, 0, 1],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["parkingbrake",  "f7r","f7l","f8r", "box", {"x":0.025, "y":0.025, "z":0.025}, {"x":-7, "y":7, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.392, "y":-0.015, "z":-0.257}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["parkingbrake", "action0", "common:parkingbrake_toggle"],
+    ],
+},
+"audi6_parkingbrake_button_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Parking Brake Button",
+        "value":80,
+    },
+    "slotType" : "audi6_parkingbrake_button",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["parkingbrakebutton_s","audi6_parkingbrake_fl", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":-15, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, -1, 1, 0, 1],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["parkingbrake",  "f7r","f7l","f8r", "box", {"x":0.025, "y":0.025, "z":0.025}, {"x":-7, "y":7, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.392, "y":-0.015, "z":-0.257}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["parkingbrake", "action0", "common:parkingbrake_toggle"],
+    ],
+},
+"audi6_ashtray": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ash Tray",
+        "value":80,
+    },
+    "slotType" : "audi6_ashtray",
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_ashtray_door","audi6_ashtray_door", "Ash Tray Door"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_ashtray", ["audi6_dash"]],
+    ],
+},
+"audi6_ashtray_door": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ash Tray Door",
+        "value":80,
+    },
+    "slotType" : "audi6_ashtray_door",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["ashtray_door_s","audi6_ashtray_door", "f7r","f7l","f8r",  {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.057,"z":0.0}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["ashtray_door",  "f7r","f7l","f8r", "box", {"x":0.105, "y":0.025, "z":0.01}, {"x":0, "y":355.723, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2775, "y":-0.1637, "z":-0.2723}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["ashtray_door", "action0", "ashtray_door"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["ashtray_door"],
+    ],
+},
+"audi6_cupholder": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cup Holder",
+        "value":80,
+    },
+    "slotType" : "audi6_cupholder",
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_cupholder_door","audi6_cupholder_door", "Cup Holder Door"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.hasSmokerPackage ~= 1"},
+         ["audi6_cupholder_b", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasSmokerPackage == 1"},
+         ["audi6_cupholder", ["audi6_dash"]],
+		 {"disable":""},
+    ],
+},
+"audi6_cupholder_door": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cup Holder Door",
+        "value":80,
+    },
+    "slotType" : "audi6_cupholder_door",
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_cupholder_door_badge","", "Cup Holder Door Badge"],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["cupholder_door_s","audi6_cupholder_door", "f7r","f7l","f8r",  {"x":90, "y":0, "z":0}, {"x":90, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.046,"z":-0.018}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["cupholder_door",  "f7r","f7l","f8r", "box", {"x":0.105, "y":0.025, "z":0.01}, {"x":0, "y":0.215, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2775, "y":0.1771, "z":-0.2242}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["cupholder_door", "action0", "cupholder_door"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["cupholder_door"],
+    ],
+},
+"audi6_acvents": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Air Conditioning Vents",
+        "value":80,
+    },
+    "slotType" : "audi6_acvents",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_drivervent", ["audi6_dash"]],
+        ["audi6_middlevent", ["audi6_dash"]],
+        ["audi6_passengervent", ["audi6_dash"]],
+        ["audi6_backvent", ["audi6_dash"]],
+        ["audi6_backvent_control", ["audi6_dash"]],
+        ["audi6_drivervent_trim", ["audi6_dash"]],
+        ["audi6_middlevent_trim", ["audi6_dash"]],
+		{"disable":"$=$components.electrics.alternativeInlay ~= 0"},
+        ["audi6_passengervent_trim", ["audi6_dash"]],
+        ["audi6_passengervent_inlay", ["audi6_dash"]],
+		{"disable":"$=$components.electrics.alternativeInlay ~= 1"},
+		["audi6_passengervent_trim_alt", ["audi6_dash"]],   		
+		{"disable":"$=$components.electrics.alternativeInlay ~= 2"},
+		["audi6_passengervent_trim_alt", ["audi6_dash"], [],{"materialOverride":[["audi6_inlay","audi6_radial_aluminium"]]}],   
+		{"disable":""},
+        ["audi6_backvent_trim", ["audi6_dash"]],
+        ["audi6_dashvent", ["audi6_dash"]],
+    ],
+},
+"audi6_glovebox_door": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Glove Box Door",
+        "value":80,
+    },
+    "slotType" : "audi6_glovebox_door",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		//mesh
+        ["glovebox_door_s","audi6_glovebox_door", "f5l","f5r","dsh5",  {"x":90, "y":0, "z":0}, {"x":-30, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.09,"z":0.00}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+        ["glovebox_door_s","audi6_glovebox_doorpanel", "f5l","f5r","dsh5",  {"x":90, "y":0, "z":0}, {"x":-30, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.09,"z":0.00}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["glovebox_button",  "f5l","f5r","dsh5", "box", {"x":0.03, "y":0.008, "z":0.04}, {"x":83, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4495, "y":0.5088, "z":0.1653}],
+	    ["glovebox_door_int",  "f5l","f5r","dsh5", "box", {"x":0.1063, "y":0.0200, "z":0.0392}, {"x":147.530, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6552, "y":0.4715, "z":0.0238}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["glovebox_button", "action0", "glovebox_door"],
+        ["glovebox_door_int", "action0", "glovebox_door"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["glovebox_door"],
+    ],
+},
+"audi6_glovebox_door_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Glove Box Door w/ Handle",
+        "value":80,
+    },
+    "slotType" : "audi6_glovebox_door",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		//mesh
+        ["glovebox_door_s","audi6_glovebox_door_b", "f5l","f5r","dsh5",  {"x":90, "y":0, "z":0}, {"x":-30, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.09,"z":0.00}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+        ["glovebox_door_s","audi6_glovebox_doorhandle", "f5l","f5r","dsh5",  {"x":90, "y":0, "z":0}, {"x":-30, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.09,"z":0.00}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+        ["glovebox_door_s","audi6_glovebox_doorpanel", "f5l","f5r","dsh5",  {"x":90, "y":0, "z":0}, {"x":-30, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.09,"z":0.00}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+	    ["glovebox_button",  "f5l","f5r","dsh5", "box", {"x":0.03, "y":0.008, "z":0.04}, {"x":83, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4495, "y":0.5088, "z":0.1653}],
+	    ["glovebox_door",  "f5l","f5r","dsh5", "box", {"x":0.1063, "y":0.0071, "z":0.0392}, {"x":147.530, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6248, "y":0.4659, "z":-0.0044}],
+	    ["glovebox_door_int",  "f5l","f5r","dsh5", "box", {"x":0.1063, "y":0.0200, "z":0.0392}, {"x":147.530, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6552, "y":0.4715, "z":0.0238}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["glovebox_button", "action0", "glovebox_door"],
+        ["glovebox_door", "action0", "glovebox_door"],
+        ["glovebox_door_int", "action0", "glovebox_door"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["glovebox_door"],
+    ],
+},
+"audi6_instrupanel_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Instrument Panel",
+        "value":80,
+    },
+    "slotType" : "audi6_instrupanel",
+    "slots":[
+        ["type", "default", "description"],		
+        ["skin_instrupanel","audi6_skin_instrupanel", "Instrument Cluster Finish", {"coreSlot":true}],
+		
+        ["audi6_gauges","audi6_gauges_metric", "Gauges", {"coreSlot":true}],
+		
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_instrupanel_trim_fl", ["audi6_dash"]],
+        ["audi6_instrupanel_buttons_fl", ["audi6_dash"]],
+        ["audi6_gaugescreen_frame_fl", ["audi6_dash"]],
+        ["audi6_gaugesymbol_frame", ["audi6_dash"]],
+		["audi6_gaugetrim", ["audi6_dash"]],
+        ["audi6_lightcontrol_frame", ["audi6_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["lightbutton_s", "audi6_lightcontrol_fl", "f5l","f5r","dsh5",  {"x":-90, "y":180, "z":0}, {"x":17, "y":-100, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+    ],
+},
+"audi6_instrupanel_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Instrument Panel",
+        "value":80,
+    },
+    "slotType" : "audi6_instrupanel",
+    "slots":[
+        ["type", "default", "description"],		
+        ["skin_instrupanel","audi6_skin_instrupanel", "Instrument Cluster Finish", {"coreSlot":true}],
+		
+        ["audi6_gauges","audi6_gauges_metric", "Gauges", {"coreSlot":true}],
+		
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_instrupanel_trim_pfl", ["audi6_dash"]],
+        ["audi6_instrupanel_buttons_pfl", ["audi6_dash"]],
+        ["audi6_gaugescreen_frame_pfl", ["audi6_dash"]],
+        ["audi6_gaugesymbol_frame", ["audi6_dash"]],
+        ["audi6_lightcontrol_frame", ["audi6_dash"]],
+        ["audi6_gaugetrim", ["audi6_dash"]],
+        ["audi6_gaugesymbol_frame", ["audi6_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        ["lightbutton_s", "audi6_lightcontrol_pfl", "f5l","f5r","dsh5",  {"x":-90, "y":180, "z":0}, {"x":17, "y":-100, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+    ],
+},
+"audi6_dash": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Dashboard",
+        "value":400,
+    },
+    "slotType" : "audi6_dash",
+	"slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",             "description"],
+        ["audi6_dash_aircon",    ["audi6_dash_aircon"],    [],          "audi6_dash_aircon",   "Climate Control",          {"coreSlot":true}],
+        ["gps",                  ["gps"],                  [],          "",                    "Navigation Unit",          {"nodeOffset":{"x":0.08,"y":-0.68,"z":1.1}}],
+        ["audi6_dash_badge",     ["audi6_dash_badge"],     [],          "",                    "Dashboard Badge"],
+        ["audi6_accessories",    ["audi6_accessories"],    [],          "",                    "Interior Accessories"],
+        ["audi6_glovebox_door",  ["audi6_glovebox_door"],  [],          "audi6_glovebox_door", "Glove Box Door"],
+        ["audi6_acvents",        ["audi6_acvents"],        [],          "audi6_acvents",       "Air Conditioning Vents",   {"coreSlot":true}],
+        ["audi6_armrest",        ["audi6_armrest"],        [],          "audi6_armrest",       "Front Armrest"],
+        ["audi6_instrupanel",    ["audi6_instrupanel"],    [],          "audi6_instrupanel_fl", "Instrument Panel",        {"coreSlot":true}],
+        ["audi6_centerconsole",  ["audi6_centerconsole"],  [],          "audi6_centerconsole", "Center Console",           {"coreSlot":true}],
+        ["audi6_steer",          ["audi6_steer"],          [],          "audi6_steer",         "Steering Wheel"],
+		["audi6_gloveboxlight_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Glovebox Light",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "glovebox_door_s",
+					"$nodeRef":"dsh2r", "$nodeX":"dsh1l", "$nodeY":"dsh1r",
+					"$deformGroup":"",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.439, "$posY":-0.729, "$posZ":0.830,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$lightOuterAngle":179,
+					"$lightRange":0.25
+				}
+		}],		
+		["audi6_ambientlighting_L_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting L",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"f5l", "$nodeX":"f5ll", "$nodeY":"f1l",
+					"$deformGroup":"",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.343, "$posY":-0.824, "$posZ":0.668,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":179,
+					"$lightRange":0.5
+				}
+		}],		
+		["audi6_ambientlighting_R_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting R",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"f5r", "$nodeX":"f5rr", "$nodeY":"f1r",
+					"$deformGroup":"",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.343, "$posY":-0.824, "$posZ":0.668,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":179,
+					"$lightRange":0.5
+				}
+		}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_dash", ["audi6_dash"]],
+        ["audi6_dash_carpet", ["audi6_dash"]],
+		{"disable":"$=$components.electrics.storagePackage ~= 1"},
+        ["audi6_footwell_storage", ["audi6_dash"]],
+		{"disable":""},
+        ["audi6_dash_sides", ["audi6_dash"]],
+		
+		{"disable":"$=$components.electrics.hasElectricSteeringColumn ~= 1"},
+        ["audi6_steering_column_electric", ["audi6_dash"]],		
+		{"disable":"$=$components.electrics.hasElectricSteeringColumn == 1"},
+        ["audi6_steering_column_manual", ["audi6_dash"]],
+		{"disable":""},
+		
+        ["audi6_glovebox_compartment", ["audi6_dash"]],
+        ["audi6_glovebox_light", ["audi6_dash"]],
+        ["audi6_glovebox_lightglass", ["audi6_dash"]],
+		
+		// plastic dashboard
+		{"disable":"$=$components.electrics.leatherDash == 1"},
+		["audi6_dash_top", ["audi6_dash"]],
+		
+		// leather dashboard
+		{"disable":"$=$components.electrics.leatherDash ~= 1"},
+		["audi6_dash_top", ["audi6_dash"], [], {"materialOverride":[["audi6_plastic_b_color2", "audi6_interior_exclusive"],["invis", "audi6_stitching_exclusive"]]}],
+		
+		// dash bottom - default
+		{"disable":"$=$components.electrics.dashBottomExclusive == 1"},
+		["audi6_dash_bottom", ["audi6_dash"]],
+		
+		// dash bottom - custom
+		{"disable":"$=$components.electrics.dashBottomExclusive ~= 1"},
+		["audi6_dash_bottom", ["audi6_dash"], [], {"materialOverride":[["audi6_plastic_b_color2", "audi6_plastic_b_exclusive"]]}],
+		{"disable":""},
+    ],
+    "glowMap":{
+	
+		//SMOOTH
+		
+	    "audi6_glovebox_light": {"simpleFunction":"glovebox_door_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+		
+		//INSTANT
+		
+	    "audi6_interior_symbs": {"simpleFunction":"lowhighbeam_auto"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+	    "audi6_interior_symbs_black": {"simpleFunction":"lowhighbeam_auto"    ,"off":"audi6_interior_symbs_black", "on":"audi6_interior_symbs_on"},
+	    "audi6_interior_symbs_hazard": {"simpleFunction":"hazard"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+	    "audi6_interior_symbs_parkingbrake": {"simpleFunction":"parkingbrakelight"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+    },
+
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //turn signal stalk
+        ["signalstalk", "audi6_signalstalk", "f5l","f5r","dsh5",  {"x":65, "y":15, "z":180}, {"x":0, "y":-14, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+        //wiper stalk
+        ["wiperstalk", "audi6_wiperstalk", "f5l","f5r","dsh5",  {"x":65, "y":-15, "z":180}, {"x":0, "y":21, "z":0}    , {"x":0, "y":0, "z":0}, 0, 1, 0, 1],
+        //cruise stalk
+		{"disable":"$=$components.electrics.adaptiveCruiseControl ~= 0"},
+        ["cruise", "audi6_cruisestalk", "f5l","f5r","dsh5",  {"x":65, "y":15, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],		
+		{"disable":"$=$components.electrics.adaptiveCruiseControl ~= 1"},
+        ["cruise", "audi6_cruisestalk_acc_pfl", "f5l","f5r","dsh5",  {"x":65, "y":15, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],		
+		{"disable":"$=$components.electrics.adaptiveCruiseControl ~= 2"},
+        ["cruise", "audi6_cruisestalk_acc_fl", "f5l","f5r","dsh5",  {"x":65, "y":15, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+		{"disable":""},
+    ],
+	
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["hood_int",  "f1ll","f1l","f5ll", "box", {"x":0.05, "y":0.17, "z":0.07}, {"x":94, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.16, "y":0.30, "z":-0.02}],
+        ["headlights",  "f5l","f5r","dsh5", "sphere", 0.0205, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.2166, "y":0.5000, "z":0.1419}],
+        ["signalstalk",  "f5l","f5r","dsh5", "sphere", 0.017, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.1522, "y":0.5814, "z":0.0940}],
+        ["gauges_screen_menu",  "f5l","f5r","dsh5", "box", {"x":0.0100, "y":0.0130, "z":0.0059}, {"x":11.384, "y":20.478, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1860, "y":0.5877, "z":0.0847}],
+        ["wipers_F",  "f5l","f5r","dsh5", "sphere", 0.017, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1522, "y":0.5814, "z":0.0940}],
+		{"disable":"$=$components.electrics.hasRearWiper ~= 1"},
+        ["wiper_R",  "f5l","f5r","dsh5", "sphere", 0.007, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.1746, "y":0.5915, "z":0.1033}],
+		{"disable":""},
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["hood_int", "action0", "hoodRelease"],
+        ["headlights", "action0", "audi6_cycle_headlights"],
+        ["signalstalk", "action0", "common:toggle_left_signal"],
+        ["signalstalk", "action2", "common:toggle_right_signal"],
+        ["gauges_screen_menu", "action0", "gauges_screen_menu"],
+        ["wipers_F", "action0", "wipers_F"],
+        ["wipers_F", "action2", "wipers_F_down"],
+        ["wiper_R", "action0", "wiper_R"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["hoodRelease"],
+		["audi6_cycle_headlights"],
+		["gauges_screen_menu"],
+    ],
+	
+    "soundscape": [
+        ["name", "src"],
+        {"node:":"dsh5"},
+        ["indicatorStart", "event:>Vehicle>Interior>Indicator>AU5_On"],
+        ["indicatorStop", "event:>Vehicle>Interior>Indicator>AU5_Off"],
+        //affects horn location because horn soundscape is loaded after
+        {"node:":"f15"},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"selfCollision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //dashboard
+         {"group":"audi6_dash"},
+         {"nodeWeight":5},
+         ["dsh1r",-0.613,-0.606,0.982],
+         ["dsh1",0.0,-0.62,1.016],
+         ["dsh1l",0.613,-0.606,0.982],
+
+         ["dsh2r",-0.667,-0.536,0.793],
+         ["dsh2",0.0,-0.536,0.793],
+         ["dsh2l",0.667,-0.536,0.793],
+
+         ["dsh3",0.0,-0.265,0.65],
+         ["dsh4",0.0,0.302,0.65],
+
+         //steering column
+         {"nodeWeight":2.0},
+         ["dsh5", 0.365, -0.4074, 0.907, {"selfCollision":false}],
+         {"group":""},
+
+         //floor thickness nodes
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":6.0},
+         ["f7r", -0.33, -0.33, 0.43, {"group":["audi6_body","audi6_dash"]}],
+         ["f7l", 0.33, -0.33, 0.43, {"group":["audi6_body","audi6_dash"]}],
+         ["f8r", -0.33, 0.30, 0.43, {"group":["audi6_body","audi6_dash"]}],
+         ["f8l", 0.33, 0.30, 0.43, {"group":["audi6_body","audi6_dash"]}],
+         ["f9r", -0.33, 1.03, 0.5],
+         ["f9l", 0.33, 1.03, 0.5],
+    ],
+    "beams":[
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //--DASHBOARD--
+          {"beamSpring":2001000,"beamDamp":250},
+          {"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":""},
+          {"deformGroup":"display_break","deformationTriggerRatio":0.05},
+          ["dsh2l", "dsh2"],
+          ["dsh2", "dsh2r"],
+          ["dsh1l", "dsh1"],
+          ["dsh1", "dsh1r"],
+          ["dsh2", "dsh1"],
+          ["dsh2l", "dsh1l"],
+          ["dsh2r", "dsh1r"],
+          ["dsh2", "dsh3"],
+          ["dsh3", "dsh4"],
+          ["dsh1r", "f6rr"],
+          ["dsh2r", "f5rr"],
+          ["dsh1l", "f6ll"],
+          ["dsh2l", "f5ll"],
+          ["dsh1", "f6l"],
+          ["dsh1", "f6r"],
+          ["dsh2", "f5l"],
+          ["dsh2", "f5r"],
+          ["dsh3", "f7l"],
+          ["dsh3", "f7r"],
+          ["dsh4", "f8r"],
+          ["dsh4", "f8l"],
+          ["dsh3", "f5l"],
+          ["dsh3", "f5r"],
+          ["dsh2", "f7l"],
+          ["dsh2", "f7r"],
+          ["dsh3", "f8l"],
+          ["dsh4", "f7l"],
+          ["dsh4", "f7r"],
+          ["dsh3", "f8r"],
+          ["dsh2l", "f5l"],
+          ["dsh2", "f5ll"],
+          ["dsh2", "f5rr"],
+          ["dsh2r", "f5r"],
+          ["dsh2r", "f6rr"],
+          ["dsh1r", "f5rr"],
+          ["dsh1l", "f5ll"],
+          ["dsh2l", "f6ll"],
+          ["dsh1l", "dsh2"],
+          ["dsh2l", "dsh1"],
+          ["dsh1", "dsh2r"],
+          ["dsh1r", "dsh2"],
+          ["dsh1r", "f6r"],
+          ["dsh1l", "f6l"],
+          ["dsh1", "f6ll"],
+          ["dsh1", "f6rr"],
+          ["dsh1", "f5r"],
+          ["dsh1", "f5l"],
+          ["dsh2", "f6r"],
+          ["dsh2", "f6l"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //steering column
+          ["dsh5", "f5l"],
+          ["dsh5", "f1l"],
+          ["dsh5", "f5ll"],
+          ["dsh5", "f5r"],
+          ["dsh5", "f6l"],
+          ["dsh5", "dsh2l"],
+          ["dsh5", "dsh1l"],
+          ["dsh5", "dsh2"],
+          ["dsh5", "dsh1"],
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":""},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"plastic"},
+            {"group":"audi6_dash"},
+            {"dragCoef":0},
+            ["dsh1r", "f6rr", "f6r"],
+            ["dsh1r", "f6r", "dsh1"],
+            ["dsh1", "f6r", "f6l"],
+            ["dsh1", "f6l", "dsh1l"],
+            ["dsh1l", "f6l", "f6ll"],
+            ["dsh1l", "f6ll", "dsh2l"],
+            ["f6ll", "f5ll", "dsh2l"],
+            ["dsh1r", "dsh2r", "f6rr"],
+            ["f6rr", "dsh2r", "f5rr"],
+            ["dsh1", "dsh2", "dsh2r"],
+            ["dsh2r", "dsh1r", "dsh1"],
+            ["dsh1", "dsh1l", "dsh2l"],
+            ["dsh2l", "dsh2", "dsh1"],
+            ["dsh2l", "f5l", "dsh2"],
+            ["dsh2l", "f5ll", "f5l"],
+            ["dsh2", "f5r", "dsh2r"],
+            ["dsh2r", "f5r", "f5rr"],
+            ["f5l", "dsh3", "dsh2"],
+            ["dsh2", "dsh3", "f5r"],
+            ["f5r", "fi1r", "f1rr"],
+            ["f1rr", "f5rr", "f5r"],
+            ["f5l", "f1ll", "fi1l"],
+            ["f5l", "f5ll", "f1ll"],
+            ["dsh4", "fi3l", "fi3r"],
+            ["fi3r", "fi2r", "dsh3"],
+            ["dsh3", "dsh4", "fi3r"],
+            ["dsh3", "fi2l", "fi3l"],
+            ["fi3l", "dsh4", "dsh3"],
+            ["dsh3", "fi2r", "fi1r"],
+            ["fi1r", "f5r", "dsh3"],
+            ["fi2l", "dsh3", "fi1l"],
+            ["f5l",  "fi1l", "dsh3"],
+
+            {"group":""},
+    ],
+},
+"audi6_dash_aircon_finish": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons_frame", ["audi6_dash"]],
+         ["audi6_dash_aircon_frame", ["audi6_dash"]],
+		 //normal
+		 {"disable":"$=$components.electrics.startStopMesh ~= 0"},
+         ["audi6_centerconsole_inlay", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"]],   
+		 //start-stop
+		 {"disable":"$=$components.electrics.startStopMesh == 0"},
+         ["audi6_centerconsole_inlay_b", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"]],   
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon_finish_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Grey",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_finish",
+	"components": {
+        "electrics": {
+			"centerFinish": 1,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons_frame", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],
+         ["audi6_dash_aircon_frame", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],
+		 //normal
+		 {"disable":"$=$components.electrics.startStopMesh ~= 0"},
+         ["audi6_centerconsole_inlay", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 //start-stop
+		 {"disable":"$=$components.electrics.startStopMesh == 0"},
+         ["audi6_centerconsole_inlay_b", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon_buttons_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Climate Control Pre-Facelift Buttons",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_buttons",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_aircon_buttons", ["audi6_dash"]],
+         ["audi6_dash_aircon_buttons_econsetup", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasHeatedSeats ~= 1"},
+         ["audi6_button_heatedseats", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		 ["audi6_button_blis", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasCurtain ~= 1"},
+		 ["audi6_button_rearsunshade", ["audi6_dash"]],
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon_buttons_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Climate Control Facelift Buttons",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_buttons",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_aircon_buttons", ["audi6_dash"]],
+         ["audi6_dash_aircon_buttons_onoffac", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasHeatedSeats ~= 1"},
+         ["audi6_button_heatedseats", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		 ["audi6_button_blis", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasCurtain ~= 1"},
+		 ["audi6_button_rearsunshade", ["audi6_dash"]],
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Climate Control",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon",
+    "slots":[
+        ["type", "default", "description"],
+        ["audi6_dash_aircon_buttons","audi6_dash_aircon_buttons_pfl", "Climate Control Buttons", {"coreSlot":true}],
+        ["audi6_dash_aircon_finish","audi6_dash_aircon_finish_grey", "Climate Control Finish", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons", ["audi6_dash"]],
+    ],
+    "glowMap":{
+        "audi6_button_blis":{"simpleFunction":{"button_isBLIS":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_auto1":{"simpleFunction":{"button_isAUTO1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_auto2":{"simpleFunction":{"button_isAUTO2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_econ":{"simpleFunction":{"button_isECON":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_setup":{"simpleFunction":{"button_isSETUP":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_fan":{"simpleFunction":{"button_isFAN":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_airflow1":{"simpleFunction":{"button_isAIRFLOW1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_airflow2":{"simpleFunction":{"button_isAIRFLOW2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseat1":{"simpleFunction":{"button_isHEATEDSEAT1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseat2":{"simpleFunction":{"button_isHEATEDSEAT2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_frontdemister":{"simpleFunction":{"button_isFRONTDEMISTER":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_reardemister":{"simpleFunction":{"button_isREARDEMISTER":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_recirculation":{"simpleFunction":{"button_isRECIRCULATION":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+		
+		//TRIGGERS
+		
+        "audi6_fan_trigger":{"simpleFunction":{"hvac_context1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_heatedseat1_trigger":{"simpleFunction":{"hvac_context2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_heatedseat2_trigger":{"simpleFunction":{"hvac_context3":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_airflow1_trigger":{"simpleFunction":{"hvac_context4":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_airflow2_trigger":{"simpleFunction":{"hvac_context5":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+		
+		"audi6_aircon_screen":{"simpleFunction":{"ignitionLevel2":0.5}, "off":"screen_off", "on":"audi6_gauges_screen", "on_intense":"audi6_gauges_screen"},
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+
+		//key
+        ["hazardbutton_s", "audi6_hazardbutton", "f5l","f5r","dsh5",       {"x":90, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.001,"z":0.0}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		//optional
+		{"disable":"$=$components.electrics.hasCurtain ~= 1"},
+		["button_rearsunshade",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4243, "y":0.4990, "z":0.0013}],
+		{"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		["button_blis",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2894, "y":0.4900, "z":0.0050}],
+		{"disable":"$=$components.electrics.hasHeatedSeats ~= 1"},
+        ["button_heatedseat1",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3237, "y":0.4876, "z":-0.0604}],
+        ["button_heatedseat2",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3902, "y":0.4947, "z":-0.0622}],
+		{"disable":""},
+		
+        ["hazards",  "f5l","f5r","dsh5", "box", {"x":0.06, "y":0.008, "z":0.015}, {"x":94, "y":3.5, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3398, "y":0.4939, "z":0.0039}],
+        ["toggleESCMode",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2582, "y":0.4891, "z":0.0060}],
+        ["button_frontdemister",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3554, "y":0.4916, "z":-0.0582}],
+        ["button_recirculation",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3554, "y":0.4905, "z":-0.0735}],
+        ["button_reardemister",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3554, "y":0.4871, "z":-0.0885}],
+        ["button_auto1",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2595, "y":0.4820, "z":-0.0326}],
+        ["button_econ",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3247, "y":0.4885, "z":-0.0339}],
+        ["button_setup",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3901, "y":0.4909, "z":-0.0359}],
+        ["button_auto2",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4539, "y":0.4967, "z":-0.0382}],
+        ["button_fan1",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2588, "y":0.4838, "z":-0.0578}],
+        ["button_fan2",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4547, "y":0.4956, "z":-0.0643}],
+        ["button_airflow1",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2588, "y":0.4838, "z":-0.0776}],
+        ["button_airflow2",  "f5l","f5r","dsh5", "box", {"x":0.022, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4547, "y":0.4956, "z":-0.0841}],
+            
+        ["tempLeft",  "f5l","f5r","dsh5", "sphere", 0.019, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3012, "y":0.4942, "z":-0.0768}],
+        ["tempRight",  "f5l","f5r","dsh5", "sphere", 0.019, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4333, "y":0.5063, "z":-0.0814}]
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		
+        ["button_blis", "action0", "button_blis"],
+        ["button_rearsunshade", "action0", "button_rearsunshade"],
+		
+        ["hazards", "action0", "common:toggle_hazard_signal"],
+        ["toggleESCMode", "action0", "common:toggleESCMode"],
+		
+        ["button_auto1", "action0", "button_auto1"],
+        ["button_auto2", "action0", "button_auto2"],
+        ["button_econ", "action0", "button_econ"],
+        ["button_setup", "action0", "button_setup"],
+        ["button_heatedseat1", "action0", "button_heatedseat1"],
+        ["button_heatedseat2", "action0", "button_heatedseat2"],
+		
+        ["button_fan1", "action0", "button_fan"],
+        ["button_fan2", "action0", "button_fan"],
+		
+        ["button_airflow1", "action0", "button_airflow1"],
+        ["button_airflow2", "action0", "button_airflow2"],
+        ["button_frontdemister", "action0", "button_frontdemister"],
+        ["button_reardemister", "action0", "button_reardemister"],
+        ["button_recirculation", "action0", "button_recirculation"],
+		
+        ["tempLeft", "action0", "tempLeftLower"],
+        ["tempLeft", "action2", "tempLeftHigher"],        
+		["tempRight", "action0", "tempRightLower"],
+        ["tempRight", "action2", "tempRightHigher"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		
+                ["button_blis"],
+                ["button_rearsunshade"],
+				
+                ["button_auto1"],
+                ["button_auto2"],
+                ["button_econ"],
+                ["button_setup"],
+                ["button_fan"],
+                ["button_airflow1"],
+                ["button_airflow2"],
+                ["button_heatedseat1"],
+                ["button_heatedseat2"],
+                ["button_frontdemister"],
+                ["button_reardemister"],
+                ["button_recirculation"],
+				
+                ["tempLeftLower"],
+                ["tempLeftHigher"],
+                ["tempRightLower"],
+                ["tempRightHigher"],
+    ],
+},
+"audi6_dash_aircon_basic_finish": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_basic_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons_frame", ["audi6_dash"]],
+         ["audi6_dash_aircon_basic_frame", ["audi6_dash"]],
+		 //normal
+		 {"disable":"$=$components.electrics.startStopMesh ~= 0"},
+         ["audi6_centerconsole_inlay", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"]],   
+		 //start-stop
+		 {"disable":"$=$components.electrics.startStopMesh == 0"},
+         ["audi6_centerconsole_inlay_b", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"]],   
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon_basic_finish_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Grey",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon_basic_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons_frame", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],
+         ["audi6_dash_aircon_basic_frame", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],
+		 //normal
+		 {"disable":"$=$components.electrics.startStopMesh ~= 0"},
+         ["audi6_centerconsole_inlay", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 //start-stop
+		 {"disable":"$=$components.electrics.startStopMesh == 0"},
+         ["audi6_centerconsole_inlay_b", ["audi6_dash"]],
+         ["audi6_centerconsole_buttonframe", ["audi6_dash"], [],{"materialOverride":[["audi6_plastic_detailed2","audi6_grey_plastic"]]}],   
+		 {"disable":""},
+    ],
+},
+"audi6_dash_aircon_basic": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Basic Climate Control",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_aircon",
+    "slots":[
+        ["type", "default", "description"],
+        ["audi6_dash_aircon_basic_finish","audi6_dash_aircon_basic_finish_grey", "Climate Control Finish", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_buttons", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasHeatedSeats ~= 1"},
+         ["audi6_button_basic_heatedseats", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		 ["audi6_button_blis", ["audi6_dash"]],
+		 {"disable":"$=$components.electrics.hasCurtain ~= 1"},
+		 ["audi6_button_rearsunshade", ["audi6_dash"]],
+		 {"disable":""},
+         ["audi6_dash_aircon_basic", ["audi6_dash"]],
+    ],
+    "glowMap":{
+        "audi6_button_blis":{"simpleFunction":{"button_isBLIS":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_reardemister":{"simpleFunction":{"button_isREARDEMISTER":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_econ":{"simpleFunction":{"button_isECON":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_recirculation":{"simpleFunction":{"button_isRECIRCULATION":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_onoff":{"simpleFunction":{"button_isONOFF":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+		
+        "audi6_button_heatedseatl1":{"simpleFunction":{"heatedSeatLevel1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseatl2":{"simpleFunction":{"heatedSeatLevel2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseatl3":{"simpleFunction":{"heatedSeatLevel3":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},        
+		
+		"audi6_button_heatedseatr1":{"simpleFunction":{"heatedSeatPLevel1":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseatr2":{"simpleFunction":{"heatedSeatPLevel2":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+        "audi6_button_heatedseatr3":{"simpleFunction":{"heatedSeatPLevel3":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on", "on_intense":"audi6_interior_symbs_on"},
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+
+		//key
+        ["hazardbutton_s", "audi6_hazardbutton", "f5l","f5r","dsh5",       {"x":90, "y":0, "z":0},    {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":-0.001,"z":0.0}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		
+        ["tempLeftNorm", "audi6_dash_aircon_basic_templeft", "f5l","f5r","dsh5",       {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":-240}, {"x":0, "y":0, "z":0}, 0, 1, 1, 1],
+        ["airflowDialNorm", "audi6_dash_aircon_basic_airflow", "f5l","f5r","dsh5",       {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":-360}, {"x":0, "y":0, "z":0}, 0, 1, 0.38, 1],
+        ["fanDialNorm", "audi6_dash_aircon_basic_fanspeed", "f5l","f5r","dsh5",       {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":-330}, {"x":0, "y":0, "z":0}, 0, 1, -0.41, 1],
+        ["tempRightNorm", "audi6_dash_aircon_basic_tempright", "f5l","f5r","dsh5",       {"x":0, "y":0, "z":180},    {"x":0, "y":0, "z":-240}, {"x":0, "y":0, "z":0}, 0, 1, 1, 1],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		//optional
+		{"disable":"$=$components.electrics.hasCurtain ~= 1"},
+		["button_rearsunshade",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4243, "y":0.4990, "z":0.0013}],
+		{"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		["button_blis",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2894, "y":0.4900, "z":0.0050}],
+		
+		{"disable":"$=$components.electrics.hasHeatedSeats ~= 1"},
+		
+        ["increaseHeatedSeatLevel",  "f5l","f5r","dsh5", "box", {"x":0.02, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2855, "y":0.4820, "z":-0.0847}],
+        ["decreaseHeatedSeatLevel",  "f5l","f5r","dsh5", "box", {"x":0.02, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2500, "y":0.4802, "z":-0.0835}],
+		
+        ["increaseHeatedSeatPLevel",  "f5l","f5r","dsh5", "box", {"x":0.02, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4583, "y":0.4906, "z":-0.0885}],
+        ["decreaseHeatedSeatPLevel",  "f5l","f5r","dsh5", "box", {"x":0.02, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4217, "y":0.4890, "z":-0.0880}],
+		{"disable":""},
+		
+        ["hazards",  "f5l","f5r","dsh5", "box", {"x":0.06, "y":0.008, "z":0.015}, {"x":94, "y":3.5, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3398, "y":0.4939, "z":0.0039}],
+        ["toggleESCMode",  "f5l","f5r","dsh5", "box", {"x":0.027, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2582, "y":0.4891, "z":0.0060}],
+		
+        ["button_reardemister",  "f5l","f5r","dsh5", "box", {"x":0.0335, "y":0.0083, "z":0.0103}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3500, "y":0.4908, "z":-0.0348}],
+        ["button_onoff",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3225, "y":0.4848, "z":-0.0854}],
+        ["button_recirculation",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3542, "y":0.4860, "z":-0.0861}],
+        ["button_econ",  "f5l","f5r","dsh5", "box", {"x":0.025, "y":0.008, "z":0.015}, {"x":94, "y":0, "z":-1.5}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3848, "y":0.4887, "z":-0.0868}],
+		
+        ["directTempLeft",  "f5l","f5r","dsh5", "sphere", 0.016, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2760, "y":0.4909, "z":-0.0562}],
+		["airflowDialNorm",  "f5l","f5r","dsh5", "sphere", 0.016, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3297, "y":0.4952, "z":-0.0518}],
+		["fanDialNorm",  "f5l","f5r","dsh5", "sphere", 0.016, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4057, "y":0.4990, "z":-0.0537}],
+        ["directTempRight",  "f5l","f5r","dsh5", "sphere", 0.016, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.4604, "y":0.5019, "z":-0.0604}]
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["hazards", "action0", "common:toggle_hazard_signal"],
+        ["toggleESCMode", "action0", "common:toggleESCMode"],
+		
+        ["button_blis", "action0", "button_blis"],
+        ["button_rearsunshade", "action0", "button_rearsunshade"],
+		
+        ["button_reardemister", "action0", "button_reardemister"],
+        ["button_onoff", "action0", "button_onoff"],
+        ["button_recirculation", "action0", "button_recirculation"],
+        ["button_econ", "action0", "button_econ"],
+		
+        ["increaseHeatedSeatLevel", "action0", "increaseHeatedSeatLevel"],
+        ["decreaseHeatedSeatLevel", "action0", "decreaseHeatedSeatLevel"],
+		
+        ["increaseHeatedSeatPLevel", "action0", "increaseHeatedSeatPLevel"],
+        ["decreaseHeatedSeatPLevel", "action0", "decreaseHeatedSeatPLevel"],
+		
+        ["airflowDialNorm", "action0", "directAirflowLower"],
+        ["airflowDialNorm", "action2", "directAirflowHigher"],
+        ["fanDialNorm", "action0", "directFanLower"],
+        ["fanDialNorm", "action2", "directFanHigher"],
+		["directTempLeft", "action0", "directTempLeftLower"],
+		["directTempLeft", "action2", "directTempLeftHigher"],
+		["directTempRight", "action0", "directTempRightLower"],
+		["directTempRight", "action2", "directTempRightHigher"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+                ["button_blis"],
+                ["button_rearsunshade"],
+				
+                ["button_reardemister"],
+                ["button_onoff"],
+                ["button_recirculation"],
+                ["button_econ"],
+                ["increaseHeatedSeatLevel"],
+                ["decreaseHeatedSeatLevel"],
+				
+                ["increaseHeatedSeatPLevel"],
+                ["decreaseHeatedSeatPLevel"],
+				
+                ["directAirflowLower"],
+                ["directAirflowHigher"],
+                ["directFanLower"],
+                ["directFanHigher"],
+                ["directTempLeftLower"],
+                ["directTempLeftHigher"],
+                ["directTempRightLower"],
+                ["directTempRightHigher"],
+    ],
+},
+"audi6_dash_badge_quattro": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quattro Badge",
+        "value":80,
+    },
+    "slotType" : "audi6_dash_badge",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_dash_badge_quattro", ["audi6_dash"]],
+    ],
+},
+"audi6_shifter_knob_M_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Shifter Knob",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_M",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest", ["audi6_body"]],
+		{"disable":"$=$components.electrics.shifterExclusive ~= 1"},
+        ["audi6_shifter_knob_M", ["audi6_shifterknob_M"], [],{"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"]]}],	
+		{"disable":"$=$components.electrics.shifterExclusive ~= nil"},
+		["audi6_shifter_knob_M", ["audi6_shifterknob_M"]],
+		{"disable":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        ["clutch"     ,"audi6_clutchpedal", "f1l","f1ll","f6l",  {"x":0, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_knob_M_a6_sline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 S-Line Shifter Knob",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_M",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest", ["audi6_body"]],
+		{"disable":"$=$components.electrics.shifterExclusive ~= 1"},
+        ["audi6_shifter_knob_M_sline", ["audi6_shifterknob_M"], [],{"materialOverride":[["audi6_dottedleather","audi6_interior_exclusive"]]}],	
+		{"disable":"$=$components.electrics.shifterExclusive ~= nil"},
+		["audi6_shifter_knob_M_sline", ["audi6_shifterknob_M"]],
+		{"disable":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        ["clutch"     ,"audi6_clutchpedal", "f1l","f1ll","f6l",  {"x":0, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_knob_M_a6_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Inlay Shifter Knob [Exclusive]",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_M",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest", ["audi6_body"]],
+        ["audi6_shifter_knob_M", ["audi6_shifterknob_M"], [],{"materialOverride":[["audi6_leather_color2","audi6_inlay"]]}],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+        ["clutch"     ,"audi6_clutchpedal", "f1l","f1ll","f6l",  {"x":0, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_M": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Manual Shifter",
+        "value":80,
+    },
+    "slotType" : "audi6_shifter",
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_shifter_knob_M","audi6_shifter_knob_M_a6", "Shifter Knob", {"coreSlot":true}],
+    ],
+	"components": {
+        "electrics": {
+            "customValues": [
+                ["electricsName", "electricsFunction","electricsDefault"],
+				["manualShifterEnabled","electrics.manualShifterEnabled",1],
+            ],
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+            ],
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.shifterExclusive ~= 1"},
+         ["audi6_shifter_boot_M", ["audi6_dash","audi6_shifterboot_M_1","audi6_shifterboot_M_2"], [],{"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],		 
+		 {"disable":"$=$components.electrics.shifterExclusive ~= nil"},
+         ["audi6_shifter_boot_M", ["audi6_dash","audi6_shifterboot_M_1","audi6_shifterboot_M_2"]],
+		 {"disable":""},
+         ["audi6_shifter_base_M", ["audi6_dash","audi6_shifterboot_M_1"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["propAnimation/hPattern", {"name":"hPattern"}],
+
+    ]
+    "hPattern": {
+        "gearCoordinates": [
+            ["gearIndex",   "x",      "y"]
+            [-1,            -1,       1]
+            [0,             0.0,    -0.0]
+            [1,             -0.65,   0.95]
+            [2,             -0.65,   -1]
+            [3,             0.0,    0.95]
+            [4,             0.0,    -1]
+            [5,             0.65,        0.95]
+            [6,             0.65,        -1]
+        ]
+        "shiftSoundNode:":["sh_b3"]
+        "shiftSoundEventHPatternGearIn": "event:>Vehicle>Interior>Gearshift>manual_modern_08_in",
+        "shiftSoundEventHPatternGearOut": "event:>Vehicle>Interior>Gearshift>manual_modern_08_out",
+        "shiftSoundVolumeHPatternGearIn": 0.5,
+        "shiftSoundVolumeHPatternGearOut": 0.5,
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":false},
+         //--SHIFTER---  has to be jbeamed to allow for realistic movement
+         {"group":"audi6_shifterboot_M_1"},
+         {"nodeWeight":0.45}
+         ["sh_b1l",  0.0514, -0.4569, 0.6914],
+         ["sh_b1r",  -0.0464, -0.4569, 0.6914],
+         ["sh_b2l",  0.0514, -0.3334, 0.6694],
+         ["sh_b2r",  -0.0464, -0.3334, 0.6694],
+
+         ["sh_b3", 0.0000, -0.4019 0.6614],
+         {"selfCollision":true},
+         {"group":["audi6_shifterboot_M","audi6_shifterboot_M_2"]},
+         {"nodeWeight":0.5}
+         ["sh_l3", 0.0000, -0.3839, 0.8164],
+         {"selfCollision":false},
+         {"nodeWeight":0.30}
+         {"group":"audi6_shifterknob_M"},
+         ["sh_l1l", 0.02, -0.3607, 0.7514],
+         ["sh_l1r", -0.02, -0.3607, 0.7514],
+         ["sh_l2l", 0.02, -0.4187, 0.7564],
+         ["sh_l2r", -0.02, -0.4187, 0.7564],
+         {"selfCollision":false},
+         {"collision":true},
+         {"group":""},
+    ],
+    "beams":[
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        //main shape
+        {"beamSpring":401000,"beamDamp":55},
+        {"beamDeform":259000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["sh_b1l", "sh_b1r"],
+        ["sh_b1l", "sh_b2l"],
+        ["sh_b1l", "sh_b2r"],
+        ["sh_b1r", "sh_b2l"],
+        ["sh_b1r", "sh_b2r"],
+        ["sh_b2l", "sh_b2r"],
+
+        ["sh_b1l", "sh_b3"],
+        ["sh_b1r", "sh_b3"],
+        ["sh_b2l", "sh_b3"],
+        ["sh_b2r", "sh_b3"],
+        //lever
+        {"beamSpring":121000,"beamDamp":35},
+        ["sh_l3", "sh_l1l"],
+        ["sh_l3", "sh_l1r"],
+        ["sh_l3", "sh_l2l"],
+        ["sh_l3", "sh_l2r"],
+
+        ["sh_l1l", "sh_l1r"],
+        ["sh_l1l", "sh_l2l"],
+        ["sh_l1l", "sh_l2r"],
+
+        ["sh_l1r", "sh_l2l"],
+        ["sh_l1r", "sh_l2r"],
+        ["sh_l2l", "sh_l2r"],
+        //hinge
+        {"beamSpring":121000,"beamDamp":25},
+        ["sh_b3", "sh_l3"],
+        ["sh_b3", "sh_l1l"],
+        ["sh_b3", "sh_l1r"],
+        ["sh_b3", "sh_l2l"],
+        ["sh_b3", "sh_l2r"],
+
+        //stabilize the shifter
+        {"beamSpring":0,"beamDamp":175},
+        ["sh_b1l", "sh_l3"],
+        ["sh_b1r", "sh_l3"],
+        ["sh_b2l", "sh_l3"],
+        ["sh_b2r", "sh_l3"],
+        {"breakGroup":""},
+        //attach to body
+        {"beamSpring":300000,"beamDamp":70},
+        {"beamDeform":1000,"beamStrength":"FLT_MAX"},
+        ["sh_b1l", "f7r"],
+        ["sh_b1r", "f7r"],
+        ["sh_b2l", "f7r"],
+        ["sh_b2r", "f7r"],
+        ["sh_b3", "f7r"],
+
+        ["sh_b1l", "f7l"],
+        ["sh_b1r", "f7l"],
+        ["sh_b2l", "f7l"],
+        ["sh_b2r", "f7l"],
+        ["sh_b3", "f7l"],
+
+        ["sh_b1l", "f2r"],
+        ["sh_b1r", "f2r"],
+        ["sh_b2l", "f2r"],
+        ["sh_b2r", "f2r"],
+        ["sh_b3", "f2r"],
+
+        ["sh_b1l", "f2l"],
+        ["sh_b1r", "f2l"],
+        ["sh_b2l", "f2l"],
+        ["sh_b2r", "f2l"],
+        ["sh_b3", "f2l"],
+
+        ["sh_b1l", "f1r"],
+        ["sh_b1r", "f1r"],
+        ["sh_b2l", "f1r"],
+        ["sh_b2r", "f1r"],
+        ["sh_b3", "f1r"],
+
+        ["sh_b1l", "f1l"],
+        ["sh_b1r", "f1l"],
+        ["sh_b2l", "f1l"],
+        ["sh_b2r", "f1l"],
+        ["sh_b3", "f1l"],
+        {"beamSpring":200000,"beamDamp":20},
+        ["sh_b1l", "dsh2"],
+        ["sh_b1r", "dsh2"],
+        ["sh_b2l", "dsh2"],
+        ["sh_b2r", "dsh2"],
+        ["sh_b3",  "dsh2"],
+        //support beams
+        {"beamType":"|SUPPORT","beamPrecompression":0.895,"beamLongBound":2},
+        {"beamSpring":201000,"beamDamp":50},
+        {"beamDeform":16000,"beamStrength":"FLT_MAX"},
+        ["sh_l1r", "sh_b2l"],
+        ["sh_l2r", "sh_b1l"],
+        ["sh_l2l", "sh_b1r"],
+        ["sh_l1l", "sh_b2r"],
+        {"beamPrecompression":0.82}
+        ["sh_l3", "sh_b1l"],
+        ["sh_l3", "sh_b1r"],
+        ["sh_l3", "sh_b2l"],
+        ["sh_l3", "sh_b2r"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "torsionHydros": [
+        ["id1:","id2:","id3:","id4:"],
+        {"spring":200, "damp":1, "deform":"FLT_MAX", "strength":1000},
+        ["sh_b2l","sh_b1l","sh_b1r","sh_l3",  {"inputSource":"hPatternAxisY","factor":-0.15}],
+        ["sh_b1r","sh_b1l","sh_b2l","sh_l3",  {"inputSource":"hPatternAxisX","factor":-0.15}],
+        ["sh_b1r","sh_b2r","sh_b2l","sh_l3",  {"inputSource":"hPatternAxisY","factor":0.15}],
+        ["sh_b2l","sh_b2r","sh_b1r","sh_l3",  {"inputSource":"hPatternAxisX","factor":0.15}],
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        {"spring":100, "damp":0.2, "deform":30000, "strength":1000},
+        ["sh_b1r", "sh_b3", "sh_l3", "sh_l1r"],
+        ["sh_b2r", "sh_b3", "sh_l3", "sh_l2r"],
+        ["sh_b2l", "sh_b3", "sh_l3", "sh_l2l"],
+        ["sh_b1l", "sh_b3", "sh_l3", "sh_l1l"],
+
+    ],
+},
+"audi6_shifter_knob_A_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Shifter Knob",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_A",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest_rs6", ["audi6_body"]],
+		{"disable":"$=$components.electrics.shifterExclusive ~= 1"},		
+        ["audi6_shifter_knob_A_rs6", ["audi6_shifter_knob_A"], [],{"materialOverride":[["audi6_dottedleather","audi6_interior_exclusive"]]}],		
+		{"disable":"$=$components.electrics.shifterExclusive ~= nil"},		
+        ["audi6_shifter_knob_A_rs6", ["audi6_shifter_knob_A"]],
+		{"disable":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal_rs6", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal_rs6_A", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_knob_A_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Shifter Knob",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_A",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest", ["audi6_body"]],
+		{"disable":"$=$components.electrics.shifterExclusive ~= 1"},		
+        ["audi6_shifter_knob_A_a6", ["audi6_shifter_knob_A"], [],{"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"]]}],		
+		{"disable":"$=$components.electrics.shifterExclusive ~= nil"},		
+        ["audi6_shifter_knob_A_a6", ["audi6_shifter_knob_A"]],
+		{"disable":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal_A", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_knob_A_a6_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Inlay Shifter Knob [Exclusive]",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter_knob_A",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_footrest", ["audi6_body"]],
+        ["audi6_shifter_knob_A_a6", ["audi6_shifter_knob_A"], [],{"materialOverride":[["audi6_leather_color2","audi6_inlay"]]}],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //pedals
+        ["throttle","audi6_gaspedal", "f1l","f1ll","f6l",  {"x":15, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+		["brake","audi6_brakepedal_A", "f1l","f1ll","f6l",  {"x":5, "y":0, "z":0}, {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+    ],
+},
+"audi6_shifter_A": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Automatic Shifter",
+        "value":150,
+    },
+    "slotType" : "audi6_shifter",
+	"components": {
+        "electrics": {
+			"automaticShifterMesh": 1,
+        },
+    },
+    "slots":[
+        ["type", "default", "description"],		
+        ["audi6_shifter_knob_A","audi6_shifter_knob_A_a6", "Shifter Knob", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+		{"disable":"$=$components.electrics.shifterExclusive ~= 1"},
+        ["audi6_shifter_boot_A", ["audi6_console", "audi6_shifter_CVT"], [],{"materialOverride":[["audi6_leather_color2","audi6_interior_exclusive"],["audi6_stitching_c","audi6_stitching_exclusive"]]}],		
+		{"disable":"$=$components.electrics.shifterExclusive ~= nil"},
+        ["audi6_shifter_boot_A", ["audi6_console", "audi6_shifter_CVT"]],
+		{"disable":""},
+        ["audi6_shifter_base_A", ["audi6_console", "audi6_body","audi6_shifterbase_A"]],
+    ],
+    "glowMap":{
+			
+            //shifter
+			"audi6_gear_P":{"simpleFunction":{"ignitionLevel2":0.5,"auto_p":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+			"audi6_gear_R":{"simpleFunction":{"ignitionLevel2":0.5,"auto_r":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+			"audi6_gear_N":{"simpleFunction":{"ignitionLevel2":0.5,"auto_n":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+			"audi6_gear_D":{"simpleFunction":{"ignitionLevel2":0.5,"auto_d":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+			"audi6_gear_S":{"simpleFunction":{"ignitionLevel2":0.5,"auto_s":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+			"audi6_gear_M":{"simpleFunction":{"ignitionLevel2":0.5,"auto_m":0.5}, "off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on2", "on_intense":"audi6_interior_symbs_on"},
+    },
+    "controller": [
+        ["fileName"],
+        ["propAnimation/dualAxisLever", {"name":"dualAxisLever"}],
+        ["gearindicator", {}],
+    ]
+	"dualAxisLever": {
+		"orderedModeCoordinates": [
+			["modeName",   "x",      "y"],
+			["P",            0.0,     1],
+			["R",            0.0,     0.3],
+			["N",            0.0,     0.0],
+			["D",            0.0,     -0.3],
+			["S",            0.0,     -0.6],
+			["M",            -1,     -0.3]
+		],
+		"impulseModeCoordinates": [
+			["modeName",   "x",      "y"],
+			["M+",         -1,     -0.0],
+			["M-",         -1,     -0.6]
+		],
+		"modeChanges": [
+			["mode1",   "mode2",    "intermediateCoordinates"],
+			["D",       "M",        [{"x":0.0,"y":-0.3}]]
+		],
+		"moveSoundNode": ["sh_b3"],
+		"moveSoundEvent": "event:>Vehicle>Interior>Gearshift>manual_modern_09_in",
+		"moveSoundVolume": 0.5,
+		//"demoModes":["M1","M2","M3","M4","M5","M6",]
+		//"demoModes":["P","R", "N", "D","S","M1","M2","M3","M4","M5","M6"]
+		"electricsNameMode": "gear"
+	},
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":false},
+         //--SHIFTER---  has to be jbeamed to allow for realistic movement
+         {"group":["audi6_shifter_CVT","audi6_shifterbase_A"]},
+         {"nodeWeight":0.45}
+         ["sh_b1l",  0.025, -0.4593, 0.6909],
+         ["sh_b1r",  -0.049, -0.4583, 0.6909],
+         ["sh_b2l",  0.025, -0.3356, 0.6733],
+         ["sh_b2r",  -0.049, -0.3346, 0.6733],
+
+         ["sh_b3", -0.003, -0.3819 0.6514],
+         {"selfCollision":true},
+         {"group":["audi6_shifter_CVT","audi6_shifter_knob_A"]},
+         {"nodeWeight":0.5}
+         ["sh_l3", -0.003, -0.3819, 0.8064],
+         {"selfCollision":false},
+         {"nodeWeight":0.30}
+         {"group":"audi6_shifter_knob_A"},
+         ["sh_l1l", 0.0103, -0.3624, 0.7514],
+         ["sh_l1r", -0.0249, -0.3624, 0.7514],
+         ["sh_l2l", 0.0103, -0.4187, 0.7514],
+         ["sh_l2r", -0.0249, -0.4187, 0.7514],
+         {"selfCollision":false},
+         {"collision":true},
+         {"group":""},
+    ],
+    "beams":[
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        //main shape
+        {"beamSpring":401000,"beamDamp":55},
+        {"beamDeform":259000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["sh_b1l", "sh_b1r"],
+        ["sh_b1l", "sh_b2l"],
+        ["sh_b1l", "sh_b2r"],
+        ["sh_b1r", "sh_b2l"],
+        ["sh_b1r", "sh_b2r"],
+        ["sh_b2l", "sh_b2r"],
+
+        ["sh_b1l", "sh_b3"],
+        ["sh_b1r", "sh_b3"],
+        ["sh_b2l", "sh_b3"],
+        ["sh_b2r", "sh_b3"],
+        //lever
+        {"beamSpring":121000,"beamDamp":35},
+        ["sh_l3", "sh_l1l"],
+        ["sh_l3", "sh_l1r"],
+        ["sh_l3", "sh_l2l"],
+        ["sh_l3", "sh_l2r"],
+
+        ["sh_l1l", "sh_l1r"],
+        ["sh_l1l", "sh_l2l"],
+        ["sh_l1l", "sh_l2r"],
+
+        ["sh_l1r", "sh_l2l"],
+        ["sh_l1r", "sh_l2r"],
+        ["sh_l2l", "sh_l2r"],
+        //hinge
+        {"beamSpring":121000,"beamDamp":25},
+        ["sh_b3", "sh_l3"],
+        ["sh_b3", "sh_l1l"],
+        ["sh_b3", "sh_l1r"],
+        ["sh_b3", "sh_l2l"],
+        ["sh_b3", "sh_l2r"],
+
+        //stabilize the shifter
+        {"beamSpring":0,"beamDamp":175},
+        ["sh_b1l", "sh_l3"],
+        ["sh_b1r", "sh_l3"],
+        ["sh_b2l", "sh_l3"],
+        ["sh_b2r", "sh_l3"],
+        {"breakGroup":""},
+        //attach to body
+        {"beamSpring":300000,"beamDamp":70},
+        {"beamDeform":1000,"beamStrength":"FLT_MAX"},
+        ["sh_b1l", "f7"],
+        ["sh_b1r", "f7"],
+        ["sh_b2l", "f7"],
+        ["sh_b2r", "f7"],
+        ["sh_b3",  "f7"],
+
+        ["sh_b1l", "f2r"],
+        ["sh_b1r", "f2r"],
+        ["sh_b2l", "f2r"],
+        ["sh_b2r", "f2r"],
+        ["sh_b3", "f2r"],
+
+        ["sh_b1l", "f2l"],
+        ["sh_b1r", "f2l"],
+        ["sh_b2l", "f2l"],
+        ["sh_b2r", "f2l"],
+        ["sh_b3", "f2l"],
+
+        ["sh_b1l", "f1r"],
+        ["sh_b1r", "f1r"],
+        ["sh_b2l", "f1r"],
+        ["sh_b2r", "f1r"],
+        ["sh_b3", "f1r"],
+
+        ["sh_b1l", "f1l"],
+        ["sh_b1r", "f1l"],
+        ["sh_b2l", "f1l"],
+        ["sh_b2r", "f1l"],
+        ["sh_b3", "f1l"],
+        {"beamSpring":200000,"beamDamp":20},
+        ["sh_b1l", "dshr"],
+        ["sh_b1r", "dshr"],
+        ["sh_b2l", "dshr"],
+        ["sh_b2r", "dshr"],
+        ["sh_b3",  "dshr"],
+        ["sh_b1l", "dshl"],
+        ["sh_b1r", "dshl"],
+        ["sh_b2l", "dshl"],
+        ["sh_b2r", "dshl"],
+        ["sh_b3",  "dshl"],
+        //support beams
+        {"beamType":"|SUPPORT","beamPrecompression":0.77,"beamLongBound":2},
+        {"beamSpring":201000,"beamDamp":50},
+        {"beamDeform":16000,"beamStrength":"FLT_MAX"},
+        ["sh_l1r", "sh_b2l"],
+        ["sh_l2r", "sh_b1l"],
+        ["sh_l2l", "sh_b1r"],
+        ["sh_l1l", "sh_b2r"],
+        {"beamPrecompression":0.81}
+        ["sh_l3", "sh_b1l"],
+        ["sh_l3", "sh_b1r"],
+        ["sh_l3", "sh_b2l"],
+        ["sh_l3", "sh_b2r"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "torsionHydros": [
+        ["id1:","id2:","id3:","id4:"],
+        {"spring":200, "damp":1, "deform":"FLT_MAX", "strength":1000},
+        ["sh_b2l","sh_b1l","sh_b1r","sh_l3",  {"inputSource":"dualAxisY","factor":-0.27}],
+        ["sh_b1r","sh_b1l","sh_b2l","sh_l3",  {"inputSource":"dualAxisX","factor":0.37}],
+        ["sh_b1r","sh_b2r","sh_b2l","sh_l3",  {"inputSource":"dualAxisY","factor":0.27}],
+        ["sh_b2l","sh_b2r","sh_b1r","sh_l3",  {"inputSource":"dualAxisX","factor":-0.37}],
+    ],
+    "torsionbars": [
+        ["id1:", "id2:", "id3:", "id4:"],
+        {"spring":100, "damp":0.2, "deform":30000, "strength":1000},
+        ["sh_b1r", "sh_b3", "sh_l3", "sh_l1r"],
+        ["sh_b2r", "sh_b3", "sh_l3", "sh_l2r"],
+        ["sh_b2l", "sh_b3", "sh_l3", "sh_l2l"],
+        ["sh_b1l", "sh_b3", "sh_l3", "sh_l1l"],
+        {"spring":300, "damp":1, "deform":"FLT_MAX", "strength":1000},
+        ["sh_b2l","sh_b2r","sh_b1r","sh_l3"],
+        ["sh_b1r","sh_b1l","sh_b2l","sh_l3"],
+    ],
+},
+"audi6_shelf_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Parcel Shelf",
+        "value":340,
+    },
+    "slotType" : "audi6_shelf_sedan",
+	"components": {
+        "electrics": {
+			"parcelShelfMesh": 1,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_shelf_sedan", ["audi6_body"]],
+    ],
+},
+"audi6_domelight_front_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Front Roof Module",
+        "value":400,
+    },
+    "slotType" : "audi6_domelight_front",
+    "glowMap":{
+            "audi6_domelight_FL": {"simpleFunction":"domelight_FL_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_FR": {"simpleFunction":"domelight_FR_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_R": {"simpleFunction":"domelight_R_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_domelight_F_pfl", ["audi6_body"]],
+         ["audi6_domelight_F_sunglassholder", ["audi6_body"]],
+         ["audi6_domelight_F_vents_pfl", ["audi6_body"]],
+         ["audi6_domelight_F_trim", ["audi6_body"]],
+		 
+		{"disable":"$=($components.electrics.sunroofMesh == 1 or $components.electrics.hasHomeLink == 1)"},
+		["audi6_domelight_F_center", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh == 1 or $components.electrics.hasHomeLink ~= 1)"},
+		["audi6_domelight_F_center_homelink", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh ~= 1 or $components.electrics.hasHomeLink == 1)"},
+		["audi6_domelight_F_center_pano", ["audi6_body"]],
+		["audi6_domelight_F_center_pano_button_pfl", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh ~= 1 or $components.electrics.hasHomeLink ~= 1)"},
+		["audi6_domelight_F_center_pano_homelink", ["audi6_body"]],
+		["audi6_domelight_F_center_pano_button_pfl", ["audi6_body"]],
+
+		{"disable":""},
+		
+         ["audi6_domelight_F_button", ["audi6_body"]],
+         ["audi6_domelight_F_buttons_pfl", ["audi6_body"]],
+         ["audi6_domelight_F_light_pfl", ["audi6_body"]],
+         ["audi6_domelight_F_lightglass_pfl", ["audi6_body"]],
+    ],
+    "slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+        ["audi6_domelight_FL_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight FL",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_FL_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.060, "$posY":-0.278, "$posZ":1.342,
+          "$rotX":90, "$rotY":0, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],     
+		["audi6_domelight_FR_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight FR",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_FR_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.060, "$posY":-0.278, "$posZ":1.342,
+          "$rotX":90, "$rotY":0, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],		
+		["audi6_domelight_R1_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight R1",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_R_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.060, "$posY":-0.164, "$posZ":1.342,
+          "$rotX":10, "$rotY":-5.237, "$rotZ":-3.466,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],		
+		["audi6_domelight_R2_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight R2",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_R_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.060, "$posY":-0.164, "$posZ":1.342,
+          "$rotX":10, "$rotY":-5.237, "$rotZ":3.466,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+        ["domelight_FR", "rf1", "rf1r", "rf2", "box", {"x":0.0200, "y":0.0200, "z":0.0274}, {"x":354, "y":353, "z":180}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0714, "y":0.0749, "z":-0.0544}],
+        ["domelight_FL", "rf1", "rf1l", "rf2", "box", {"x":0.0200, "y":0.0200, "z":-0.0274}, {"x":-174, "y":353, "z":-180}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0714, "y":0.0749, "z":0.0544}],
+        ["domelight_R", "rf1", "rf1l", "rf2", "box", {"x":0.0380, "y":0.0200, "z":0.0177}, {"x":0, "y":-6, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.0147, "y":0.1239, "z":0.0608}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["domelight_FR",           "action0", "domelight_FR"],
+        ["domelight_FL",           "action0", "domelight_FL"],
+        ["domelight_R",           "action0", "domelight_R"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["domelight_FR"],
+		["domelight_FL"],
+		["domelight_R"],
+    ],
+},
+"audi6_domelight_front_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Front Roof Module",
+        "value":400,
+    },
+    "slotType" : "audi6_domelight_front",
+    "glowMap":{
+            "audi6_domelight_FL": {"simpleFunction":"domelight_FL_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_FR": {"simpleFunction":"domelight_FR_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_R": {"simpleFunction":"domelight_R_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_domelight_F_fl", ["audi6_body"]],
+         ["audi6_domelight_F_sunglassholder", ["audi6_body"]],
+         ["audi6_domelight_F_vents_fl", ["audi6_body"]],
+         ["audi6_domelight_F_trim", ["audi6_body"]],
+		 
+		{"disable":"$=($components.electrics.sunroofMesh == 1 or $components.electrics.hasHomeLink == 1)"},
+		["audi6_domelight_F_center", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh == 1 or $components.electrics.hasHomeLink ~= 1)"},
+		["audi6_domelight_F_center_homelink", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh ~= 1 or $components.electrics.hasHomeLink == 1)"},
+		["audi6_domelight_F_center_pano", ["audi6_body"]],
+		["audi6_domelight_F_center_pano_button_fl", ["audi6_body"]],
+
+		{"disable":"$=($components.electrics.sunroofMesh ~= 1 or $components.electrics.hasHomeLink ~= 1)"},
+		["audi6_domelight_F_center_pano_homelink", ["audi6_body"]],
+		["audi6_domelight_F_center_pano_button_fl", ["audi6_body"]],
+
+		{"disable":""},
+		
+         ["audi6_domelight_F_button", ["audi6_body"]],
+         ["audi6_domelight_F_buttons_fl", ["audi6_body"]],
+         ["audi6_domelight_F_light_fl", ["audi6_body"]],
+         ["audi6_domelight_F_lightglass_fl", ["audi6_body"]],
+    ],
+    "slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+        ["audi6_domelight_FL_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight FL",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_FL_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.060, "$posY":-0.278, "$posZ":1.342,
+          "$rotX":90, "$rotY":0, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],     
+		["audi6_domelight_FR_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight FR",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_FR_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.060, "$posY":-0.278, "$posZ":1.342,
+          "$rotX":90, "$rotY":0, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],		
+		["audi6_domelight_R1_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight R1",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_R_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.060, "$posY":-0.164, "$posZ":1.342,
+          "$rotX":10, "$rotY":-5.237, "$rotZ":-3.466,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],		
+		["audi6_domelight_R2_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Domelight R2",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "domelight_R_s",
+          "$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+          "$deformGroup":"windshield_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.060, "$posY":-0.164, "$posZ":1.342,
+          "$rotX":10, "$rotY":-5.237, "$rotZ":3.466,
+		  "$lightOuterAngle":179,
+          "$lightRange":1
+        }
+        }],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+        ["domelight_FR", "rf1", "rf1r", "rf2", "box", {"x":0.0207, "y":0.0200, "z":0.0274}, {"x":354, "y":353, "z":180}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0774, "y":0.0746, "z":-0.0537}],
+        ["domelight_FL", "rf1", "rf1l", "rf2", "box", {"x":0.0207, "y":0.0200, "z":-0.0274}, {"x":-174, "y":353, "z":-180}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0774, "y":0.0746, "z":0.0537}],
+        ["domelight_R", "rf1", "rf1l", "rf2", "box", {"x":0.0380, "y":0.0200, "z":0.0177}, {"x":0, "y":-6, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.0147, "y":0.1239, "z":0.0608}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["domelight_FR",           "action0", "domelight_FR"],
+        ["domelight_FL",           "action0", "domelight_FL"],
+        ["domelight_R",           "action0", "domelight_R"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["domelight_FR"],
+		["domelight_FL"],
+		["domelight_R"],
+    ],
+},
+"audi6_domelight_rear_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Rear Roof Module",
+        "value":340,
+    },
+    "slotType" : "audi6_domelight_rear",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         // avant
+         {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh == 1)"},
+         ["audi6_domelight_rear_pfl_avant", ["audi6_body"]],
+         {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh ~= 1)"},
+         ["audi6_domelight_rear_pfl_avant_sunroof", ["audi6_body"]],
+         // sedan
+         {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh == 1)"},
+         ["audi6_domelight_rear_pfl_sedan", ["audi6_body"]],
+         {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh ~= 1)"},
+         ["audi6_domelight_rear_pfl_sedan_sunroof", ["audi6_body"]],
+         {"disable":""},
+    ],
+	"slots2": [
+		["name",                                "allowTypes",               "denyTypes", "default",                "description"],
+		//plain sedan
+		["audi6_domelight_RL_sedan_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sedan_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//plain avant
+		["audi6_domelight_RL_avant_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_avant_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//sunroof sedan
+		["audi6_domelight_RL_sunroof_sedan_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.440,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sunroof_sedan_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.440,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//sunroof avant
+		["audi6_domelight_RL_sunroof_avant_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sunroof_avant_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+	],
+    "glowMap":{
+            "audi6_domelight_RL": {"simpleFunction":"domelight_RL_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_RR": {"simpleFunction":"domelight_RR_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size",                           "baseRotation",          "rotation",               "translation",    "baseTranslation"],
+        //avant, no sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh == 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0174, "y":-0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":0.0505, "z": 0.0021}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0174, "y": 0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":0.0505, "z":-0.0021}],
+        //avant, sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh ~= 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0174, "y":-0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":0.1631, "z":-0.0021}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0174, "y": 0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":0.1631, "z":0.0021}],
+        //sedan, no sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh == 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0174, "y":-0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":-0.1056, "z":-0.0168}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0174, "y": 0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":-0.1056, "z": 0.0168}],
+        //sedan, sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh ~= 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0174, "y":-0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":-0.0049, "z":-0.0232}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0174, "y": 0.0200, "z":0.0222}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0275, "y":-0.0049, "z":0.0232}],
+        {"disable":""},
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["domelight_RR",           "action0", "domelight_RR"],
+        ["domelight_RL",           "action0", "domelight_RL"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["domelight_RR"],
+        ["domelight_RL"],
+    ],
+},
+"audi6_domelight_rear_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Rear Roof Module",
+        "value":340,
+    },
+    "slotType" : "audi6_domelight_rear",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         // avant
+         {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh == 1)"},
+         ["audi6_domelight_rear_fl_avant", ["audi6_body"]],
+         {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh ~= 1)"},
+         ["audi6_domelight_rear_fl_avant_sunroof", ["audi6_body"]],
+         // sedan
+         {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh == 1)"},
+         ["audi6_domelight_rear_fl_sedan", ["audi6_body"]],
+         {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh ~= 1)"},
+         ["audi6_domelight_rear_fl_sedan_sunroof", ["audi6_body"]],
+         {"disable":""},
+    ],
+	"slots2": [
+		["name",                                "allowTypes",               "denyTypes", "default",                "description"],
+		//plain sedan
+		["audi6_domelight_RL_sedan_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sedan_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//plain avant
+		["audi6_domelight_RL_avant_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_avant_bulb",       ["incandescent_white_21W"], [],          "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.759, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 0) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//sunroof sedan
+		["audi6_domelight_RL_sunroof_sedan_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.440,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sunroof_sedan_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.440,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 0 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		//sunroof avant
+		["audi6_domelight_RL_sunroof_avant_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RL",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RL_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3l", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+		["audi6_domelight_RR_sunroof_avant_bulb", ["incandescent_white_21W"], [],        "incandescent_white_21W", "Domelight RR",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "domelight_RR_s",
+				"$nodeRef":"rf3", "$nodeX":"rf3r", "$nodeY":"rf4",
+				"$deformGroup":"sunroof_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.065, "$posY":0.869, "$posZ":1.471,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$disable":"$= ($bodyStyle ~= 2 or $sunroofMesh ~= 1) and 1 or 0",
+				"$lightOuterAngle":179,
+				"$lightRange":1
+			}
+		}],
+	],
+    "glowMap":{
+            "audi6_domelight_RL": {"simpleFunction":"domelight_RL_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_domelight_RR": {"simpleFunction":"domelight_RR_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size",                           "baseRotation",          "rotation",               "translation",    "baseTranslation"],
+        //avant, no sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh == 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0198, "y":-0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":0.0496, "z": 0.0021}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0198, "y": 0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":0.0496, "z":-0.0021}],
+        //avant, sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 0) or ($components.electrics.sunroofMesh ~= 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0198, "y":-0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":0.1631, "z":-0.0021}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0198, "y":0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":0.1631, "z":0.0021}],
+        //sedan, no sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh == 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0198, "y":-0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":-0.1065, "z":-0.0168}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0198, "y": 0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":-0.1065, "z": 0.0168}],
+        //sedan, sunroof
+        {"disable":"$=($components.electrics.bodyStyle == 2) or ($components.electrics.sunroofMesh ~= 1)"},
+        ["domelight_RR", "rf3", "rf3r", "rf4", "box", {"x":0.0198, "y":-0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":-0.0031, "z":-0.0168}],
+        ["domelight_RL", "rf3", "rf3l", "rf4", "box", {"x":0.0198, "y": 0.0200, "z":0.0209}, {"x":0.000, "y":2.232, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0335, "y":-0.0031, "z":0.0168}],
+        {"disable":""},
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["domelight_RR",           "action0", "domelight_RR"],
+        ["domelight_RL",           "action0", "domelight_RL"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["domelight_RR"],
+        ["domelight_RL"],
+    ],
+},
+"audi6_interior_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Interior",
+        "value":400,
+    },
+    "slotType" : "audi6_interior_sedan",
+	"slots2": [
+        ["name",                         "allowTypes",                     "denyTypes", "default",                      "description"],
+        ["audi6_interior_package_sedan", ["audi6_interior_package_sedan"], [],          "audi6_interior_package_sedan", "Interior Packages",   {"coreSlot":true}],
+        ["audi6_doorhandle_int",         ["audi6_doorhandle_int"],         [],          "audi6_doorhandle_int_rs6",     "Door Panel Handles"],
+        ["audi6_dash",                   ["audi6_dash"],                   [],          "audi6_dash",                   "Dashboard",           {"coreSlot":true}],
+        ["audi6_domelight_front",        ["audi6_domelight_front"],        [],          "audi6_domelight_front_pfl",    "Front Roof Module",   {"coreSlot":true}],
+        ["audi6_domelight_rear",         ["audi6_domelight_rear"],         [],          "audi6_domelight_rear_pfl",     "Rear Roof Module",    {"coreSlot":true}],
+        ["audi6_sunvisor_L",             ["audi6_sunvisor_L"],             [],          "audi6_sunvisor_L",             "Left Sunvisor"],
+        ["audi6_sunvisor_R",             ["audi6_sunvisor_R"],             [],          "audi6_sunvisor_R",             "Right Sunvisor"],
+        ["audi6_seat_FL",                ["audi6_seat_FL"],                [],          "audi6_seat_FL",                "Front Left Seat"],
+        ["audi6_seat_FR",                ["audi6_seat_FR"],                [],          "audi6_seat_FR",                "Front Right Seat"],
+        ["audi6_seats_R",                ["audi6_seats_R"],                [],          "audi6_seats_R",                "Rear Seats"],
+        ["audi6_shelf_sedan",            ["audi6_shelf_sedan"],            [],          "audi6_shelf_sedan",            "Parcel Shelf",        {"coreSlot":true}],
+        ["skin_interior",                ["skin_interior"],                [],          "audi6_skin_interior",          "Interior Color",      {"coreSlot":true}],
+        ["skin_inlay",                   ["skin_inlay"],                   [],          "audi6_skin_inlay",             "Decorative Inlay",    {"coreSlot":true}],
+        ["skin_ceiling",                 ["skin_ceiling"],                 [],          "audi6_skin_ceiling",           "Headliner",           {"coreSlot":true}],
+        ["skin_seat",                    ["skin_seat"],                    [],          "audi6_skin_seat",              "Upholstery",          {"coreSlot":true}],
+		["audi6_sunvisor_mirrorcover_L_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Sunvisor Mirror Cover L",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "sunvisor_mirrorcover_L_s",
+				"$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+				"$deformGroup":"windshield_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.378, "$posY":-0.241, "$posZ":1.360,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$lightOuterAngle":179,
+				"$lightRange":0.25
+			}
+		}],
+		["audi6_sunvisor_mirrorcover_R_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Sunvisor Mirror Cover R",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "sunvisor_mirrorcover_R_s",
+				"$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+				"$deformGroup":"windshield_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":-0.378, "$posY":-0.241, "$posZ":1.360,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$lightOuterAngle":179,
+				"$lightRange":0.25
+			}
+		}],
+	],
+    "glowMap":{
+            "audi6_sunvisorlight_L": {"simpleFunction":"sunvisor_mirrorcover_L_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_sunvisorlight_R": {"simpleFunction":"sunvisor_mirrorcover_R_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_intpanels_sedan", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.sunroofMesh == 1"},
+         ["audi6_intceiling_sedan", ["audi6_body"]],		 
+		 {"disable":"$=$components.electrics.sunroofMesh ~= 1"},
+         ["audi6_intceiling_sedan_sunroof", ["audi6_body"]],
+		 {"disable":""},
+         ["audi6_intpanels_plastic", ["audi6_body"]],
+         ["audi6_intpanels_sedan_plastic", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.rearAirbags ~= 1"},
+         ["audi6_intpanels_airbag", ["audi6_body"]],
+		 {"disable":""},
+         ["audi6_intcarpet_sedan", ["audi6_body"]],
+         ["audi6_seatbelt_F", ["audi6_body"]],		 
+         ["audi6_seatbelt_R", ["audi6_body"]],		 
+         ["audi6_sunvisor_lights", ["audi6_body"]],
+         ["audi6_sunvisor_lightsglass", ["audi6_body"]],
+         ["audi6_intpanel_vents_R", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.sunroofMesh == 1"},
+         ["audi6_roofhandles_F", ["audi6_body"]],
+         ["audi6_roofhandles_R_sedan", ["audi6_body"]],		 
+		 {"disable":"$=$components.electrics.sunroofMesh ~= 1"},
+		 ["audi6_roofhandles_F_sunroof", ["audi6_body"]],
+         ["audi6_roofhandles_R_sedan_sunroof", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+"audi6_interior_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Interior",
+        "value":400,
+    },
+    "slotType" : "audi6_interior_avant",
+	"slots2": [
+        ["name",                         "allowTypes",                     "denyTypes", "default",                      "description"],
+        ["audi6_interior_package_avant", ["audi6_interior_package_avant"], [],          "audi6_interior_package_avant", "Interior Package",   {"coreSlot":true}],
+        ["audi6_doorhandle_int",         ["audi6_doorhandle_int"],         [],          "audi6_doorhandle_int_rs6",     "Door Panel Handles"],
+        ["audi6_dash",                   ["audi6_dash"],                   [],          "audi6_dash",                   "Dashboard",          {"coreSlot":true}],
+        ["audi6_domelight_front",        ["audi6_domelight_front"],        [],          "audi6_domelight_front_pfl",    "Front Roof Module",  {"coreSlot":true}],
+        ["audi6_domelight_rear",         ["audi6_domelight_rear"],         [],          "audi6_domelight_rear_pfl",     "Rear Roof Module",   {"coreSlot":true}],
+        ["audi6_sunvisor_L",             ["audi6_sunvisor_L"],             [],          "audi6_sunvisor_L",             "Left Sunvisor"],
+        ["audi6_sunvisor_R",             ["audi6_sunvisor_R"],             [],          "audi6_sunvisor_R",             "Right Sunvisor"],
+        ["audi6_seat_FL",                ["audi6_seat_FL"],                [],          "audi6_seat_FL",                "Front Left Seat"],
+        ["audi6_seat_FR",                ["audi6_seat_FR"],                [],          "audi6_seat_FR",                "Front Right Seat"],
+        ["audi6_seats_R",                ["audi6_seats_R"],                [],          "audi6_seats_R",                "Rear Seats"],
+        ["audi6_shelf_avant",            ["audi6_shelf_avant"],            [],          "audi6_shelf_avant",            "Parcel Shelf"],
+        ["skin_interior",                ["skin_interior"],                [],          "audi6_skin_interior",          "Interior Color",     {"coreSlot":true}],
+        ["skin_inlay",                   ["skin_inlay"],                   [],          "audi6_skin_inlay",             "Decorative Inlay",   {"coreSlot":true}],
+        ["skin_ceiling",                 ["skin_ceiling"],                 [],          "audi6_skin_ceiling",           "Headliner",          {"coreSlot":true}],
+        ["skin_seat",                    ["skin_seat"],                    [],          "audi6_skin_seat",              "Upholstery",         {"coreSlot":true}],
+		["audi6_sunvisor_mirrorcover_L_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Sunvisor Mirror Cover L",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "sunvisor_mirrorcover_L_s",
+				"$nodeRef":"rf1", "$nodeX":"rf1l", "$nodeY":"rf2",
+				"$deformGroup":"windshield_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":0.378, "$posY":-0.241, "$posZ":1.360,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$lightOuterAngle":179,
+				"$lightRange":0.25
+			}
+		}],
+		["audi6_sunvisor_mirrorcover_R_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Sunvisor Mirror Cover R",
+		{
+			"coreSlot":true,
+			"variables":{
+				"$electric": "sunvisor_mirrorcover_R_s",
+				"$nodeRef":"rf1", "$nodeX":"rf1r", "$nodeY":"rf2",
+				"$deformGroup":"windshield_break",
+				"$shadowEnable":1,
+				"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+				"$posX":-0.378, "$posY":-0.241, "$posZ":1.360,
+				"$rotX":90, "$rotY":0, "$rotZ":0,
+				"$lightOuterAngle":179,
+				"$lightRange":0.25
+			}
+		}],
+	],
+    "glowMap":{
+            "audi6_sunvisorlight_L": {"simpleFunction":"sunvisor_mirrorcover_L_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+            "audi6_sunvisorlight_R": {"simpleFunction":"sunvisor_mirrorcover_R_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1.00}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_intpanels_avant", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.sunroofMesh == 1"},
+         ["audi6_intceiling_avant", ["audi6_body"]],		 
+		 {"disable":"$=$components.electrics.sunroofMesh ~= 1"},
+         ["audi6_intceiling_avant_sunroof", ["audi6_body"]],
+		 {"disable":""},
+         ["audi6_intpanels_plastic", ["audi6_body"]],
+         ["audi6_intpanels_avant_plastic", ["audi6_body"]],
+		 ["audi6_shelf_holder_avant", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.rearAirbags ~= 1"},
+         ["audi6_intpanels_airbag", ["audi6_body"]],
+		 {"disable":""},
+         ["audi6_intcarpet_avant", ["audi6_body"]],
+         ["audi6_sparecompartment_handleframe_avant", ["audi6_body"]],
+         ["audi6_sparecompartment_handle_avant", ["audi6_body"]],
+         ["audi6_trunkbay_lightglass_avant", ["audi6_body"]],
+         ["audi6_trunkbay_light_avant", ["audi6_body"]],
+         ["audi6_trunkbay_chromepart_avant", ["audi6_body"]],
+         ["audi6_trunkbay_middlecarpet_avant", ["audi6_body"]],
+         ["audi6_trunkbay_rails_avant", ["audi6_body"]],
+         ["audi6_seatbelt_F", ["audi6_body"]],		 
+         ["audi6_seatbelt_R", ["audi6_body"]],		 
+         ["audi6_sunvisor_lights", ["audi6_body"]],
+         ["audi6_sunvisor_lightsglass", ["audi6_body"]],
+         ["audi6_intpanel_vents_R", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.sunroofMesh == 1"},
+         ["audi6_roofhandles_F", ["audi6_body"]],
+         ["audi6_roofhandles_R_avant", ["audi6_body"]],		 
+		 {"disable":"$=$components.electrics.sunroofMesh ~= 1"},
+		 ["audi6_roofhandles_F_sunroof", ["audi6_body"]],
+         ["audi6_roofhandles_R_avant_sunroof", ["audi6_body"]],
+		 {"disable":""},
+		 //lockable side compartment
+         ["audi6_trunkbay_sidecarpet_L_avant", ["audi6_body"]],
+         ["audi6_trunkbay_sidecarpetdoor_L_avant", ["audi6_body"]],
+         ["audi6_trunkbay_sidecarpetdoorhandle_L_avant", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.hasLocksideCompartment ~= 1"},
+         ["audi6_trunkbay_sidecarpet_R_b_avant", ["audi6_body"]],
+         ["audi6_trunkbay_sidecarpetdoor_R_avant", ["audi6_body"]],
+         ["audi6_trunkbay_sidecarpetdoorhandle_R_avant", ["audi6_body"]],
+		 {"disable":"$=$components.electrics.hasLocksideCompartment == 1"},
+         ["audi6_trunkbay_sidecarpet_R_avant", ["audi6_body"]],
+         ["audi6_trunkbay_storagenet_avant", ["audi6_body"]],
+		 {"disable":""},
+    ],
+},
+}

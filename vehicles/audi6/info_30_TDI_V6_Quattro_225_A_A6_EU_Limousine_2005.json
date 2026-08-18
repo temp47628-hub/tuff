@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [225] (Tiptronic) A6 (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 3.0L TDI (225 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, climate control, DSP audio system, deep blue interior, mid-brown walnut inlay finish, deep blue volterra leather seats. Exterior painted in Light Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 225,
+      "Torque": 450,
+      "Top Speed": 68.33333333333333,
+      "Weight": 1770,
+      "Value": 64060,
+      "0-100 km/h": 7.1,
+      "0-60 mph": 6.7,
+      "defaultPaintName1": "Light Silver"
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body {
+    margin: 0; padding: 0;
+    background: transparent;
+    overflow: hidden;
+  }
+  #cam-overlay {
+    position: absolute;
+    width: 100vw; height: 100vh;
+    pointer-events: none;
+  }
+#front-sensors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+  object-fit: cover;
+  display: none;
+}
+  #reverse-sensors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 2;
+    object-fit: cover;
+    /* Added display none so it is hidden by default */
+    display: none; 
+  }
+  .guide-line {
+    fill: none;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 3px rgba(0,0,0,0.7));
+  }
+  .red { stroke: #ff8800; }
+  .yellow { stroke: #ff8800; }
+  .green { stroke: #ff8800; }
+</style>
+</head>
+<body>
+<svg id="cam-overlay" viewBox="0 0 700 650" xmlns="http://www.w3.org/2000/svg">
+  <path id="leftRed" class="guide-line red"/>
+  <path id="leftYellow" class="guide-line yellow"/>
+  <path id="leftGreen" class="guide-line green"/>
+  <path id="rightRed" class="guide-line red"/>
+  <path id="rightYellow" class="guide-line yellow"/>
+  <path id="rightGreen" class="guide-line green"/>
+</svg>
+
+<img id="reverse-sensors" src="reverse-sensors.png" alt="Reverse Sensors">
+<img id="front-sensors" src="front-sensors.png" alt="Front Sensors">
+
+<script>
+  const colors = [
+    { fracStart: 0.1, fracEnd: 0.35, id: "Red" },
+    { fracStart: 0.35, fracEnd: 0.6, id: "Yellow" },
+    { fracStart: 0.6, fracEnd: 0.85, id: "Green" }
+  ];
+
+  function getGuidePoints(baseX, steer, isLeft) {
+    const inwardShift = 60; 
+    const baseShiftX = isLeft ? -inwardShift : inwardShift;
+    const bend = steer;
+
+    return {
+      p0: [baseX + baseShiftX, 600],
+      p1: [baseX + baseShiftX, 420],
+      p2: [baseX + bend * 180, 320],
+      p3: [baseX + bend * 280, 160]
+    };
+  }
+
+  function cubicBezier(p0, p1, p2, p3, t) {
+    const u = 1 - t;
+    return [
+      u * u * u * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t * t * t * p3[0],
+      u * u * u * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t * t * t * p3[1]
+    ];
+  }
+
+  function segmentPath(p0, p1, p2, p3, t0, t1) {
+    const steps = 20;
+    const points = [];
+    for (let i = 0; i <= steps; i++) {
+      const t = t0 + (t1 - t0) * (i / steps);
+      points.push(cubicBezier(p0, p1, p2, p3, t));
+    }
+    return "M" + points.map(p => p.join(",")).join(" L");
+  }
+
+  const paths = {
+    left: {
+      Red: document.getElementById("leftRed"),
+      Yellow: document.getElementById("leftYellow"),
+      Green: document.getElementById("leftGreen")
+    },
+    right: {
+      Red: document.getElementById("rightRed"),
+      Yellow: document.getElementById("rightYellow"),
+      Green: document.getElementById("rightGreen")
+    }
+  };
+
+  let currentSteer = 0;
+  let targetSteer = 0;
+
+  function animateGuide() {
+    currentSteer += (targetSteer - currentSteer) * 0.12;
+    const leftPts = getGuidePoints(130, currentSteer, true);
+    const rightPts = getGuidePoints(570, currentSteer, false);
+
+    colors.forEach(({ fracStart, fracEnd, id }) => {
+      paths.left[id].setAttribute(
+        "d",
+        segmentPath(leftPts.p0, leftPts.p1, leftPts.p2, leftPts.p3, fracStart, fracEnd)
+      );
+      paths.right[id].setAttribute(
+        "d",
+        segmentPath(rightPts.p0, rightPts.p1, rightPts.p2, rightPts.p3, fracStart, fracEnd)
+      );
+    });
+
+    requestAnimationFrame(animateGuide);
+  }
+
+  window.updateGuide = function(data) {
+    const sensorsImg = document.getElementById('reverse-sensors');
+    const frontSensorsImg = document.getElementById('front-sensors');
+    if (data && data.button_parkingsensors == 1 && data.reverseCameraEnabled == 1) {
+      sensorsImg.style.display = 'block';
+      frontSensorsImg.style.display = (data.frontParkingSensorsEnabled == 1) ? 'block' : 'none';
+    } else {
+      sensorsImg.style.display = 'none';
+      frontSensorsImg.style.display = 'none';
+    }
+
+    if (data && typeof data.steering === 'number' && !isNaN(data.steering)) {
+      let normalizedSteer = data.steering / 400;
+      targetSteer = Math.max(-2.5, Math.min(2.5, normalizedSteer));
+    } else {
+      targetSteer = 0;
+    }
+  };
+
+  animateGuide();
+</script>
+</body>
+</html>

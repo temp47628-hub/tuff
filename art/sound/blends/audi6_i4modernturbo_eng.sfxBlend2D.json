@@ -1,0 +1,55 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>mod_engine",
+    "samples" : 
+    [
+        [
+			["art/sound/audi6/engine/i4modernturbo_eng/800.wav", 800],
+			["art/sound/audi6/engine/i4modernturbo_eng/1517.wav", 1517],
+			["art/sound/audi6/engine/i4modernturbo_eng/1858.wav", 1858],
+			["art/sound/audi6/engine/i4modernturbo_eng/2237.wav", 2237],
+			["art/sound/audi6/engine/i4modernturbo_eng/2591.wav", 2591],
+			["art/sound/audi6/engine/i4modernturbo_eng/3012.wav", 3012],
+			["art/sound/audi6/engine/i4modernturbo_eng/3507.wav", 3507],
+			["art/sound/audi6/engine/i4modernturbo_eng/3972.wav", 3972],
+			["art/sound/audi6/engine/i4modernturbo_eng/4308.wav", 4308],
+			["art/sound/audi6/engine/i4modernturbo_eng/4667.wav", 4667],
+			["art/sound/audi6/engine/i4modernturbo_eng/5017.wav", 5017],
+			["art/sound/audi6/engine/i4modernturbo_eng/5343.wav", 5343],
+			["art/sound/audi6/engine/i4modernturbo_eng/5647.wav", 5647],
+			["art/sound/audi6/engine/i4modernturbo_eng/5913.wav", 5913],
+			["art/sound/audi6/engine/i4modernturbo_eng/6167.wav", 6167],
+			["art/sound/audi6/engine/i4modernturbo_eng/6385.wav", 6385],
+			["art/sound/audi6/engine/i4modernturbo_eng/6613.wav", 6613],
+			["art/sound/audi6/engine/i4modernturbo_eng/6792.wav", 6792],
+			["art/sound/audi6/engine/i4modernturbo_eng/7128.wav", 7128],
+			["art/sound/audi6/engine/i4modernturbo_eng/7281.wav", 7281]
+
+        ]
+        ,
+        [
+			["art/sound/audi6/engine/i4modernturbo_eng/800.wav", 800],
+			["art/sound/audi6/engine/i4modernturbo_eng/1517.wav", 1517],
+			["art/sound/audi6/engine/i4modernturbo_eng/1858.wav", 1858],
+			["art/sound/audi6/engine/i4modernturbo_eng/2237.wav", 2237],
+			["art/sound/audi6/engine/i4modernturbo_eng/2591.wav", 2591],
+			["art/sound/audi6/engine/i4modernturbo_eng/3012.wav", 3012],
+			["art/sound/audi6/engine/i4modernturbo_eng/3507.wav", 3507],
+			["art/sound/audi6/engine/i4modernturbo_eng/3972.wav", 3972],
+			["art/sound/audi6/engine/i4modernturbo_eng/4308.wav", 4308],
+			["art/sound/audi6/engine/i4modernturbo_eng/4667.wav", 4667],
+			["art/sound/audi6/engine/i4modernturbo_eng/5017.wav", 5017],
+			["art/sound/audi6/engine/i4modernturbo_eng/5343.wav", 5343],
+			["art/sound/audi6/engine/i4modernturbo_eng/5647.wav", 5647],
+			["art/sound/audi6/engine/i4modernturbo_eng/5913.wav", 5913],
+			["art/sound/audi6/engine/i4modernturbo_eng/6167.wav", 6167],
+			["art/sound/audi6/engine/i4modernturbo_eng/6385.wav", 6385],
+			["art/sound/audi6/engine/i4modernturbo_eng/6613.wav", 6613],
+			["art/sound/audi6/engine/i4modernturbo_eng/6792.wav", 6792],
+			["art/sound/audi6/engine/i4modernturbo_eng/7128.wav", 7128],
+			["art/sound/audi6/engine/i4modernturbo_eng/7281.wav", 7281]
+        ]
+    ]
+}

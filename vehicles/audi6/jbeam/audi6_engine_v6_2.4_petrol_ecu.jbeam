@@ -1,0 +1,14 @@
+{
+"audi6_engine_v6_2.4_petrol_ecu_na_177": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock ECU",
+        "value":2500,
+    },
+    "slotType" : "audi6_engine_v6_2.4_petrol_ecu",
+    "mainEngine":{
+        "revLimiterRPM":6500,
+        "revLimiterType": "soft",
+    },
+},
+}

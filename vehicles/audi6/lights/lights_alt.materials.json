@@ -1,0 +1,76 @@
+{
+	  "audi6_lights_alt": {
+    "name": "audi6_lights_alt",
+    "mapTo": "audi6_lights_alt",
+    "class": "Material",
+    "persistentId": "b2cc8aab-8838-47e2-b212-cdbead279064",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/audi6/textures/alu_ao.data.png",
+        "baseColorMap": "vehicles/audi6/lights/lights_alt_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/audi6/lights/lights_m.data.png",
+        "normalMap": "vehicles/audi6/lights/lights_nm.normal.png",
+        "roughnessFactor": 0.150000006,
+        "roughnessMap": "vehicles/audi6/lights/lights_r.data.png"
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },	  
+  "audi6_lights_alt_on_intense": {
+    "name": "audi6_lights_alt_on_intense",
+    "mapTo": "audi6_lights_alt_on_intense",
+    "class": "Material",
+    "persistentId": "b2cc8aab-8838-47e2-b212-cdbead279064",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/audi6/textures/alu_ao.data.png",
+        "baseColorMap": "vehicles/audi6/lights/lights_alt_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+		"emissiveIntensityNits": 80000,
+        "emissiveMap": "vehicles/audi6/lights/lights_intense_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/audi6/lights/lights_m.data.png",
+        "normalMap": "vehicles/audi6/lights/lights_nm.normal.png",
+        "roughnessFactor": 0.150000006,
+        "roughnessMap": "vehicles/audi6/lights/lights_r.data.png"
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },  
+}

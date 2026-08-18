@@ -1,0 +1,274 @@
+{
+//CR
+"audi6_engine_i4_2.0_diesel_ecu_cr_136_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"136 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu_cr",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    70],
+			[600,   105],
+			[1000,  145],
+			[1750,  192],
+			[2000,  201],
+			[2500,  211],
+			[3000,  200],
+			[4000,  195],
+			[4500,  193],
+			[5000,  190],
+			[6000,  170]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 15.7],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_cr_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"170 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu_cr",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    65],
+			[600,    95],
+			[1000,  135],
+			[1750,  177],
+			[2000,  186],
+			[2500,  197],
+			[3000,  193],
+			[4000,  199],
+			[4500,  194],
+			[5000,  180],
+			[6000,  170]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 21.6],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_cr_stage1_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 200 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu_cr",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    65],
+			[600,    95],
+			[1000,  135],
+			[1750,  177],
+			[2000,  186],
+			[2500,  197],
+			[3000,  193],
+			[4000,  199],
+			[4500,  194],
+			[5000,  180],
+			[6000,  170]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 27.6],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_cr_stage2_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 2 220 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu_cr",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    65],
+			[600,    95],
+			[1000,  135],
+			[1750,  177],
+			[2000,  186],
+			[2500,  197],
+			[3000,  193],
+			[4000,  199],
+			[4500,  194],
+			[5000,  180],
+			[6000,  170]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 31.3],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_cr_stage3_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 3 240 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu_cr",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    65],
+			[600,    95],
+			[1000,  135],
+			[1750,  177],
+			[2000,  186],
+			[2500,  197],
+			[3000,  193],
+			[4000,  199],
+			[4500,  194],
+			[5000,  180],
+			[6000,  170]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 35.2],
+    }
+},
+//PD
+"audi6_engine_i4_2.0_diesel_ecu_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"140 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    70],
+			[600,   105],
+			[1000,  145],
+			[1750,  192],
+			[2000,  201],
+			[2500,  211],
+			[3000,  200],
+			[4000,  199],
+			[4500,  197],
+			[5000,  194],
+			[6000,  173]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 15.7],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_stage1_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 175 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    70],
+			[600,   105],
+			[1000,  145],
+			[1750,  192],
+			[2000,  201],
+			[2500,  211],
+			[3000,  200],
+			[4000,  199],
+			[4500,  197],
+			[5000,  194],
+			[6000,  173]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 22.7],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_stage2_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 2 195 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    70],
+			[600,   105],
+			[1000,  145],
+			[1750,  192],
+			[2000,  201],
+			[2500,  211],
+			[3000,  200],
+			[4000,  199],
+			[4500,  197],
+			[5000,  194],
+			[6000,  173]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 27.3],
+    }
+},
+"audi6_engine_i4_2.0_diesel_ecu_stage3_nodpf": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 3 215 ECU (DPF Delete)",
+        "value":725,
+    },
+    "slotType" : "audi6_engine_i4_2.0_diesel_ecu",
+    "mainEngine":{
+		"torque": [
+			["rpm", "torque"],
+			[0,      0],
+			[350,    70],
+			[600,   105],
+			[1000,  145],
+			[1750,  192],
+			[2000,  201],
+			[2500,  211],
+			[3000,  200],
+			[4000,  199],
+			[4500,  197],
+			[5000,  194],
+			[6000,  173]
+		],
+        "revLimiterRPM":5000,
+		"particulates":1000,
+    },
+    "turbocharger": {
+        "wastegateStart":[10.3, 31.3],
+    }
+},
+}

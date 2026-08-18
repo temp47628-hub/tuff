@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+  font-family: DotMatrix;
+  src: url(/vehicles/audi6/mirror_compass/dot-matrix.ttf);
+}
+
+body {
+    margin: 0;
+    background: transparent;
+    font-family: DotMatrix;
+}
+.compass {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+    color: red;
+    text-shadow: 1px 1px 3px red;
+}
+</style>
+</head>
+<body>
+<div class="compass" id="compass">N</div>
+
+<script>
+const directions = ["N","NE","E","SE","S","SW","W","NW"];
+
+// Convert yaw radians to compass direction
+function getCompassDirection(yawRad){
+    let deg = yawRad * 180 / Math.PI;
+    deg = (deg + 360) % 360; // normalize 0-360
+    let index = Math.round(deg / 45) % 8;
+    return directions[index];
+}
+
+// This function is called by BeamNG GUI with electrics data
+window.updateData = function(data){
+    if(!data || !data.electrics) return;
+
+    let yaw = data.electrics.vehicleYaw || 0; // our custom electric from Lua
+    let dir = getCompassDirection(yaw);
+
+    document.getElementById("compass").textContent = dir;
+};
+
+// Optional setup function
+window.setup = function(){
+    // Nothing needed for now
+};
+</script>
+</body>
+</html>

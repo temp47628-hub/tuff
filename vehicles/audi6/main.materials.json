@@ -1,0 +1,304 @@
+{
+  "AUD_emblem_046|bumperfemblem_a": {
+    "name": "AUD_emblem_046|bumperfemblem_a",
+    "mapTo": "AUD_emblem_046|bumperfemblem_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #132"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "AUD_emblem_047|trunkemblem_a": {
+    "name": "AUD_emblem_047|trunkemblem_a",
+    "mapTo": "AUD_emblem_047|trunkemblem_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #85"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "audi6_glass_clear": {
+    "name": "audi6_glass_clear",
+    "mapTo": "audi6_glass_clear",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "audi6_glass_red": {
+    "name": "audi6_glass_red",
+    "mapTo": "audi6_glass_red",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800307691,
+          0,
+          0.00139528397,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "audi6_windowglass": {
+    "name": "audi6_windowglass",
+    "mapTo": "audi6_windowglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "blackglass": {
+    "name": "blackglass",
+    "mapTo": "blackglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #17"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "blkplastic_lgl|pedals_a": {
+    "name": "blkplastic_lgl|pedals_a",
+    "mapTo": "blkplastic_lgl|pedals_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #03"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "bx_main": {
+    "name": "bx_main",
+    "mapTo": "bx_main",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0799841732,
+          0.455843389,
+          0.800126076,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "chrome": {
+    "name": "chrome",
+    "mapTo": "chrome",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "chrome_diffuse": {
+    "name": "chrome_diffuse",
+    "mapTo": "chrome_diffuse",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #85"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "chrome_polished": {
+    "name": "chrome_polished",
+    "mapTo": "chrome_polished",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #01"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "etk800_001": {
+    "name": "etk800_001",
+    "mapTo": "etk800.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "plastic_coloured_white|vents_a": {
+    "name": "plastic_coloured_white|vents_a",
+    "mapTo": "plastic_coloured_white|vents_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #03"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "plastic_smooth_colored|pillartrim_a": {
+    "name": "plastic_smooth_colored|pillartrim_a",
+    "mapTo": "plastic_smooth_colored|pillartrim_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #102"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sat_plastic_detailed": {
+    "name": "sat_plastic_detailed",
+    "mapTo": "sat_plastic_detailed",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0629983097,
+          0.0629983097,
+          0.0629983097,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "symbols": {
+    "name": "symbols",
+    "mapTo": "symbols",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #61"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "symbols_aud_rs6_09_doortags_diff": {
+    "name": "symbols_aud_rs6_09_doortags_diff",
+    "mapTo": "symbols_aud_rs6_09_doortags_diff",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "Map #105"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

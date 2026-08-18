@@ -1,0 +1,28 @@
+{
+"audi6_engine_v8_4.2_petrol_ecu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock ECU",
+        "value":500,
+    },
+    "slotType" : "audi6_engine_v8_4.2_petrol_ecu",
+    "mainEngine":{
+        "revLimiterRPM":7000,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+    },
+},
+"audi6_engine_v8_4.2_petrol_ecu_mpi": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock ECU",
+        "value":500,
+    },
+    "slotType" : "audi6_engine_v8_4.2_petrol_ecu_mpi",
+    "mainEngine":{
+        "revLimiterRPM":6700,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+    },
+},
+}

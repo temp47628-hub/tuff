@@ -1,0 +1,57 @@
+{
+  "audi6_vivace_engine": {
+    "name": "audi6_vivace_engine",
+    "mapTo": "audi6_vivace_engine",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/vanilla/vivace/vivace_engine_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/vanilla/vivace/vivace_engine_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/vanilla/vivace/vivace_engine_m.data.png",
+        "normalMap": "/vehicles/audi6/vanilla/vivace/vivace_engine_n.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/vanilla/vivace/vivace_engine_r.data.png"
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_vivace_mechanical": {
+    "name": "audi6_vivace_mechanical",
+    "mapTo": "audi6_vivace_mechanical",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/vanilla/vivace/vivace_mechanical_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/vanilla/vivace/vivace_mechanical_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/vanilla/vivace/vivace_mechanical_m.data.png",
+        "normalMap": "vehicles/audi6/vanilla/vivace/vivace_mechanical_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/vanilla/vivace/vivace_mechanical_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+}

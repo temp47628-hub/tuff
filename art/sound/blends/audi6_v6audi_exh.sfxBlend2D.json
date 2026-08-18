@@ -1,0 +1,36 @@
+{
+    "header" : {
+	    "version" : 1
+    },
+    "eventName" : "event:>Engine>mod_exhaust",
+    "samples" :
+    [
+	    [
+		    ["art/sound/audi6/engine/v6audi_exh/862.wav", 862],
+		    ["art/sound/audi6/engine/v6audi_exh/1203.wav", 1203],
+		    ["art/sound/audi6/engine/v6audi_exh/1687.wav", 1687],
+		    ["art/sound/audi6/engine/v6audi_exh/2187.wav", 2187],
+		    ["art/sound/audi6/engine/v6audi_exh/2558.wav", 2558],
+		    ["art/sound/audi6/engine/v6audi_exh/3234.wav", 3234],
+		    ["art/sound/audi6/engine/v6audi_exh/3680.wav", 3680],
+		    ["art/sound/audi6/engine/v6audi_exh/4183.wav", 4183],
+		    ["art/sound/audi6/engine/v6audi_exh/5372.wav", 5372],
+		    ["art/sound/audi6/engine/v6audi_exh/6337.wav", 6337],
+		    ["art/sound/audi6/engine/v6audi_exh/6957.wav", 6957]
+	    ]
+	    ,
+	    [
+		    ["art/sound/audi6/engine/v6audi_exh/862.wav", 862],
+		    ["art/sound/audi6/engine/v6audi_exh/1203.wav", 1203],
+		    ["art/sound/audi6/engine/v6audi_exh/1687.wav", 1687],
+		    ["art/sound/audi6/engine/v6audi_exh/2187.wav", 2187],
+		    ["art/sound/audi6/engine/v6audi_exh/2558.wav", 2558],
+		    ["art/sound/audi6/engine/v6audi_exh/3234.wav", 3234],
+		    ["art/sound/audi6/engine/v6audi_exh/3680.wav", 3680],
+		    ["art/sound/audi6/engine/v6audi_exh/4183.wav", 4183],
+		    ["art/sound/audi6/engine/v6audi_exh/5372.wav", 5372],
+		    ["art/sound/audi6/engine/v6audi_exh/6337.wav", 6337],
+		    ["art/sound/audi6/engine/v6audi_exh/6957.wav", 6957]
+	    ]
+    ]
+}

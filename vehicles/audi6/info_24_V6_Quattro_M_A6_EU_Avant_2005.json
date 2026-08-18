@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 Quattro (M) A6 (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.4L V6 (177 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding mirrors, 16-inch alloys, basic infotainment system with a 6-disc CD changer, auto-dimming rear view mirror, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, brown walnut inlay finish, black meridian cloth seats. Exterior painted in Aurora Blue",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":62.11699164345404,
+      "Weight":1685,
+      "Value":36020,
+      "0-100 km/h":9.4,
+      "0-60 mph":8.9,
+      "defaultPaintName1": "Aurora Blue"
+}

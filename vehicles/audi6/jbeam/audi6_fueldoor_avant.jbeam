@@ -1,0 +1,304 @@
+{
+"audi6_fueldoor_a6_avant": {
+    "information":{
+        "authors":"kws & FastLane",
+        "name":"Fuel Door",
+        "value":240,
+    },
+    "slotType" : "audi6_fueldoor_a6_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["audi6_fueldooropen", ["audi6_body"]],
+         ["audi6_fueldoor_a6_avant", ["audi6_fueldoor"]],
+         ["audi6_fueldoorframe", ["audi6_fueldoor"]],
+		 {"disable":"$=$components.electrics.fuelType ~= 0"},
+		 ["audi6_fueldoorframe_sticker", ["audi6_fueldoor"], [],{"materialOverride":[["audi6_doortags","audi6_doortags_avant_gas"]]}],		 
+		 {"disable":"$=$components.electrics.fuelType ~= 1"},
+		 ["audi6_fueldoorframe_sticker", ["audi6_fueldoor"], [],{"materialOverride":[["audi6_doortags","audi6_doortags_avant"]]}],
+		 {"disable":""},
+    ],
+	"triggerEventLinks":[
+        ["triggerId:triggers", "action", "targetEventId:events"],
+		["fueldoor", "action0", "fueldoor"],
+	],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["fueldoor", "fu1","fu3","fu2", "sphere", 0.03, {"x":0, "y":-0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.77, "y":0.07, "z":0.01},{"x":0, "y":0, "z":-0.0}],
+	],
+    "triggerEventLinks2": [
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		["fueldoor", "action0", "fueldoor"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["fueldoor"],
+    ],
+	"nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":true},
+         //scope
+         {"nodeWeight":0.7},
+         {"group":"audi6_fueldoor"},
+         ["fu1", -0.8223, 1.5081, 1.0353],
+         ["fu2", -0.8733, 1.2965, 0.9105],
+         ["fu3", -0.8733, 1.5081, 0.9105],
+         ["fu4", -0.8223, 1.2965, 1.0353],
+         //rigidifier
+         ["fu7", -0.8024, 1.3919, 0.9746, {"selfCollision":false}],
+         {"group":""},
+		 {"collision":false},
+         ["fu8", -1.0223, 1.1841, 1.0613],
+         ["fu9", -1.0223, 1.1841, 0.9061],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"breakGroupType":0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":555,"beamStrength":175000},
+          {"beamSpring":801000,"beamDamp":100},
+          {"deformationTriggerRatio":0.03},
+          //main shape
+          {"deformLimitExpansion":1.1},
+		  ["fu2", "fu3"],
+          ["fu3", "fu1"],
+          ["fu1", "fu4"],
+          ["fu4", "fu2"],
+
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          //vert
+          ["fu1","fu2"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":13972.5,"beamStrength":175000},
+
+		  ["fu4", "fu3"],
+
+
+
+          //rigidifier
+          {"beamDeform":6682.5,"beamStrength":175000},
+          ["fu1","fu7"],
+
+          ["fu2","fu7"],
+		  ["fu4", "fu7"],
+          ["fu3", "fu7"],
+
+          //attach
+          {"disableTriangleBreaking":true},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":450500,"beamStrength":4150},
+          {"beamSpring":801000,"beamDamp":100},
+
+            ["fu4", "q6r"],
+            ["fu4", "q2r"],
+            ["fu4", "q5r"],
+            ["fu4", "q1r"],
+            ["fu2", "q6r"],
+            ["fu2", "q2r"],
+            ["fu2", "q5r"],
+            ["fu2", "q1r"],
+
+
+
+            ["fu8", "q6r"],
+            ["fu8", "q5r"],
+            ["fu8", "q2r"],
+			["fu8", "q7r"],
+            ["fu9", "q6r"],
+            ["fu9", "q5r"],
+            ["fu9", "q2r"],
+			["fu9", "q7r"],
+
+          //support beams
+          {"beamType":"|SUPPORT", "beamLongBound":8},
+          {"beamSpring":830830,"beamDamp":100.8},
+          {"beamDeform":10125,"beamStrength":630000},
+          {"optional":true},
+          
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+		  ["fu8","fu9"],
+
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"group":"audi6_fueldoor"},
+            {"furoundModel":"plastic"},
+            {"dragCoef":8},
+            ["fu1", "fu3", "fu2"],
+            ["fu4", "fu1", "fu2"],
+            {"group":""},
+            //gap
+            {"dragCoef":0},
+            {"breakGroup":""},
+    ],
+	"hydros": [
+            ["id1:", "id2:"],
+            {"beamType":"|HYDRO"},
+            {"beamDeform":500,"beamStrength":5500},
+            {"beamLimitSpring":145000,"beamLimitDamp":300},
+            {"beamSpring":71000,"beamDamp":800},
+            {"beamPrecompression":1.0},
+            ["fu1","fu8",{"inputSource":"fueldoor","inLimit":1.0,"outLimit":0.35,"inRate":1.0,"outRate":10.0,"inputFactor":1}],
+            ["fu3","fu9",{"inputSource":"fueldoor","inLimit":1.0,"outLimit":0.35,"inRate":1.0,"outRate":10.0,"inputFactor":1}],
+            {"beamSpring":10500,"beamDamp":250},
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"audi6_fueldoor_rs6_avant": {
+    "information":{
+        "authors":"kws & FastLane",
+        "name":"Fuel Door",
+        "value":240,
+    },
+    "slotType" : "audi6_fueldoor_rs6_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["audi6_fueldooropen", ["audi6_body"]],
+         ["audi6_fueldoor_rs6_avant", ["audi6_fueldoor"]],
+         ["audi6_fueldoorframe", ["audi6_fueldoor"]],
+		 {"disable":"$=$components.electrics.fuelType ~= 0"},
+		 ["audi6_fueldoorframe_sticker", ["audi6_fueldoor"], [],{"materialOverride":[["audi6_doortags","audi6_doortags_avant_gas"]]}],		 
+		 {"disable":"$=$components.electrics.fuelType ~= 1"},
+		 ["audi6_fueldoorframe_sticker", ["audi6_fueldoor"], [],{"materialOverride":[["audi6_doortags","audi6_doortags_avant"]]}],
+		 {"disable":""},
+    ],
+	"triggerEventLinks":[
+        ["triggerId:triggers", "action", "targetEventId:events"],
+		["fueldoor", "action0", "fueldoor"],
+	],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["fueldoor", "fu1","fu3","fu2", "sphere", 0.03, {"x":0, "y":-0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.77, "y":0.07, "z":0.01},{"x":0, "y":0, "z":-0.0}],
+	],
+    "triggerEventLinks2": [
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		["fueldoor", "action0", "fueldoor"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["fueldoor"],
+    ],
+	"nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":true},
+         //scope
+         {"nodeWeight":0.7},
+         {"group":"audi6_fueldoor"},
+         ["fu1", -0.8223, 1.5081, 1.0353],
+         ["fu2", -0.8733, 1.2965, 0.9105],
+         ["fu3", -0.8733, 1.5081, 0.9105],
+         ["fu4", -0.8223, 1.2965, 1.0353],
+         //rigidifier
+         ["fu7", -0.8024, 1.3919, 0.9746, {"selfCollision":false}],
+         {"group":""},
+		 {"collision":false},
+         ["fu8", -1.0223, 1.1841, 1.0613],
+         ["fu9", -1.0223, 1.1841, 0.9061],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"breakGroupType":0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":555,"beamStrength":175000},
+          {"beamSpring":801000,"beamDamp":100},
+          {"deformationTriggerRatio":0.03},
+          //main shape
+          {"deformLimitExpansion":1.1},
+		  ["fu2", "fu3"],
+          ["fu3", "fu1"],
+          ["fu1", "fu4"],
+          ["fu4", "fu2"],
+
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          //vert
+          ["fu1","fu2"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":13972.5,"beamStrength":175000},
+
+		  ["fu4", "fu3"],
+
+
+
+          //rigidifier
+          {"beamDeform":6682.5,"beamStrength":175000},
+          ["fu1","fu7"],
+
+          ["fu2","fu7"],
+		  ["fu4", "fu7"],
+          ["fu3", "fu7"],
+
+          //attach
+          {"disableTriangleBreaking":true},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":450500,"beamStrength":4150},
+          {"beamSpring":801000,"beamDamp":100},
+
+            ["fu4", "q6r"],
+            ["fu4", "q2r"],
+            ["fu4", "q5r"],
+            ["fu4", "q1r"],
+            ["fu2", "q6r"],
+            ["fu2", "q2r"],
+            ["fu2", "q5r"],
+            ["fu2", "q1r"],
+
+
+
+            ["fu8", "q6r"],
+            ["fu8", "q5r"],
+            ["fu8", "q2r"],
+			["fu8", "q7r"],
+            ["fu9", "q6r"],
+            ["fu9", "q5r"],
+            ["fu9", "q2r"],
+			["fu9", "q7r"],
+
+          //support beams
+          {"beamType":"|SUPPORT", "beamLongBound":8},
+          {"beamSpring":830830,"beamDamp":100.8},
+          {"beamDeform":10125,"beamStrength":630000},
+          {"optional":true},
+          
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+		  ["fu8","fu9"],
+
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"group":"audi6_fueldoor"},
+            {"furoundModel":"plastic"},
+            {"dragCoef":8},
+            ["fu1", "fu3", "fu2"],
+            ["fu4", "fu1", "fu2"],
+            {"group":""},
+            //gap
+            {"dragCoef":0},
+            {"breakGroup":""},
+    ],
+	"hydros": [
+            ["id1:", "id2:"],
+            {"beamType":"|HYDRO"},
+            {"beamDeform":500,"beamStrength":5500},
+            {"beamLimitSpring":145000,"beamLimitDamp":300},
+            {"beamSpring":71000,"beamDamp":800},
+            {"beamPrecompression":1.0},
+            ["fu1","fu8",{"inputSource":"fueldoor","inLimit":1.0,"outLimit":0.35,"inRate":1.0,"outRate":10.0,"inputFactor":1}],
+            ["fu3","fu9",{"inputSource":"fueldoor","inLimit":1.0,"outLimit":0.35,"inRate":1.0,"outRate":10.0,"inputFactor":1}],
+            {"beamSpring":10500,"beamDamp":250},
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

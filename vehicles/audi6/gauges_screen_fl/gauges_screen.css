@@ -1,0 +1,321 @@
+@font-face {
+  font-family: DSEG14Classic;
+  src: url(/ui/common/DSEG14Classic-Regular.ttf);
+}
+
+@font-face {
+  font-family: AUDImmiBasic;
+  src: url(/vehicles/audi6/fonts/AUDImmiBasic.ttf);
+}
+
+body {
+  margin: 0;
+  padding-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: DSEG14Classic;
+  font-size: 35px;
+  overflow: hidden;
+
+  background-image: url('gauges_screen.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.gauge {
+  width: 100%;
+}
+
+.unit {
+  font-size: 50%;
+  margin-left: 2px;
+}
+
+.unit2 {
+  font-size: 50%;
+  margin-left: 10px;
+}
+
+#door {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 101;
+}
+
+#door_FL, #door_FR, #door_RL, #door_RR, #hood, #trunk {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 102;
+}
+
+#fuel_icon {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 101;
+}
+
+#warning_symbol {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 101;
+}
+
+#warning_symbol_bottom {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 101;
+}
+
+.toptext {
+  position: absolute;
+  right: -150px;
+  bottom: 470px;
+  width: 512px;
+  height: 25px;
+  color: #ff0000;
+  font-family: AUDImmiBasic;
+  font-size:40px;
+  transform: scaleX(0.75);
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.gear {
+  position: absolute;
+  right: 0px;
+  bottom: 230px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-family: AUDImmiBasic;
+  font-size:40px;
+  
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.line1 {
+  position: absolute;
+  right: 16px;
+  bottom: 430px;
+  width: 180px;
+  height: 3px;
+  background-color: #ff0000;
+  z-index: 101;
+}
+
+.line2 {
+  position: absolute;
+  right: 16px;
+  bottom: 345px;
+  width: 180px;
+  height: 3px;
+  background-color: #ff0000;
+  z-index: 101;
+}
+
+.line3 {
+  position: absolute;
+  right: 16px;
+  bottom: 260px;
+  width: 180px;
+  height: 3px;
+  background-color: #ff0000;
+  z-index: 101;
+}
+
+.temp {
+  position: absolute;
+  right: 0px;
+  bottom: 375px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-family: AUDImmiBasic;
+  font-size:55px;
+  
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.range {
+  position: absolute;
+  right: 30px;
+  bottom: 290px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-family: AUDImmiBasic;
+  font-size:55px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.time {
+  position: absolute;
+  right: 337px;
+  bottom: 462px;
+  width: 200px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:20px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.date {
+  position: absolute;
+  right: 337px;
+  bottom: 438px;
+  width: 200px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:16px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.distanceUnit {
+  position: absolute;
+  right: 457px;
+  bottom: 320px;
+  width: 200px;
+  height: 25px;
+  color: #ff0000;
+  font-family: AUDImmiBasic;
+  font-size:22px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.odo {
+  position: absolute;
+  right: 337px;
+  bottom: 327px;
+  width: 200px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:20px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.trip {
+  position: absolute;
+  right: 337px;
+  bottom: 352px;
+  width: 200px;
+  height: 25px;
+  color: #ff0000;
+  
+  font-size:20px;
+  
+  
+  text-align: right;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.climateTemp1 {
+  position: absolute;
+  right: 175px;
+  bottom: 115px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-size:66px;
+  font-family: AUDImmiBasic;
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.climateTempUnit1 {
+  position: absolute;
+  right: 115px;
+  bottom: 124px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-size:33px;
+  font-family: AUDImmiBasic;
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.climateTemp2 {
+  position: absolute;
+  right: 205px;
+  bottom: 32px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-size:66px;
+  font-family: AUDImmiBasic;
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}
+
+.climateTempUnit2 {
+  position: absolute;
+  right: 145px;
+  bottom: 41px;
+  width: 210px;
+  height: 25px;
+  color: #ff0000;
+  font-size:33px;
+  font-family: AUDImmiBasic;
+  
+  text-align: center;
+  line-height: 25px;
+  z-index: 101;
+}

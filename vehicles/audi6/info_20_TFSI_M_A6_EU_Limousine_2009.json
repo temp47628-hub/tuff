@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (M) A6 (EU) [Limousine] 2009",
+      "Description":"2009 Limousine 2.0L TFSI (170 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, 16-inch alloys, basic infotainment system with CD player, base climate control, DSP audio system, black interior, radial aluminuim inlay finish, black meridian cloth seats. Exterior painted in Ice Silver",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Manual",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":63.50974930362117,
+      "Weight":1520,
+      "Value":26210,
+      "0-100 km/h":8.2,
+      "0-60 mph":7.8,
+	  "defaultPaintName1":"Ice Silver",
+}

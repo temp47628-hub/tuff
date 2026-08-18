@@ -1,0 +1,42 @@
+{
+  "audi6_wheelcap_facelift": {
+    "name": "audi6_wheelcap_facelift",
+    "mapTo": "audi6_wheelcap_facelift",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_ao.data.png",
+        "baseColorMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_cc.data.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_m.data.png",
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_nm.normal.png",
+        "roughnessMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_cc.data.png",
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/common/audi6_wheels/textures/audi_wheelcap_facelift/audi6_wheelcap_facelift_nm.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

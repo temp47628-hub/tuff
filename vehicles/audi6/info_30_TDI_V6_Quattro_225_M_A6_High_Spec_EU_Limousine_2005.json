@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [225] (M) A6 High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 3.0L TDI (225 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, lighting package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, black interior, mid-brown walnut inlay finish, black valcona leather seats. Exterior painted in Stratos Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 225,
+      "Torque": 450,
+      "Top Speed": 68.33333333333333,
+      "Weight": 1735,
+      "Value": 68010,
+      "0-100 km/h": 6.9,
+      "0-60 mph": 6.5,
+      "defaultPaintName1": "Stratos Blue"
+}

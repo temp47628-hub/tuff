@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (M) A6 (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.7L TDI V6 (180 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding mirrors, 17-inch alloys, basic infotainment system with a 6-disc CD changer, auto-dimming rear view mirror, climate control, DSP audio system, black interior, radial aluminium inlay finish, black meridian cloth seats. Exterior painted in Light Silver",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 63.926719999999996,
+      "Weight": 1640,
+      "Value": 39010,
+      "0-100 km/h": 8.1,
+      "0-60 mph": 7.7,
+      "defaultPaintName1": "Light Silver"
+}

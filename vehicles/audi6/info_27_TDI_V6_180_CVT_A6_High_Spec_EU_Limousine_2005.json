@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (Multitronic) A6 High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.7L TDI V6 (180 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, rear electric window blind, climate control, DSP audio system, deep blue interior, brown walnut inlay finish, deep blue mondial cloth seats. Exterior painted in Stratos Blue",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 62.5856,
+      "Weight": 1665,
+      "Value": 42060,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 7.9,
+      "defaultPaintName1": "Stratos Blue"
+}

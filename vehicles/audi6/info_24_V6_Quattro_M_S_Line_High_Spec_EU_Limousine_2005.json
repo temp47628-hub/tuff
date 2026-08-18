@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 Quattro (M) S-Line High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.4L V6 (177 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, luggage compartment package, rear electric window blind, climate control, DSP audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":64.06685236768802,
+      "Weight":1625,
+      "Value":37510,
+      "0-100 km/h":9.1,
+      "0-60 mph":8.6,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

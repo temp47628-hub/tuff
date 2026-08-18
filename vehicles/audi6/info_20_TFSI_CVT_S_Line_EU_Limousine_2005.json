@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (Multitronic) S-Line (EU) [Limousine] 2005",
+      "Description":"2005 Limousine 2.0L TFSI (170 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, basic halogen lights, power folding mirrors, 18-inch alloys, basic infotainment system with a CD player, base climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":61.28133704735376,
+      "Weight":1550,
+      "Value":27060,
+      "0-100 km/h":8.7,
+      "0-60 mph":8.3,
+	  "defaultPaintName1":"Daytona Grey [S-Line and RS6]",
+}

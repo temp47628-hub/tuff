@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (Multitronic) S-Line (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 2.7L TDI V6 (180 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, luggage compartment package, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 62.5856,
+      "Weight": 1665,
+      "Value": 40060,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 7.9,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

@@ -1,0 +1,923 @@
+{
+"audi6_taillight_R_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift LED Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_R_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_R_avant", ["audi6_taillight_R"]],
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_R_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_R_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_R_avant", ["audi6_taillight_R"]],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_reflectors_R_avant", ["audi6_taillight_R"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_R_brake_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Right Taillight Brake LED Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake",
+                "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+                "$deformGroup":"taillightglass_R_break",
+                "$posX":-0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":-12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+          "$deformGroup":"taillightglass_R_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":-5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_R"},
+         ["tl1r",-0.6222, 2.3066, 0.9989],
+         ["tl2r",-0.7433, 2.1999, 0.9989],
+         ["tl3r",-0.6153, 2.359, 0.8457],
+         ["tl4r",-0.7554, 2.2495, 0.8509],
+         ["tl5r", -0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6r", -0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["tl1r","tl2r"],
+          ["tl3r","tl4r"],
+          ["tl1r","tl3r"],
+          ["tl2r","tl4r"],
+
+          ["tl1r","tl4r"],
+          ["tl2r","tl3r"],
+
+          ["tl2r","tl5r"],
+          ["tl4r","tl5r"],
+
+          ["tl6r", "tl1r"],
+          ["tl6r", "tl2r"],
+          ["tl6r", "tl5r"],
+          ["tl6r", "tl4r"],
+          ["tl6r", "tl3r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          {"breakGroup":"taillight_a_R"},
+          ["tl1r", "q4r"],
+          ["tl2r", "q4r"],
+          ["tl3r", "q4r"],
+          ["tl4r", "q4r"],
+          ["tl3r", "r4rr"],
+          ["tl4r", "r4rr"],
+          ["tl3r", "r6rr"],
+          ["tl4r", "r6rr"],
+          ["tl5r", "q3r"],
+          ["tl5r", "q9r"],
+          ["tl6r", "q3r"],
+          ["tl6r", "q9r"],
+          ["tl1r", "r6"],
+          ["tl3r", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_R_supportBeams"},
+          ["tl2r","q9r"],
+          ["tl4r","q9r"],
+          ["tl2r","q3r"],
+          ["tl1r","q4r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_R"},
+            {"dragCoef":8.75},
+            ["tl1r","tl3r","tl4r"],
+            ["tl1r","tl4r","tl2r"],
+            ["tl2r", "tl4r", "tl5r"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl3r", "tl1r", "tl6r"],
+            ["tl6r", "tl1r", "tl2r"],
+            ["tl5r", "tl6r", "tl2r"],
+            ["tl4r", "tl3r", "tl6r"],
+            ["tl5r", "tl4r", "tl6r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_taillight_L_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift LED Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_L_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_L_avant", ["audi6_taillight_L"]],
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_L_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_L_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_L_avant", ["audi6_taillight_L"]],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_reflectors_L_avant", ["audi6_taillight_L"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_L_brake_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Left Taillight Brake LED Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake",
+                "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+                "$deformGroup":"taillightglass_L_break",
+                "$posX":0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+          "$deformGroup":"taillightglass_L_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_L"},
+         ["tl1l",0.6222, 2.3066, 0.9989],
+         ["tl2l",0.7433, 2.1999, 0.9989],
+         ["tl3l",0.6153, 2.359, 0.8457],
+         ["tl4l",0.7554, 2.2495, 0.8509],
+         ["tl5l", 0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6l", 0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["tl1l","tl2l"],
+          ["tl3l","tl4l"],
+          ["tl1l","tl3l"],
+          ["tl2l","tl4l"],
+
+          ["tl1l","tl4l"],
+          ["tl2l","tl3l"],
+
+          ["tl2l","tl5l"],
+          ["tl4l","tl5l"],
+
+          ["tl6l", "tl1l"],
+          ["tl6l", "tl2l"],
+          ["tl6l", "tl5l"],
+          ["tl6l", "tl4l"],
+          ["tl6l", "tl3l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          //l
+          {"breakGroup":"taillight_a_L"},
+          ["tl1l", "q4l"],
+          ["tl2l", "q4l"],
+          ["tl3l", "q4l"],
+          ["tl4l", "q4l"],
+          ["tl3l", "r4ll"],
+          ["tl4l", "r4ll"],
+          ["tl3l", "r6ll"],
+          ["tl4l", "r6ll"],
+          ["tl5l", "q3l"],
+          ["tl5l", "q9l"],
+          ["tl6l", "q3l"],
+          ["tl6l", "q9l"],
+          ["tl1l", "r6"],
+          ["tl3l", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_L_supportBeams"},
+          ["tl2l","q9l"],
+          ["tl4l","q9l"],
+          ["tl2l","q3l"],
+          ["tl1l","q4l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_L"},
+            {"dragCoef":7},
+            ["tl3l","tl1l","tl4l"],
+            ["tl4l","tl1l","tl2l"],
+            ["tl4l", "tl2l", "tl5l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl1l", "tl3l", "tl6l"],
+            ["tl1l", "tl6l", "tl2l"],
+            ["tl6l", "tl5l", "tl2l"],
+            ["tl3l", "tl4l", "tl6l"],
+            ["tl4l", "tl5l", "tl6l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_taillight_R_halo_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift Halogen Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_R_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_R_avant", ["audi6_taillight_R"]],
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_R_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_R_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_R_halo_avant", ["audi6_taillight_R"]],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_reflectors_R_halo_avant", ["audi6_taillight_R"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_R_brake_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Right Taillight Brake Halogen Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake_s",
+                "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+                "$deformGroup":"taillightglass_R_break",
+                "$posX":-0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":-12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+          "$deformGroup":"taillightglass_R_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":-5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_R"},
+         ["tl1r",-0.6222, 2.3066, 0.9989],
+         ["tl2r",-0.7433, 2.1999, 0.9989],
+         ["tl3r",-0.6153, 2.359, 0.8457],
+         ["tl4r",-0.7554, 2.2495, 0.8509],
+         ["tl5r", -0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6r", -0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["tl1r","tl2r"],
+          ["tl3r","tl4r"],
+          ["tl1r","tl3r"],
+          ["tl2r","tl4r"],
+
+          ["tl1r","tl4r"],
+          ["tl2r","tl3r"],
+
+          ["tl2r","tl5r"],
+          ["tl4r","tl5r"],
+
+          ["tl6r", "tl1r"],
+          ["tl6r", "tl2r"],
+          ["tl6r", "tl5r"],
+          ["tl6r", "tl4r"],
+          ["tl6r", "tl3r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          {"breakGroup":"taillight_a_R"},
+          ["tl1r", "q4r"],
+          ["tl2r", "q4r"],
+          ["tl3r", "q4r"],
+          ["tl4r", "q4r"],
+          ["tl3r", "r4rr"],
+          ["tl4r", "r4rr"],
+          ["tl3r", "r6rr"],
+          ["tl4r", "r6rr"],
+          ["tl5r", "q3r"],
+          ["tl5r", "q9r"],
+          ["tl6r", "q3r"],
+          ["tl6r", "q9r"],
+          ["tl1r", "r6"],
+          ["tl3r", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_R_supportBeams"},
+          ["tl2r","q9r"],
+          ["tl4r","q9r"],
+          ["tl2r","q3r"],
+          ["tl1r","q4r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_R"},
+            {"dragCoef":8.75},
+            ["tl1r","tl3r","tl4r"],
+            ["tl1r","tl4r","tl2r"],
+            ["tl2r", "tl4r", "tl5r"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl3r", "tl1r", "tl6r"],
+            ["tl6r", "tl1r", "tl2r"],
+            ["tl5r", "tl6r", "tl2r"],
+            ["tl4r", "tl3r", "tl6r"],
+            ["tl5r", "tl4r", "tl6r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_taillight_L_halo_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift Halogen Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_L_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_L_avant", ["audi6_taillight_L"]],
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_L_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_L_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_L_halo_avant", ["audi6_taillight_L"]],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_taillight_reflectors_L_halo_avant", ["audi6_taillight_L"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_L_brake_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Left Taillight Brake Halogen Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake_s",
+                "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+                "$deformGroup":"taillightglass_L_break",
+                "$posX":0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+          "$deformGroup":"taillightglass_L_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_L"},
+         ["tl1l",0.6222, 2.3066, 0.9989],
+         ["tl2l",0.7433, 2.1999, 0.9989],
+         ["tl3l",0.6153, 2.359, 0.8457],
+         ["tl4l",0.7554, 2.2495, 0.8509],
+         ["tl5l", 0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6l", 0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["tl1l","tl2l"],
+          ["tl3l","tl4l"],
+          ["tl1l","tl3l"],
+          ["tl2l","tl4l"],
+
+          ["tl1l","tl4l"],
+          ["tl2l","tl3l"],
+
+          ["tl2l","tl5l"],
+          ["tl4l","tl5l"],
+
+          ["tl6l", "tl1l"],
+          ["tl6l", "tl2l"],
+          ["tl6l", "tl5l"],
+          ["tl6l", "tl4l"],
+          ["tl6l", "tl3l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          //l
+          {"breakGroup":"taillight_a_L"},
+          ["tl1l", "q4l"],
+          ["tl2l", "q4l"],
+          ["tl3l", "q4l"],
+          ["tl4l", "q4l"],
+          ["tl3l", "r4ll"],
+          ["tl4l", "r4ll"],
+          ["tl3l", "r6ll"],
+          ["tl4l", "r6ll"],
+          ["tl5l", "q3l"],
+          ["tl5l", "q9l"],
+          ["tl6l", "q3l"],
+          ["tl6l", "q9l"],
+          ["tl1l", "r6"],
+          ["tl3l", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_L_supportBeams"},
+          ["tl2l","q9l"],
+          ["tl4l","q9l"],
+          ["tl2l","q3l"],
+          ["tl1l","q4l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_L"},
+            {"dragCoef":7},
+            ["tl3l","tl1l","tl4l"],
+            ["tl4l","tl1l","tl2l"],
+            ["tl4l", "tl2l", "tl5l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl1l", "tl3l", "tl6l"],
+            ["tl1l", "tl6l", "tl2l"],
+            ["tl6l", "tl5l", "tl2l"],
+            ["tl3l", "tl4l", "tl6l"],
+            ["tl4l", "tl5l", "tl6l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_taillight_R_fl_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Facelift LED Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_R_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_R_avant", ["audi6_taillight_R"]],
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_R_fl_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_R_avant", ["audi6_taillight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights_alt", "deformMaterialDamaged":"audi6_lights_alt"},
+         ["audi6_taillight_R_avant", ["audi6_taillight_R"], [],{"materialOverride":[["audi6_lights","audi6_lights_alt"]]}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_R_break", "deformMaterialBase":"audi6_lights_alt", "deformMaterialDamaged":"audi6_lights_alt"},
+         ["audi6_taillight_reflectors_R_avant", ["audi6_taillight_R"], [],{"materialOverride":[["audi6_signal_R","audi6_signal_R_alt"]]}],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_R_brake_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Right Taillight Brake LED Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake",
+                "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+                "$deformGroup":"taillightglass_R_break",
+                "$posX":-0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":-12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$nodeRef":"tl4r", "$nodeX":"tl3r", "$nodeY":"tl2r",
+          "$deformGroup":"taillightglass_R_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":-5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_R"},
+         ["tl1r",-0.6222, 2.3066, 0.9989],
+         ["tl2r",-0.7433, 2.1999, 0.9989],
+         ["tl3r",-0.6153, 2.359, 0.8457],
+         ["tl4r",-0.7554, 2.2495, 0.8509],
+         ["tl5r", -0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6r", -0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["tl1r","tl2r"],
+          ["tl3r","tl4r"],
+          ["tl1r","tl3r"],
+          ["tl2r","tl4r"],
+
+          ["tl1r","tl4r"],
+          ["tl2r","tl3r"],
+
+          ["tl2r","tl5r"],
+          ["tl4r","tl5r"],
+
+          ["tl6r", "tl1r"],
+          ["tl6r", "tl2r"],
+          ["tl6r", "tl5r"],
+          ["tl6r", "tl4r"],
+          ["tl6r", "tl3r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          {"breakGroup":"taillight_a_R"},
+          ["tl1r", "q4r"],
+          ["tl2r", "q4r"],
+          ["tl3r", "q4r"],
+          ["tl4r", "q4r"],
+          ["tl3r", "r4rr"],
+          ["tl4r", "r4rr"],
+          ["tl3r", "r6rr"],
+          ["tl4r", "r6rr"],
+          ["tl5r", "q3r"],
+          ["tl5r", "q9r"],
+          ["tl6r", "q3r"],
+          ["tl6r", "q9r"],
+          ["tl1r", "r6"],
+          ["tl3r", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_R_supportBeams"},
+          ["tl2r","q9r"],
+          ["tl4r","q9r"],
+          ["tl2r","q3r"],
+          ["tl1r","q4r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_R"},
+            {"dragCoef":8.75},
+            ["tl1r","tl3r","tl4r"],
+            ["tl1r","tl4r","tl2r"],
+            ["tl2r", "tl4r", "tl5r"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl3r", "tl1r", "tl6r"],
+            ["tl6r", "tl1r", "tl2r"],
+            ["tl5r", "tl6r", "tl2r"],
+            ["tl4r", "tl3r", "tl6r"],
+            ["tl5r", "tl4r", "tl6r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_taillight_L_fl_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Facelift LED Taillight",
+        "value":120,
+    },
+    "slotType" : "audi6_taillight_L_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_taillightframe_L_avant", ["audi6_taillight_L"]],
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_taillightglass_L_fl_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+		 //["audi6_taillightinnerglass_L_avant", ["audi6_taillight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound2", "deformVolume":0.3}],
+         {"deformGroup":""},
+
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights_alt", "deformMaterialDamaged":"audi6_lights_alt"},
+         ["audi6_taillight_L_avant", ["audi6_taillight_L"], [],{"materialOverride":[["audi6_lights","audi6_lights_alt"]]}],
+         {"deformGroup":""},
+		 
+         {"deformGroup":"taillightglass_L_break", "deformMaterialBase":"audi6_lights_alt", "deformMaterialDamaged":"audi6_lights_alt"},
+         ["audi6_taillight_reflectors_L_avant", ["audi6_taillight_L"], [],{"materialOverride":[["audi6_signal_L","audi6_signal_L_alt"]]}],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name", "allowTypes", "denyTypes", "default", "description"],
+        ["audi6_taillight_L_brake_bulb", ["led_modern_red_5W"], [], "led_modern_red_5W", "Left Taillight Brake LED Unit",
+        {
+            "coreSlot":true,
+            "variables":{
+                "$electric":"lowhighBrake",
+                "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+                "$deformGroup":"taillightglass_L_break",
+                "$posX":0.666, "$posY":2.264, "$posZ":0.953,
+                "$rotX":20.674, "$rotY":-9.818, "$rotZ":12.159,
+                "$shadowEnable":1,
+            }
+        }],
+        ["audi6_taillight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$nodeRef":"tl4l", "$nodeX":"tl3l", "$nodeY":"tl2l",
+          "$deformGroup":"taillightglass_L_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.679, "$posY":2.289, "$posZ":0.901,
+          "$rotX":0, "$rotY":0, "$rotZ":5
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--taillight--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.4},
+         {"group":"audi6_taillight_L"},
+         ["tl1l",0.6222, 2.3066, 0.9989],
+         ["tl2l",0.7433, 2.1999, 0.9989],
+         ["tl3l",0.6153, 2.359, 0.8457],
+         ["tl4l",0.7554, 2.2495, 0.8509],
+         ["tl5l", 0.8094, 2.1005, 0.9199],
+         {"selfCollision":false},
+         {"nodeWeight":0.4},
+         ["tl6l", 0.6779, 2.1829, 0.93],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--taillight--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":20},
+          {"beamDeform":10000,"beamStrength":60000},
+          //taillight main shape
+          {"deformGroup":"taillightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["tl1l","tl2l"],
+          ["tl3l","tl4l"],
+          ["tl1l","tl3l"],
+          ["tl2l","tl4l"],
+
+          ["tl1l","tl4l"],
+          ["tl2l","tl3l"],
+
+          ["tl2l","tl5l"],
+          ["tl4l","tl5l"],
+
+          ["tl6l", "tl1l"],
+          ["tl6l", "tl2l"],
+          ["tl6l", "tl5l"],
+          ["tl6l", "tl4l"],
+          ["tl6l", "tl3l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":501000,"beamDamp":20},
+          {"beamDeform":4000,"beamStrength":12000},
+          //l
+          {"breakGroup":"taillight_a_L"},
+          ["tl1l", "q4l"],
+          ["tl2l", "q4l"],
+          ["tl3l", "q4l"],
+          ["tl4l", "q4l"],
+          ["tl3l", "r4ll"],
+          ["tl4l", "r4ll"],
+          ["tl3l", "r6ll"],
+          ["tl4l", "r6ll"],
+          ["tl5l", "q3l"],
+          ["tl5l", "q9l"],
+          ["tl6l", "q3l"],
+          ["tl6l", "q9l"],
+          ["tl1l", "r6"],
+          ["tl3l", "r6"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //taillight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":1},
+          {"beamSpring":401000,"beamDamp":20},
+          {"beamDeform":5000,"beamStrength":330000},
+          {"breakGroup":"taillight_L_supportBeams"},
+          ["tl2l","q9l"],
+          ["tl4l","q9l"],
+          ["tl2l","q3l"],
+          ["tl1l","q4l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left taillight
+            {"groundModel":"plastic"},
+            {"group":"audi6_taillight_L"},
+            {"dragCoef":7},
+            ["tl3l","tl1l","tl4l"],
+            ["tl4l","tl1l","tl2l"],
+            ["tl4l", "tl2l", "tl5l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["tl1l", "tl3l", "tl6l"],
+            ["tl1l", "tl6l", "tl2l"],
+            ["tl6l", "tl5l", "tl2l"],
+            ["tl3l", "tl4l", "tl6l"],
+            ["tl4l", "tl5l", "tl6l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+}

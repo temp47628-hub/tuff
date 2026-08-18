@@ -1,0 +1,236 @@
+{
+"audi6_skin_floormats": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : ""
+},
+"audi6_skin_floormats_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Light Grey",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "grey_floormats"
+},
+"audi6_skin_floormats_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "blue_floormats"
+},
+"audi6_skin_floormats_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "beige_floormats"
+},
+"audi6_skin_floormats_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "linenbeige_floormats"
+},
+"audi6_skin_floormats_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "brown_floormats"
+},
+"audi6_skin_floormats_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "silver_floormats"
+},
+"audi6_skin_floormats_pearlsilver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pearl Silver",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "pearlsilver_floormats"
+},
+"audi6_skin_floormats_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "creambeige_floormats"
+},
+"audi6_skin_floormats_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "blue_ae_floormats"
+},
+"audi6_skin_floormats_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "burgundy_ae_floormats"
+},
+"audi6_skin_floormats_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "nightblue_ae_floormats"
+},
+"audi6_skin_floormats_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "regencygreen_ae_floormats"
+},
+"audi6_skin_floormats_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "palaceblue_ae_floormats"
+},
+"audi6_skin_floormats_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "sandbeige_ae_floormats"
+},
+"audi6_skin_floormats_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "chestnutbrown_ae_floormats"
+},
+"audi6_skin_floormats_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "classicred_ae_floormats"
+},
+"audi6_skin_floormats_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "red_ae_floormats"
+},
+"audi6_skin_floormats_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "saddlebrown_ae_floormats"
+},
+"audi6_skin_floormats_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "jetgrey_ae_floormats"
+},
+"audi6_skin_floormats_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "alabasterwhite_ae_floormats"
+},
+"audi6_skin_floormats_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "magnolia_ae_floormats"
+},
+"audi6_skin_floormats_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "havannabrown_ae_floormats"
+},
+"audi6_skin_floormats_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "cocos_ae_floormats"
+},
+"audi6_skin_floormats_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "cognac_ae_floormats"
+},
+"audi6_skin_floormats_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats",
+    "skinName" : "orange_ae_floormats"
+},
+}

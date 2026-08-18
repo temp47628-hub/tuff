@@ -1,0 +1,163 @@
+{
+"audi6_shelf_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Parcel Shelf",
+        "value":240,
+    },
+    "slotType" : "audi6_shelf_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_shelf_avant", ["audi6_parcelshelf"]],
+         ["audi6_shelf_handle_avant", ["audi6_parcelshelf"]],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["parcelshelf", "shelf3","shelf1","shelf2", "box", {"x":0.1000, "y":0.0200, "z":0.0400}, {"x":18.000, "y":0.000, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0.0, "y":0.0, "z":0.0},{"x":0.5454, "y":0.0831, "z":0.0256}],
+	],
+	"triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["parcelshelf",           "action0", "parcelshelf"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["parcelshelf"],
+    ],
+	"nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":true},
+         //scope
+         {"nodeWeight":0.7},
+         {"group":"audi6_parcelshelf"},
+         ["shelf1", -0.5964, 2.2274, 1.0498],
+         ["shelf2", 0.5965, 1.4278, 1.0506],
+         ["shelf3", 0.5965, 2.2206, 1.0506],
+         ["shelf4", -0.5964, 1.4223, 1.0498],
+
+		 {"group":"audi6_parcelshelf2"},
+		 {"collision":false},
+		 {"selfCollision":false},
+
+		 ["shelf11", -0.5964, 2.2274, 1.04],
+         ["shelf22", 0.5965, 1.4278, 1.04],
+         ["shelf33", 0.5965, 2.2206, 1.04],
+         ["shelf44", -0.5964, 1.4223, 1.04],
+         //rigidifier
+         {"group":""},
+		 {"collision":false},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"breakGroupType":0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":555,"beamStrength":175000},
+          {"beamSpring":801000,"beamDamp":100},
+          {"deformationTriggerRatio":0.03},
+          //main shape
+          {"deformLimitExpansion":1.1},
+          {"disableTriangleBreaking":true},
+          ["shelf33","shelf22"],
+		  ["shelf44", "shelf11"],
+
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          //vert
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":13972.5,"beamStrength":175000},
+
+          //rigidifier
+          {"beamDeform":6682.5,"beamStrength":175000},
+
+          //attach
+          {"disableTriangleBreaking":true},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamDeform":450500,"beamStrength":4444150},
+          {"beamSpring":801000,"beamDamp":100},
+
+           ["shelf4", "q5r"],
+           ["shelf4", "q2r"],
+           ["shelf4", "q4r"],
+           ["shelf4", "q1r"],
+           ["shelf2", "q5l"],
+           ["shelf2", "q2l"],
+           ["shelf2", "q4l"],
+           ["shelf2", "q1l"],
+
+
+
+           ["shelf44", "q5r"],
+           ["shelf44", "q2r"],
+           ["shelf44", "q4r"],
+           ["shelf44", "q1r"],
+           ["shelf22", "q5l"],
+           ["shelf22", "q2l"],
+           ["shelf22", "q4l"],
+           ["shelf22", "q1l"],
+		   ["shelf11", "q1r"],
+           ["shelf33", "q5l"],
+			
+           ["shelf11", "q5r"],
+           ["shelf11", "q2r"],
+           ["shelf11", "q4r"],
+           ["shelf11", "q1r"],
+           ["shelf33", "q5l"],
+           ["shelf33", "q2l"],
+           ["shelf33", "q4l"],
+           ["shelf33", "q1l"],
+
+
+        //support beams
+        {"beamType":"|SUPPORT", "beamLongBound":8},
+        {"beamSpring":830830,"beamDamp":100.8},
+        {"beamDeform":10125,"beamStrength":630000},
+        //hood
+        {"optional":true},
+
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"deformLimitExpansion":1.0},
+        ["shelf8","shelf9"],
+		
+        {"beamSpring":200,"beamDamp":100},
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"disableTriangleBreaking":true},
+        ["shelf3","shelf1"],
+
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"group":"audi6_parcelshelf"},
+            {"shelfroundModel":"plastic"},
+            {"dragCoef":8},
+            ["shelf2", "shelf3", "shelf1"],
+            ["shelf2", "shelf1", "shelf4"],
+            {"group":""},
+            //gap
+            {"dragCoef":0},
+            {"breakGroup":""},
+    ],
+	"rails": {
+      "shelf_rail1":{"links:":["shelf33", "shelf22"], "looped":false, "capped":true}
+	  "shelf_rail2":{"links:":["shelf44", "shelf11"], "looped":false, "capped":true}
+
+	},
+	"slidenodes": [
+		["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+		["shelf3", "shelf_rail1", true, true, 0.0, 1001000, "10000", "FLT_MAX"],
+		["shelf1", "shelf_rail2", true, true, 0.0, 1001000, "10000", "FLT_MAX"],
+	],
+	"hydros": [
+            ["id1:", "id2:"],
+            {"beamDeform":30000,"beamStrength":150000},
+            {"beamSpring":25500,"beamDamp":250},
+            {"beamLimitSpring":0,"beamLimitDamp":0},
+            ["shelf22","shelf3",{"inputSource":"parcelshelf","inLimit":1.0,"outLimit":0.07,"inRate":0.71,"outRate":10.0,"inputFactor":1}],
+            ["shelf44","shelf1",{"inputSource":"parcelshelf","inLimit":1.0,"outLimit":0.07,"inRate":0.71,"outRate":10.0,"inputFactor":1}],
+            {"beamSpring":10500,"beamDamp":250},
+            {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

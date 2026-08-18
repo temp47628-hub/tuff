@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [225] (M) S-Line (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 3.0L TDI (225 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, luggage compartment package, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather. Exterior painted in Daytona Grey",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 225,
+      "Torque": 450,
+      "Top Speed": 68.33333333333333,
+      "Weight": 1735,
+      "Value": 65010,
+      "0-100 km/h": 6.9,
+      "0-60 mph": 6.5,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

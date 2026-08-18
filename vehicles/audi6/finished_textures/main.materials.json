@@ -1,0 +1,142 @@
+{
+  "audi6_carbonfiber": {
+    "name": "audi6_carbonfiber",
+    "mapTo": "audi6_carbonfiber",
+    "class": "Material",
+    "persistentId": "9c1e3207-6faf-4602-b576-d90a47c368ee",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.686275005,
+          0.686275005,
+          0.686275005,
+          1
+        ],
+        "clearCoatRoughnessFactor": 0,
+        "detailMap": "/vehicles/audi6/finished_textures/carbonfiber_d.color.png",
+        "detailNormalMap": "vehicles/audi6/finished_textures/carbonfiber_n.normal.png",
+        "detailScale": [
+          10,
+          10
+        ],
+        "metallicFactor": 0.5,
+        "opacityFactor": 0,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.561999977,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_grille": {
+    "name": "audi6_grille",
+    "mapTo": "audi6_grille",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/audi6/finished_textures/grill_d.png",
+        "normalMap": "/vehicles/audi6/finished_textures/grill_n.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grill_o.png",
+        "roughnessMap": "/vehicles/audi6/finished_textures/grill_s.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "audi6_grille_hex": {
+    "name": "audi6_grille_hex",
+    "mapTo": "audi6_grille_hex",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.140854001,
+          0.140854001,
+          0.140854001,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_horizontal": {
+    "name": "audi6_grille_horizontal",
+    "mapTo": "audi6_grille_horizontal",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/audi6/finished_textures/grille_horizontal_b.color.png",
+        "normalMap": "/vehicles/audi6/finished_textures/grille_horizontal_nm.normal.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

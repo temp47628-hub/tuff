@@ -1,0 +1,80 @@
+{
+"audi6_mirror_fold": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Electrically Folding Mirrors",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_fold",
+	"components": {
+        "electrics": {
+			"foldingMirrors": 1,
+        },
+    },
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":485000,"beamStrength":6900},
+        {"beamLimitSpring":40000,"beamLimitDamp":400},
+        {"beamSpring":40000,"beamDamp":400},
+		//left
+        ["mi4l","d13l",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+		//right
+        ["mi4r","d13r",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+    ],
+},
+"audi6_mirror_fold_auto": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Electrically Folding and Auto Dimming Mirrors",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_fold",
+	"components": {
+        "electrics": {
+			"foldingMirrors": 1,
+			"autoDimmingMirrors": 1,
+        },
+    },
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":485000,"beamStrength":6900},
+        {"beamLimitSpring":40000,"beamLimitDamp":400},
+        {"beamSpring":40000,"beamDamp":400},
+		//left
+        ["mi4l","d13l",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+		//right
+        ["mi4r","d13r",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+    ],
+},
+"audi6_mirror_fold_auto_mem": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Electrically Folding and Auto Dimming Mirrors (w/ Memory Function)",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_fold",
+	"components": {
+        "electrics": {
+			"foldingMirrors": 1,
+			"autoDimmingMirrors": 1,
+			"customValues": [
+                ["electricsName", "electricsFunction","electricsDefault"],
+				["memoryMirrorsEnabled","electrics.memoryMirrorsEnabled",1],
+            ],
+            "smoothers": [
+                ["electricsName", "smootherType", "params"],
+            ],
+        },
+    },
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":485000,"beamStrength":6900},
+        {"beamLimitSpring":40000,"beamLimitDamp":400},
+        {"beamSpring":40000,"beamDamp":400},
+		//left
+        ["mi4l","d13l",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+		//right
+        ["mi4r","d13r",{"inputSource":"audi6_fold_mirror","inLimit":0.85,"outLimit":1.1,"inRate":0.08,"outRate":0.02,"inputFactor":-1}],
+    ],
+},
+}

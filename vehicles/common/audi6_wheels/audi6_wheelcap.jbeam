@@ -1,0 +1,982 @@
+{
+"audi6_wheelcap_F_s6pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_s6pfl",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_s6pfl_19x9", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_s6pfl_19x9", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_s6pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_s6pfl",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_s6pfl_19x9", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_s6pfl_19x9", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_s6fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_s6fl",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_s6fl_19x9", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_s6fl_19x9", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_s6fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_s6fl",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_s6fl_19x9", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_s6fl_19x9", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a67spkstar": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a67spkstar",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67spkstar_17x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67spkstar_17x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a67spkstar": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a67spkstar",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67spkstar_17x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67spkstar_17x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a67armstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a67armstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67armstr_17x75", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67armstr_17x75", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a67armstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a67armstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67armstr_17x75", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67armstr_17x75", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a6fl5armd": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a6fl5armd",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6fl5armd_18x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a6fl5armd_18x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a6fl5armd": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a6fl5armd",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6fl5armd_18x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a6fl5armd_18x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a610spkstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a610spkstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a610spkstr_18x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a610spkstr_18x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a610spkstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a610spkstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a610spkstr_18x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a610spkstr_18x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a6vdesign": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a6vdesign",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6vdesign_18x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a6vdesign_18x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a6vdesign": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a6vdesign",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6vdesign_18x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+        ["audi6_wheelcap_a6vdesign_18x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1.0, "y":1.0, "z":1.0}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a65spky": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a65spky",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a65spky_17x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a65spky_17x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a65spky": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a65spky",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a65spky_17x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a65spky_17x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_pfl15spk": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_pfl15spk",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6pfl15spk_17x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a6pfl15spk_17x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_pfl15spk": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_pfl15spk",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6pfl15spk_17x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a6pfl15spk_17x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a8d3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a8d3",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a8d3_18x8", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a8d3_18x8", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a8d3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a8d3",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a8d3_18x8", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a8d3_18x8", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a6pflsdesign": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a6pflsdesign",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6pflsdesign_18x85", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a6pflsdesign_18x85", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a6pflsdesign": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a6pflsdesign",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a6pflsdesign_18x85", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a6pflsdesign_18x85", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a69spk": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a69spk",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a69spk_16x7", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a69spk_16x7", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a69spk": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a69spk",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a69spk_16x7", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a69spk_16x7", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a67spk_16x7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a67spk_16x7",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67spk_16x7", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67spk_16x7", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a67spk_16x7": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a67spk_16x7",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a67spk_16x7", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a67spk_16x7", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_F_a66spkstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_F_a66spkstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a66spkstr_16x7", ["hubcap_FR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a66spkstr_16x7", ["hubcap_FL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+"audi6_wheelcap_R_a66spkstr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Wheel Cap",
+        "value":1450,
+    },
+    "slotType" : "audi6_wheelcap_R_a66spkstr",
+
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //resized
+        ["audi6_wheelcap_a66spkstr_16x7", ["hubcap_RR"], [], {"pos":{"x":-0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+        ["audi6_wheelcap_a66spkstr_16x7", ["hubcap_RL"], [], {"pos":{"x": 0.52, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0},   "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //hubcap options
+            {"enableHubcaps":true},
+            {"hubcapSelfCollision":true},
+            {"hubcapCollision":true},
+            {"enableExtraHubcapBeams":false},
+            {"hubcapOffset":0.0},
+            {"hubcapWidth":0.06},
+            {"hubcapRadius":0.075},
+            {"hubcapBeamSpring":251000, "hubcapBeamDamp":11},
+            {"hubcapBeamDeform":3500, "hubcapBeamStrength":14000},
+            {"hubcapAttachBeamSpring":251000, "hubcapAttachBeamDamp":10},
+            {"hubcapAttachBeamDeform":1600, "hubcapAttachBeamStrength":2000},
+            {"hubcapSupportBeamDeform":3500, "hubcapSupportBeamStrength":5500},
+            {"hubcapNodeWeight":0.16},
+            {"hubcapCenterNodeWeight":0.16},
+            {"hubcapNodeMaterial":"|NM_METAL"},
+            {"hubcapFrictionCoef":0.7},
+    ],
+},
+}

@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 Quattro (M) A6 High-Spec (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.4L V6 (177 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, DSP audio system, deep blue interior, mid-brown walnut inlay finish, deep blue mondial cloth seats. Exterior painted in Stratos Blue",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":62.11699164345404,
+      "Weight":1685,
+      "Value":37020,
+      "0-100 km/h":9.4,
+      "0-60 mph":8.9,
+      "defaultPaintName1": "Stratos Blue"
+}

@@ -1,0 +1,274 @@
+{
+"audi6_skin_inlay": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Radial Aluminium",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 1,
+        },
+    },
+    "skinName" : ""
+},
+"audi6_skin_inlay_axialalu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Axial Aluminium",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 1,
+        },
+    },
+    "skinName" : "axialalu_inlay"
+},
+"audi6_skin_inlay_alutrigon": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Aluminium Trigon",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 1,
+        },
+    },
+    "skinName" : "alutrigon_inlay"
+},
+"audi6_skin_inlay_brushedalu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Matt-Brushed Aluminium",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 1,
+        },
+    },
+    "skinName" : "brushedalu_inlay"
+},
+"audi6_skin_inlay_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Grey",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 2,
+        },
+    },
+    "skinName" : "grey_inlay"
+},
+"audi6_skin_inlay_glossyblack": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Piano Finish, Black",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "glossyblack_inlay"
+},
+"audi6_skin_inlay_vavonawood": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Vavona Wood, Assam Grey",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "vavonawood_inlay"
+},
+"audi6_skin_inlay_brownwalnut": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Brown Walnut",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "brownwalnut_inlay"
+},
+"audi6_skin_inlay_midbrownwalnut": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Mid-Brown Walnut",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "midbrownwalnut_inlay"
+},
+"audi6_skin_inlay_beigebirch": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Birch, Beige",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "beigebirch_inlay"
+},
+"audi6_skin_inlay_greybirch": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Birch, Grey",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "greybirch_inlay"
+},
+"audi6_skin_inlay_naturalash": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Natural Ash",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "naturalash_inlay"
+},
+"audi6_skin_inlay_carbonfiber": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Carbon Atlas",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+        },
+    },
+    "skinName" : "carbonfiber_inlay"
+},
+"audi6_skin_inlay_myrtle": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Myrtle, Nutmeg [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "myrtle_inlay"
+},
+"audi6_skin_inlay_oaksepia": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Oak, Sepia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "oaksepia_inlay"
+},
+"audi6_skin_inlay_poplarsaffron": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Poplar, Saffron [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "poplarsaffron_inlay"
+},
+"audi6_skin_inlay_quiltedmaple": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quilted Maple, Gold [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "quiltedmaple_inlay"
+},
+"audi6_skin_inlay_ashnougat": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Ash, Nougat [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "ashnougat_inlay"
+},
+"audi6_skin_inlay_maplecopper": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Fine-Grain Maple, Copper [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_inlay",
+	"components": {
+        "electrics": {
+			"alternativeInlay": 0,
+			"audiExclusiveBadge": 1,
+        },
+    },
+    "skinName" : "maplecopper_inlay"
+},
+}

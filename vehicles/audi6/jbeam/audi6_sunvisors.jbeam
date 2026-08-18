@@ -1,0 +1,189 @@
+{
+"audi6_sunvisor_L": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Sunvisor",
+        "value":240,
+    },
+    "slotType" : "audi6_sunvisor_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_sunvisor_L", ["audi6_sunvisor_l"]],
+		 ["audi6_sunvisor_support_L", ["audi6_roof", "audi6_body"]],
+    ],
+    "mirrors": [
+		["mesh", "idRef:", "id1:", "id2:"],
+		["audi6_sunvisor_L","vis1_l","vis2_l","vis3_l",{"refBaseTranslation":{"x":-0.160,"y":0.0,"z":0.0},"baseRotationGlobal":{"x":82.1,"y":0.0,"z":-19.1}}],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+
+        ["sunvisor_mirrorcover_L_s", "audi6_sunvisor_mirrorcover_L", "vis1_l","vis2_l","vis3_l",       {"x":90, "y":0, "z":0},    {"x":0, "y":0, "z":2}, {"x":0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":-0.13,"y":-0.007116,"z":0.004}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id","idRef:","idX:","idY:","type","size","baseRotation","rotation","translation","baseTranslation"],
+        ["sunvisor_l", "vis1_l","vis2_l","vis3_l", "sphere", 0.02, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, {"x":-0.0777, "y":0.2203, "z":0.0000}],	
+		//"x":0.0074, "y":0.1040, "z":0.0079
+        ["sunvisor_mirrorcover_L", "vis1_l","vis2_l","vis3_l", "box", {"x":0.0615, "y":0.0078, "z":0.0080}, {"x":0.186, "y":32.320, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, {"x":0.0702, "y":-0.0069, "z":0.0079}],	
+    ],
+    "triggerEventLinks2": [
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["sunvisor_l", "action0", "sunvisor_lOPEN"],
+        ["sunvisor_l", "action2", "sunvisor_lCLOSE"],
+        ["sunvisor_mirrorcover_L", "action0", "sunvisor_mirrorcover_L"],
+    ],
+	
+    "actionsEnabled": [
+        ["id"],
+		["sunvisor_lOPEN"],	
+		["sunvisor_lCLOSE"],	
+		["sunvisor_mirrorcover_L"],	
+    ],
+	"nodes":[
+        ["id", "posX", "posY", "posZ"],
+        {"selfCollision":true, "collision":true},
+        {"frictionCoef":0.5},
+        {"nodeMaterial":"|NM_CLOTH"},
+		{"nodeWeight":0.3},
+		["vis1_l", 0.3956, -0.1535, 1.3574, {"group":["audi6_sunvisor_l"]}],
+		["vis2_l", 0.4899, -0.2952, 1.3265, {"group":["audi6_sunvisor_l"]}],
+		["vis3_l", 0.1116, -0.3268, 1.3439, {"group":["audi6_sunvisor_l"]}],
+	],
+	
+	"beams":[
+        ["id1:", "id2:"],
+        {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+        {"deformLimitExpansion":1},
+		{"beamSpring":400000,"beamDamp":30},
+        {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+		
+        ["vis1_l", "vis2_l"],
+		["vis2_l", "vis3_l"],
+		["vis3_l", "vis1_l"],
+		
+		{"breakGroup":"sun_l"},
+		{"beamDeform":1500,"beamStrength":2300},
+		["vis3_l", "p2ll"],
+		["vis3_l", "dsh2l"],
+		["vis3_l", "f6l"],
+		["vis3_l", "rf1"],
+		
+		["vis2_l", "p2ll"],
+		["vis2_l", "p1l"],
+		["vis2_l", "rf1l"],
+		["vis2_l", "rf1"],
+		{"breakGroup":""}
+		
+		{"breakGroup":""}
+	],
+	
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":3000,"beamStrength":"FLT_MAX"},
+		{"beamSpring":120100,"beamDamp":300},
+        {"beamPrecompression":1.0},
+        {"breakGroupType":1},
+        {"breakGroup":"sun_l"},
+        ["dsh1l","vis1_l", {"inputSource":"sunvisor_l","inLimit":0.65,"outLimit":0.5,"inRate":0.5,"outRate":0.5}],
+        {"breakGroup":""},
+    ],
+	
+	"triangles":[
+		["id1:", "id2:", "id3:"],
+		["vis1_l",  "vis3_l", "vis2_l"],
+		["vis3_r", "vis1_r",  "vis2_r"],
+	],
+},
+"audi6_sunvisor_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Sunvisor",
+        "value":240,
+    },
+    "slotType" : "audi6_sunvisor_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_sunvisor_R", ["audi6_sunvisor_r"]],
+		 ["audi6_sunvisor_support_R", ["audi6_roof", "audi6_body"]],
+    ],
+    "mirrors": [
+		["mesh", "idRef:", "id1:", "id2:"],
+		["audi6_sunvisor_R","vis1_r","vis2_r","vis3_r",{"refBaseTranslation":{"x":0.160,"y":0.0,"z":0.0},"baseRotationGlobal":{"x":82.1,"y":0.0,"z":19.1}}],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+
+        ["sunvisor_mirrorcover_R_s", "audi6_sunvisor_mirrorcover_R", "vis1_r","vis2_r","vis3_r",       {"x":90, "y":0, "z":0},    {"x":0, "y":0, "z":-2}, {"x":0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.13,"y":-0.007116,"z":0.004}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id","idRef:","idX:","idY:","type","size","baseRotation","rotation","translation","baseTranslation"],
+        ["sunvisor_r", "vis1_r","vis2_r","vis3_r", "sphere", 0.02, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, {"x":-0.0777, "y":0.2203, "z":0.0000}],	
+        ["sunvisor_mirrorcover_R", "vis1_r","vis2_r","vis3_r", "box", {"x":0.0615, "y":-0.0078, "z":0.0080}, {"x":0.186, "y":32.320, "z":0.000}, {"x":0, "y":0, "z":0}, {"x":0.0, "y":0.0, "z":0.0}, {"x":0.0702, "y":-0.0069, "z":-0.0079}],	
+    ],
+    "triggerEventLinks2": [
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["sunvisor_r", "action0", "sunvisor_rOPEN"],
+        ["sunvisor_r", "action2", "sunvisor_rCLOSE"],
+        ["sunvisor_mirrorcover_R", "action0", "sunvisor_mirrorcover_R"],
+    ],
+	
+    "actionsEnabled": [
+        ["id"],
+		["sunvisor_rOPEN"],	
+		["sunvisor_rCLOSE"],	
+		["sunvisor_mirrorcover_R"],	
+    ],
+	"nodes":[
+        ["id", "posX", "posY", "posZ"],
+        {"selfCollision":true, "collision":true},
+        {"frictionCoef":0.5},
+        {"nodeMaterial":"|NM_CLOTH"},
+		{"nodeWeight":0.3},
+		["vis1_r", -0.3956, -0.1535, 1.3574, {"group":["audi6_sunvisor_r"]}],
+		["vis2_r", -0.4899, -0.2952, 1.3265, {"group":["audi6_sunvisor_r"]}],
+		["vis3_r", -0.1116, -0.3268, 1.3439, {"group":["audi6_sunvisor_r"]}],
+	],
+	
+	"beams":[
+        ["id1:", "id2:"],
+        {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+        {"deformLimitExpansion":1},
+		{"beamSpring":400000,"beamDamp":30},
+        {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+		
+		["vis1_r", "vis2_r"],
+		["vis2_r", "vis3_r"],
+		["vis3_r", "vis1_r"],
+		
+		{"breakGroup":"sun_r"},
+		{"beamDeform":1500,"beamStrength":2300},
+		["vis3_r", "p2rr"],
+		["vis3_r", "dsh2r"],
+		["vis3_r", "f6r"],
+		["vis3_r", "rf1"],
+		
+		["vis2_r", "p2rr"],
+		["vis2_r", "p1r"],
+		["vis2_r", "rf1r"],
+		["vis2_r", "rf1"],
+		{"breakGroup":""}
+	],
+	
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":3000,"beamStrength":"FLT_MAX"},
+		{"beamSpring":120100,"beamDamp":300},
+        {"beamPrecompression":1.0},
+        {"breakGroupType":1},
+        {"breakGroup":"sun_r"},
+        ["dsh1r","vis1_r", {"inputSource":"sunvisor_r","inLimit":0.65,"outLimit":0.5,"inRate":0.5,"outRate":0.5}],
+        {"breakGroup":""},
+    ],
+	
+	"triangles":[
+		["id1:", "id2:", "id3:"],
+		["vis1_l",  "vis3_l", "vis2_l"],
+		["vis3_r", "vis1_r",  "vis2_r"],
+	],
+},
+}

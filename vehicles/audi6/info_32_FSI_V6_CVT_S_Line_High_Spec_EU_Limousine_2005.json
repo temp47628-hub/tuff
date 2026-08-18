@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.2L FSI V6 (Multitronic) S-Line High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 3.2L V6 FSI (256 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 19-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, lighting package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Misano Red",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 256,
+      "Torque": 330,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1590,
+      "Value": 81560,
+      "0-100 km/h": 7.0,
+      "0-60 mph": 6.6,
+      "defaultPaintName1":"Misano Red [S-Line and RS6]"
+}

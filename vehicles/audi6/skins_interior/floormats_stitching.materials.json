@@ -1,0 +1,914 @@
+{
+  "audi6_floormats_stitching": {
+    "name": "audi6_floormats_stitching",
+    "mapTo": "audi6_floormats_stitching",
+    "class": "Material",
+    "persistentId": "74104bd5-9d82-5905-b4da-c138df1b64ae",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.137254998,
+          0.137254998,
+          0.137254998,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.alabasterwhite_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.alabasterwhite_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.alabasterwhite_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "0262dab6-c987-54b6-bd06-2373254d7d5b",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.667797029,
+          0.622663975,
+          0.537750006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.beige_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.beige_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.beige_floormats_piping",
+    "class": "Material",
+    "persistentId": "c3d60a23-1c31-5a87-97cc-78d148070ddd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.72507298,
+          0.626478016,
+          0.521578014,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.blue_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.blue_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.blue_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "08695c7f-ab3b-4d17-8bff-287504a395bd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0.425953001,
+          1,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.blue_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.blue_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.blue_floormats_piping",
+    "class": "Material",
+    "persistentId": "4fe2a20d-588d-54a9-8e5d-69b3f458bb7e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.brown_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.brown_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.brown_floormats_piping",
+    "class": "Material",
+    "persistentId": "a9035ee1-5ea5-5af5-bf58-2a4ace6a4d77",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.581882,
+          0.388000995,
+          0.251933992,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.burgundy_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.burgundy_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.burgundy_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.341176003,
+          0.149020001,
+          0.149020001,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.chestnutbrown_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.chestnutbrown_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.chestnutbrown_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "85fd4858-6426-59d7-824a-1d7cec6f6da1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.243137002,
+          0.145098001,
+          0.109803997,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.classicred_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.classicred_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.classicred_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "e832df76-23d7-5671-8d07-a06708b51961",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.730800986,
+          0.408497006,
+          0.408497006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_b.color.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 10,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.cocos_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.cocos_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.cocos_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "e3c4b669-7ff8-5934-9484-c2b863345105",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.450980008,
+          0.36470601,
+          0.262744993,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.cognac_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.cognac_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.cognac_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "680ebd49-1f84-50e2-914b-d2c28409b641",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.549019992,
+          0.349020004,
+          0.188235,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.creambeige_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.creambeige_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.creambeige_floormats_piping",
+    "class": "Material",
+    "persistentId": "c849e79f-0189-565a-8572-cb7af3f8f273",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.havannabrown_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.havannabrown_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.havannabrown_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "84f3f462-8a39-53e9-86cd-d0a469939fc4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.352777004,
+          0.290322989,
+          0.231542006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.jetgrey_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.jetgrey_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.jetgrey_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "755e6fb1-e562-548c-aaff-c1c9d32c022f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.337255001,
+          0.333332986,
+          0.352941006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },  
+  "audi6_floormats_stitching.skin_floormats_piping.grey_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.grey_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.grey_floormats_piping",
+    "class": "Material",
+    "persistentId": "755e6fb1-e562-548c-aaff-c1c9d32c022f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392870009,
+          0.392870009,
+          0.392870009,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.linenbeige_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.linenbeige_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.linenbeige_floormats_piping",
+    "class": "Material",
+    "persistentId": "201f3f27-8ebb-5860-8c7e-861e195fa5ae",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.magnolia_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.magnolia_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.magnolia_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "516c4921-f144-52cb-adfd-3eb4565f23a6",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.647059023,
+          0.505882025,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.nightblue_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.nightblue_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.nightblue_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.141176,
+          0.168626994,
+          0.203922004,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.palaceblue_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.palaceblue_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.palaceblue_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "7742966c-d375-4a47-9a9b-b1e6ba3ba990",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.179805994,
+          0.257898003,
+          0.318410993,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.red_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.red_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.red_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "e832df76-23d7-5671-8d07-a06708b51961",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.823529005,
+          0,
+          0,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_b.color.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 10,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.regencygreen_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.regencygreen_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.regencygreen_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.168626994,
+          0.215685993,
+          0.156863004,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.saddlebrown_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.saddlebrown_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.saddlebrown_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "8d53f483-6ac4-562e-b155-916b7d7136f7",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.36470601,
+          0.227450997,
+          0.133332998,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.sandbeige_ae_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.sandbeige_ae_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.sandbeige_ae_floormats_piping",
+    "class": "Material",
+    "persistentId": "06631d01-3bb5-504e-9cec-e489b68df079",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.644886017,
+          0.552740991,
+          0.423265994,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_floormats_stitching.skin_floormats_piping.silver_floormats_piping": {
+    "name": "audi6_floormats_stitching.skin_floormats_piping.silver_floormats_piping",
+    "mapTo": "audi6_floormats_stitching.skin_floormats_piping.silver_floormats_piping",
+    "class": "Material",
+    "persistentId": "8d51d339-9ee4-53ea-aa0a-a0f0c802f2d0",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.587610006,
+          0.587610006,
+          0.587610006,
+          1
+        ],
+        "detailNormalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "normalMap": "/vehicles/audi6/textures/stitch_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/vehicles/audi6/textures/stitch_o.data.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 75,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

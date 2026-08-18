@@ -1,0 +1,117 @@
+{
+    "audi6_DSE_TC_AWD": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Anti-Slip Regulation (AWD)",
+            "value":250,
+        },
+        "slotType" : "audi6_DSE_TC",
+
+        "controller": [
+            ["fileName"],
+            ["drivingDynamics/supervisors/tractionControl" {"name": "tractionControl"}]
+            ["drivingDynamics/supervisors/slipProviders/virtualSpeedSlip"]
+
+        ],
+
+        "tractionControl": {
+            "tractionControlledMotors": ["mainEngine"]
+        }
+        "motorTorqueControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.2,                 2.5,    0.8,    0,      20,                 2]
+                ]
+            }
+        }
+
+        "brakeControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "slipRangeThreshold",   "maxVelocity"    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.1,                0.2,                    10,              1,      1.5,    0,      20,                 2]
+                ]
+            }
+        }
+    },
+
+    "audi6_DSE_TC_RWD": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Anti-Slip Regulation (RWD)",
+            "value":250,
+        },
+        "slotType" : "audi6_DSE_TC",
+
+        "controller": [
+            ["fileName"],
+            ["drivingDynamics/supervisors/tractionControl" {"name": "tractionControl"}]
+            ["drivingDynamics/supervisors/slipProviders/virtualSpeedSlip"]
+
+        ],
+
+        "tractionControl": {
+            "tractionControlledMotors": ["mainEngine"]
+        }
+        "motorTorqueControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.15,                 2.0,    0.1,    0.15,    200,                 80]
+                ]
+            }
+        }
+
+        "brakeControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "slipRangeThreshold",   "maxVelocity"    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.1,                0.1,                    30,              1,      1.5,    0,      20,                 2]
+                ]
+            }
+        }
+    },
+	
+    "audi6_DSE_TC_FWD": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Anti-Slip Regulation (FWD)",
+            "value":250,
+        },
+        "slotType" : "audi6_DSE_TC",
+
+        "controller": [
+            ["fileName"],
+            ["drivingDynamics/supervisors/tractionControl" {"name": "tractionControl"}]
+            ["drivingDynamics/supervisors/slipProviders/virtualSpeedSlip"]
+        ],
+
+        "tractionControl": {
+            "tractionControlledMotors": ["mainEngine"]
+        }
+        "motorTorqueControl": {
+            "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.15,                0.5,    1.4,    0.1,    20,                 5]
+                ]
+            }
+        }
+
+        "brakeControl": {
+        "useForTractionControl": true,
+            "tractionControl": {
+                "wheelGroupSettings":[
+                    ["motorName",   "slipThreshold",    "slipRangeThreshold",   "maxVelocity"    "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["mainEngine",  0.1,                0.2,                    10,              1,      1.5,    0,      20,                 2]
+                ]
+            }
+        }
+    },
+}

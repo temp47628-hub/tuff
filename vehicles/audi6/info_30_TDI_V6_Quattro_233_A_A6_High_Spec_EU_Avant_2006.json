@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [233] (Tiptronic) A6 High-Spec (EU) [Avant] 2006",
+      "Description": "2006 Avant 3.0L TDI (233 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, start-stop system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, premium lighting package, rear and side manual window blinds, climate control, BOSE surround sound audio system, black and cream beige interior, fine-grain beige birch inlay finish, cream beige valcona leather seats. Exterior painted in Canyon Red",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 233,
+      "Torque": 500,
+      "Top Speed": 68.88888888888889,
+      "Weight": 1810,
+      "Value": 68270,
+      "0-100 km/h": 7.0,
+      "0-60 mph": 6.6,
+      "defaultPaintName1": "Canyon Red [A6]"
+}

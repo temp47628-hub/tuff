@@ -1,0 +1,12 @@
+{
+//tint
+"audi6_skin_lightglass_tint": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tinted Taillights",
+        "value":500,
+    },
+    "slotType" : "skin_lightglass",
+    "skinName" : "tint_lightglass"
+},
+}

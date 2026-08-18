@@ -1,0 +1,29 @@
+{
+"audi6_skin_instrupanel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":500,
+    },
+    "slotType" : "skin_instrupanel",
+    "skinName" : ""
+},
+"audi6_skin_instrupanel_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Grey",
+        "value":500,
+    },
+    "slotType" : "skin_instrupanel",
+    "skinName" : "grey_instrupanel"
+},
+"audi6_skin_instrupanel_glossyblack": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Glossy Black",
+        "value":500,
+    },
+    "slotType" : "skin_instrupanel",
+    "skinName" : "glossyblack_instrupanel"
+},
+}

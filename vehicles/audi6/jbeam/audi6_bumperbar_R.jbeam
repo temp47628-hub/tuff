@@ -1,0 +1,14 @@
+{
+"audi6_bumperbar_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Bumper Support",
+        "value":180,
+    },
+    "slotType" : "audi6_bumperbar_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_bumperbar_R", ["audi6_body"]],
+    ],
+},
+}

@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.8L FSI V6 [210] (Multitronic) S-Line High-Spec (EU) [Avant] 2006",
+      "Description": "2006 Avant 2.8L FSI V6 (210 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, start-stop system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Phantom Black",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 210,
+      "Torque": 280,
+      "Top Speed": 64.463168,
+      "Weight": 1630,
+      "Value": 57070,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 8.0,
+      "defaultPaintName1": "Phantom Black"
+}

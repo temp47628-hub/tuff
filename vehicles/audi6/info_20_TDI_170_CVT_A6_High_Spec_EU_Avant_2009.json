@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TDI [170] (Multitronic) A6 High-Spec (EU) [Avant] 2009",
+      "Description":"2009 Avant 2.0L TDI (170 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic rear parking system, start-stop system, power folding mirrors, 16-inch alloys, basic infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, brown walnut inlay finish, black arkana cloth seats. Exterior painted in Condor Grey",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":350,
+      "Top Speed":59.6100278551532,
+      "Weight":1660,
+      "Value":23470,
+      "0-100 km/h":9.2,
+      "0-60 mph":8.7,
+	  "defaultPaintName1":"Condor Grey",
+}

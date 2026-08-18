@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.2L FSI V6 Quattro (Tiptronic) S-Line High-Spec (EU) [Avant] 2005",
+      "Description": "2005 Avant 3.2L V6 FSI (256 HP) with 6-Speed Tiptronic Transmission and Quattro permanent four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding mirrors, electric slide and tilt sunroof, chrome exterior trims, 19-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, GSM car telephone, auto-dimming rear view mirror, electrically adjustable seats, smoker package, lighting package, load-area fixing kit, storage package, rear manual and manual side window blinds, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black speed cloth and leather seats. Exterior painted in Avus Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 256,
+      "Torque": 330,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1770,
+      "Value": 84570,
+      "0-100 km/h": 7.4,
+      "0-60 mph": 7.0,
+      "defaultPaintName1": "Avus Silver [S-Line]"
+}

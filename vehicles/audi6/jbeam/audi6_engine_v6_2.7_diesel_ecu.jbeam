@@ -1,0 +1,142 @@
+{
+"audi6_engine_v6_2.7_diesel_ecu_180": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"180 ECU",
+        "value":1500,
+    },
+    "slotType" : "audi6_engine_v6_2.7_diesel_ecu",
+    "mainEngine":{
+		"torque":[
+			["rpm", "torque"],
+			[0, 0],
+			[350, 140],
+			[700, 177],
+			[1000, 205],
+			[2000, 254],
+			[3000, 265],
+			[4000, 240],
+			[5000, 182],
+			[6000, 114],
+			[8000, 8]
+		],
+        "revLimiterRPM":5000,
+        "revLimiterType": "soft",
+    },
+    "turbocharger": {
+        "wastegateStart":[8.3, 14.8],
+    }
+},
+"audi6_engine_v6_2.7_diesel_ecu_190": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"190 ECU",
+        "value":1500,
+    },
+    "slotType" : "audi6_engine_v6_2.7_diesel_ecu",
+    "mainEngine":{
+		"torque":[
+			["rpm", "torque"],
+			[0, 0],
+			[350, 140],
+			[700, 177],
+			[1000, 205],
+			[2000, 252],
+			[3000, 263],
+			[4000, 240],
+			[5000, 182],
+			[6000, 114],
+			[8000, 8]
+		],
+        "revLimiterRPM":5000,
+        "revLimiterType": "soft",
+    },
+    "turbocharger": {
+        "wastegateStart":[8.3, 16.9],
+    }
+},
+"audi6_engine_v6_2.7_diesel_ecu_stage1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 220 ECU",
+        "value":1500,
+    },
+    "slotType" : "audi6_engine_v6_2.7_diesel_ecu",
+    "mainEngine":{
+		"torque":[
+			["rpm", "torque"],
+			[0, 0],
+			[350, 140],
+			[700, 177],
+			[1000, 205],
+			[2000, 253],
+			[3000, 264],
+			[4000, 240],
+			[5000, 182],
+			[6000, 114],
+			[8000, 8]
+		],
+        "revLimiterRPM":5000,
+        "revLimiterType": "soft",
+    },
+    "turbocharger": {
+        "wastegateStart":[8.3, 23.3],
+    }
+},
+"audi6_engine_v6_2.7_diesel_ecu_stage2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 2 240 ECU",
+        "value":1500,
+    },
+    "slotType" : "audi6_engine_v6_2.7_diesel_ecu",
+    "mainEngine":{
+		"torque":[
+			["rpm", "torque"],
+			[0, 0],
+			[350, 140],
+			[700, 177],
+			[1000, 205],
+			[2000, 253],
+			[3000, 264],
+			[4000, 240],
+			[5000, 182],
+			[6000, 114],
+			[8000, 8]
+		],
+        "revLimiterRPM":5000,
+        "revLimiterType": "soft",
+    },
+    "turbocharger": {
+        "wastegateStart":[8.3, 27.5],
+    }
+},
+"audi6_engine_v6_2.7_diesel_ecu_stage3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 3 260 ECU",
+        "value":1500,
+    },
+    "slotType" : "audi6_engine_v6_2.7_diesel_ecu",
+    "mainEngine":{
+		"torque":[
+			["rpm", "torque"],
+			[0, 0],
+			[350, 140],
+			[700, 177],
+			[1000, 205],
+			[2000, 253],
+			[3000, 264],
+			[4000, 240],
+			[5000, 182],
+			[6000, 114],
+			[8000, 8]
+		],
+        "revLimiterRPM":5000,
+        "revLimiterType": "soft",
+    },
+    "turbocharger": {
+        "wastegateStart":[8.3, 31.5],
+    }
+},
+}

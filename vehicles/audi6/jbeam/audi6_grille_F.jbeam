@@ -1,0 +1,1573 @@
+{
+"audi6_grille_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift RS6 Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":0,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_licenseplate_F","audi6_licenseplate_F_EU", "Front License Plate"],
+        ["audi6_grillebadge_rs6","audi6_grillebadge_rs6", "Grille Badge"],
+        ["audi6_grillelettering_rs6","audi6_grillelettering_rs6", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_rs6", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_rs6", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_rs6", ["audi6_grille_F"]],
+		 {"disable":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grillelettering_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_rs6",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_rs6", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grillebadge_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Audi Badge",
+        "value":20,
+    },
+    "slotType" : "audi6_grillebadge_rs6",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillebadge_rs6", ["audi6_badge_F"]],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_METAL"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.4},
+        {"group":"audi6_badge_F"},
+        ["fbadge_1r", 0.032,-2.3381,0.7175],
+        ["fbadge_2r", -0.032,-2.3381,0.7175],
+        ["fbadge_3r", -0.0,-2.3755,0.6405],
+
+        //rigidifier
+        {"group":""},
+        ["fbadge_5r", -0.0,-2.3361,0.6705, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //Fender Turn Signal
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"badgeglass_R_break", "deformationTriggerRatio":0.1},
+          //main shape
+          ["fbadge_1r", "fbadge_2r"],
+          ["fbadge_2r", "fbadge_3r"],
+          //["fbadge_3r", "fbadge_4r"],
+
+          //crossing
+          ["fbadge_1r", "fbadge_3r"],
+          //["fbadge_1r", "fbadge_4r"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":13000,"beamStrength":"FLT_MAX"},
+          ["fbadge_5r", "fbadge_1r"],
+          ["fbadge_5r", "fbadge_2r"],
+          ["fbadge_5r", "fbadge_3r"],
+          //["fbadge_5r", "fbadge_4r"],
+
+          //attach
+          {"beamSpring":501000,"beamDamp":10},
+          {"beamDeform":13000,"beamStrength":3000},
+          {"breakGroup":"badge_F"},
+          //grille
+          ["gri_1r", "fbadge_1r"],
+          ["gri_1r", "fbadge_2r"],
+          ["gri_1r", "fbadge_3r"],
+
+          ["gri_1", "fbadge_1r"],
+          ["gri_1", "fbadge_2r"],
+          ["gri_1", "fbadge_3r"],
+
+          ["gri_1l", "fbadge_1r"],
+          ["gri_1l", "fbadge_2r"],
+          ["gri_1l", "fbadge_3r"],
+
+          ["gri_2", "fbadge_1r"],
+          ["gri_2", "fbadge_2r"],
+          ["gri_2", "fbadge_3r"],
+
+          //body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformGroup":""}
+          {"breakGroup":""},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            {"group":"audi6_badge_F"},
+
+            ["fbadge_1r", "fbadge_2r", "fbadge_3r"],
+    ],
+},
+"audi6_grille_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift A6 Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":1,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_licenseplate_F","audi6_licenseplate_F_EU", "Front License Plate"],
+        ["audi6_grillebadge_a6_fl","audi6_grillebadge_a6_fl", "Grille Badge"],
+        ["audi6_grillelettering_a6_fl","", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_a6_fl", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"]],
+		 {"disable":""},
+
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grille_a6_allroad": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift A6 Allroad Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":1,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_licenseplate_F","audi6_licenseplate_F_EU", "Front License Plate"],
+        ["audi6_grillebadge_a6_fl","audi6_grillebadge_a6_fl", "Grille Badge", {"nodeMove":{"x":0.0, "y":-0.002, "z":0.0}}],
+        ["audi6_grillelettering_a6_fl","", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_a6_allroad", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"]],
+		 {"disable":""},
+
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grillelettering_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quattro Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_a6_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_a6_fl_quattro", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grillelettering_a6_fl_sline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S-Line Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_a6_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_a6_fl_sline", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grillebadge_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Audi Badge",
+        "value":20,
+    },
+    "slotType" : "audi6_grillebadge_a6_fl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillebadge_a6_fl", ["audi6_badge_F"]],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_METAL"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.4},
+        {"group":"audi6_badge_F"},
+        ["fbadge_1r", 0.032,-2.3381,0.7175],
+        ["fbadge_2r", -0.032,-2.3381,0.7175],
+        ["fbadge_3r", -0.0,-2.3755,0.6405],
+
+        //rigidifier
+        {"group":""},
+        ["fbadge_5r", -0.0,-2.3361,0.6705, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //Fender Turn Signal
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"badgeglass_R_break", "deformationTriggerRatio":0.1},
+          //main shape
+          ["fbadge_1r", "fbadge_2r"],
+          ["fbadge_2r", "fbadge_3r"],
+          //["fbadge_3r", "fbadge_4r"],
+
+          //crossing
+          ["fbadge_1r", "fbadge_3r"],
+          //["fbadge_1r", "fbadge_4r"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":13000,"beamStrength":"FLT_MAX"},
+          ["fbadge_5r", "fbadge_1r"],
+          ["fbadge_5r", "fbadge_2r"],
+          ["fbadge_5r", "fbadge_3r"],
+          //["fbadge_5r", "fbadge_4r"],
+
+          //attach
+          {"beamSpring":501000,"beamDamp":10},
+          {"beamDeform":13000,"beamStrength":3000},
+          {"breakGroup":"badge_F"},
+          //grille
+          ["gri_1r", "fbadge_1r"],
+          ["gri_1r", "fbadge_2r"],
+          ["gri_1r", "fbadge_3r"],
+
+          ["gri_1", "fbadge_1r"],
+          ["gri_1", "fbadge_2r"],
+          ["gri_1", "fbadge_3r"],
+
+          ["gri_1l", "fbadge_1r"],
+          ["gri_1l", "fbadge_2r"],
+          ["gri_1l", "fbadge_3r"],
+
+          ["gri_2", "fbadge_1r"],
+          ["gri_2", "fbadge_2r"],
+          ["gri_2", "fbadge_3r"],
+
+          //body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformGroup":""}
+          {"breakGroup":""},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            {"group":"audi6_badge_F"},
+
+            ["fbadge_1r", "fbadge_2r", "fbadge_3r"],
+    ],
+},
+"audi6_grille_s6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift S6 Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":2,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_licenseplate_F","audi6_licenseplate_F_EU", "Front License Plate"],
+        ["audi6_grillebadge_s6_pfl","audi6_grillebadge_s6_pfl", "Grille Badge"],
+        ["audi6_grillelettering_s6_pfl","", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_s6_pfl", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"]],
+		 {"disable":""},
+
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grillelettering_s6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S6 Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_s6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_s6_pfl", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grillebadge_s6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Audi Badge",
+        "value":20,
+    },
+    "slotType" : "audi6_grillebadge_s6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillebadge_s6_pfl", ["audi6_badge_F"]],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_METAL"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.4},
+        {"group":"audi6_badge_F"},
+        ["fbadge_1r", 0.032,-2.3381,0.7175],
+        ["fbadge_2r", -0.032,-2.3381,0.7175],
+        ["fbadge_3r", -0.0,-2.3755,0.6405],
+
+        //rigidifier
+        {"group":""},
+        ["fbadge_5r", -0.0,-2.3361,0.6705, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //Fender Turn Signal
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"badgeglass_R_break", "deformationTriggerRatio":0.1},
+          //main shape
+          ["fbadge_1r", "fbadge_2r"],
+          ["fbadge_2r", "fbadge_3r"],
+          //["fbadge_3r", "fbadge_4r"],
+
+          //crossing
+          ["fbadge_1r", "fbadge_3r"],
+          //["fbadge_1r", "fbadge_4r"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":13000,"beamStrength":"FLT_MAX"},
+          ["fbadge_5r", "fbadge_1r"],
+          ["fbadge_5r", "fbadge_2r"],
+          ["fbadge_5r", "fbadge_3r"],
+          //["fbadge_5r", "fbadge_4r"],
+
+          //attach
+          {"beamSpring":501000,"beamDamp":10},
+          {"beamDeform":13000,"beamStrength":3000},
+          {"breakGroup":"badge_F"},
+          //grille
+          ["gri_1r", "fbadge_1r"],
+          ["gri_1r", "fbadge_2r"],
+          ["gri_1r", "fbadge_3r"],
+
+          ["gri_1", "fbadge_1r"],
+          ["gri_1", "fbadge_2r"],
+          ["gri_1", "fbadge_3r"],
+
+          ["gri_1l", "fbadge_1r"],
+          ["gri_1l", "fbadge_2r"],
+          ["gri_1l", "fbadge_3r"],
+
+          ["gri_2", "fbadge_1r"],
+          ["gri_2", "fbadge_2r"],
+          ["gri_2", "fbadge_3r"],
+
+          //body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformGroup":""}
+          {"breakGroup":""},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            {"group":"audi6_badge_F"},
+
+            ["fbadge_1r", "fbadge_2r", "fbadge_3r"],
+    ],
+},
+"audi6_grille_a6s_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift A6 S-Line Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":2,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_licenseplate_F","audi6_licenseplate_F_EU", "Front License Plate"],
+        ["audi6_grillebadge_a6_fl","audi6_grillebadge_a6_fl", "Grille Badge", {"nodeMove":{"x":0.0, "y":-0.005, "z":0.002}}],
+        ["audi6_grillelettering_a6s_pfl","", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_a6s_pfl", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_a6_fl", ["audi6_grille_F"]],
+		 {"disable":""},
+
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grillelettering_a6s_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quattro Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_a6s_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_a6s_pfl_quattro", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grillelettering_a6s_pfl_sline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S-Line Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_a6s_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_a6s_pfl_sline", ["audi6_grille_F"]],
+    ],
+},
+"audi6_platebracket_EU_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front EU License Plate Bracket",
+        "value":340,
+    },
+    "slotType" : "audi6_platebracket_a6_pfl",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_plate_EU_a6_pfl","audi6_plate_EU_a6_pfl", "Front License Plate"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_platebracket_EU_a6_pfl", ["audi6_grille_F"]],
+    ],
+},
+"audi6_platebracket_US_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front US License Plate Bracket",
+        "value":340,
+    },
+    "slotType" : "audi6_platebracket_a6_pfl",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_plate_US_a6_pfl","audi6_plate_US_a6_pfl", "Front License Plate"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_platebracket_US_a6_pfl", ["audi6_grille_F"]],
+    ],
+},
+"audi6_plate_EU_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front EU License Plate",
+        "value":340,
+    },
+    "slotType" : "audi6_plate_EU_a6_pfl",
+	"licenseplateFormat": "52-11",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_plateholder_EU_a6_pfl", ["audi6_licenseplateholder_F"]],
+         ["licenseplate-52-11-r2", ["audi6_licenseplateholder_F"],[],{"pos":{"x":0.0, "y":-2.377, "z":0.513135}, "rot":{"x":-6, "y":0, "z":0}, "scale":{"x":1, "y":0.9, "z":1}}],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_PLASTIC"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.45},
+        {"group":"audi6_licenseplateholder_F"},
+        ["lph1lf", 0.2589,-2.3938,0.555],
+        ["lph2lf", 0.2589,-2.406,0.4449],
+        ["lph3f", 0,-2.3938,0.555],
+        ["lph4f", 0.0,-2.406,0.4449],
+        ["lph1rf", -0.2589,-2.3938,0.555],
+        ["lph2rf", -0.2589,-2.406,0.4449],
+ 
+        //rigidifier
+        {"group":""},
+        ["lph5f", 0,-2.2917,0.4993, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //License Plate Holder
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":1000,"beamStrength":"FLT_MAX"},
+          //main shape left
+          ["lph3f", "lph1lf"],
+          ["lph1lf", "lph2lf"],
+          ["lph2lf", "lph4f"],
+
+          //main shape left
+          ["lph3f", "lph1rf"],
+          ["lph1rf", "lph2rf"],
+          ["lph2rf", "lph4f"],
+
+          //crossing
+          ["lph1lf", "lph4f"],
+          ["lph2lf", "lph3f"],
+
+          ["lph1rf", "lph4f"],
+          ["lph2rf", "lph3f"],
+
+          ["lph3f", "lph4f"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":5000,"beamStrength":"FLT_MAX"},
+          ["lph5f", "lph1lf"],
+          ["lph5f", "lph2lf"],
+
+          ["lph5f", "lph3f"],
+          ["lph5f", "lph4f"],
+
+          ["lph5f", "lph2rf"],
+          ["lph5f", "lph1rf"],
+
+          //attach
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":130000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":2300},
+          {"deformGroup":""}
+          {"breakGroup":"licenseplateholder_F"},
+          //to bumper
+          ["lph3f", "gri_2"],
+          ["lph3f", "gri_1"],
+          ["lph4f", "gri_2"],
+          ["lph4f", "gri_1"],
+
+          ["lph1lf", "gri_1l"],
+          ["lph1rf", "gri_1r"],
+          ["lph2lf", "gri_1l"],
+          ["lph2rf", "gri_1r"],
+
+          ["lph1lf", "gri_2l"],
+          ["lph1rf", "gri_2r"],
+          ["lph2lf", "gri_2l"],
+          ["lph2rf", "gri_2r"],
+
+          ["lph5f", "gri_2"],
+          ["lph5f", "gri_1"],
+          ["lph5f", "gri_2l"],
+          ["lph5f", "gri_1l"],
+          ["lph5f", "gri_2r"],
+          ["lph5f", "gri_1r"],
+
+          {"deformGroup":""}
+          {"breakGroup":""},
+          //support beams to body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"plastic"},
+            {"group":"audi6_licenseplateholder_F"},
+
+            ["lph4f", "lph2lf", "lph1lf"],
+            ["lph1lf", "lph3f", "lph4f"],
+
+            ["lph1rf", "lph2rf", "lph4f"],
+            ["lph4f", "lph3f", "lph1rf"],
+    ],
+},
+"audi6_plate_US_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front US License Plate",
+        "value":340,
+    },
+    "slotType" : "audi6_plate_US_a6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_plate_US_a6_pfl", ["audi6_grille_F"]],
+    ],
+},
+"audi6_grille_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift A6 Grille",
+        "value":340,
+    },
+    "slotType" : "audi6_grille",
+    "components": {
+          "bodySpecifics": {
+			  "grilleType":2,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_platebracket_a6_pfl","audi6_platebracket_EU_a6_pfl", "Front License Plate Bracket"],
+        ["audi6_grillebadge_a6_fl","audi6_grillebadge_a6_fl", "Grille Badge", {"nodeMove":{"x":0.0, "y":-0.01, "z":0.006}}],
+        ["audi6_grillelettering_a6_pfl","", "Grille Lettering"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grille_a6_pfl", ["audi6_grille_F"]],
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim ~= 1"},
+         ["audi6_grille_trim_a6_pfl", ["audi6_grille_F"], [],{"materialOverride":[["audi6_chrome","audi6_plastic_glossy"]]}],		 
+		 {"disable":"$=$components.electrics.glossyBlackGrilleTrim == 1"},
+         ["audi6_grille_trim_a6_pfl", ["audi6_grille_F"]],
+		 {"disable":""},
+
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":0.5},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"group":"audi6_grille_F"},
+         {"collision":true},
+         {"selfCollision":true},
+         
+         ["gri_1r", -0.321, -2.2688, 0.7325],      
+         ["gri_1", 0.0000, -2.2866, 0.7428],
+         ["gri_1l", 0.321, -2.2688, 0.7325],
+         
+         ["gri_2r", -0.2918, -2.3494, 0.5272],
+         ["gri_2", -0.0000, -2.3769, 0.5295],
+         ["gri_2l", 0.2918, -2.3494, 0.5272],
+         
+         ["gri_3r", -0.246, -2.3589, 0.3619],    
+         ["gri_3", -0.0000, -2.3752, 0.3563],
+         ["gri_3l", 0.246, -2.3589, 0.3619],
+
+
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":0.8},
+         ["gri_5", 0.0000, -2.2311, 0.536],
+    ],
+    "beams": [
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"beamSpring":401000,"beamDamp":60},
+        {"beamDeform":18000,"beamStrength":75000},
+        {"deformLimitExpansion":1.1},
+        //main shape
+
+        ["gri_1","gri_1l"],
+        ["gri_1l","gri_2l"],
+        ["gri_2l","gri_3l"],
+        ["gri_3","gri_3l"],
+        ["gri_2","gri_3"],
+        ["gri_1","gri_2"],
+        ["gri_2","gri_2l"],
+        ["gri_2r","gri_2"],
+        ["gri_1r","gri_1"],
+        ["gri_3r","gri_3"],
+        ["gri_2r","gri_3r"],
+        ["gri_1r","gri_2r"],
+
+        //crossing
+        {"deformLimitExpansion":""},
+        {"beamDeform":16000,"beamStrength":59000},
+
+        ["gri_1l","gri_2"],
+        ["gri_1","gri_2l"],
+        ["gri_2","gri_3l"],
+        ["gri_2l","gri_3"],
+        ["gri_2r","gri_3"],
+        ["gri_2","gri_3r"],
+        ["gri_1r","gri_2"],
+        ["gri_1","gri_2r"],
+
+        //rigidifier
+        {"beamSpring":101000,"beamDamp":250},
+        {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+        ["gri_1r","gri_5"],
+        ["gri_2r","gri_5"],
+        ["gri_3r","gri_5"],
+        ["gri_3","gri_5"],
+        ["gri_2","gri_5"],
+        ["gri_1","gri_5"],
+        ["gri_1l","gri_5"],
+        ["gri_2l","gri_5"],
+        ["gri_3l","gri_5"],
+
+
+          //attach
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":9000,"beamStrength":12000},
+          {"disableTriangleBreaking":true},
+		  
+          {"breakGroup":"grille_R"},
+          ["gri_1r","fb0r"],
+          ["gri_1r","fb1r"],
+          ["gri_1r","fb2r"],
+          ["gri_1r","fb3r"],
+		  
+          ["gri_2r","fb0r"],
+          ["gri_2r","fb1r"],
+          ["gri_2r","fb2r"],
+          ["gri_2r","fb3r"],
+		  
+          ["gri_3r","fb0r"],
+          ["gri_3r","fb1r"],
+          ["gri_3r","fb2r"],
+          ["gri_3r","fb3r"],
+		  
+          {"breakGroup":"grille_L"},
+          ["gri_1l","fb0l"],
+          ["gri_1l","fb1l"],
+          ["gri_1l","fb2l"],
+          ["gri_1l","fb3l"],
+		  
+          ["gri_2l","fb0l"],
+          ["gri_2l","fb1l"],
+          ["gri_2l","fb2l"],
+          ["gri_2l","fb3l"],
+		  
+          ["gri_3l","fb0l"],
+          ["gri_3l","fb1l"],
+          ["gri_3l","fb2l"],
+          ["gri_3l","fb3l"],
+		  
+          {"breakGroup":"grille_M"},
+
+          ["gri_1","fb0"],
+          ["gri_1","fb1r"],
+          ["gri_1","fb1l"],
+          ["gri_2","fb0"],
+          ["gri_2","fb3"],
+          ["gri_3","fb3"],
+          ["gri_3","fb2r"],
+          ["gri_3","fb2l"],
+
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+        
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":2},
+            {"groundModel":"plastic"},
+            {"group":"audi6_grille_F"},
+
+	    ["gri_1","gri_2l","gri_1l"],
+        ["gri_1","gri_2","gri_2l"],
+        ["gri_2","gri_3l","gri_2l"],
+        ["gri_2","gri_3","gri_3l"],
+        ["gri_1r","gri_2r","gri_2"],
+        ["gri_1r","gri_2","gri_1"],
+        ["gri_2r","gri_3r","gri_3"],
+        ["gri_2r","gri_3","gri_2"],		
+            {"group":""},
+            {"dragCoef":0},
+    ],
+},
+"audi6_grillelettering_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quattro Lettering",
+        "value":340,
+    },
+    "slotType" : "audi6_grillelettering_a6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_grillelettering_a6_pfl_quattro", ["audi6_grille_F"]],
+    ],
+},
+}

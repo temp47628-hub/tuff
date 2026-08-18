@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.2L FSI V6 (Multitronic) A6 (EU) [Avant] 2005",
+      "Description": "2005 Avant 3.2L V6 FSI (256 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, lighting package, rear manual window blind, climate control, BOSE surround sound audio system, black and amaretto brown interior, mid-brown walnut inlay finish, amaretto brown volterra leather seats. Exterior painted in Phantom Black",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 256,
+      "Torque": 330,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1660,
+      "Value": 80070,
+      "0-100 km/h": 7.2,
+      "0-60 mph": 6.8,
+      "defaultPaintName1": "Phantom Black"
+}

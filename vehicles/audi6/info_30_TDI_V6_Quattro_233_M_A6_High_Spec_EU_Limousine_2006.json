@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [233] (M) A6 High-Spec (EU) [Limousine] 2006",
+      "Description": "2006 Limousine 3.0L TDI (233 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, start-stop system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, premium lighting package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, graphite and light grey interior, brown walnut inlay finish, light grey valcona leather seats. Exterior painted in Aero Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 233,
+      "Torque": 500,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1740,
+      "Value": 68210,
+      "0-100 km/h": 6.6,
+      "0-60 mph": 6.2,
+      "defaultPaintName1": "Aero Blue [A6]"
+}

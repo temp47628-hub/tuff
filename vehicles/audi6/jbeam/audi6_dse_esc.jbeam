@@ -1,0 +1,106 @@
+{
+    "audi6_DSE_ESC": {
+        "information":{
+            "authors":"Diamondback",
+            "name":"Electronic Stability Program",
+            "value":250,
+        },
+        "slotType" : "audi6_DSE_ESC",
+
+        "controller": [
+            ["fileName"],
+            ["drivingDynamics/supervisors/yawControl" {"name": "yawControl"}]
+            ["drivingDynamics/supervisors/yawProviders/STMEstimate"]
+            ["driveModes"]
+        ],
+
+        "brakeControl": {
+            "useForYawControl": true
+            "yawControl": {
+                "PIDSettings": [
+                    ["type",        "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["yawAV",       2.0,    0.5,     0.0,   100,                10,              ]
+                    ["slipAngle",   2.0,    1.0,     0.0,   10,                 1,               ]
+                ],
+                "yawAVThreshold": 0.4
+                "slipAngleThreshold": 0.05
+            }
+        },
+        "motorTorqueControl": {
+            "useForYawControl": true
+            "yawControl": {
+                "yawControlledMotors": ["mainEngine", "frontMotor", "rearMotor"]
+                "PIDSettings": [
+                    ["type",        "kP",   "kI",   "kD",   "integralInCoef",   "integralOutCoef"],
+                    ["yawAV",       2.0,    0.5,     0.0,   100,                10,              ]
+                    ["slipAngle",   2.0,    1.0,     0.0,   10,                 1,               ]
+                ],
+                "yawAVThreshold": 0.4
+                "slipAngleThreshold": 0.05
+            }
+        },
+
+        "driveModes": {
+            "enabledModes":["comfort", "off"]
+            "defaultMode": "comfort"
+            "defaultSettings": [
+                ["type"]
+                //ESC & TCS
+                ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                ["controller", {"controllerName":"motorTorqueControl", "tractionControl": "default", "yawControl": "default"}]
+                ["controller", {"controllerName":"brakeControl", "tractionControl": "default", "yawControl": "default"}]
+
+                //Engine & Transmission
+                ["transmission", {"defaultForwardMode": "D"}]
+            ],
+            "modes": {
+                "comfort": {
+                    "name": "ESP On",
+                    "order": 10,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":true}]
+                        ["controller", {"controllerName":"motorTorqueControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.12,
+                            "tractionControl.wheelGroupSettings.mainEngine.minimumThrottleLimit": 0.1,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.05,
+                            "yawControl.yawAvThreshold": 0.5
+                        }],
+                        ["controller", {"controllerName":"brakeControl",
+                            "tractionControl.isEnabled":true,
+                            "tractionControl.wheelGroupSettings.mainEngine.slipThreshold": 0.10,
+
+                            "yawControl.isEnabled":true,
+                            "yawControl.slipAngleThreshold": 0.08,
+                            "yawControl.yawAvThreshold": 0.6
+                        }],
+
+                        //UI
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"ffaa00", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                },
+                "off": {
+                    "name": "ESP Off",
+                    "order": 50,
+                    "settings": [
+                        ["type"]
+                        //ESC & TCS
+                        ["controller", {"controllerName":"tractionControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"yawControl", "isEnabled":false}]
+                        ["controller", {"controllerName":"motorTorqueControl"}],
+                        ["controller", {"controllerName":"brakeControl"}],
+
+                        //UI & Gauges
+                        ["simpleControlButton", {"buttonId":"dse", "uiName":"DSE","icon":"powertrain_esc","color":"999999", "offColor":"343434", "offColorElectric":"dseWarningPulse"}]
+                    ],
+                }
+            },
+        },
+    },
+}

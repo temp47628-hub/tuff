@@ -1,0 +1,691 @@
+{
+  "audi6_seatbelt": {
+    "name": "audi6_seatbelt",
+    "mapTo": "audi6_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/audi6/textures/seatbelt_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.alabasterwhite_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.alabasterwhite_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.alabasterwhite_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.667797029,
+          0.622663975,
+          0.537750006,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.beige_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.beige_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.beige_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.72507298,
+          0.626478016,
+          0.521578014,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.blue_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.blue_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.blue_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0.425953001,
+          1,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.blue_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.blue_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.blue_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.brown_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.brown_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.brown_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.581882,
+          0.388000995,
+          0.251933992,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.burgundy_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.burgundy_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.burgundy_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.341320992,
+          0.149735004,
+          0.149735004,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.chestnutbrown_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.chestnutbrown_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.chestnutbrown_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.243137002,
+          0.145098001,
+          0.109803997,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.classicred_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.classicred_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.classicred_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.730800986,
+          0.408497006,
+          0.408497006,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.cocos_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.cocos_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.cocos_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.450980008,
+          0.36470601,
+          0.262744993,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.cognac_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.cognac_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.cognac_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.549019992,
+          0.349020004,
+          0.188235,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.creambeige_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.creambeige_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.creambeige_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.havannabrown_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.havannabrown_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.havannabrown_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.352777004,
+          0.290322989,
+          0.231542006,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.jetgrey_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.jetgrey_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.jetgrey_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.337255001,
+          0.333332986,
+          0.352941006,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.linenbeige_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.linenbeige_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.linenbeige_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.magnolia_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.magnolia_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.magnolia_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.647059023,
+          0.505882025,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.nightblue_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.nightblue_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.nightblue_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.141176,
+          0.168626994,
+          0.203922004,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.orange_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.orange_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.orange_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.862537026,
+          0.444626987,
+          0,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.palaceblue_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.palaceblue_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.palaceblue_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.179805994,
+          0.257898003,
+          0.318410993,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.paranutbrown_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.paranutbrown_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.paranutbrown_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.345097989,
+          0.25097999,
+          0.180391997,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.red_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.red_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.red_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.823529005,
+          0,
+          0,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.regencygreen_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.regencygreen_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.regencygreen_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.168626994,
+          0.215685993,
+          0.156863004,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.saddlebrown_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.saddlebrown_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.saddlebrown_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.36470601,
+          0.227450997,
+          0.133332998,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.sandbeige_ae_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.sandbeige_ae_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.sandbeige_ae_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.644886017,
+          0.552740991,
+          0.423265994,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "audi6_seatbelt.skin_seatbelt.silver_seatbelt": {
+    "name": "audi6_seatbelt.skin_seatbelt.silver_seatbelt",
+    "mapTo": "audi6_seatbelt.skin_seatbelt.silver_seatbelt",
+    "class": "Material",
+    "persistentId": "5e39234e-d785-4ff6-8b61-d88ac49d3053",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.587610006,
+          0.587610006,
+          0.587610006,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/seatbelt_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

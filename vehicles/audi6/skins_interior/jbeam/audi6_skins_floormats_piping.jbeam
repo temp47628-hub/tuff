@@ -1,0 +1,236 @@
+{
+"audi6_skin_floormats_piping": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : ""
+},
+"audi6_skin_floormats_piping_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Light Grey",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "grey_floormats_piping"
+},
+"audi6_skin_floormats_piping_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "blue_floormats_piping"
+},
+"audi6_skin_floormats_piping_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "beige_floormats_piping"
+},
+"audi6_skin_floormats_piping_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "linenbeige_floormats_piping"
+},
+"audi6_skin_floormats_piping_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "brown_floormats_piping"
+},
+"audi6_skin_floormats_piping_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "silver_floormats_piping"
+},
+"audi6_skin_floormats_piping_pearlsilver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pearl Silver",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "pearlsilver_floormats_piping"
+},
+"audi6_skin_floormats_piping_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "creambeige_floormats_piping"
+},
+"audi6_skin_floormats_piping_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "blue_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "burgundy_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "nightblue_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "regencygreen_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "palaceblue_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "sandbeige_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "chestnutbrown_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "classicred_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "red_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "saddlebrown_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "jetgrey_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "alabasterwhite_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "magnolia_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "havannabrown_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "cocos_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "cognac_ae_floormats_piping"
+},
+"audi6_skin_floormats_piping_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":0,
+    },
+    "slotType" : "skin_floormats_piping",
+    "skinName" : "orange_ae_floormats_piping"
+},
+}

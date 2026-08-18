@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [225] (M) S-Line (EU) [Avant] 2005",
+      "Description": "2005 Avant 3.0L TDI (225 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black speed cloth and leather. Exterior painted in Aero Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 225,
+      "Torque": 450,
+      "Top Speed": 66.94444444444444,
+      "Weight": 1805,
+      "Value": 65020,
+      "0-100 km/h": 7.1,
+      "0-60 mph": 6.7,
+      "defaultPaintName1": "Aero Blue [A6]"
+}

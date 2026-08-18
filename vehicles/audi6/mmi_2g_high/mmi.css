@@ -1,0 +1,405 @@
+@font-face {
+  font-family: AudiType;
+  src: url(/vehicles/audi6/fonts/AudiTypeScreen-Normal.ttf);
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  font-family: AudiType;
+  font-size: 35px;
+  overflow: hidden;
+  background: url('hud.png') no-repeat center / 100% 100%;
+}
+
+.interface-root {
+  width: 100%;
+}
+
+#bootscreen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  z-index: 100;
+  transition: opacity 0.8s ease, transform 1.2s ease;
+}
+
+.fadeout {
+  opacity: 0;
+  transform: scale(1.05);
+  pointer-events: none;
+}
+
+.fadein {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+#scroll-indicator-up,
+#scroll-indicator-down {
+  position: absolute;
+  left: 81px;
+  top: 50%;
+  font-size: 22px;
+  z-index: 200;
+  pointer-events: none;
+  display: none;
+}
+
+#scroll-indicator-up { transform: translateY(calc(-99px + var(--scroll-offset, 0px))); }
+#scroll-indicator-down { transform: translateY(69px); }
+
+.parking-overlay,
+.proximity-indicator,
+#volume-level,
+#selector-bl,
+#selector-tl,
+#selector-br,
+#selector-tr,
+#visual-overlay,
+#sub-indicators,
+#sub-indicators2,
+#sub-indicators3,
+#sub-indicators4 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parking-overlay {
+  z-index: 102;
+  pointer-events: none;
+  display: none;
+}
+
+.proximity-indicator {
+  object-fit: contain;
+}
+
+#volume-level,
+#selector-bl,
+#selector-tl,
+#selector-br,
+#selector-tr,
+#visual-overlay {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+#scroll-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  pointer-events: none;
+}
+
+#scroll-overlay::before {
+  content: '';
+  position: absolute;
+  left: var(--scroll-left, 108px);
+  bottom: var(--row-bottom, 160px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 2px solid var(--scroll-color, red);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+#scroll-overlay::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--scroll-left, 108px) + 14px);
+  bottom: calc(var(--row-bottom, 160px) + 4px);
+  width: var(--scroll-line-width, 20px);
+  height: 2px;
+  background: var(--scroll-color, red);
+}
+
+#sub-indicators,
+#sub-indicators2,
+#sub-indicators3,
+#sub-indicators4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.center-label,
+.bottom-center-label,
+.left-stat,
+.right-stat,
+.left-sub,
+.right-sub,
+.time-display,
+.title-text,
+.corner-tl,
+.corner-tr,
+.corner-bl,
+.corner-br {
+  position: absolute;
+  height: 25px;
+  font-size: 22px;
+  line-height: 25px;
+  z-index: 1001;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu-item-1,
+.menu-item-2,
+.menu-item-3,
+.menu-item-4,
+.menu-item-5,
+.menu-item-6 {
+  position: absolute;
+  height: 25px;
+  font-size: 21px;
+  line-height: 25px;
+  z-index: 1001;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.center-label {
+  left: 94px;
+  right: 94px;
+  bottom: 197px;
+  color: white;
+  text-align: center;
+}
+
+.bottom-center-label {
+  font-size: 16px;
+  left: 94px;
+  right: 94px;
+  bottom: 2px;
+  color: white;
+  text-align: center;
+}
+
+.left-stat { right: -225px; bottom: 190px; width: 512px; color: white; text-align: center; }
+.right-stat { right: 225px; bottom: 190px; width: 512px; color: white; text-align: center; }
+.left-sub { right: -10px; bottom: 60px; width: 512px; color: white; text-align: left; }
+.right-sub { right: 10px; bottom: 60px; width: 512px; color: white; text-align: right; }
+
+.time-display {
+  right: 0px;
+  bottom: 4px;
+  width: 512px;
+  color: white;
+  text-align: center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.title-text {
+  right: 0;
+  width: 512px;
+  color: white;
+  text-align: center;
+}
+
+.corner-tl, .corner-bl { right: 300px; width: 200px; color: white; text-align: left; }
+.corner-tr, .corner-br { right: 15px; width: 200px; color: white; text-align: right; }
+
+.corner-tl, .corner-tr { bottom: 230px; }
+.corner-bl, .corner-br { bottom: 4px; }
+
+.menu-item-1, .menu-item-2, .menu-item-3, .menu-item-4, .menu-item-5, .menu-item-6 {
+  left: 100px;
+  right: 100px;
+  text-align: left;
+}
+
+.menu-item-1 { bottom: 188px; color: white; }
+.menu-item-2 { bottom: 160px; color: red; }
+.menu-item-3 { bottom: 132px; color: red; }
+.menu-item-4 { bottom: 104px; color: red; }
+.menu-item-5 { bottom: 76px; color: red; }
+.menu-item-6 { bottom: 48px; color: red; }
+
+.value-box-1, .value-box-2, .value-box-3, .value-box-4, .value-box-5, .value-box-6 {
+  position: absolute;
+  right: 100px;
+  font-size: 22px;
+  color: black;
+  z-index: 101;
+  display: none;
+  align-items: center;
+  padding: 2px 32px 2px 25px;
+  line-height: 1;
+}
+
+.value-box-1 { bottom: 188px; background-color: white; }
+.value-box-2 { bottom: 160px; background-color: red; }
+.value-box-3 { bottom: 132px; background-color: red; }
+.value-box-4 { bottom: 104px; background-color: red; }
+.value-box-5 { bottom: 76px; background-color: red; }
+.value-box-6 { bottom: 48px; background-color: red; }
+
+.value-indicator-2,
+.value-indicator-3,
+.value-indicator-4,
+.value-indicator-5,
+.value-indicator-6 {
+  position: absolute;
+  right: 100px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 101;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.value-indicator-2 { bottom: 160px; }
+.value-indicator-3 { bottom: 132px; }
+.value-indicator-4 { bottom: 104px; }
+.value-indicator-5 { bottom: 76px; }
+.value-indicator-6 { bottom: 48px; }
+
+.value-indicator-2::after,
+.value-indicator-3::after,
+.value-indicator-5::after,
+.value-indicator-6::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--indicator-color, #ff1400);
+  border-radius: 50%;
+}
+
+.indicator-selected::after {
+  background-color: white !important;
+}
+
+.value-indicator-4.center-vent-selected::after {
+  background-color: white;
+}
+
+.value-indicator-4::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--indicator-color, #ff1400);
+  border-radius: 50%;
+}
+
+.value-indicator-4.climate-active {
+  right: 206px; 
+  bottom: 80px;
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+}
+
+.value-indicator-4.climate-active::after {
+  top: 6px;
+  left: 6px;
+  width: 80px;
+  height: 80px;
+}
+
+.value-indicator-4.sideassist-active {
+  right: 206px;
+  bottom: 80px;
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+}
+
+.value-indicator-4.sideassist-active::after {
+  top: 6px;
+  left: 6px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--indicator-color, #ff0000);
+}
+
+.value-indicator-4.tel-active::after {
+  background-color: green;
+}
+
+.value-indicator-4.fanheated-active {
+  right: 206px;
+  bottom: 80px;
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-color: white;
+  color: white;
+  font-size: 16px;
+}
+
+.value-indicator-4.fanheated-active::after {
+  background: transparent;
+}
+
+.value-indicator-4.ext-lighting-indicator {
+  bottom: 160px;
+  color: transparent;
+}
+
+.value-indicator-4.ext-lighting-indicator::after {
+  background-color: #ff0000;
+  display: none;
+}
+
+.value-indicator-4.ext-lighting-indicator.active::after {
+  display: block;
+}
+
+.value-indicator-4.ext-lighting-indicator.center-vent-selected::after {
+  display: block;
+  background-color: white;
+}
+
+.battery-container {
+  position: absolute;
+  right: 126px;
+  bottom: 115px;
+  width: 260px;
+  height: 24px;
+  padding: 3px;
+  z-index: 105;
+}
+
+.battery-bar {
+  display: flex;
+  gap: 4px;
+  height: 100%;
+}
+
+.battery-segment {
+  flex: 1;
+  height: 100%;
+  background-color: transparent; 
+}
+
+.battery-segment.active {
+  background-color: red;
+  visibility: visible; 
+}

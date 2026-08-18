@@ -1,0 +1,2107 @@
+{
+  "audi6_seat_insert": {
+    "name": "audi6_seat_insert",
+    "mapTo": "audi6_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/meridiancloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },  
+  "audi6_seat_insert.skin_seat_insert.black_cloth_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_cloth_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_cloth_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/seatfabric_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.alabasterwhite_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.alabasterwhite_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.alabasterwhite_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.667797029,
+          0.622663975,
+          0.537750006,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.beige_cloth2_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.beige_cloth2_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.beige_cloth2_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.72507298,
+          0.626478016,
+          0.521578014,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/arkanacloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "baseColorMap": "vehicles/audi6/textures/seatfabric_b.color.png",
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.beige_cloth4_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.beige_cloth4_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.beige_cloth4_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.72507298,
+          0.626478016,
+          0.521578014,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mondialcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "baseColorMap": "vehicles/audi6/textures/seatfabric_b.color.png",
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.beige_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.beige_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.beige_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.beige_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.beige_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.beige_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }, 
+  "audi6_seat_insert.skin_seat_insert.beige_nleather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.beige_nleather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.beige_nleather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/nleather_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/nleather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/nleather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_cloth2_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_cloth2_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_cloth2_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/arkanacloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_cloth3_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_cloth3_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_cloth3_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mistralcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_cloth4_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_cloth4_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_cloth4_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mondialcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_alcantara2_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_alcantara2_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_alcantara2_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "detailNormalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.black_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/leather_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },  
+  "audi6_seat_insert.skin_seat_insert.black_nleather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_nleather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_nleather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/nleather_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/nleather_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/nleather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/nleather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.blue_cloth4_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.blue_cloth4_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.blue_cloth4_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mondialcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.blue_cloth_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.blue_cloth_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.blue_cloth_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/meridiancloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.blue_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.blue_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.blue_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0,
+          0.425953001,
+          1,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.blue_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.blue_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.blue_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.172548994,
+          0.192157,
+          0.227450997,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.brown_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.brown_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.brown_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.581882,
+          0.388000995,
+          0.251933992,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.burgundy_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.burgundy_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.burgundy_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.341176003,
+          0.149020001,
+          0.149020001,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.chestnutbrown_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.chestnutbrown_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.chestnutbrown_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.243952006,
+          0.146691993,
+          0.109814003,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.classicred_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.classicred_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.classicred_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.729412019,
+          0.407842994,
+          0.407842994,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.cocos_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.cocos_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.cocos_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.450147003,
+          0.36658299,
+          0.264510989,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.cognac_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.cognac_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.cognac_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.549019992,
+          0.349418014,
+          0.188235,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.creambeige_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.creambeige_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.creambeige_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_cloth2_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_cloth2_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_cloth2_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/arkanacloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_cloth3_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_cloth3_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_cloth3_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mistralcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_cloth4_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_cloth4_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_cloth4_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/mondialcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_cloth_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_cloth_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_cloth_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/meridiancloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.925960004,
+          0.925949991,
+          0.925949991,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.grey_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.grey_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.grey_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.havannabrown_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.havannabrown_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.havannabrown_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.352941006,
+          0.290196002,
+          0.231372997,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.jetgrey_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.jetgrey_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.jetgrey_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.337255001,
+          0.333332986,
+          0.352941006,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.lightgrey_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.lightgrey_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.lightgrey_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.536060989,
+          0.500126004,
+          0.456232011,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.linenbeige_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.linenbeige_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.linenbeige_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.magnolia_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.magnolia_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.magnolia_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.725489974,
+          0.647059023,
+          0.505882025,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.nightblue_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.nightblue_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.nightblue_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.141176,
+          0.168626994,
+          0.203922004,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.orange_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.orange_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.orange_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.862744987,
+          0.44313699,
+          0,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.palaceblue_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.palaceblue_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.palaceblue_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.180391997,
+          0.258823991,
+          0.31764701,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.paranutbrown_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.paranutbrown_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.paranutbrown_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.347048998,
+          0.250102013,
+          0.182063997,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.pearlsilver_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.pearlsilver_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.pearlsilver_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.552941024,
+          0.549019992,
+          0.521569014,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.red_alcantara_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.red_alcantara_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.red_alcantara_seat_insert",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/alcantara_ao.data.png",
+        "baseColorFactor": [
+          0.823529005,
+          0,
+          0,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/alcantara_b.color.png",
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "/vehicles/audi6/textures/alcantara_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alcantara_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.red_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.red_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.red_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.823529005,
+          0,
+          0,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.regencygreen_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.regencygreen_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.regencygreen_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.168626994,
+          0.215685993,
+          0.156863004,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.saddlebrown_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.saddlebrown_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.saddlebrown_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.364232004,
+          0.228630006,
+          0.134751007,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.sandbeige_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.sandbeige_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.sandbeige_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.643136978,
+          0.552941024,
+          0.423528999,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.silver_cloth_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.silver_cloth_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.silver_cloth_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.587610006,
+          0.587610006,
+          0.587610006,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/speedcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },  
+  "audi6_seat_insert.skin_seat_insert.black_cloth5_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.black_cloth5_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.black_cloth5_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/seatfabric_ao.data.png",
+        "baseColorFactor": [
+          0.235293999,
+          0.235293999,
+          0.235293999,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/textures/speedcloth_b.color.png",
+        "detailNormalMap": "/vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/audi6/textures/seatfabric_r.data.png"
+      },
+      {
+        "baseColorFactor": [
+          0.352941006,
+          0.352941006,
+          0.352941006,
+          1
+        ],
+        "normalMap": "vehicles/audi6/textures/seatfabric_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.474999994
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "subSurfacaae0": "0",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_seat_insert.skin_seat_insert.silver_leather_seat_insert": {
+    "name": "audi6_seat_insert.skin_seat_insert.silver_leather_seat_insert",
+    "mapTo": "audi6_seat_insert.skin_seat_insert.silver_leather_seat_insert",
+    "class": "Material",
+    "persistentId": "f795b864-599f-4120-91af-31b46f1be8d4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/textures/leather_ao.data.png",
+        "baseColorFactor": [
+          0.587610006,
+          0.587610006,
+          0.587610006,
+          1
+        ],
+        "clearCoatFactor": 0.293000013,
+        "clearCoatRoughnessFactor": 0.541000009,
+        "normalMap": "/vehicles/audi6/textures/leather_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/textures/leather_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

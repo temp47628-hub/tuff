@@ -1,0 +1,60 @@
+{
+  "audi6_bastion_engine": {
+    "name": "audi6_bastion_engine",
+    "mapTo": "audi6_bastion_engine",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/vanilla/bastion/bastion_engine_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/vanilla/bastion/bastion_engine_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/vanilla/bastion/bastion_engine_m.data.png",
+        "normalMap": "vehicles/audi6/vanilla/bastion/bastion_engine_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/vanilla/bastion/bastion_engine_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_bastion_mechanical": {
+    "name": "audi6_bastion_mechanical",
+    "mapTo": "audi6_bastion_mechanical",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/vanilla/bastion/bastion_mechanical_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/audi6/vanilla/bastion/bastion_mechanical_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/vanilla/bastion/bastion_mechanical_m.data.png",
+        "normalMap": "vehicles/audi6/vanilla/bastion/bastion_mechanical_nm.normal.png",
+        "roughnessMap": "/vehicles/audi6/vanilla/bastion/bastion_mechanical_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+}

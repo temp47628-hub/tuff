@@ -1,0 +1,934 @@
+{
+"audi6_seat_FL_headrest_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Left Seat Headrest",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_FL_headrest_a6",
+    "props": [
+        ["func",        "mesh",                   "idRef:","idX:","idY:", "baseRotation",              "rotation",               "translation",            "min", "max", "offset", "multiplier"],
+		//headrest
+		["moveHeadrestFL", "audi6_seat_FL_headrest_a6", "sf3ll", "sf3l", "sf2l", {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":-0}, {"x":0.0, "y":0.0, "z":-0.0}, 0, 1, 0, -1, {"translationGlobal":{"x":0.0,"y":0.0,"z":0.075}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["moveHeadrestFLDown", "sf3ll", "sf3l", "sf2l", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0342, "y":0.2084, "z":0.0339}, {"x":0, "y":0, "z":0}],
+        ["moveHeadrestFLUp", "sf3ll", "sf3l", "sf2l", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5049, "y":0.2084, "z":0.0339}, {"x":0, "y":0, "z":0}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["moveHeadrestFLUp",           "action0", "moveHeadrestFLUp"],
+        ["moveHeadrestFLDown",           "action0", "moveHeadrestFLDown"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["moveHeadrestFLUp"],
+		["moveHeadrestFLDown"],
+    ],
+},
+"audi6_seat_FR_headrest_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Right Seat Headrest",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_FR_headrest_a6",
+    "props": [
+        ["func",        "mesh",                   "idRef:","idX:","idY:", "baseRotation",              "rotation",               "translation",            "min", "max", "offset", "multiplier"],
+		//headrest
+		["moveHeadrestFR", "audi6_seat_FR_headrest_a6", "sf3rr", "sf3r", "sf2r", {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":-0}, {"x":0.0, "y":0.0, "z":-0.0}, 0, 1, 0, -1, {"translationGlobal":{"x":0.0,"y":0.0,"z":0.075}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["moveHeadrestFRDown", "sf3rr", "sf3r", "sf2r", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0342, "y":0.2084, "z":-0.0339}, {"x":0, "y":0, "z":0}],
+        ["moveHeadrestFRUp", "sf3rr", "sf3r", "sf2r", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5049, "y":0.2084, "z":-0.0339}, {"x":0, "y":0, "z":0}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["moveHeadrestFRUp",           "action0", "moveHeadrestFRUp"],
+        ["moveHeadrestFRDown",           "action0", "moveHeadrestFRDown"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["moveHeadrestFRUp"],
+		["moveHeadrestFRDown"],
+    ],
+},
+"audi6_seat_RL_headrest": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Left Seat Headrest",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_RL_headrest",
+    "props": [
+        ["func",        "mesh",                   "idRef:","idX:","idY:", "baseRotation",              "rotation",               "translation",            "min", "max", "offset", "multiplier"],
+		//headrest
+		["moveHeadrestRL", "audi6_seats_RL_headrest", "srear3","srear3ll","srear2", {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":-0}, {"x":0.0, "y":0.0, "z":-0.0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.003,"z":0.075}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["moveHeadrestRLDown", "srear3","srear3ll","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6311, "y":0.1717, "z":-0.0498}, {"x":0, "y":0, "z":0}],
+        ["moveHeadrestRLUp", "srear3","srear3ll","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2899, "y":0.1717, "z":-0.0498}, {"x":0, "y":0, "z":0}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["moveHeadrestRLUp",           "action0", "moveHeadrestRLUp"],
+        ["moveHeadrestRLDown",           "action0", "moveHeadrestRLDown"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["moveHeadrestRLUp"],
+		["moveHeadrestRLDown"],
+    ],
+},
+"audi6_seat_RR_headrest": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Right Seat Headrest",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_RR_headrest",
+    "props": [
+        ["func",        "mesh",                   "idRef:","idX:","idY:", "baseRotation",              "rotation",               "translation",            "min", "max", "offset", "multiplier"],
+		//headrest
+		["moveHeadrestRR", "audi6_seats_RR_headrest", "srear4","srear3rr","srear2", {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":-0}, {"x":0.0, "y":0.0, "z":-0.0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.003,"z":0.075}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["moveHeadrestRRDown", "srear4","srear3rr","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5627, "y":0.1744, "z":0.0498}, {"x":0, "y":0, "z":0}],
+        ["moveHeadrestRRUp", "srear4","srear3rr","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.7729, "y":0.1744, "z":0.0498}, {"x":0, "y":0, "z":0}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["moveHeadrestRRUp",           "action0", "moveHeadrestRRUp"],
+        ["moveHeadrestRRDown",           "action0", "moveHeadrestRRDown"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["moveHeadrestRRUp"],
+		["moveHeadrestRRDown"],
+    ],
+},
+"audi6_seat_R_headrest": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Center Seat Headrest",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_R_headrest",
+    "props": [
+        ["func",        "mesh",                   "idRef:","idX:","idY:", "baseRotation",              "rotation",               "translation",            "min", "max", "offset", "multiplier"],
+		//headrest
+		["moveHeadrestR", "audi6_seats_R_headrest", "srear4","srear3rr","srear2", {"x":0.0, "y":0.0, "z":0.0}, {"x":0, "y":0, "z":-0}, {"x":0.0, "y":0.0, "z":-0.0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.000,"z":0.037}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["moveHeadrestRDown", "srear4","srear3rr","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0731, "y":0.1707, "z":0.0498}, {"x":0, "y":0, "z":0}],
+        ["moveHeadrestRUp", "srear4","srear3rr","srear2", "sphere", 0.022, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.2835, "y":0.1707, "z":0.0498}, {"x":0, "y":0, "z":0}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["moveHeadrestRUp",           "action0", "moveHeadrestRUp"],
+        ["moveHeadrestRDown",           "action0", "moveHeadrestRDown"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["moveHeadrestRUp"],
+		["moveHeadrestRDown"],
+    ],
+},
+"audi6_armrest_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Armrest",
+        "value":40,
+    },
+    "slotType" : "audi6_armrest_R",
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+		{"disable":"$=$components.electrics.storagePackage ~= 1"},
+        ["armrest_r_s","audi6_armrest_R", "srear4","srear3rr","srear2",  {"x":90, "y":0, "z":0}, {"x":116, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.16,"z":0.09}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],		
+		{"disable":"$=$components.electrics.storagePackage == 1"},
+        ["armrest_r_s","audi6_armrest_R_b", "srear4","srear3rr","srear2",  {"x":90, "y":0, "z":0}, {"x":116, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.16,"z":0.09}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+		{"disable":""},
+        ["armrest_r_s","audi6_armrest_R_door", "srear4","srear3rr","srear2",  {"x":90, "y":0, "z":0}, {"x":116, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1, {"translationGlobal":{"x":0.0,"y":0.16,"z":0.09}, "baseRotationGlobal":{"x":0,"y":0.0,"z":0.0}}],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+        ["armrest_r", "srear4","srear3rr","srear2", "box", {"x":0.0916, "y":0.0300, "z":0.0294},  {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.0847, "y":0.1393, "z":-0.0247}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["armrest_r",           "action0", "armrest_r"],
+    ],
+    "actionsEnabled": [
+        ["id"],
+		["armrest_r"],
+    ],
+},
+"audi6_seat_FL_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Front Left Seat",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_FL",
+	"components": {
+        "electrics": {
+			"FLSeatType": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_seat_FL_headrest_a6","audi6_seat_FL_headrest_a6", "Front Left Seat Headrest"],
+    ],
+    "camerasInternal":[
+        ["type", "x", "y", "z", "fov", "id1:", "id2:", "id3:", "id4:", "id5:", "id6:"],
+        //dash cam
+        ["dash", 0.355, 0.1, 1.2, 55, "sf2ll","sf2l","sf3ll","sf3l",[],[], {"beamDeform":5001000,"beamStrength":"FLT_MAX"}],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_seat_FL_rails", ["audi6_body", "audi6_floor"]],
+         ["audi6_seat_FL_rails_sliding", ["audi6_seat_FL_base"]],
+         ["audi6_seat_FL_base_a6", ["audi6_seat_FL_base"]],
+		 {"disable":"$=$components.electrics.storagePackage ~= 1"},
+         ["audi6_seat_FL_backplastic_storage_a6", ["audi6_seat_FL_back"]],
+		 {"disable":""},
+         ["audi6_seat_FL_base_seatbelt_rs6", ["audi6_seat_FL_base"]],
+         ["audi6_seat_FL_back_a6", ["audi6_seat_FL_back"]],
+         ["audi6_seat_FL_backplastic_a6", ["audi6_seat_FL_back"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeWeight":15},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //seats flexbody
+         {"group":"audi6_seat_FL"},
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeWeight":3.0},
+         {"group":"audi6_seat_FL_base"},
+         ["sf1l", 0.1312, -0.3731, 0.54],
+         ["sf1ll", 0.6312, -0.3731, 0.54],
+         {"group":["audi6_seat_FL_back","audi6_seat_FL_base"]},
+         ["sf2l", 0.1312, 0.0986, 0.54],
+         ["sf2ll", 0.6312, 0.0986, 0.54],
+         {"group":"audi6_seat_FL_back"},
+         ["sf3l", 0.2212, 0.3069, 1.21],
+         ["sf3ll", 0.5412, 0.3069, 1.21],
+         {"nodeWeight":8.0},
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         ["sr1l", 0.1312, -0.4931, 0.54],
+         ["sr1ll", 0.6312, -0.4931, 0.54],
+         ["sr2l", 0.1312, 0.2169, 0.54],
+         ["sr2ll", 0.6312, 0.2169, 0.54],
+    ],
+    "slidenodes": [ 
+         ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+         ["sf1l",   "1l",       true,       true,        0,        10000000, 100000000, 345435],
+         ["sf2l",   "1l",       true,       true,        0,        10000000, 100000000, 345435],
+         ["sf1ll",  "1ll",      true,       true,        0,        10000000, 100000000, 345435],
+         ["sf2ll",  "1ll",      true,       true,        0,        10000000, 100000000, 345435],
+    ],
+    "rails": {
+        "1l":{"links:":["sr1l", "sr2l"], "looped":false, "capped":true},
+        "1ll":{"links:":["sr1ll", "sr2ll"], "looped":false, "capped":true},
+    },
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+        {"beamSpring":2000100,"beamDamp":5000},
+        {"beamPrecompression":1.0},
+        {"breakGroupType":1},
+        {"breakGroup":"main_slide"},
+        ["sr1l","sf1l", {"inputSource":"tilt","inLimit":0.3,"outLimit":2.0,"inRate":50,"outRate":50,"inputFactor":1}],
+        {"beamSpring":2501000,"beamDamp":300},
+        {"breakGroup":"main_recline"},
+        ["sf1l","sf3l", {"inputSource":"recline","inLimit":0.65,"outLimit":1.15,"inRate":5,"outRate":5,"inputFactor":1}],
+        ["sf1ll","sf3ll", {"inputSource":"recline","inLimit":0.65,"outLimit":1.15,"inRate":5,"outRate":5,"inputFactor":1}],
+        {"beamPrecompression":1.0},
+        {"breakGroupType":0},
+        {"breakGroup":""},
+    ],
+    "beams":[
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        //main shape
+        {"beamSpring":2501000,"beamDamp":300},
+        {"beamDeform":10000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["sf1l", "sf1ll"],
+        ["sf2l", "sf2ll"],
+        ["sf3l", "sf3ll"],
+        ["sf1l", "sf2l"],
+        ["sf2l", "sf3l"],
+        ["sf1ll", "sf2ll"],
+        ["sf2ll", "sf3ll"],
+        //crossing
+        {"beamDeform":7000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":""},
+        ["sf1ll", "sf2l"],
+        ["sf2ll", "sf1l"],
+        ["sf2l", "sf3ll"],
+        ["sf3l", "sf2ll"],
+        /*//corners
+        {"beamDeform":3000},
+        ["sf3l", "sf1l"],
+        ["sf3ll", "sf1ll"],*/
+
+        //damper
+        {"beamSpring":0,"beamDamp":800},
+        ["sf3ll", "f9l"],
+        ["sf3l", "r1ll"],
+
+        //attach to body
+        {"beamSpring":501000,"beamDamp":37.6},
+        {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+        ["sr2l", "f3l"],
+        ["sr2l", "f2l"],
+        ["sr2l", "f3r"],
+        ["sr2l", "f2r"],
+
+        ["sr2ll", "f3l"],
+        ["sr2ll", "f3ll"],
+        ["sr2ll", "f2l"],
+        ["sr1l", "f2l"],
+        ["sr1ll", "f2l"],
+        ["sr1ll", "f2ll"],
+        ["sr1l", "f3l"],
+
+        ["sr1ll", "f1l"],
+        ["sr1ll", "f1ll"],
+        ["sr1l", "f1ll"],
+        ["sr1l", "f1l"],
+
+        //limiter
+        {"beamType":"|SUPPORT", "beamLongBound":5},
+        {"beamSpring":470000,"beamDamp":141},
+        {"beamPrecompression":0.9},
+        {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+        {"optional":true},
+        ["sr2l", "p4l"],
+        ["sr2l", "p3l"],
+        ["sr1l", "f1ll"],
+        ["sr1l", "f3ll"],
+        {"optional":false},
+        {"beamPrecompression":1},
+
+        {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"deformLimitExpansion":""},
+    ],
+    "triangles":[
+        ["id1:", "id2:", "id3:"],
+        {"groundModel":"metal"},
+        {"dragCoef":0},
+        //front seat
+        ["sf2l",  "sf1l",  "sf1ll"],
+        ["sf1ll", "sf2ll", "sf2l"],
+        ["sf3l",  "sf2l",  "sf2ll"],
+        ["sf2ll", "sf3ll", "sf3l"],
+    ],
+},
+"audi6_seat_FR_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Front Right Seat",
+        "value":1250,
+    },
+    "slotType" : "audi6_seat_FR",
+	"components": {
+        "electrics": {
+			"FRSeatType": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["load_seat_FR","", "Front Seat Load", {
+            "nodeMove":{"x":-0.35, "y":-0.23, "z":0.75},
+            "variables":{
+                "$rotx":-8, "$roty":0, "$rotz":90,
+                "$group":"audi6_seat_FR_base",
+            },
+        }],
+        ["audi6_seat_FR_headrest_a6","audi6_seat_FR_headrest_a6", "Front Right Seat Headrest"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_seat_FR_rails", ["audi6_body", "audi6_floor"]],
+         ["audi6_seat_FR_rails_sliding", ["audi6_seat_FR_base"]],
+         ["audi6_seat_FR_base_a6", ["audi6_seat_FR_base"]],
+		 {"disable":"$=$components.electrics.storagePackage ~= 1"},
+         ["audi6_seat_FR_backplastic_storage_a6", ["audi6_seat_FR_back"]],
+		 {"disable":""},
+         ["audi6_seat_FR_base_seatbelt_rs6", ["audi6_seat_FR_base"]],
+         ["audi6_seat_FR_back_a6", ["audi6_seat_FR_back"]],	
+         ["audi6_seat_FR_backplastic_a6", ["audi6_seat_FR_back"]],	
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeWeight":15},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //seats flexbody
+         {"group":"audi6_seat_FL"},
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeWeight":3.0},
+         {"group":"audi6_seat_FR_base"},
+         ["sf1r", -0.1312, -0.3731, 0.54],
+         ["sf1rr", -0.6312, -0.3731, 0.54],
+         {"group":["audi6_seat_FR_back","audi6_seat_FR_base"]},
+         ["sf2r", -0.1312, 0.0986, 0.54],
+         ["sf2rr", -0.6312, 0.0986, 0.54],
+         {"group":"audi6_seat_FR_back"},
+         ["sf3r", -0.2212, 0.3069, 1.21],
+         ["sf3rr", -0.5412, 0.3069, 1.21],
+         {"nodeWeight":8.0},
+         {"group":""},
+         {"collision":false},
+         {"selfCollision":false},
+         ["sr1r", -0.1312, -0.4931, 0.54],
+         ["sr1rr", -0.6312, -0.4931, 0.54],
+         ["sr2r", -0.1312, 0.2169, 0.54],
+         ["sr2rr", -0.6312, 0.2169, 0.54],
+    ],
+    "slidenodes": [ 
+         ["id:", "railName", "attached", "fixToRair", "tolerance", "spring", "strength", "capStrength"],
+         ["sf1r",   "1r",       true,       true,        0,        10000000, 100000000, 345435],
+         ["sf2r",   "1r",       true,       true,        0,        10000000, 100000000, 345435],
+         ["sf1rr",  "1rr",      true,       true,        0,        10000000, 100000000, 345435],
+         ["sf2rr",  "1rr",      true,       true,        0,        10000000, 100000000, 345435],
+    ],
+    "rails": {
+        "1r":{"links:":["sr1r", "sr2r"], "looped":false, "capped":true},
+        "1rr":{"links:":["sr1rr", "sr2rr"], "looped":false, "capped":true},
+    },
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+        {"beamSpring":2000100,"beamDamp":5000},
+        {"beamPrecompression":1.0},
+        {"breakGroupType":1},
+        {"breakGroup":"main_slidea"},
+        ["sr1r","sf1r", {"inputSource":"tilta","inLimit":0.3,"outLimit":2.0,"inRate":50,"outRate":50,"inputFactor":1}],
+        {"beamSpring":2501000,"beamDamp":300},
+        {"breakGroup":"main_reclinea"},
+        ["sf1r","sf3r", {"inputSource":"reclinea","inLimit":0.65,"outLimit":1.15,"inRate":5,"outRate":5,"inputFactor":1}],
+        ["sf1rr","sf3rr", {"inputSource":"reclinea","inLimit":0.65,"outLimit":1.15,"inRate":5,"outRate":5,"inputFactor":1}],
+        {"beamPrecompression":1.0},
+        {"breakGroupType":0},
+        {"breakGroup":""},
+    ],
+	"beams":[
+		["id1:", "id2:"],
+		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		//main shape
+		{"beamSpring":2501000,"beamDamp":300},
+		{"beamDeform":10000,"beamStrength":"FLT_MAX"},
+		{"deformLimitExpansion":1.1},
+		["sf1r", "sf1rr"],
+		["sf2r", "sf2rr"],
+		["sf3r", "sf3rr"],
+		["sf1r", "sf2r"],
+		["sf2r", "sf3r"],
+		["sf1rr", "sf2rr"],
+		["sf2rr", "sf3rr"],
+		//crossing
+		{"beamDeform":7000,"beamStrength":"FLT_MAX"},
+		{"deformLimitExpansion":""},
+		["sf1rr", "sf2r"],
+		["sf2rr", "sf1r"],
+		["sf2r", "sf3rr"],
+		["sf3r", "sf2rr"],
+		/*//corners
+		{"beamDeform":3000},
+		["sf3r", "sf1r"],
+		["sf3rr", "sf1rr"],*/
+
+		//damper
+		{"beamSpring":0,"beamDamp":800},
+		["sf3rr", "f9r"],
+		["sf3r", "r1rr"],
+
+		//attach to body
+		{"beamSpring":501000,"beamDamp":37.6},
+		{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+		["sr2r", "f3r"],
+		["sr2r", "f2r"],
+		["sr2r", "f3l"],
+		["sr2r", "f2l"],
+
+		["sr2rr", "f3r"],
+		["sr2rr", "f3rr"],
+		["sr2rr", "f2r"],
+		["sr1r", "f2r"],
+		["sr1rr", "f2r"],
+		["sr1rr", "f2rr"],
+		["sr1r", "f3r"],
+
+		["sr1rr", "f1r"],
+		["sr1rr", "f1rr"],
+		["sr1r", "f1rr"],
+		["sr1r", "f1r"],
+
+		//limiter
+		{"beamType":"|SUPPORT", "beamLongBound":5},
+		{"beamSpring":470000,"beamDamp":141},
+		{"beamPrecompression":0.9},
+		{"beamDeform":6000,"beamStrength":"FLT_MAX"},
+		{"optional":true},
+		["sr2r", "p4r"],
+		["sr2r", "p3r"],
+		["sr1r", "f1rr"],
+		["sr1r", "f3rr"],
+		{"optional":false},
+		{"beamPrecompression":1},
+
+		{"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		{"deformLimitExpansion":""},
+	],
+    "triangles":[
+        ["id1:", "id2:", "id3:"],
+        {"groundModel":"metal"},
+        {"dragCoef":0},
+        //front seat
+        ["sf1r", "sf2r", "sf1rr"],
+        ["sf2rr", "sf1rr", "sf2r"],
+        ["sf2r", "sf3r", "sf2rr"],
+        ["sf3rr", "sf2rr", "sf3r"],
+    ],
+},
+"audi6_seats_R_a6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Split-Folding Rear Seats",
+        "value":800,
+    },
+    "slotType" : "audi6_seats_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["load_seat_R","", "Rear Seat Load", {
+            "nodeMove":{"x": 0.00, "y":0.72, "z":0.675},
+            "variables":{
+                "$rotx":-10, "$roty":0, "$rotz":0,
+                "$group":"audi6_seats_R",
+            },
+        }],
+		["audi6_seat_RL_headrest","audi6_seat_RL_headrest", "Rear Left Seat Headrest"],
+		["audi6_seat_RR_headrest","audi6_seat_RR_headrest", "Rear Right Seat Headrest"],
+		["audi6_seat_R_headrest","audi6_seat_R_headrest", "Rear Center Seat Headrest"],
+        ["audi6_armrest_R","audi6_armrest_R", "Rear Armrest"],
+    ],
+	"triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type",  "size", 						  "baseRotation", 		 "rotation", 				  "translation", 					  "baseTranslation"],        
+		["seatfold_RR", "srear4","srear3rr","srear2", "sphere", 0.03, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6539, "y":0.0891, "z":0.0720}],
+	    ["seatfold_RL", "srear3","srear3ll","srear2", "sphere", 0.03, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3775, "y":0.0891, "z":-0.0720}],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		["seatfold_RR", "action0", "seatfold_RR"],
+	    ["seatfold_RL", "action0", "seatfold_RL"],
+	],
+    "actionsEnabled": [
+        ["id"],
+		["seatfold_RR"],
+		["seatfold_RL"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_seats_R_bottom_a6", ["audi6_seats_R", "audi6_floor"]],
+         ["audi6_seatbelt_R_bottom", ["audi6_seats_R", "audi6_floor"]],
+		 ["audi6_seats_RL_back_a6", ["audi6_seat_RL_top"]],
+		 ["audi6_seats_RR_back_a6", ["audi6_seat_RR_top"]],
+		 ["audi6_seatbelt_RR_rs6", ["audi6_seat_RR_top"]],
+    ],
+    "nodes":[
+          ["id", "posX", "posY", "posZ"],
+          {"group":"audi6_seats_R"},
+          {"collision":true},
+          {"selfCollision":true},
+          {"nodeWeight":1.5},
+		  
+          ["srearsp1r", -0.5878, 0.4855, 0.5681],
+          ["srear1", 0.1373, 0.4755, 0.5715],
+          ["srearsp1l", 0.5878, 0.4855, 0.5681],
+
+          ["srear2rr", -0.5878, 1.0153, 0.6155, {"group":["audi6_seats_R","audi6_seat_RR_top"]}],
+          ["srear2", 0.1373, 1.0153, 0.6151, {"group":["audi6_seats_R","audi6_seat_RR_top","audi6_seat_RL_top"]}],
+          ["srear2ll", 0.5878, 1.0153, 0.6155, {"group":["audi6_seats_R","audi6_seat_RL_top"]}],
+		  
+		  {"group":"audi6_seat_RR_top"},
+          ["srear3rr", -0.5878, 1.2352, 1.1799],
+		  ["srear4", 0.1273, 1.2352, 1.1799],
+		  
+		  {"group":"audi6_seat_RL_top"},
+          ["srear3ll", 0.5878, 1.2352, 1.1799],
+		  ["srear3", 0.1473, 1.2352, 1.1799],
+		  
+          {"group":""},
+    ],
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":48500000,"beamStrength":"FLT_MAX"},
+        {"beamLimitSpring":9000000,"beamLimitDamp":400},
+      
+        {"beamSpring":30000,"beamDamp":400},
+		["srear4","srear1",{"inputSource":"seatfold_RR","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+        ["srear3rr","srearsp1r",{"inputSource":"seatfold_RR","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+		
+		["srear3","srear1",{"inputSource":"seatfold_RL","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+        ["srear3ll","srearsp1l",{"inputSource":"seatfold_RL","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+    ],
+    "beams":[
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //main shape
+          {"beamSpring":201000,"beamDamp":300},
+          {"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.2},
+            ["srear2rr", "srearsp1r"],
+            ["srearsp1r", "srear1"],
+            ["srear1", "srear2"],
+            ["srear2", "srear2rr"],
+            ["srear2rr", "srear1"],
+            ["srear2", "srearsp1r"],
+            ["srear1", "srearsp1l"],
+            ["srearsp1l", "srear2ll"],
+            ["srear2ll", "srear2"],
+            ["srear2", "srearsp1l"],
+            ["srear2ll", "srear1"],
+  
+            ["srear2ll", "srear3ll"],
+            ["srear3ll", "srear3"],
+            ["srear3", "srear2"],
+            ["srear2", "srear3ll"],
+            ["srear3", "srear2ll"],
+
+            ["srear2", "srear4"],
+            ["srear2rr", "srear3rr"],
+            ["srear3rr", "srear4"],
+            ["srear2rr", "srear4"],
+            ["srear3rr", "srear2"],
+
+
+          //crossing
+          {"beamDeform":7000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":""},
+          ["srearsp1l", "srear2rr"],
+            ["srear2ll", "srearsp1r"],
+          //corner
+          {"beamDeform":3000,"beamStrength":"FLT_MAX"},
+
+
+          //damper
+          {"beamSpring":0,"beamDamp":800},
+          //["srear3ll", "tb3ll"],
+          //["srear3rr", "tb3rr"],
+          //["srear3", "tb3rr"],
+          //["srear3", "tb3ll"],
+
+          //attach
+          {"beamSpring":201000,"beamDamp":300},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+          ["srear2ll", "f4l"],
+          ["srear2ll", "f4ll"],
+          ["srear2ll", "f9l"],
+          ["srear2ll", "f3l"],
+          ["srearsp1l", "f3ll"],
+          ["srearsp1l", "f4ll"],
+          ["srearsp1l", "f3l"],
+
+          ["srear2rr", "f4r"],
+          ["srear2rr", "f4rr"],
+          ["srear2rr", "f9r"],
+          ["srear2rr", "f3r"],
+          ["srearsp1r", "f3rr"],
+          ["srearsp1r", "f4rr"],
+          ["srearsp1r", "f3r"],
+
+
+          {"beamSpring":101000,"beamDamp":150},
+          ["srear2", "f4l"],
+          ["srear2", "f4r"],
+          ["srear2", "f3r"],
+          ["srear2", "f3l"],
+
+          ["srear1", "f4l"],
+          ["srear1", "f4r"],
+          ["srear1", "f3r"],
+          ["srear1", "f3l"],
+		  
+          //limiter
+          {"beamType":"|SUPPORT", "beamLongBound":5},
+          {"beamSpring":340000,"beamDamp":71},
+          {"beamPrecompression":0.9},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+          //{"optional":true},
+          ["srear3ll", "p10l"],
+          ["srear3ll", "q1l"],
+          ["srear2ll", "q5l"],
+          ["srear2ll", "f9l"],
+
+          ["srear3rr", "p10r"],
+          ["srear3rr", "q1r"],
+          ["srear2rr", "q5r"],
+          ["srear2rr", "f9r"],
+
+          {"beamPrecompression":0.7},
+          ["r1ll", "srear2ll"],
+          ["r1", "srear2"],
+          ["r1rr", "srear2rr"],
+          ["r1rr", "srear3rr"],
+          ["r1", "srear3"],
+          ["r1ll", "srear3ll"],
+          {"optional":false},
+          {"beamPrecompression":1},
+		  
+          //cargo load box
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":500001,"beamDamp":250},
+          {"beamDeform":510000,"beamStrength":"FLT_MAX"},
+          {"optional":true},
+          ["seat_box_R", "srear1rr"],
+          ["seat_box_R", "srear1ll"],
+          ["seat_box_R", "srear2rr"],
+          ["seat_box_R", "srear2ll"],
+          ["seat_box_R", "srear3rr"],
+          ["seat_box_R", "srear3ll"],
+          {"optional":false},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+    "triangles":[
+        ["id1:", "id2:", "id3:"],
+        {"groundModel":"metal"},
+        {"dragCoef":0},
+
+            ["srear2rr", "srearsp1r", "srear1"],
+            ["srear1", "srear2", "srear2rr"],
+            ["srear2ll", "srear2", "srear1"],
+            ["srear1", "srearsp1l", "srear2ll"],
+			
+            ["srear2ll", "srear3ll", "srear3"],
+            ["srear3", "srear2", "srear2ll"],
+
+            ["srear4", "srear3rr", "srear2rr"],
+            ["srear4", "srear2rr", "srear2"],
+    ],
+},
+"audi6_seats_R_a6_base": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Rear Seats",
+        "value":800,
+    },
+    "slotType" : "audi6_seats_R",
+    "slots": [
+        ["type", "default", "description"],
+        ["load_seat_R","", "Rear Seat Load", {
+            "nodeMove":{"x": 0.00, "y":0.72, "z":0.675},
+            "variables":{
+                "$rotx":-10, "$roty":0, "$rotz":0,
+                "$group":"audi6_seats_R",
+            },
+        }],
+		["audi6_seat_RL_headrest","audi6_seat_RL_headrest", "Rear Left Seat Headrest"],
+		["audi6_seat_RR_headrest","audi6_seat_RR_headrest", "Rear Right Seat Headrest"],
+		["audi6_seat_R_headrest","audi6_seat_R_headrest", "Rear Center Seat Headrest"],
+        ["audi6_armrest_R","audi6_armrest_R", "Rear Armrest"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_seats_R_bottom_a6", ["audi6_seats_R", "audi6_floor"]],
+         ["audi6_seatbelt_R_bottom", ["audi6_seats_R", "audi6_floor"]],
+		 ["audi6_seats_RL_back_a6", ["audi6_seat_RL_top"]],
+		 ["audi6_seats_RR_back_a6", ["audi6_seat_RR_top"]],
+		 ["audi6_seatbelt_RR_rs6", ["audi6_seat_RR_top"]],
+    ],
+    "nodes":[
+          ["id", "posX", "posY", "posZ"],
+          {"group":"audi6_seats_R"},
+          {"collision":true},
+          {"selfCollision":true},
+          {"nodeWeight":1.5},
+		  
+          ["srearsp1r", -0.5878, 0.4855, 0.5681],
+          ["srear1", 0.1373, 0.4755, 0.5715],
+          ["srearsp1l", 0.5878, 0.4855, 0.5681],
+
+          ["srear2rr", -0.5878, 1.0153, 0.6155, {"group":["audi6_seats_R","audi6_seat_RR_top"]}],
+          ["srear2", 0.1373, 1.0153, 0.6151, {"group":["audi6_seats_R","audi6_seat_RR_top","audi6_seat_RL_top"]}],
+          ["srear2ll", 0.5878, 1.0153, 0.6155, {"group":["audi6_seats_R","audi6_seat_RL_top"]}],
+		  
+		  {"group":"audi6_seat_RR_top"},
+          ["srear3rr", -0.5878, 1.2352, 1.1799],
+		  ["srear4", 0.1273, 1.2352, 1.1799],
+		  
+		  {"group":"audi6_seat_RL_top"},
+          ["srear3ll", 0.5878, 1.2352, 1.1799],
+		  ["srear3", 0.1473, 1.2352, 1.1799],
+		  
+          {"group":""},
+    ],
+	"hydros": [
+        ["id1:","id2:"],
+        {"beamDeform":48500000,"beamStrength":"FLT_MAX"},
+        {"beamLimitSpring":9000000,"beamLimitDamp":400},
+      
+        {"beamSpring":30000,"beamDamp":400},
+		["srear4","srear1",{"inputSource":"seatfold_RR","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+        ["srear3rr","srearsp1r",{"inputSource":"seatfold_RR","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+		
+		["srear3","srear1",{"inputSource":"seatfold_RL","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+        ["srear3ll","srearsp1l",{"inputSource":"seatfold_RL","inLimit":0.2,"outLimit":0.2,"inRate":0.45,"outRate":0.45,"inputFactor":-1}],
+    ],
+    "beams":[
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //main shape
+          {"beamSpring":201000,"beamDamp":300},
+          {"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.2},
+            ["srear2rr", "srearsp1r"],
+            ["srearsp1r", "srear1"],
+            ["srear1", "srear2"],
+            ["srear2", "srear2rr"],
+            ["srear2rr", "srear1"],
+            ["srear2", "srearsp1r"],
+            ["srear1", "srearsp1l"],
+            ["srearsp1l", "srear2ll"],
+            ["srear2ll", "srear2"],
+            ["srear2", "srearsp1l"],
+            ["srear2ll", "srear1"],
+  
+            ["srear2ll", "srear3ll"],
+            ["srear3ll", "srear3"],
+            ["srear3", "srear2"],
+            ["srear2", "srear3ll"],
+            ["srear3", "srear2ll"],
+
+            ["srear2", "srear4"],
+            ["srear2rr", "srear3rr"],
+            ["srear3rr", "srear4"],
+            ["srear2rr", "srear4"],
+            ["srear3rr", "srear2"],
+
+
+          //crossing
+          {"beamDeform":7000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":""},
+          ["srearsp1l", "srear2rr"],
+            ["srear2ll", "srearsp1r"],
+          //corner
+          {"beamDeform":3000,"beamStrength":"FLT_MAX"},
+
+
+          //damper
+          {"beamSpring":0,"beamDamp":800},
+          //["srear3ll", "tb3ll"],
+          //["srear3rr", "tb3rr"],
+          //["srear3", "tb3rr"],
+          //["srear3", "tb3ll"],
+
+          //attach
+          {"beamSpring":201000,"beamDamp":300},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+          ["srear2ll", "f4l"],
+          ["srear2ll", "f4ll"],
+          ["srear2ll", "f9l"],
+          ["srear2ll", "f3l"],
+          ["srearsp1l", "f3ll"],
+          ["srearsp1l", "f4ll"],
+          ["srearsp1l", "f3l"],
+
+          ["srear2rr", "f4r"],
+          ["srear2rr", "f4rr"],
+          ["srear2rr", "f9r"],
+          ["srear2rr", "f3r"],
+          ["srearsp1r", "f3rr"],
+          ["srearsp1r", "f4rr"],
+          ["srearsp1r", "f3r"],
+
+
+          {"beamSpring":101000,"beamDamp":150},
+          ["srear2", "f4l"],
+          ["srear2", "f4r"],
+          ["srear2", "f3r"],
+          ["srear2", "f3l"],
+
+          ["srear1", "f4l"],
+          ["srear1", "f4r"],
+          ["srear1", "f3r"],
+          ["srear1", "f3l"],
+		  
+          //limiter
+          {"beamType":"|SUPPORT", "beamLongBound":5},
+          {"beamSpring":340000,"beamDamp":71},
+          {"beamPrecompression":0.9},
+          {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+          //{"optional":true},
+          ["srear3ll", "p10l"],
+          ["srear3ll", "q1l"],
+          ["srear2ll", "q5l"],
+          ["srear2ll", "f9l"],
+
+          ["srear3rr", "p10r"],
+          ["srear3rr", "q1r"],
+          ["srear2rr", "q5r"],
+          ["srear2rr", "f9r"],
+
+          {"beamPrecompression":0.7},
+          ["r1ll", "srear2ll"],
+          ["r1", "srear2"],
+          ["r1rr", "srear2rr"],
+          ["r1rr", "srear3rr"],
+          ["r1", "srear3"],
+          ["r1ll", "srear3ll"],
+          {"optional":false},
+          {"beamPrecompression":1},
+		  
+          //cargo load box
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":500001,"beamDamp":250},
+          {"beamDeform":510000,"beamStrength":"FLT_MAX"},
+          {"optional":true},
+          ["seat_box_R", "srear1rr"],
+          ["seat_box_R", "srear1ll"],
+          ["seat_box_R", "srear2rr"],
+          ["seat_box_R", "srear2ll"],
+          ["seat_box_R", "srear3rr"],
+          ["seat_box_R", "srear3ll"],
+          {"optional":false},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+    "triangles":[
+        ["id1:", "id2:", "id3:"],
+        {"groundModel":"metal"},
+        {"dragCoef":0},
+
+            ["srear2rr", "srearsp1r", "srear1"],
+            ["srear1", "srear2", "srear2rr"],
+            ["srear2ll", "srear2", "srear1"],
+            ["srear1", "srearsp1l", "srear2ll"],
+			
+            ["srear2ll", "srear3ll", "srear3"],
+            ["srear3", "srear2", "srear2ll"],
+
+            ["srear4", "srear3rr", "srear2rr"],
+            ["srear4", "srear2rr", "srear2"],
+    ],
+},
+}

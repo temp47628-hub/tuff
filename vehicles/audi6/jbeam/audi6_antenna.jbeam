@@ -1,0 +1,298 @@
+{
+"audi6_antennafin_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Antenna Fin",
+        "value":20,
+    },
+    "slotType" : "audi6_antennafin_sedan",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_antennafin_sedan", ["audi6_antennafin"]],
+    ],
+	"nodes": [
+	  ["id", "posX", "posY", "posZ"],
+	  {"group":"audi6_antennafin"},
+	  {"selfCollision":true},
+	  {"collision":true},
+	  {"nodeWeight":0.76},
+	  {"frictionCoef":0.7},
+	  {"nodeMaterial":"|NM_METAL"},
+
+	  ["afin_1l",  0.0076, 1.1423, 1.528],
+	  ["afin_2l",  0.0343, 1.0509, 1.4559],
+	  ["afin_3l",  0.0076, 1.1976, 1.5215],
+	  ["afin_4l",  0.0343, 1.1752, 1.4333],
+
+	  ["afin_1r", -0.0076, 1.1423, 1.528],
+	  ["afin_2r", -0.0343, 1.0509, 1.4559],
+	  ["afin_3r", -0.0076, 1.1976, 1.5215],
+	  ["afin_4r", -0.0343, 1.1752, 1.4333],
+
+	  {"group":""}
+	],
+
+	"beams": [
+	  ["id1:", "id2:"],
+	  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+	  //main shape
+	  {"beamSpring":275000,"beamDamp":50},
+	  {"beamDeform":30000,"beamStrength":"FLT_MAX"},
+	  {"deformationTriggerRatio":0.1},
+
+	  {"deformGroup":"lightbar_L"},
+	  // left frame (unchanged)
+	  ["afin_1l","afin_2l"],
+	  ["afin_2l","afin_3l"],
+	  ["afin_3l","afin_4l"],
+	  ["afin_4l","afin_1l"],
+	  ["afin_1l","afin_3l"],
+	  ["afin_2l","afin_4l"],
+
+	  {"deformGroup":"lightbar_R"},
+	  // right frame (unchanged)
+	  ["afin_1r","afin_2r"],
+	  ["afin_2r","afin_3r"],
+	  ["afin_3r","afin_4r"],
+	  ["afin_4r","afin_1r"],
+	  ["afin_1r","afin_3r"],
+	  ["afin_2r","afin_4r"],
+	  {"deformGroup":""},
+
+	  // center frame replaced by direct l–r connections
+	  ["afin_1l","afin_1r"],
+	  ["afin_2l","afin_2r"],
+	  ["afin_3l","afin_3r"],
+	  ["afin_4l","afin_4r"],
+	  ["afin_1l","afin_3r"],
+	  ["afin_2l","afin_4r"],
+	  ["afin_1r","afin_3l"],
+	  ["afin_2r","afin_4l"],
+
+	  //cross-beams (center -> left/right) converted to l–r only
+	  {"deformGroup":"lightbar_L"},
+	  ["afin_4l","afin_3r"],
+	  ["afin_3l","afin_4r"],
+	  ["afin_3l","afin_1r"],
+	  ["afin_1l","afin_3r"],
+	  ["afin_1l","afin_2r"],
+	  ["afin_2l","afin_1r"],
+	  ["afin_2l","afin_4r"],
+	  ["afin_4l","afin_2r"],
+
+	  ["afin_4l","afin_1r"],
+	  ["afin_2l","afin_3r"],
+	  ["afin_1l","afin_4r"],
+	  ["afin_3l","afin_2r"],
+
+	  {"deformGroup":"lightbar_R"},
+	  ["afin_4r","afin_3l"],
+	  ["afin_3r","afin_4l"],
+	  ["afin_3r","afin_1l"],
+	  ["afin_1r","afin_3l"],
+	  ["afin_1r","afin_2l"],
+	  ["afin_2r","afin_1l"],
+	  ["afin_2r","afin_4l"],
+	  ["afin_4r","afin_2l"],
+
+	  ["afin_4r","afin_1l"],
+	  ["afin_2r","afin_3l"],
+	  ["afin_1r","afin_4l"],
+	  ["afin_3r","afin_2l"],
+	  {"deformGroup":""},
+
+	  //to body – all center-node refs removed; only l/r remain
+	  {"beamSpring":225000,"beamDamp":50},
+	  {"beamDeform":2000,"beamStrength":4000},
+
+	  {"breakGroup":"lightbar_breakl"},
+	  {"deformGroup":"lightbar_L"},
+	  ["afin_3l","rf4l"],
+	  ["afin_4l","rf4l"],
+	  ["afin_3l","rf3l"],
+	  ["afin_4l","rf3l"],
+	  ["afin_1l","rf2l"],
+	  ["afin_2l","rf2l"],
+	  ["afin_1l","rf3l"],
+	  ["afin_2l","rf3l"],
+
+	  {"deformGroup":"lightbar_R"},
+	  {"breakGroup":"lightbar_breakr"},
+	  ["afin_3r","rf4r"],
+	  ["afin_4r","rf4r"],
+	  ["afin_3r","rf3r"],
+	  ["afin_4r","rf3r"],
+	  ["afin_1r","rf2r"],
+	  ["afin_2r","rf2r"],
+	  ["afin_1r","rf3r"],
+	  ["afin_2r","rf3r"],
+	  {"deformGroup":""},
+	  {"breakGroup":""},
+
+	  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0}
+	],
+
+	"quads": [
+	  ["id1:","id2:","id3:","id4:"],
+	  {"group":"audi6_antennafin"},
+	  {"dragCoef":14},
+	  ["afin_1l","afin_2l","afin_4l","afin_3l"],
+	  ["afin_2l","afin_1l","afin_1r","afin_2r"],
+	  ["afin_3l","afin_4l","afin_4r","afin_3r"],
+	  ["afin_3r","afin_4r","afin_2r","afin_1r"],
+	  ["afin_1r","afin_1l","afin_3l","afin_3r"],
+	  ["afin_2r","afin_2l","afin_4l","afin_4r"],
+
+	  {"group":""}
+	]
+},
+"audi6_antennafin_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Antenna Fin",
+        "value":20,
+    },
+    "slotType" : "audi6_antennafin_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_antennafin_avant", ["audi6_antennafin"]],
+    ],
+	"nodes": [
+	  ["id", "posX", "posY", "posZ"],
+	  {"group":"audi6_antennafin"},
+	  {"selfCollision":true},
+	  {"collision":true},
+	  {"nodeWeight":0.76},
+	  {"frictionCoef":0.7},
+	  {"nodeMaterial":"|NM_METAL"},
+
+	  ["afin_1l",  0.0076, 1.6285, 1.5579],
+	  ["afin_2l",  0.0343, 1.5438, 1.4781],
+	  ["afin_3l",  0.0076, 1.6842, 1.5562],
+	  ["afin_4l",  0.0343, 1.6696, 1.4664],
+
+	  ["afin_1r", -0.0076, 1.6285, 1.5579],
+	  ["afin_2r", -0.0343, 1.5438, 1.4781],
+	  ["afin_3r", -0.0076, 1.6842, 1.5562],
+	  ["afin_4r", -0.0343, 1.6696, 1.4664],
+
+	  {"group":""}
+	],
+
+	"beams": [
+	  ["id1:", "id2:"],
+	  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+	  //main shape
+	  {"beamSpring":275000,"beamDamp":50},
+	  {"beamDeform":30000,"beamStrength":"FLT_MAX"},
+	  {"deformationTriggerRatio":0.1},
+
+	  {"deformGroup":"lightbar_L"},
+	  // left frame (unchanged)
+	  ["afin_1l","afin_2l"],
+	  ["afin_2l","afin_3l"],
+	  ["afin_3l","afin_4l"],
+	  ["afin_4l","afin_1l"],
+	  ["afin_1l","afin_3l"],
+	  ["afin_2l","afin_4l"],
+
+	  {"deformGroup":"lightbar_R"},
+	  // right frame (unchanged)
+	  ["afin_1r","afin_2r"],
+	  ["afin_2r","afin_3r"],
+	  ["afin_3r","afin_4r"],
+	  ["afin_4r","afin_1r"],
+	  ["afin_1r","afin_3r"],
+	  ["afin_2r","afin_4r"],
+	  {"deformGroup":""},
+
+	  // center frame replaced by direct l–r connections
+	  ["afin_1l","afin_1r"],
+	  ["afin_2l","afin_2r"],
+	  ["afin_3l","afin_3r"],
+	  ["afin_4l","afin_4r"],
+	  ["afin_1l","afin_3r"],
+	  ["afin_2l","afin_4r"],
+	  ["afin_1r","afin_3l"],
+	  ["afin_2r","afin_4l"],
+
+	  //cross-beams (center -> left/right) converted to l–r only
+	  {"deformGroup":"lightbar_L"},
+	  ["afin_4l","afin_3r"],
+	  ["afin_3l","afin_4r"],
+	  ["afin_3l","afin_1r"],
+	  ["afin_1l","afin_3r"],
+	  ["afin_1l","afin_2r"],
+	  ["afin_2l","afin_1r"],
+	  ["afin_2l","afin_4r"],
+	  ["afin_4l","afin_2r"],
+
+	  ["afin_4l","afin_1r"],
+	  ["afin_2l","afin_3r"],
+	  ["afin_1l","afin_4r"],
+	  ["afin_3l","afin_2r"],
+
+	  {"deformGroup":"lightbar_R"},
+	  ["afin_4r","afin_3l"],
+	  ["afin_3r","afin_4l"],
+	  ["afin_3r","afin_1l"],
+	  ["afin_1r","afin_3l"],
+	  ["afin_1r","afin_2l"],
+	  ["afin_2r","afin_1l"],
+	  ["afin_2r","afin_4l"],
+	  ["afin_4r","afin_2l"],
+
+	  ["afin_4r","afin_1l"],
+	  ["afin_2r","afin_3l"],
+	  ["afin_1r","afin_4l"],
+	  ["afin_3r","afin_2l"],
+	  {"deformGroup":""},
+
+	  //to body – all center-node refs removed; only l/r remain
+	  {"beamSpring":225000,"beamDamp":50},
+	  {"beamDeform":2000,"beamStrength":4000},
+
+	  {"breakGroup":"lightbar_breakl"},
+	  {"deformGroup":"lightbar_L"},
+	  ["afin_3l","rf6l"],
+	  ["afin_4l","rf6l"],
+	  ["afin_3l","rf5l"],
+	  ["afin_4l","rf5l"],
+	  ["afin_1l","rf4l"],
+	  ["afin_2l","rf4l"],
+	  ["afin_1l","rf5l"],
+	  ["afin_2l","rf5l"],
+
+	  {"deformGroup":"lightbar_R"},
+	  {"breakGroup":"lightbar_breakr"},
+	  ["afin_3r","rf6r"],
+	  ["afin_4r","rf6r"],
+	  ["afin_3r","rf5r"],
+	  ["afin_4r","rf5r"],
+	  ["afin_1r","rf4r"],
+	  ["afin_2r","rf4r"],
+	  ["afin_1r","rf5r"],
+	  ["afin_2r","rf5r"],
+	  {"deformGroup":""},
+	  {"breakGroup":""},
+
+	  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0}
+	],
+
+	"quads": [
+	  ["id1:","id2:","id3:","id4:"],
+	  {"group":"audi6_antennafin"},
+	  {"dragCoef":14},
+	  ["afin_1l","afin_2l","afin_4l","afin_3l"],
+	  ["afin_2l","afin_1l","afin_1r","afin_2r"],
+	  ["afin_3l","afin_4l","afin_4r","afin_3r"],
+	  ["afin_3r","afin_4r","afin_2r","afin_1r"],
+	  ["afin_1r","afin_1l","afin_3l","afin_3r"],
+	  ["afin_2r","afin_2l","afin_4l","afin_4r"],
+
+	  {"group":""}
+	]
+},
+}

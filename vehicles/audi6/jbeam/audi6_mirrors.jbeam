@@ -1,0 +1,1267 @@
+{
+"audi6_mirror_finish": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Body Colored",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+
+         // PFL - show when mirror_FL == 0 AND no allroad mirror installed
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 0"}
+         ["audi6_mirror_L_pfl", ["audi6_mirror_L"]],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 0"}
+         ["audi6_mirror_R_pfl", ["audi6_mirror_R"]],
+
+         // Allroad - show when mirror_FL / mirror_FR == 2
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 2"}
+         ["audi6_mirror_L_allroad", ["audi6_mirror_L"]],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 2"}
+         ["audi6_mirror_R_allroad", ["audi6_mirror_R"]],
+
+         // FL normal - show when mirror_FL == 1 AND hasSideAssist == 0
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_L_fl", ["audi6_mirror_L"]],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_R_fl", ["audi6_mirror_R"]],
+
+         // FL side assist - show when mirror_FL == 1 AND hasSideAssist == 1
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_L_blis_fl", ["audi6_mirror_L"]],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_R_blis_fl", ["audi6_mirror_R"]],
+
+         {"disable":""}
+    ],
+},
+"audi6_mirror_finish_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+
+         // PFL - show when mirror_FL == 0 AND no allroad mirror installed
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 0"}
+         ["audi6_mirror_L_pfl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 0"}
+         ["audi6_mirror_R_pfl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+
+         // Allroad - show when mirror_FL / mirror_FR == 2
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 2"}
+         ["audi6_mirror_L_allroad", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 2"}
+         ["audi6_mirror_R_allroad", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+
+         // FL normal - show when mirror_FL == 1 AND hasSideAssist == 0
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_L_fl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_R_fl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+
+         // FL side assist - show when mirror_FL == 1 AND hasSideAssist == 1
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_L_blis_fl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_R_blis_fl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_aluminium"]]}],
+
+         {"disable":""}
+    ],
+},
+"audi6_mirror_finish_mattblack": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Matt Black",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_finish",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+
+         // PFL - show when mirror_FL == 0 AND no allroad mirror installed
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 0"}
+         ["audi6_mirror_L_pfl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 0"}
+         ["audi6_mirror_R_pfl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+
+         // Allroad - show when mirror_FL / mirror_FR == 2
+         {"disable":"$=($components.electrics.mirror_FL or 0) ~= 2"}
+         ["audi6_mirror_L_allroad", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+         {"disable":"$=($components.electrics.mirror_FR or 0) ~= 2"}
+         ["audi6_mirror_R_allroad", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+
+         // FL normal - show when mirror_FL == 1 AND hasSideAssist == 0
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_L_fl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 1)"}
+         ["audi6_mirror_R_fl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+
+         // FL side assist - show when mirror_FL == 1 AND hasSideAssist == 1
+         {"disable":"$=(($components.electrics.mirror_FL or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_L_blis_fl", ["audi6_mirror_L"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+         {"disable":"$=(($components.electrics.mirror_FR or 0) ~= 1) or (($components.electrics.hasSideAssist or 0) == 0)"}
+         ["audi6_mirror_R_blis_fl", ["audi6_mirror_R"], [],{"materialOverride":[["audi6_paint","audi6_mattblack"]]}],
+
+         {"disable":""}
+    ],
+},
+"audi6_mirror_L_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Left Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_L",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_mirrorsignal_L_bulb", ["led_modern_amber_3W"], [], "led_modern_amber_3W", "Mirror Signal L",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "signal_L",
+					"$nodeRef":"mi4l", "$nodeX":"mi3l", "$nodeY":"mi2l",
+					"$deformGroup":"mirrorsignal_L_break",
+					"$shadowEnable":1,
+					"$posX":0.993, "$posY":-0.629, "$posZ":1.066,
+					"$rotX":-179.93, "$rotY":-173.016, "$rotZ":43.76,
+				}
+		}],		
+		["audi6_puddlelight_L_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light L",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FL",
+					"$nodeRef":"mi4l", "$nodeX":"mi3l", "$nodeY":"mi2l",
+					"$deformGroup":"mirrorsignal_L_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FL": 1,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],    
+         ["audi6_mirrormain_L_fl", ["audi6_mirror_L"]],       
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_mirrorlight_glass_L_fl", ["audi6_mirror_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],		
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_mirrorlight_L_fl", ["audi6_mirror_L"]], 
+         {"deformGroup":""},
+		 
+		 {"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+         ["audi6_mirrormain_dimming_L_fl", ["audi6_mirror_L"]],        		 
+		 {"disable":""},	
+		 
+		 {"disable":"$=$components.electrics.hasSideAssist ~= 1"},	
+		 ["audi6_mirror_L_blislight_fl", ["audi6_mirror_L"]],
+		 {"disable":""},	
+		 
+		 {"disable":"$=$components.electrics.puddleLights ~= 1"},	
+         ["audi6_mirror_plastic_puddle_L_fl", ["audi6_mirror_L"]],	
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_puddlelightglass_L_fl", ["audi6_mirror_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],		
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_puddlelight_L_fl", ["audi6_mirror_L"]],		
+		 {"deformGroup":""},
+		 {"disable":"$=$components.electrics.puddleLights == 1"},	
+         ["audi6_mirror_plastic_L_fl", ["audi6_mirror_L"]],
+		 {"disable":""},	
+    ],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_L_fl","mi4l","mi3l","mi2l",{"refBaseTranslation":{"x":-0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":-15}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_L"},
+         ["mi1l", 0.8089, -0.6138, 1.1535],
+         ["mi2l", 0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3l", 0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4l", 1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5l", 0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6l", 0.827, -0.66, 1.0001],
+         ["mi7l", 0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4l", "mi7l", "mi6l", "d9l"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          {"deformLimitExpansion":1.1},
+          //l
+          ["mi1l","mi2l"],
+          ["mi1l","mi3l"],
+          ["mi1l","mi4l"],
+          ["mi1l","mi5l"],
+          ["mi2l","mi3l"],
+          ["mi2l","mi4l"],
+          ["mi2l","mi5l"],
+          ["mi3l","mi4l"],
+          ["mi3l","mi5l"],
+          ["mi4l","mi5l"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_L"},
+          ["mi1l","mi7l"],
+          ["mi2l","mi7l"],
+          ["mi3l","mi7l"],
+          ["mi4l","mi7l"],
+          ["mi5l","mi7l"],
+
+          ["mi1l","mi6l"],
+          ["mi2l","mi6l"],
+          ["mi3l","mi6l"],
+          ["mi4l","mi6l"],
+          ["mi5l","mi6l"],
+
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2l","d8l"],
+          ["mi4l","d8l"],
+          ["mi4l","d4l"],
+          ["mi4l","d5l"],
+
+          ["mi3l","d5l"],
+          ["mi5l","d5l"],
+
+          ["mi1l","d7l"],
+          ["mi2l","d7l"],
+          ["mi3l","d7l"],
+          ["mi4l","d7l"],
+          ["mi5l","d7l"],
+          {"breakGroupType":0},
+
+          ["mi2l", "d5l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d4l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d9l", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_L_break","deformationTriggerRatio":0.01},
+          ["mi6l","mi7l"],
+          ["mi6l","d10l"],
+          ["mi7l","d10l"],
+          ["mi6l","d4l"],
+          ["mi7l","d4l"],
+          ["mi6l","d7l"],
+          ["mi7l","d7l"],
+
+          ["mi6l","d8l"],
+          ["mi7l","d8l"],
+          ["mi6l","d5l"],
+          ["mi7l","d5l"],
+
+          ["mi6l", "d14l"],
+          ["mi7l", "d14l"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_L"},
+          ["d8l", "mi2l",{"boundZone":0.02}],
+          ["d8l", "mi4l",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_L"},
+            {"dragCoef":35},
+            ["mi1l","mi2l","mi3l"],
+            ["mi3l","mi2l","mi4l"],
+
+            ["mi2l","mi1l","mi5l"],
+            ["mi4l","mi2l","mi5l"],
+            ["mi3l","mi4l","mi5l"],
+            ["mi1l","mi3l","mi5l"],
+            {"group":""},
+    ],
+},
+"audi6_mirror_R_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Facelift Right Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_R",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_mirrorsignal_R_bulb", ["led_modern_amber_3W"], [], "led_modern_amber_3W", "Mirror Signal R",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "signal_R",
+					"$nodeRef":"mi4r", "$nodeX":"mi3r", "$nodeY":"mi2r",
+					"$deformGroup":"mirrorsignal_R_break",
+					"$shadowEnable":1,
+					"$posX":-0.993, "$posY":-0.629, "$posZ":1.066,
+					"$rotX":-179.93, "$rotY":-173.016, "$rotZ":-43.76,
+				}
+		}],		
+		["audi6_puddlelight_R_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light R",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FR",
+					"$nodeRef":"mi4r", "$nodeX":"mi3r", "$nodeY":"mi2r",
+					"$deformGroup":"mirrorsignal_R_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FR": 1,
+        },
+    },
+	"flexbodies": [
+		["mesh", "[group]:", "nonFlexMaterials"],
+		["audi6_mirrormain_R_fl", ["audi6_mirror_R"]],
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+		["audi6_mirrorlight_glass_R_fl", ["audi6_mirror_R"], [], {"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],
+		{"deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+		["audi6_mirrorlight_R_fl", ["audi6_mirror_R"]],
+		{"deformGroup":""},
+
+		{"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+		["audi6_mirrormain_dimming_R_fl", ["audi6_mirror_R"]],
+		{"disable":""},
+
+		{"disable":"$=$components.electrics.hasSideAssist ~= 1"},
+		["audi6_mirror_R_blislight_fl", ["audi6_mirror_R"]],
+		{"disable":""},
+
+		{"disable":"$=$components.electrics.puddleLights ~= 1"},
+		["audi6_mirror_plastic_puddle_R_fl", ["audi6_mirror_R"]],
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+		["audi6_puddlelightglass_R_fl", ["audi6_mirror_R"], [], {"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],
+		{"deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+		["audi6_puddlelight_R_fl", ["audi6_mirror_R"]],
+		{"deformGroup":""},
+		{"disable":"$=$components.electrics.puddleLights == 1"},
+		["audi6_mirror_plastic_R_fl", ["audi6_mirror_R"]],
+		{"disable":""},
+	],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_R_fl","mi4r","mi3r","mi2r",{"refBaseTranslation":{"x":0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":18}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_R"},
+         ["mi1r", -0.8089, -0.6138, 1.1535],
+         ["mi2r", -0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3r", -0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4r", -1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5r", -0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6r", -0.827, -0.66, 1.0001],
+         ["mi7r", -0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4r", "mi7r", "mi6r", "d9r"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          //r
+          {"deformLimitExpansion":1.1},
+          ["mi1r","mi2r"],
+          ["mi1r","mi3r"],
+          ["mi1r","mi4r"],
+          ["mi1r","mi5r"],
+          ["mi2r","mi3r"],
+          ["mi2r","mi4r"],
+          ["mi2r","mi5r"],
+          ["mi3r","mi4r"],
+          ["mi3r","mi5r"],
+          ["mi4r","mi5r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_R"},
+          ["mi1r","mi7r"],
+          ["mi2r","mi7r"],
+          ["mi3r","mi7r"],
+          ["mi4r","mi7r"],
+          ["mi5r","mi7r"],
+
+          ["mi1r","mi6r"],
+          ["mi2r","mi6r"],
+          ["mi3r","mi6r"],
+          ["mi4r","mi6r"],
+          ["mi5r","mi6r"],
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2r","d8r"],
+          ["mi4r","d8r"],
+          ["mi4r","d4r"],
+          ["mi4r","d5r"],
+
+          ["mi3r","d5r"],
+          ["mi5r","d5r"],
+
+          ["mi1r","d7r"],
+          ["mi2r","d7r"],
+          ["mi3r","d7r"],
+          ["mi4r","d7r"],
+          ["mi5r","d7r"],
+          {"breakGroupType":0},
+          ["mi2r", "d5r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d4r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d9r", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_R_break","deformationTriggerRatio":0.01},
+          ["mi6r","mi7r"],
+          ["mi6r","d10r"],
+          ["mi7r","d10r"],
+          ["mi6r","d4r"],
+          ["mi7r","d4r"],
+          ["mi6r","d7r"],
+          ["mi7r","d7r"],
+
+          ["mi6r","d8r"],
+          ["mi7r","d8r"],
+          ["mi6r","d5r"],
+          ["mi7r","d5r"],
+
+          ["mi6r", "d14r"],
+          ["mi7r", "d14r"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_R"},
+          ["d8r", "mi2r",{"boundZone":0.02}],
+          ["d8r", "mi4r",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_R"},
+            {"dragCoef":35},
+            ["mi2r","mi1r","mi3r"],
+            ["mi2r","mi3r","mi4r"],
+
+            ["mi1r","mi2r","mi5r"],
+            ["mi2r","mi4r","mi5r"],
+            ["mi4r","mi3r","mi5r"],
+            ["mi3r","mi1r","mi5r"],
+            {"group":""},
+    ],
+},
+"audi6_mirror_L_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Left Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_L",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_puddlelight_L_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light L",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FL",
+					"$nodeRef":"mi4l", "$nodeX":"mi3l", "$nodeY":"mi2l",
+					"$deformGroup":"mirrorsignal_L_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FL": 0,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],       
+		 {"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+         ["audi6_mirrormain_dimming_L_pfl", ["audi6_mirror_L"]],      
+		 {"disable":""},		 
+         ["audi6_mirrormain_L_pfl", ["audi6_mirror_L"]],   
+		 
+		 {"disable":"$=$components.electrics.puddleLights ~= 1"},	
+         ["audi6_mirror_plastic_puddle_L_pfl", ["audi6_mirror_L"]],	
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_puddlelightglass_L_pfl", ["audi6_mirror_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],		
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_puddlelight_L_pfl", ["audi6_mirror_L"]],		
+		 {"deformGroup":""},
+		 {"disable":"$=$components.electrics.puddleLights == 1"},	
+         ["audi6_mirror_plastic_L_pfl", ["audi6_mirror_L"]],
+		 {"disable":""},	
+    ],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_L_pfl","mi4l","mi3l","mi2l",{"refBaseTranslation":{"x":-0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":-15}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_L"},
+         ["mi1l", 0.8089, -0.6138, 1.1535],
+         ["mi2l", 0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3l", 0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4l", 1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5l", 0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6l", 0.827, -0.66, 1.0001],
+         ["mi7l", 0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4l", "mi7l", "mi6l", "d9l"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          {"deformLimitExpansion":1.1},
+          //l
+          ["mi1l","mi2l"],
+          ["mi1l","mi3l"],
+          ["mi1l","mi4l"],
+          ["mi1l","mi5l"],
+          ["mi2l","mi3l"],
+          ["mi2l","mi4l"],
+          ["mi2l","mi5l"],
+          ["mi3l","mi4l"],
+          ["mi3l","mi5l"],
+          ["mi4l","mi5l"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_L"},
+          ["mi1l","mi7l"],
+          ["mi2l","mi7l"],
+          ["mi3l","mi7l"],
+          ["mi4l","mi7l"],
+          ["mi5l","mi7l"],
+
+          ["mi1l","mi6l"],
+          ["mi2l","mi6l"],
+          ["mi3l","mi6l"],
+          ["mi4l","mi6l"],
+          ["mi5l","mi6l"],
+
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2l","d8l"],
+          ["mi4l","d8l"],
+          ["mi4l","d4l"],
+          ["mi4l","d5l"],
+
+          ["mi3l","d5l"],
+          ["mi5l","d5l"],
+
+          ["mi1l","d7l"],
+          ["mi2l","d7l"],
+          ["mi3l","d7l"],
+          ["mi4l","d7l"],
+          ["mi5l","d7l"],
+          {"breakGroupType":0},
+
+          ["mi2l", "d5l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d4l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d9l", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_L_break","deformationTriggerRatio":0.01},
+          ["mi6l","mi7l"],
+          ["mi6l","d10l"],
+          ["mi7l","d10l"],
+          ["mi6l","d4l"],
+          ["mi7l","d4l"],
+          ["mi6l","d7l"],
+          ["mi7l","d7l"],
+
+          ["mi6l","d8l"],
+          ["mi7l","d8l"],
+          ["mi6l","d5l"],
+          ["mi7l","d5l"],
+
+          ["mi6l", "d14l"],
+          ["mi7l", "d14l"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_L"},
+          ["d8l", "mi2l",{"boundZone":0.02}],
+          ["d8l", "mi4l",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_L"},
+            {"dragCoef":35},
+            ["mi1l","mi2l","mi3l"],
+            ["mi3l","mi2l","mi4l"],
+
+            ["mi2l","mi1l","mi5l"],
+            ["mi4l","mi2l","mi5l"],
+            ["mi3l","mi4l","mi5l"],
+            ["mi1l","mi3l","mi5l"],
+            {"group":""},
+    ],
+},
+"audi6_mirror_L_allroad": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Allroad Left Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_L",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_puddlelight_L_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light L",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FL",
+					"$nodeRef":"mi4l", "$nodeX":"mi3l", "$nodeY":"mi2l",
+					"$deformGroup":"mirrorsignal_L_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FL": 2,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],       
+		 {"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+         ["audi6_mirrormain_dimming_L_allroad", ["audi6_mirror_L"]],      
+		 {"disable":""},		 
+         ["audi6_mirrormain_L_allroad", ["audi6_mirror_L"]],   
+		 
+		 {"disable":"$=$components.electrics.puddleLights ~= 1"},	
+         ["audi6_mirror_plastic_puddle_L_allroad", ["audi6_mirror_L"]],	
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_puddlelightglass_L_allroad", ["audi6_mirror_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],		
+		 {"deformGroup":"mirrorsignal_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_puddlelight_L_allroad", ["audi6_mirror_L"]],		
+		 {"deformGroup":""},
+		 {"disable":"$=$components.electrics.puddleLights == 1"},	
+         ["audi6_mirror_plastic_L_allroad", ["audi6_mirror_L"]],
+		 {"disable":""},	
+    ],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_L_allroad","mi4l","mi3l","mi2l",{"refBaseTranslation":{"x":-0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":-15}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_L"},
+         ["mi1l", 0.8089, -0.6138, 1.1535],
+         ["mi2l", 0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3l", 0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4l", 1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5l", 0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6l", 0.827, -0.66, 1.0001],
+         ["mi7l", 0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4l", "mi7l", "mi6l", "d9l"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          {"deformLimitExpansion":1.1},
+          //l
+          ["mi1l","mi2l"],
+          ["mi1l","mi3l"],
+          ["mi1l","mi4l"],
+          ["mi1l","mi5l"],
+          ["mi2l","mi3l"],
+          ["mi2l","mi4l"],
+          ["mi2l","mi5l"],
+          ["mi3l","mi4l"],
+          ["mi3l","mi5l"],
+          ["mi4l","mi5l"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_L"},
+          ["mi1l","mi7l"],
+          ["mi2l","mi7l"],
+          ["mi3l","mi7l"],
+          ["mi4l","mi7l"],
+          ["mi5l","mi7l"],
+
+          ["mi1l","mi6l"],
+          ["mi2l","mi6l"],
+          ["mi3l","mi6l"],
+          ["mi4l","mi6l"],
+          ["mi5l","mi6l"],
+
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2l","d8l"],
+          ["mi4l","d8l"],
+          ["mi4l","d4l"],
+          ["mi4l","d5l"],
+
+          ["mi3l","d5l"],
+          ["mi5l","d5l"],
+
+          ["mi1l","d7l"],
+          ["mi2l","d7l"],
+          ["mi3l","d7l"],
+          ["mi4l","d7l"],
+          ["mi5l","d7l"],
+          {"breakGroupType":0},
+
+          ["mi2l", "d5l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d4l", {"beamSpring":0,"beamDamp":30}],
+          ["mi2l", "d9l", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_L_break","deformationTriggerRatio":0.01},
+          ["mi6l","mi7l"],
+          ["mi6l","d10l"],
+          ["mi7l","d10l"],
+          ["mi6l","d4l"],
+          ["mi7l","d4l"],
+          ["mi6l","d7l"],
+          ["mi7l","d7l"],
+
+          ["mi6l","d8l"],
+          ["mi7l","d8l"],
+          ["mi6l","d5l"],
+          ["mi7l","d5l"],
+
+          ["mi6l", "d14l"],
+          ["mi7l", "d14l"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_L"},
+          ["d8l", "mi2l",{"boundZone":0.02}],
+          ["d8l", "mi4l",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_L"},
+            {"dragCoef":35},
+            ["mi1l","mi2l","mi3l"],
+            ["mi3l","mi2l","mi4l"],
+
+            ["mi2l","mi1l","mi5l"],
+            ["mi4l","mi2l","mi5l"],
+            ["mi3l","mi4l","mi5l"],
+            ["mi1l","mi3l","mi5l"],
+            {"group":""},
+    ],
+},
+"audi6_mirror_R_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Right Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_R",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_puddlelight_R_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light R",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FR",
+					"$nodeRef":"mi4r", "$nodeX":"mi3r", "$nodeY":"mi2r",
+					"$deformGroup":"mirrorsignal_R_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FR": 0,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],     
+		 {"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+         ["audi6_mirrormain_dimming_R_pfl", ["audi6_mirror_R"]],      
+		 {"disable":""},		 
+         ["audi6_mirrormain_R_pfl", ["audi6_mirror_R"]],   
+		 
+		{"disable":"$=$components.electrics.puddleLights ~= 1"},
+		["audi6_mirror_plastic_puddle_R_pfl", ["audi6_mirror_R"]],
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+		["audi6_puddlelightglass_R_pfl", ["audi6_mirror_R"], [], {"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],
+		{"deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+		["audi6_puddlelight_R_pfl", ["audi6_mirror_R"]],
+		{"deformGroup":""},
+		{"disable":"$=$components.electrics.puddleLights == 1"},
+		["audi6_mirror_plastic_R_pfl", ["audi6_mirror_R"]],
+		{"disable":""},
+    ],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_R_pfl","mi4r","mi3r","mi2r",{"refBaseTranslation":{"x":0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":18}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_R"},
+         ["mi1r", -0.8089, -0.6138, 1.1535],
+         ["mi2r", -0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3r", -0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4r", -1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5r", -0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6r", -0.827, -0.66, 1.0001],
+         ["mi7r", -0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4r", "mi7r", "mi6r", "d9r"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          //r
+          {"deformLimitExpansion":1.1},
+          ["mi1r","mi2r"],
+          ["mi1r","mi3r"],
+          ["mi1r","mi4r"],
+          ["mi1r","mi5r"],
+          ["mi2r","mi3r"],
+          ["mi2r","mi4r"],
+          ["mi2r","mi5r"],
+          ["mi3r","mi4r"],
+          ["mi3r","mi5r"],
+          ["mi4r","mi5r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_R"},
+          ["mi1r","mi7r"],
+          ["mi2r","mi7r"],
+          ["mi3r","mi7r"],
+          ["mi4r","mi7r"],
+          ["mi5r","mi7r"],
+
+          ["mi1r","mi6r"],
+          ["mi2r","mi6r"],
+          ["mi3r","mi6r"],
+          ["mi4r","mi6r"],
+          ["mi5r","mi6r"],
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2r","d8r"],
+          ["mi4r","d8r"],
+          ["mi4r","d4r"],
+          ["mi4r","d5r"],
+
+          ["mi3r","d5r"],
+          ["mi5r","d5r"],
+
+          ["mi1r","d7r"],
+          ["mi2r","d7r"],
+          ["mi3r","d7r"],
+          ["mi4r","d7r"],
+          ["mi5r","d7r"],
+          {"breakGroupType":0},
+          ["mi2r", "d5r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d4r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d9r", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_R_break","deformationTriggerRatio":0.01},
+          ["mi6r","mi7r"],
+          ["mi6r","d10r"],
+          ["mi7r","d10r"],
+          ["mi6r","d4r"],
+          ["mi7r","d4r"],
+          ["mi6r","d7r"],
+          ["mi7r","d7r"],
+
+          ["mi6r","d8r"],
+          ["mi7r","d8r"],
+          ["mi6r","d5r"],
+          ["mi7r","d5r"],
+
+          ["mi6r", "d14r"],
+          ["mi7r", "d14r"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_R"},
+          ["d8r", "mi2r",{"boundZone":0.02}],
+          ["d8r", "mi4r",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_R"},
+            {"dragCoef":35},
+            ["mi2r","mi1r","mi3r"],
+            ["mi2r","mi3r","mi4r"],
+
+            ["mi1r","mi2r","mi5r"],
+            ["mi2r","mi4r","mi5r"],
+            ["mi4r","mi3r","mi5r"],
+            ["mi3r","mi1r","mi5r"],
+            {"group":""},
+    ],
+},
+"audi6_mirror_R_allroad": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pre-Facelift Allroad Right Mirror",
+        "value":180,
+    },
+    "slotType" : "audi6_mirror_R",
+	"slots2": [
+	    ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+		["audi6_puddlelight_R_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Puddle Light R",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "puddlelight_FR",
+					"$nodeRef":"mi4r", "$nodeX":"mi3r", "$nodeY":"mi2r",
+					"$deformGroup":"mirrorsignal_R_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.897, "$posY":-0.628, "$posZ":1.032,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $puddleLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.4
+				}
+		}],		
+	],
+	"components": {
+        "electrics": {
+			"mirror_FR": 2,
+        },
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],     
+		 {"disable":"$=$components.electrics.autoDimmingMirrors ~= 1"},
+         ["audi6_mirrormain_dimming_R_allroad", ["audi6_mirror_R"]],      
+		 {"disable":""},		 
+         ["audi6_mirrormain_R_allroad", ["audi6_mirror_R"]],   
+		 
+		{"disable":"$=$components.electrics.puddleLights ~= 1"},
+		["audi6_mirror_plastic_puddle_R_allroad", ["audi6_mirror_R"]],
+		{"deformGroup":"mirrorsignal_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+		["audi6_puddlelightglass_R_allroad", ["audi6_mirror_R"], [], {"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.2}],
+		{"deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+		["audi6_puddlelight_R_allroad", ["audi6_mirror_R"]],
+		{"deformGroup":""},
+		{"disable":"$=$components.electrics.puddleLights == 1"},
+		["audi6_mirror_plastic_R_allroad", ["audi6_mirror_R"]],
+		{"disable":""},
+    ],
+    "mirrors": [
+        ["mesh", "idRef:", "id1:", "id2:"],
+        ["audi6_mirrormain_R_allroad","mi4r","mi3r","mi2r",{"refBaseTranslation":{"x":0.1,"y":-0.02,"z":0.05},"baseRotationGlobal":{"x":0,"y":0,"z":18}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--MIRROR--
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.3},
+         {"selfCollision":true},
+         {"collision":true},
+         {"frictionCoef":1},
+         {"group":"audi6_mirror_R"},
+         ["mi1r", -0.8089, -0.6138, 1.1535],
+         ["mi2r", -0.9943, -0.5497, 1.1434,{"nodeWeight":0.8}],
+         ["mi3r", -0.8084, -0.6132, 1.0186,{"selfCollision":false}],
+         ["mi4r", -1.0201, -0.5397, 1.0482,{"nodeWeight":0.8}],
+         ["mi5r", -0.936, -0.6674, 1.0763],
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["mi6r", -0.827, -0.66, 1.0001],
+         ["mi7r", -0.8227, -0.6541, 1.1399],
+    ],
+    "torsionbars":[
+       ["id1:", "id2:", "id3:", "id4:"],
+       //mirror hinge
+       {"spring":300, "damp":5, "deform":10, "strength":10000},
+       ["mi4r", "mi7r", "mi6r", "d9r"],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--MIRRORS--
+          {"beamSpring":401000,"beamDamp":30},
+          {"beamDeform":3000,"beamStrength":62500},
+          //mirror
+          //r
+          {"deformLimitExpansion":1.1},
+          ["mi1r","mi2r"],
+          ["mi1r","mi3r"],
+          ["mi1r","mi4r"],
+          ["mi1r","mi5r"],
+          ["mi2r","mi3r"],
+          ["mi2r","mi4r"],
+          ["mi2r","mi5r"],
+          ["mi3r","mi4r"],
+          ["mi3r","mi5r"],
+          ["mi4r","mi5r"],
+
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamDeform":3000,"beamStrength":7000},
+          {"breakGroup":"mirror_R"},
+          ["mi1r","mi7r"],
+          ["mi2r","mi7r"],
+          ["mi3r","mi7r"],
+          ["mi4r","mi7r"],
+          ["mi5r","mi7r"],
+
+          ["mi1r","mi6r"],
+          ["mi2r","mi6r"],
+          ["mi3r","mi6r"],
+          ["mi4r","mi6r"],
+          ["mi5r","mi6r"],
+
+          {"beamSpring":0,"beamDamp":60},
+          {"breakGroupType":1},
+          ["mi2r","d8r"],
+          ["mi4r","d8r"],
+          ["mi4r","d4r"],
+          ["mi4r","d5r"],
+
+          ["mi3r","d5r"],
+          ["mi5r","d5r"],
+
+          ["mi1r","d7r"],
+          ["mi2r","d7r"],
+          ["mi3r","d7r"],
+          ["mi4r","d7r"],
+          ["mi5r","d7r"],
+          {"breakGroupType":0},
+          ["mi2r", "d5r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d4r", {"beamSpring":0,"beamDamp":30}],
+          ["mi2r", "d9r", {"beamSpring":0,"beamDamp":30}],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"beamSpring":301000,"beamDamp":30},
+          {"beamDeform":22000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mirrorsignal_R_break","deformationTriggerRatio":0.01},
+          ["mi6r","mi7r"],
+          ["mi6r","d10r"],
+          ["mi7r","d10r"],
+          ["mi6r","d4r"],
+          ["mi7r","d4r"],
+          ["mi6r","d7r"],
+          ["mi7r","d7r"],
+
+          ["mi6r","d8r"],
+          ["mi7r","d8r"],
+          ["mi6r","d5r"],
+          ["mi7r","d5r"],
+
+          ["mi6r", "d14r"],
+          ["mi7r", "d14r"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          //mirror detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.04,"beamShortBound":0.04},
+          {"beamPrecompression":1.0,"beamSpring":6270,"beamDamp":30,"beamDeform":10000,"beamStrength":"FLT_MAX"},
+          {"breakGroup":"mirror_R"},
+          ["d8r", "mi2r",{"boundZone":0.02}],
+          ["d8r", "mi4r",{"boundZone":0.02}],
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right mirror
+            {"groundModel":"plastic"},
+            {"group":"audi6_mirror_R"},
+            {"dragCoef":35},
+            ["mi2r","mi1r","mi3r"],
+            ["mi2r","mi3r","mi4r"],
+
+            ["mi1r","mi2r","mi5r"],
+            ["mi2r","mi4r","mi5r"],
+            ["mi4r","mi3r","mi5r"],
+            ["mi3r","mi1r","mi5r"],
+            {"group":""},
+    ],
+},
+}

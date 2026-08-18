@@ -1,0 +1,599 @@
+{
+"audi6_chmsl_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Brake Light",
+        "value":340,
+    },
+    "slotType" : "audi6_chmsl_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_chmslglass_avant", ["audi6_trunk"]],
+         ["audi6_chmsl_avant", ["audi6_trunk"]],
+    ],
+    "slots2": [
+        ["name",                 "allowTypes",             "denyTypes", "default",                       "description"],
+        ["audi6_tailgate_chmsl_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "CHMSL",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "brakelights",
+          "$nodeRef":"t1r", "$nodeX":"t1l", "$nodeY":"t2rr",
+          "$deformGroup":"tailgateglass_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.00, "$posY":1.876, "$posZ":1.407,
+          "$rotX":10, "$rotY":0, "$rotZ":0
+        }
+        }],
+    ],
+},
+"audi6_badge_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Audi Badge",
+        "value":20,
+    },
+    "slotType" : "audi6_badge_avant",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_badge_avant", ["audi6_badge_R"]],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+        {"nodeMaterial":"|NM_METAL"},
+        {"frictionCoef":0.5},
+        //main
+        {"collision":true},
+        {"selfCollision":true},
+        {"nodeWeight":0.4},
+        {"group":"audi6_badge_R"},
+        ["rbadge_f1", -0.0610,2.4151,0.9908],
+        ["rbadge_f2", 0.0606,2.4143,0.9916],
+        ["rbadge_f3", 0.0010,2.4508,0.879],
+
+        //rigidifier
+        {"group":""},
+        ["rbadge_f5", 0.0031,2.4297,0.8903, {"collision":false,"selfCollision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":701000,"beamDamp":10},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"badgeglass_F_break", "deformationTriggerRatio":0.1},
+          //main shape
+          ["rbadge_f1", "rbadge_f2"],
+          ["rbadge_f2", "rbadge_f3"],
+          //["rbadge_f3", "rbadge_f4r"],
+
+          //crossing
+          ["rbadge_f1", "rbadge_f3"],
+          //["rbadge_f1", "rbadge_f4r"],
+
+          //rigidifier
+          {"beamSpring":1051000,"beamDamp":80},
+          {"beamDeform":13000,"beamStrength":"FLT_MAX"},
+          ["rbadge_f5", "rbadge_f1"],
+          ["rbadge_f5", "rbadge_f2"],
+          ["rbadge_f5", "rbadge_f3"],
+          //["rbadge_f5", "rbadge_f4r"],
+
+          //attach
+          {"beamSpring":501000,"beamDamp":10},
+          {"beamDeform":13000,"beamStrength":3000},
+          {"breakGroup":"badge_R"},
+          
+          ["t3r", "rbadge_f1"],
+          ["t3r", "rbadge_f2"],
+          ["t3r", "rbadge_f3"],
+
+          ["t3", "rbadge_f1"],
+          ["t3", "rbadge_f2"],
+          ["t3", "rbadge_f3"],
+
+          ["t3l", "rbadge_f1"],
+          ["t3l", "rbadge_f2"],
+          ["t3l", "rbadge_f3"],
+
+          ["t4r", "rbadge_f1"],
+          ["t4r", "rbadge_f2"],
+          ["t4r", "rbadge_f3"],
+
+          ["t4", "rbadge_f1"],
+          ["t4", "rbadge_f2"],
+          ["t4", "rbadge_f3"],
+
+          ["t4l", "rbadge_f1"],
+          ["t4l", "rbadge_f2"],
+          ["t4l", "rbadge_f3"],
+
+          //body
+          {"beamType":"|SUPPORT"},
+
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformGroup":""}
+          {"breakGroup":""},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            {"group":"audi6_badge_R"},
+
+            ["rbadge_f1", "rbadge_f2", "rbadge_f3"],
+    ],
+},
+"audi6_tailgatebottom_eu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"EUDM Tailgate Bottom Segment",
+        "value":340,
+    },
+    "slotType" : "audi6_tailgatebottom",
+    "components": {
+          "bodySpecifics": {
+			  "trunkType":2,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+	    ["audi6_lettering_model","", "Model Lettering"],
+		["audi6_lettering_eng","", "Engine Lettering"],
+		["audi6_lettering_quattro","", "Quattro Lettering"],
+		["audi6_licenseplate_R_EU","audi6_licenseplate_R_EU", "Rear License Plate"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_tailgate_eu_avant", ["audi6_trunk"]],
+    ],
+},
+"audi6_tailgatebottom_us": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"USDM Tailgate Bottom Segment",
+        "value":340,
+    },
+    "slotType" : "audi6_tailgatebottom",
+    "components": {
+          "bodySpecifics": {
+			  "trunkType":2,
+          },
+    },
+    "slots": [
+        ["type", "default", "description"],
+	    ["audi6_lettering_model","", "Model Lettering"],
+		["audi6_lettering_eng","", "Engine Lettering"],
+		["audi6_lettering_quattro","", "Quattro Lettering"],
+		["audi6_licenseplate_R_US","audi6_licenseplate_R_US", "Rear License Plate"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_tailgate_us_avant", ["audi6_trunk"]],
+    ],
+},
+"audi6_tailgate_avant": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tailgate",
+        "value":410,
+    },
+    "slotType" : "audi6_tailgate_avant",
+	"components": {
+        "electrics": {
+			"hasTailgate": 1,
+        },
+    },
+	"slots2": [
+        ["name",                      "allowTypes",                  "denyTypes", "default",                    "description"],
+        ["audi6_tailgateglass_avant", ["audi6_tailgateglass_avant"], [],          "audi6_tailgateglass_avant",  "Tailgate Glass"],
+        ["audi6_badge_avant",         ["audi6_badge_avant"],         [],          "audi6_badge_avant",          "Tailgate Badge"],
+        ["audi6_chmsl_avant",         ["audi6_chmsl_avant"],         [],          "audi6_chmsl_avant",          "Brake Light",              {"coreSlot":true}],
+        ["audi6_tailgatebottom",      ["audi6_tailgatebottom"],      [],          "audi6_tailgatebottom_eu",    "Tailgate Bottom Segment",  {"coreSlot":true}],
+        ["audi6_trunklight_L_avant",  ["audi6_trunklight_L_avant"],  [],          "audi6_trunklight_L_avant",   "Left Trunk Light"],
+        ["audi6_trunklight_R_avant",  ["audi6_trunklight_R_avant"],  [],          "audi6_trunklight_R_avant",   "Right Trunk Light"],
+		//plate lights
+		["audi6_platelight_R_bulb",   ["incandescent_white_21W"],    [],          "incandescent_white_21W", "Platelight R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam_s",
+          "$nodeRef":"t4r", "$nodeX":"t4rr", "$nodeY":"t3r",
+          "$deformGroup":"tailgateglass_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.106, "$posY":2.406, "$posZ":0.889,
+          "$rotX":90, "$rotY":180, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":0.2
+        }
+        }],		
+		["audi6_platelight_L_bulb",   ["incandescent_white_21W"],    [],          "incandescent_white_21W", "Platelight L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam_s",
+          "$nodeRef":"t4l", "$nodeX":"t4ll", "$nodeY":"t3l",
+          "$deformGroup":"tailgateglass_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.106, "$posY":2.406, "$posZ":0.889,
+          "$rotX":90, "$rotY":180, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":0.2
+        }
+        }],
+		//bootlight
+		["audi6_bootlight_R_bulb",   ["incandescent_white_21W"],    [],          "incandescent_white_21W", "Bootlight R",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "doorlight_trunk_s",
+          "$nodeRef":"t4r", "$nodeX":"t4rr", "$nodeY":"t3r",
+          "$deformGroup":"tailgateglass_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":-0.365, "$posY":2.351, "$posZ":0.692,
+          "$rotX":-177, "$rotY":-180, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1.25
+        }
+        }],		
+		["audi6_bootlight_L_bulb",   ["incandescent_white_21W"],    [],          "incandescent_white_21W", "Bootlight L",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "doorlight_trunk_s",
+          "$nodeRef":"t4l", "$nodeX":"t4ll", "$nodeY":"t3l",
+          "$deformGroup":"tailgateglass_break",
+          "$shadowEnable":1,
+          "$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+          "$posX":0.365, "$posY":2.351, "$posZ":0.692,
+          "$rotX":-177, "$rotY":-180, "$rotZ":0,
+		  "$lightOuterAngle":179,
+          "$lightRange":1.25
+        }
+        }],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_tailgate_hinges_avant", ["audi6_trunk"]],
+		
+        ["audi6_tailgate_struts_avant", ["audi6_trunk_strut"]],
+
+        ["audi6_tailgate_carpet_avant", ["audi6_trunk"]],
+        ["audi6_tailgate_carpetglass_avant", ["audi6_trunk"]],
+        ["audi6_tailgate_carpetlight_avant", ["audi6_trunk"]],
+        ["audi6_tailgate_spoiler_avant", ["audi6_trunk"]],
+		
+        ["audi6_tailgateglass_frame_avant", ["audi6_trunk"]],
+
+        ["audi6_licenseplate_lightframe_avant", ["audi6_trunk"]],
+        ["audi6_licenseplate_lightglass_avant", ["audi6_trunk"]],
+        ["audi6_licenseplate_light_avant", ["audi6_trunk"]],
+		{"disable":"$=($components.electrics.reverseCameraMesh or 0) ~= 1"}
+        ["audi6_revcamlens_avant", ["audi6_trunk"]],
+		{"disable":""}
+    ],
+    "glowMap":{
+            "audi6_doorlight_trunk": {"simpleFunction":"doorlight_trunk_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+    },
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"trunkCoupler"}],
+    ]
+    "trunkCoupler":{
+        "groupType": "autoCoupling",
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["r7",      "t7",        40000,                     0.01,                   0.005,                      0.2,                 0.1,                   "tailgate_latch"]
+        ]
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["r5"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Trunk>modern_02_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Trunk>90s_04_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 130,
+        "openForceDuration": 1.5,
+        "closeForceMagnitude": 200,
+        "closeForceDuration": 1.5,
+    }
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["tailgate", "t4","t4r","t3", "box", {"x":0.1, "y":0.08, "z":0.08}, {"x":0, "y":0, "z":-3}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.05, "y":0.18, "z":-0.04}],
+        ["tailgate_int", "t4","t4r","t3", "box", {"x":0.1200, "y":0.0582, "z":0.0417}, {"x":16.392, "y":0.000, "z":357.000}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":-0.0600, "y":0.0291, "z":0.0390}],
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_trunk"],
+        ["audi6_lock_trunk"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["tailgate", "action0", "audi6_trunk"],
+        ["tailgate_int", "action0", "trunk"],
+    ],
+    "nodes": [
+        ["id", "posX", "posY", "posZ"],
+         //--TAILGATE--
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_trunk"},
+         {"nodeWeight":1.3},
+         ["t1r", -0.5594, 1.8341, 1.3894],
+         ["t1", 0, 1.91, 1.44],
+         ["t1l", 0.5594, 1.8341, 1.3894],
+
+         ["t2rr", -0.5896, 2.0968, 1.2095],
+         ["t2ll", 0.5896, 2.0968, 1.2095],
+
+         ["t3rr", -0.6107, 2.2678, 1.0556, {"group":["audi6_trunk","audi6_trunk_strut"]}],
+         {"selfCollision":false},
+         ["t3r", -0.3267, 2.3284, 1.0596],
+         ["t3", -0.0067, 2.3434, 1.0606],
+         ["t3l", 0.3133, 2.3284, 1.0596],
+         {"selfCollision":true},
+         ["t3ll", 0.5993, 2.2678, 1.0556, {"group":["audi6_trunk","audi6_trunk_strut"]}],
+
+         {"nodeWeight":1.5},
+         ["t4rr", -0.5458, 2.4043, 0.66],
+         ["t4r", -0.30, 2.4345, 0.66],
+         ["t4", 0.0, 2.4445, 0.66],
+         ["t4l", 0.30, 2.4345, 0.66],
+         ["t4ll", 0.5458, 2.4043, 0.66],
+
+         {"collision":false},
+         {"selfCollision":false},
+         {"nodeWeight":2},
+         ["t5", 0, 2.17, 0.83],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.6},
+         ["t7", -0.0, 2.43, 0.58],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TAILGATE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1201000,"beamDamp":100},
+          {"beamDeform":32550,"beamStrength":"FLT_MAX"},
+          //tailgate main shape
+          {"deformLimitExpansion":1.1},
+          {"deformationTriggerRatio":0.05},
+          
+          ["t3rr","t3r"],
+          ["t4rr","t4r"],
+          ["t3rr","t4rr"],
+          ["t3r","t4r"],
+          
+          ["t3l","t3ll"],
+          ["t4l","t4ll"],
+          ["t3l","t4l"],
+          ["t3ll","t4ll"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+          ["t1r","t1"],
+          ["t1","t1l"],
+          ["t1r","t2rr"],
+          ["t1l","t2ll"],
+          ["t3r","t3"],
+          ["t3l","t3"],
+          ["t2rr","t3rr"],
+          ["t2ll","t3ll"],
+          ["t4r","t4"],
+          ["t4l","t4"],
+          ["t3","t4"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":14550,"beamStrength":"FLT_MAX"},
+          
+          ["t4rr","t3r"],
+          ["t4r","t3rr"],
+          
+          ["t4l","t3ll"],
+          ["t4ll","t3l"],
+          {"deformGroup":""},
+          ["t2rr","t3r"],
+          ["t2ll","t3l"],
+          ["t4r","t3"],
+          ["t4","t3r"],
+          ["t4l","t3"],
+          ["t4","t3l"],
+
+          //rigids
+          {"beamSpring":801000,"beamDamp":120},
+          {"beamDeform":5550,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"tailgateglass_break", "deformationTriggerRatio":0.02},
+          ["t1r","t1l"],
+          ["t1r","t3rr"],
+          ["t1r","t3r"],
+          ["t1l","t3l"],
+          ["t1l","t3ll"],
+          ["t2rr","t4rr"],
+          ["t2ll","t4ll"],
+          
+          ["t4rr","t4"],
+          ["t3rr","t3"],
+          
+          ["t4","t4ll"],
+          ["t3","t3ll"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+          ["t3r","t3l"],
+          ["t4r","t4l"],
+          ["t1","t2rr"],
+          ["t1","t2ll"],
+
+          //rigidifier
+          {"beamSpring":1751000,"beamDamp":150},
+          {"beamDeform":5000,"beamStrength":"FLT_MAX"},
+          {"deformationTriggerRatio":0.05},
+          ["t1r","t5"],
+          ["t1","t5", {"beamDeform":10000}],
+          ["t1l","t5"],
+          ["t2rr","t5"],
+          ["t2ll","t5"],
+          
+          ["t3rr","t5"],
+          ["t3r","t5"],
+          ["t4rr","t5"],
+          ["t4r","t5"],
+          
+          ["t3l","t5"],
+          ["t3ll","t5"],
+          ["t4l","t5"],
+          ["t4ll","t5"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+          ["t3","t5"],
+          ["t4","t5"],
+
+          //latch node
+          ["t7", "t3"],
+          ["t7", "t3r"],
+          ["t7", "t3l"],
+          ["t7", "t4"],
+          ["t7", "t4r"],
+          ["t7", "t4l"],
+          ["t7", "t5"],
+
+          //tailgate hinge
+          {"beamSpring":2001000,"beamDamp":120},
+          {"beamDeform":18000,"beamStrength":44000},
+          {"breakGroup":"tailgatehinge_R"},
+          
+          ["t1r","rf6r"],
+          ["t1r","rf6r"],
+          ["t1","rf6l"],
+          ["t1","rf6l"],
+          ["t2ll","rf6l"],
+          ["t2rr","rf6r"],
+          ["t5","rf6r"],
+
+          {"breakGroup":"tailgatehinge_L"},
+          
+          ["t1l","rf6l"],
+          ["t1l","rf6l"],
+          ["t1","rf6r"],
+          ["t1","rf6r"],
+          ["t2rr","rf6r"],
+          ["t2ll","rf6l"],
+          ["t5","rf6l"],
+          {"deformGroup":""},
+          {"breakGroup":""},
+
+          //tailgate latch
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":2001000,"beamDamp":120},
+          {"beamDeform":9000,"beamStrength":22000},
+          {"breakGroup":"tailgatelatch"},
+          //["t4","r7"],
+          //["t4r","r7"],
+          //["t4l","r7"],
+          //["t4r","r7rr"],
+          //["t4","r7rr"],
+          //["t4","r7ll"],
+          //["t4l","r7ll"],
+          //["t5","r7rr"],
+          //["t5","r7"],
+          //["t5","r7ll"],
+          {"breakGroup":""},
+
+          //pop open
+          {"breakGroupType":1},
+          {"beamType":"|SUPPORT", "beamLongBound":4},
+          {"beamSpring":7000,"beamDamp":200},
+          {"beamDeform":4000,"beamStrength":10000},
+          {"beamPrecompression":1.05},
+          ["t4l", "r6", {"breakGroup":"tailgatehinge_R"}],
+          ["t4r", "r6", {"breakGroup":"tailgatehinge_L"}],
+
+          //gas struts
+          {"breakGroupType":1},
+          {"beamSpring":400,"beamDamp":500},
+          {"beamDeform":4000,"beamStrength":10000},
+          {"beamPrecompression":5.5},
+          ["p12r","t3rr", {"breakGroup":"tailgatehinge_R"}],
+          ["p12l","t3ll", {"breakGroup":"tailgatehinge_L"}],
+          {"beamPrecompression":1},
+          {"breakGroupType":0},
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          ["t3rr","r3rr", {"breakGroup":"tailgatehinge_R"}],
+          ["t3ll","r3ll", {"breakGroup":"tailgatehinge_L"}],
+          {"breakGroup":""},
+
+          //tailgate support beams
+          {"beamType":"|SUPPORT", "beamLongBound":16},
+          {"beamSpring":1001000,"beamDamp":50},
+          {"beamDeform":7500,"beamStrength":230000},
+          {"breakGroup":"tailgate_supportBeams"},
+          ["t3rr","q4r", {"beamLongBound":20}],
+          ["t3ll","q4l", {"beamLongBound":20}],
+
+          ["t2rr","p11r"],
+          ["t2ll","p11l"],
+          ["t2rr","p12r"],
+          ["t2ll","p12l"],
+
+          ["t2rr","rf6r"],
+          ["t2ll","rf6l"],
+
+          ["t3rr","q9r"],
+          ["t3ll","q9l"],
+
+          ["t4r","q9r"],
+          ["t4l","q9l"],
+
+          ["t4rr","r4rr"],
+          ["t4ll","r4ll"],
+
+          ["t4rr","r3rr"],
+          ["t4ll","r3ll"],
+
+          ["t3","r7"],
+          ["t3r","r7"],
+          ["t3l","r7"],
+          ["t3r","r7rr"],
+          ["t3l","r7ll"],
+
+          {"beamPrecompression":0.7},
+          ["t1r","rf5r"],
+          ["t1l","rf5l"],
+          ["t1","rf5"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailgate
+            {"groundModel":"metal"},
+            {"group":"audi6_trunk"},
+            {"dragCoef":3.5},
+            ["t1","t1l","t2ll"],
+            ["t1","t2ll","t2rr"],
+            ["t1","t2rr","t1r"],
+            ["t2ll","t3ll","t3l"],
+            ["t2ll","t3l","t3"],
+            ["t2ll","t3","t2rr"],
+            ["t2rr","t3","t3r"],
+            ["t2rr","t3r","t3rr"],
+
+            {"dragCoef":10.5},
+            ["t3ll","t4ll","t4l"],
+            ["t3ll","t4l","t3l"],
+            ["t3l","t4","t3"],
+            ["t3l","t4l","t4"],
+            ["t4r","t3r","t4"],
+            ["t3r","t3","t4"],
+            ["t3r","t4r","t3rr"],
+            ["t4rr","t3rr","t4r"],
+    ],
+},
+}

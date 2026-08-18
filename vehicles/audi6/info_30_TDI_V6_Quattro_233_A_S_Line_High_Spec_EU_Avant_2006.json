@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.0L TDI V6 Quattro [233] (Tiptronic) S-Line High-Spec (EU) [Avant] 2006",
+      "Description": "2006 Avant 3.0L TDI (233 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, start-stop system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, rear and side manual window blinds, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Quartz Grey",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 233,
+      "Torque": 500,
+      "Top Speed": 68.88888888888889,
+      "Weight": 1810,
+      "Value": 69270,
+      "0-100 km/h": 7.0,
+      "0-60 mph": 6.6,
+      "defaultPaintName1": "Quartz Grey"
+}

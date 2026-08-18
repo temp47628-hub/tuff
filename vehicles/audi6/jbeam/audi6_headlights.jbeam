@@ -1,0 +1,1616 @@
+{
+"audi6_headlight_R_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Facelift A6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_R", ["audi6_headlight_R"]],
+         ["audi6_headlight_frame_R_a6_fl", ["audi6_headlight_R"]],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_R", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_R_a6_fl", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_R_a6_fl", ["audi6_headlight_R"]],
+         ["audi6_headlightreflector_frame_R_a6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_R"]]}],
+         ["audi6_headlightreflector_R_rs6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_R"]]}],
+         ["audi6_headlight_drl_R_a6_fl", ["audi6_headlight_R"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_R_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_R_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_r_incandescent.color.png",
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":205
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_R"},
+         ["he1r",-0.484, -2.1756, 0.7815],
+         ["he3r",-0.4584, -2.2563, 0.6467],
+         ["he2r",-0.8013, -1.8988, 0.7825],
+         ["he4r",-0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5r",-0.6149, -1.9405, 0.7073],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["he1r","he2r"],
+          ["he3r","he4r"],
+          ["he1r","he3r"],
+          ["he2r","he4r"],
+
+          ["he1r","he4r"],
+          ["he2r","he3r"],
+
+          ["he1r","he5r"],
+          ["he2r","he5r"],
+          ["he3r","he5r"],
+          ["he4r","he5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"headlight_R"},
+          ["he5r","f15rr"],
+          ["he5r","f15r"],
+          ["he2r","f15rr"],
+          ["he2r","f15r"],
+          ["he4r","f15rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"headlight_R"},
+          ["he1r","f15r"],
+          ["he1r","f15rr"],
+          ["he3r","f15r"],
+          ["he3r","f13rr"],
+          //["he1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2r","f18r"],
+          ["he4r","f18r"],
+          ["he3r","f11rr"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_R_supportBeams"},
+          ["he2r","h4"],
+          ["he3r","h4r"],
+          ["he5r","h4rr"],
+          {"breakGroup":""},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_R"},
+            {"dragCoef":8.75},
+            ["he3r","he1r","he4r"],
+            ["he4r","he1r","he2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he4r","he2r","he5r"],
+            ["he1r","he5r","he2r"],
+            ["he3r","he5r","he1r"],
+            ["he4r","he5r","he3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_L_a6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Facelift A6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_L", ["audi6_headlight_L"]],
+         ["audi6_headlight_frame_L_a6_fl", ["audi6_headlight_L"]],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_L", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_L_a6_fl", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_L_a6_fl", ["audi6_headlight_L"]],
+         ["audi6_headlightreflector_frame_L_a6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_L"]]}],
+         ["audi6_headlightreflector_L_rs6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_L"]]}],
+         ["audi6_headlight_drl_L_a6_fl", ["audi6_headlight_L"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_L_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_L_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_l_incandescent.color.png",
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":155
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_L"},
+         ["he1l",0.484, -2.1756, 0.7815],
+         ["he3l",0.4584, -2.2563, 0.6467],
+         ["he2l",0.8013, -1.8988, 0.7825],
+         ["he4l",0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5l",0.6149, -1.9405, 0.7073],
+         {"group":""},
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":128000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["he1l","he2l"],
+          ["he3l","he4l"],
+          ["he1l","he3l"],
+          ["he2l","he4l"],
+
+          ["he1l","he4l"],
+          ["he2l","he3l"],
+
+          ["he1l","he5l"],
+          ["he2l","he5l"],
+          ["he3l","he5l"],
+          ["he4l","he5l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":28000},
+          //l
+          {"breakGroup":"headlight_L"},
+          ["he5l","f15ll"],
+          ["he5l","f15l"],
+          ["he2l","f15ll"],
+          ["he2l","f15l"],
+          ["he4l","f15ll"],
+
+          {"beamDeform":3000,"beamStrength":28000},
+          {"breakGroup":"headlight_L"},
+          ["he1l","f15ll"],
+          ["he1l","f15l"],
+          ["he3l","f15l"],
+          ["he3l","f13ll"],
+          //["he1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2l","f18l"],
+          ["he4l","f18l"],
+          ["he3l","f11ll"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_L_supportBeams"},
+          ["he2l","h4"],
+          ["he3l","h4l"],
+          ["he5l","h4ll"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_L"},
+            {"dragCoef":8.75},
+            ["he1l","he3l","he4l"],
+            ["he1l","he4l","he2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he2l","he4l","he5l"],
+            ["he5l","he1l","he2l"],
+            ["he5l","he3l","he1l"],
+            ["he5l","he4l","he3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_R_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift A6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_R", ["audi6_headlight_R"]],
+         ["audi6_headlight_frame_R_a6_pfl", ["audi6_headlight_R"]],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_R", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_R_a6_fl", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_R_a6_pfl", ["audi6_headlight_R"]],
+         ["audi6_headlightreflector_frame_R_a6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running_R"]]}],
+         ["audi6_headlightreflector_R_rs6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running_R"]]}],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_R_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_R_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_r_incandescent.color.png",
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":205
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_R"},
+         ["he1r",-0.484, -2.1756, 0.7815],
+         ["he3r",-0.4584, -2.2563, 0.6467],
+         ["he2r",-0.8013, -1.8988, 0.7825],
+         ["he4r",-0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5r",-0.6149, -1.9405, 0.7073],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["he1r","he2r"],
+          ["he3r","he4r"],
+          ["he1r","he3r"],
+          ["he2r","he4r"],
+
+          ["he1r","he4r"],
+          ["he2r","he3r"],
+
+          ["he1r","he5r"],
+          ["he2r","he5r"],
+          ["he3r","he5r"],
+          ["he4r","he5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"headlight_R"},
+          ["he5r","f15rr"],
+          ["he5r","f15r"],
+          ["he2r","f15rr"],
+          ["he2r","f15r"],
+          ["he4r","f15rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"headlight_R"},
+          ["he1r","f15r"],
+          ["he1r","f15rr"],
+          ["he3r","f15r"],
+          ["he3r","f13rr"],
+          //["he1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2r","f18r"],
+          ["he4r","f18r"],
+          ["he3r","f11rr"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_R_supportBeams"},
+          ["he2r","h4"],
+          ["he3r","h4r"],
+          ["he5r","h4rr"],
+          {"breakGroup":""},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_R"},
+            {"dragCoef":8.75},
+            ["he3r","he1r","he4r"],
+            ["he4r","he1r","he2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he4r","he2r","he5r"],
+            ["he1r","he5r","he2r"],
+            ["he3r","he5r","he1r"],
+            ["he4r","he5r","he3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_L_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift A6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_L", ["audi6_headlight_L"]],
+         ["audi6_headlight_frame_L_a6_pfl", ["audi6_headlight_L"]],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_L", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_L_a6_fl", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_L_a6_pfl", ["audi6_headlight_L"]],
+         ["audi6_headlightreflector_frame_L_a6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running_L"]]}],
+         ["audi6_headlightreflector_L_rs6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running_L"]]}],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_L_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_L_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_l_incandescent.color.png",
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":155
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_L"},
+         ["he1l",0.484, -2.1756, 0.7815],
+         ["he3l",0.4584, -2.2563, 0.6467],
+         ["he2l",0.8013, -1.8988, 0.7825],
+         ["he4l",0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5l",0.6149, -1.9405, 0.7073],
+         {"group":""},
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":128000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["he1l","he2l"],
+          ["he3l","he4l"],
+          ["he1l","he3l"],
+          ["he2l","he4l"],
+
+          ["he1l","he4l"],
+          ["he2l","he3l"],
+
+          ["he1l","he5l"],
+          ["he2l","he5l"],
+          ["he3l","he5l"],
+          ["he4l","he5l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":28000},
+          //l
+          {"breakGroup":"headlight_L"},
+          ["he5l","f15ll"],
+          ["he5l","f15l"],
+          ["he2l","f15ll"],
+          ["he2l","f15l"],
+          ["he4l","f15ll"],
+
+          {"beamDeform":3000,"beamStrength":28000},
+          {"breakGroup":"headlight_L"},
+          ["he1l","f15ll"],
+          ["he1l","f15l"],
+          ["he3l","f15l"],
+          ["he3l","f13ll"],
+          //["he1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2l","f18l"],
+          ["he4l","f18l"],
+          ["he3l","f11ll"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_L_supportBeams"},
+          ["he2l","h4"],
+          ["he3l","h4l"],
+          ["he5l","h4ll"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_L"},
+            {"dragCoef":8.75},
+            ["he1l","he3l","he4l"],
+            ["he1l","he4l","he2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he2l","he4l","he5l"],
+            ["he5l","he1l","he2l"],
+            ["he5l","he3l","he1l"],
+            ["he5l","he4l","he3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_R_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift S6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_R", ["audi6_headlight_R"]],
+         ["audi6_headlight_frame_R_a6_pfl", ["audi6_headlight_R"]],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_R", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_R_a6_fl", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_R_a6_pfl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_headlight_inst","audi6_headlight_s6_inst"]]}],   
+         ["audi6_headlightreflector_frame_R_a6_fl", ["audi6_headlight_R"]],   
+         ["audi6_headlightreflector_R_rs6_fl", ["audi6_headlight_R"]],   
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_R_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "highbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_r_incandescent.color.png",
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":205
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_R"},
+         ["he1r",-0.484, -2.1756, 0.7815],
+         ["he3r",-0.4584, -2.2563, 0.6467],
+         ["he2r",-0.8013, -1.8988, 0.7825],
+         ["he4r",-0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5r",-0.6149, -1.9405, 0.7073],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["he1r","he2r"],
+          ["he3r","he4r"],
+          ["he1r","he3r"],
+          ["he2r","he4r"],
+
+          ["he1r","he4r"],
+          ["he2r","he3r"],
+
+          ["he1r","he5r"],
+          ["he2r","he5r"],
+          ["he3r","he5r"],
+          ["he4r","he5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"headlight_R"},
+          ["he5r","f15rr"],
+          ["he5r","f15r"],
+          ["he2r","f15rr"],
+          ["he2r","f15r"],
+          ["he4r","f15rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"headlight_R"},
+          ["he1r","f15r"],
+          ["he1r","f15rr"],
+          ["he3r","f15r"],
+          ["he3r","f13rr"],
+          //["he1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2r","f18r"],
+          ["he4r","f18r"],
+          ["he3r","f11rr"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_R_supportBeams"},
+          ["he2r","h4"],
+          ["he3r","h4r"],
+          ["he5r","h4rr"],
+          {"breakGroup":""},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_R"},
+            {"dragCoef":8.75},
+            ["he3r","he1r","he4r"],
+            ["he4r","he1r","he2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he4r","he2r","he5r"],
+            ["he1r","he5r","he2r"],
+            ["he3r","he5r","he1r"],
+            ["he4r","he5r","he3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_L_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift S6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_L", ["audi6_headlight_L"]],
+         ["audi6_headlight_frame_L_a6_pfl", ["audi6_headlight_L"]],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_L", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_L_a6_fl", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_L_a6_pfl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_headlight_inst","audi6_headlight_s6_inst"]]}],   
+         ["audi6_headlightreflector_frame_L_a6_fl", ["audi6_headlight_L"]],   
+         ["audi6_headlightreflector_L_rs6_fl", ["audi6_headlight_L"]],   
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_L_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "highbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_l_incandescent.color.png",
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":155
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_L"},
+         ["he1l",0.484, -2.1756, 0.7815],
+         ["he3l",0.4584, -2.2563, 0.6467],
+         ["he2l",0.8013, -1.8988, 0.7825],
+         ["he4l",0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5l",0.6149, -1.9405, 0.7073],
+         {"group":""},
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":128000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["he1l","he2l"],
+          ["he3l","he4l"],
+          ["he1l","he3l"],
+          ["he2l","he4l"],
+
+          ["he1l","he4l"],
+          ["he2l","he3l"],
+
+          ["he1l","he5l"],
+          ["he2l","he5l"],
+          ["he3l","he5l"],
+          ["he4l","he5l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":28000},
+          //l
+          {"breakGroup":"headlight_L"},
+          ["he5l","f15ll"],
+          ["he5l","f15l"],
+          ["he2l","f15ll"],
+          ["he2l","f15l"],
+          ["he4l","f15ll"],
+
+          {"beamDeform":3000,"beamStrength":28000},
+          {"breakGroup":"headlight_L"},
+          ["he1l","f15ll"],
+          ["he1l","f15l"],
+          ["he3l","f15l"],
+          ["he3l","f13ll"],
+          //["he1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2l","f18l"],
+          ["he4l","f18l"],
+          ["he3l","f11ll"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_L_supportBeams"},
+          ["he2l","h4"],
+          ["he3l","h4l"],
+          ["he5l","h4ll"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_L"},
+            {"dragCoef":8.75},
+            ["he1l","he3l","he4l"],
+            ["he1l","he4l","he2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he2l","he4l","he5l"],
+            ["he5l","he1l","he2l"],
+            ["he5l","he3l","he1l"],
+            ["he5l","he4l","he3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_R_a6_halo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Pre-Facelift A6 Halogen Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_R", ["audi6_headlight_R"]],
+         ["audi6_headlight_frame_R_a6_pfl", ["audi6_headlight_R"]],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_R", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_R_a6_halo", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_R_a6_halo", ["audi6_headlight_R"]],
+         ["audi6_headlightreflector_frame_R_a6_halo", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running"]]}], 
+         ["audi6_headlightreflector_R_a6_halo", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running"]]}], 
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_halogen_R_low_bulb", ["headlightBulb_halogen_55W_projector"], [], "headlightBulb_halogen_55W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_halogen_R_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "highbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_halogen_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_r_incandescent.color.png",
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":205
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_R"},
+         ["he1r",-0.484, -2.1756, 0.7815],
+         ["he3r",-0.4584, -2.2563, 0.6467],
+         ["he2r",-0.8013, -1.8988, 0.7825],
+         ["he4r",-0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5r",-0.6149, -1.9405, 0.7073],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["he1r","he2r"],
+          ["he3r","he4r"],
+          ["he1r","he3r"],
+          ["he2r","he4r"],
+
+          ["he1r","he4r"],
+          ["he2r","he3r"],
+
+          ["he1r","he5r"],
+          ["he2r","he5r"],
+          ["he3r","he5r"],
+          ["he4r","he5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"headlight_R"},
+          ["he5r","f15rr"],
+          ["he5r","f15r"],
+          ["he2r","f15rr"],
+          ["he2r","f15r"],
+          ["he4r","f15rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"headlight_R"},
+          ["he1r","f15r"],
+          ["he1r","f15rr"],
+          ["he3r","f15r"],
+          ["he3r","f13rr"],
+          //["he1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2r","f18r"],
+          ["he4r","f18r"],
+          ["he3r","f11rr"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_R_supportBeams"},
+          ["he2r","h4"],
+          ["he3r","h4r"],
+          ["he5r","h4rr"],
+          {"breakGroup":""},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_R"},
+            {"dragCoef":8.75},
+            ["he3r","he1r","he4r"],
+            ["he4r","he1r","he2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he4r","he2r","he5r"],
+            ["he1r","he5r","he2r"],
+            ["he3r","he5r","he1r"],
+            ["he4r","he5r","he3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_L_a6_halo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Pre-Facelift A6 Halogen Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_L", ["audi6_headlight_L"]],
+         ["audi6_headlight_frame_L_a6_pfl", ["audi6_headlight_L"]],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_L", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_L_a6_halo", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_L_a6_halo", ["audi6_headlight_L"]],
+         ["audi6_headlightreflector_frame_L_a6_halo", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running"]]}], 
+         ["audi6_headlightreflector_L_a6_halo", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_running"]]}], 
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_halogen_L_low_bulb", ["headlightBulb_halogen_55W_projector"], [], "headlightBulb_halogen_55W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_halogen_L_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "highbeam_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_halogen_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_l_incandescent.color.png",
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":155
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_L"},
+         ["he1l",0.484, -2.1756, 0.7815],
+         ["he3l",0.4584, -2.2563, 0.6467],
+         ["he2l",0.8013, -1.8988, 0.7825],
+         ["he4l",0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5l",0.6149, -1.9405, 0.7073],
+         {"group":""},
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":128000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["he1l","he2l"],
+          ["he3l","he4l"],
+          ["he1l","he3l"],
+          ["he2l","he4l"],
+
+          ["he1l","he4l"],
+          ["he2l","he3l"],
+
+          ["he1l","he5l"],
+          ["he2l","he5l"],
+          ["he3l","he5l"],
+          ["he4l","he5l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":28000},
+          //l
+          {"breakGroup":"headlight_L"},
+          ["he5l","f15ll"],
+          ["he5l","f15l"],
+          ["he2l","f15ll"],
+          ["he2l","f15l"],
+          ["he4l","f15ll"],
+
+          {"beamDeform":3000,"beamStrength":28000},
+          {"breakGroup":"headlight_L"},
+          ["he1l","f15ll"],
+          ["he1l","f15l"],
+          ["he3l","f15l"],
+          ["he3l","f13ll"],
+          //["he1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2l","f18l"],
+          ["he4l","f18l"],
+          ["he3l","f11ll"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_L_supportBeams"},
+          ["he2l","h4"],
+          ["he3l","h4l"],
+          ["he5l","h4ll"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_L"},
+            {"dragCoef":8.75},
+            ["he1l","he3l","he4l"],
+            ["he1l","he4l","he2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he2l","he4l","he5l"],
+            ["he5l","he1l","he2l"],
+            ["he5l","he3l","he1l"],
+            ["he5l","he4l","he3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_R_rs6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Facelift RS6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_R", ["audi6_headlight_R"]],
+         ["audi6_headlight_frame_R_rs6_fl", ["audi6_headlight_R"]],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_R", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_R_rs6_fl", ["audi6_headlight_R"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_R_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_R_rs6_fl", ["audi6_headlight_R"]],
+         ["audi6_headlightreflector_frame_R_rs6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_R"]]}], 
+         ["audi6_headlightreflector_R_rs6_fl", ["audi6_headlight_R"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_R"]]}], 
+         ["audi6_headlight_drl_R_rs6_fl", ["audi6_headlight_R"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_R_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_R_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_R_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_R_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_r_incandescent.color.png",
+          "$nodeRef":"he4r", "$nodeX":"he3r", "$nodeY":"he2r",
+          "$deformGroup":"headlightglass_R_break",
+          "$posX":-0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":205
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //right
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_R"},
+         ["he1r",-0.484, -2.1756, 0.7815],
+         ["he3r",-0.4584, -2.2563, 0.6467],
+         ["he2r",-0.8013, -1.8988, 0.7825],
+         ["he4r",-0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5r",-0.6149, -1.9405, 0.7073],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":62000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_R_break", "deformationTriggerRatio":0.05},
+          //r
+          {"deformLimitExpansion":1.1},
+          ["he1r","he2r"],
+          ["he3r","he4r"],
+          ["he1r","he3r"],
+          ["he2r","he4r"],
+
+          ["he1r","he4r"],
+          ["he2r","he3r"],
+
+          ["he1r","he5r"],
+          ["he2r","he5r"],
+          ["he3r","he5r"],
+          ["he4r","he5r"],
+
+          //attach
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":24000},
+          //r
+          {"deformLimitExpansion":""},
+          {"breakGroup":"headlight_R"},
+          ["he5r","f15rr"],
+          ["he5r","f15r"],
+          ["he2r","f15rr"],
+          ["he2r","f15r"],
+          ["he4r","f15rr"],
+
+          {"beamDeform":3000,"beamStrength":24000},
+          {"breakGroup":"headlight_R"},
+          ["he1r","f15r"],
+          ["he1r","f15rr"],
+          ["he3r","f15r"],
+          ["he3r","f13rr"],
+          //["he1r","f13rr"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2r","f18r"],
+          ["he4r","f18r"],
+          ["he3r","f11rr"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_R_supportBeams"},
+          ["he2r","h4"],
+          ["he3r","h4r"],
+          ["he5r","h4rr"],
+          {"breakGroup":""},
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //right headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_R"},
+            {"dragCoef":8.75},
+            ["he3r","he1r","he4r"],
+            ["he4r","he1r","he2r"],
+
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he4r","he2r","he5r"],
+            ["he1r","he5r","he2r"],
+            ["he3r","he5r","he1r"],
+            ["he4r","he5r","he3r"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+"audi6_headlight_L_rs6_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Facelift RS6 Xenon Headlight",
+        "value":350,
+    },
+    "slotType" : "audi6_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_headlightframe_L", ["audi6_headlight_L"]],
+         ["audi6_headlight_frame_L_rs6_fl", ["audi6_headlight_L"]],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_glass", "deformMaterialDamaged":"audi6_glass_dmg"},
+         ["audi6_headlightglass_L", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+         ["audi6_headlightinnerglass_L_rs6_fl", ["audi6_headlight_L"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>extglassbreaksound3", "deformVolume":0.4}],
+		 
+         {"deformGroup":"headlightglass_L_break", "deformMaterialBase":"audi6_lights", "deformMaterialDamaged":"audi6_lights"},
+         ["audi6_headlight_L_rs6_fl", ["audi6_headlight_L"]],
+         ["audi6_headlightreflector_frame_L_rs6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_L"]]}], 
+         ["audi6_headlightreflector_L_rs6_fl", ["audi6_headlight_L"], [],{"materialOverride":[["audi6_highbeam","audi6_highbeam_L"]]}], 
+         ["audi6_headlight_drl_L_rs6_fl", ["audi6_headlight_L"]],
+         {"deformGroup":""},
+    ],
+    "slots2": [
+        ["name",                    "allowTypes",                "denyTypes", "default",                 "description"],
+        ["audi6_headlight_L_low_bulb", ["headlightBulb_xenon_35W_projector"], [], "headlightBulb_xenon_35W_projector", "Low Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "lowhighbeam",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.648, "$posY":-2.022, "$posZ":0.724,
+          "$rotX":-0.57, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_high_bulb", ["headlightBulb_halogen_60W"], [], "headlightBulb_halogen_60W", "High Beam",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "audi6_drl_L_s",
+          "$lightPattern": "LHD"
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.527, "$posY":-2.042, "$posZ":0.715,
+          "$rotX":0, "$rotY":0, "$rotZ":180
+        }
+        }],
+        ["audi6_headlight_L_signal_bulb", ["incandescent_amber_21W"], [], "incandescent_amber_21W", "Signal",
+        {
+        "coreSlot":true,
+        "variables":{
+          "$electric": "signal_L_s",
+          "$cookieName":"art/special/BNG_light_cookie_blinker_l_incandescent.color.png",
+          "$nodeRef":"he4l", "$nodeX":"he3l", "$nodeY":"he2l",
+          "$deformGroup":"headlightglass_L_break",
+          "$posX":0.757, "$posY":-1.867, "$posZ":0.724,
+          "$rotX":0, "$rotY":0, "$rotZ":155
+        }
+        }]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--HEADLIGHT--
+         //left
+         {"selfCollision":true},
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         {"nodeWeight":0.6},
+         {"group":"audi6_headlight_L"},
+         ["he1l",0.484, -2.1756, 0.7815],
+         ["he3l",0.4584, -2.2563, 0.6467],
+         ["he2l",0.8013, -1.8988, 0.7825],
+         ["he4l",0.8108, -1.9654, 0.6607],
+         //{"selfCollision":false}
+         ["he5l",0.6149, -1.9405, 0.7073],
+         {"group":""},
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--HEADLIGHT--
+          {"beamSpring":1001000,"beamDamp":60},
+          {"beamDeform":12000,"beamStrength":128000},
+          //headlight main shape
+          {"deformGroup":"headlightglass_L_break", "deformationTriggerRatio":0.05},
+          //l
+          {"deformLimitExpansion":1.1},
+          ["he1l","he2l"],
+          ["he3l","he4l"],
+          ["he1l","he3l"],
+          ["he2l","he4l"],
+
+          ["he1l","he4l"],
+          ["he2l","he3l"],
+
+          ["he1l","he5l"],
+          ["he2l","he5l"],
+          ["he3l","he5l"],
+          ["he4l","he5l"],
+          //attach
+          {"deformLimitExpansion":""},
+          {"beamSpring":301000,"beamDamp":60},
+          {"beamDeform":3000,"beamStrength":28000},
+          //l
+          {"breakGroup":"headlight_L"},
+          ["he5l","f15ll"],
+          ["he5l","f15l"],
+          ["he2l","f15ll"],
+          ["he2l","f15l"],
+          ["he4l","f15ll"],
+
+          {"beamDeform":3000,"beamStrength":28000},
+          {"breakGroup":"headlight_L"},
+          ["he1l","f15ll"],
+          ["he1l","f15l"],
+          ["he3l","f15l"],
+          ["he3l","f13ll"],
+          //["he1l","f13ll"],
+
+          {"beamDeform":1500,"beamStrength":46000},
+          ["he2l","f18l"],
+          ["he4l","f18l"],
+          ["he3l","f11ll"],
+          {"breakGroup":""},
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //headlight support beams
+          {"beamType":"|SUPPORT", "beamLongBound":15},
+          {"beamSpring":601000,"beamDamp":90},
+          {"beamDeform":13000,"beamStrength":330000},
+          {"optional":true},
+          {"breakGroup":"headlight_L_supportBeams"},
+          ["he2l","h4"],
+          ["he3l","h4l"],
+          ["he5l","h4ll"],
+          {"optional":false},
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //left headlight
+            {"groundModel":"plastic"},
+            {"group":"audi6_headlight_L"},
+            {"dragCoef":8.75},
+            ["he1l","he3l","he4l"],
+            ["he1l","he4l","he2l"],
+            {"triangleType":"NONCOLLIDABLE"},
+            ["he2l","he4l","he5l"],
+            ["he5l","he1l","he2l"],
+            ["he5l","he3l","he1l"],
+            ["he5l","he4l","he3l"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+},
+}

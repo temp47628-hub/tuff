@@ -1,0 +1,224 @@
+{
+	  "audi6_grille_hex_color": {
+    "name": "audi6_grille_hex_color",
+    "mapTo": "audi6_grille_hex_color",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.140854001,
+          0.140854001,
+          0.140854001,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_hex_color.skin_interior.beige2_interior": {
+    "name": "audi6_grille_hex_color.skin_interior.beige2_interior",
+    "mapTo": "audi6_grille_hex_color.skin_interior.beige2_interior",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_hex_color.skin_interior.beige_interior": {
+    "name": "audi6_grille_hex_color.skin_interior.beige_interior",
+    "mapTo": "audi6_grille_hex_color.skin_interior.beige_interior",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.725489974,
+          0.627451003,
+          0.521569014,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_hex_color.skin_interior.blue_interior": {
+    "name": "audi6_grille_hex_color.skin_interior.blue_interior",
+    "mapTo": "audi6_grille_hex_color.skin_interior.blue_interior",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_hex_color.skin_interior.creambeige_interior": {
+    "name": "audi6_grille_hex_color.skin_interior.creambeige_interior",
+    "mapTo": "audi6_grille_hex_color.skin_interior.creambeige_interior",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.709803998,
+          0.647059023,
+          0.584313989,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "audi6_grille_hex_color.skin_interior.grey_interior": {
+    "name": "audi6_grille_hex_color.skin_interior.grey_interior",
+    "mapTo": "audi6_grille_hex_color.skin_interior.grey_interior",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.470587999,
+          0.470587999,
+          0.470587999,
+          1
+        ],
+        "normalMap": "vehicles/audi6/finished_textures/grille_hex_n.normal.png",
+        "opacityMap": "/vehicles/audi6/finished_textures/grille_hex_o.data.png",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 86,
+    "alphaTest": true,
+    "doubleSided": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+}

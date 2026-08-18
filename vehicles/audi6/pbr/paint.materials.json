@@ -1,0 +1,45 @@
+{
+  "audi6_paint": {
+    "name": "audi6_paint",
+    "mapTo": "audi6_paint",
+    "class": "Material",
+    "persistentId": "999a2ee6-b1eb-4a25-9473-d3aa3fb14e79",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/pbr/audi6_main_ao.data.png",
+        "baseColorMap": "/vehicles/audi6/pbr/audi6_main_b.color.png",
+        "clearCoatFactor": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/pbr/audi6_main_m.data.png",
+        "normalMap": "vehicles/common/null_n.dds",
+        "roughnessMap": "/vehicles/audi6/pbr/audi6_main_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/pbr/audi6_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/audi6/pbr/audi6_main_cc.data.png",
+        "colorPaletteMap": "/vehicles/audi6/pbr/audi6_main_p.color.png",
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/audi6/pbr/audi6_main_c.data.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+}

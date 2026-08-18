@@ -1,0 +1,245 @@
+{
+"audi6_skin_seatback": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : ""
+},
+"audi6_skin_seatback_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Grey",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "grey_seatback"
+},
+"audi6_skin_seatback_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "beige_seatback"
+},
+"audi6_skin_seatback_linenbeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Linen Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "linenbeige_seatback"
+},
+"audi6_skin_seatback_brown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Amaretto Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "brown_seatback"
+},
+"audi6_skin_seatback_paranutbrown": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Paranut Brown",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "paranutbrown_seatback"
+},
+"audi6_skin_seatback_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "blue_seatback"
+},
+"audi6_skin_seatback_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "creambeige_seatback"
+},
+"audi6_skin_seatback_silver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "silver_seatback"
+},
+"audi6_skin_seatback_pearlsilver": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Pearl Silver",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "pearlsilver_seatback"
+},
+"audi6_skin_seatback_red_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Crimson Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "red_ae_seatback"
+},
+"audi6_skin_seatback_classicred_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Classic Red [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "classicred_ae_seatback"
+},
+"audi6_skin_seatback_burgundy_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Burgundy [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "burgundy_ae_seatback"
+},
+"audi6_skin_seatback_nightblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Night Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "nightblue_ae_seatback"
+},
+"audi6_skin_seatback_regencygreen_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Regency Green [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "regencygreen_ae_seatback"
+},
+"audi6_skin_seatback_blue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "blue_ae_seatback"
+},
+"audi6_skin_seatback_saddlebrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Saddle Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "saddlebrown_ae_seatback"
+},
+"audi6_skin_seatback_chestnutbrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Chestnut Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "chestnutbrown_ae_seatback"
+},
+"audi6_skin_seatback_jetgrey_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Jet Grey [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "jetgrey_ae_seatback"
+},
+"audi6_skin_seatback_palaceblue_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Palace Blue [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "palaceblue_ae_seatback"
+},
+"audi6_skin_seatback_alabasterwhite_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Alabaster White [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "alabasterwhite_ae_seatback"
+},
+"audi6_skin_seatback_magnolia_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Magnolia [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "magnolia_ae_seatback"
+},
+"audi6_skin_seatback_sandbeige_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Sand Beige [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "sandbeige_ae_seatback"
+},
+"audi6_skin_seatback_havannabrown_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Havanna Brown [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "havannabrown_ae_seatback"
+},
+"audi6_skin_seatback_cocos_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cocos [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "cocos_ae_seatback"
+},
+"audi6_skin_seatback_cognac_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cognac [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "cognac_ae_seatback"
+},
+"audi6_skin_seatback_orange_ae": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Orange [Exclusive]",
+        "value":500,
+    },
+    "slotType" : "skin_seatback",
+    "skinName" : "orange_ae_seatback"
+},
+}

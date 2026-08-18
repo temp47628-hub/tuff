@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "4.2L V8 Quattro [335] (Tiptronic) A6 (EU) [Avant] 2005",
+      "Description": "2005 Avant 4.2L V8 (335 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, front and rear parking system, power folding auto-dimming mirrors, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, storage package, lighting package, rear and side manual window blinds, climate control, BOSE surround sound audio system, black interior, brown walnut inlay finish, black natural leather seats. Exterior painted in Aurora Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 335,
+      "Torque": 420,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1830,
+      "Value": 87020,
+      "0-100 km/h": 6.2,
+      "0-60 mph": 5.9,
+      "defaultPaintName1": "Aurora Blue"
+}

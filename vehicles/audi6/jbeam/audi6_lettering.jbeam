@@ -1,0 +1,260 @@
+{
+"audi6_lettering_rs6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RS6 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_model",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        // facelift sedan
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_rs6_sedan", ["audi6_trunk"]],
+        // pre-facelift sedan
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_rs6_sedan", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        // avant
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_rs6_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_s6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"S6 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_model",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_s6_sedan", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_s6_sedan", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_s6_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_a6_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"A6 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_model",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_a6_sedan", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_a6_sedan", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_a6_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_allroad_sedan": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Allroad Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_model",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_allroad_sedan", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_allroad_sedan", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_allroad_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_quattro": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quattro Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_quattro",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        // facelift sedan
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_trunklettering_quattro", ["audi6_trunk"]],
+        // pre-facelift sedan
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_trunklettering_quattro", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        // avant
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_trunklettering_quattro_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_20t": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.0T Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_20t", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_20t", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_20t_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_20tdi": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.0 TDI Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_20tdi", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_20tdi", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_20tdi_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_24": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.4 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_24", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_24", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_24_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_27tdi": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.7 TDI Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_27tdi", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_27tdi", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_27tdi_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_28": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2.8 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_28", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_28", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_28_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_30t": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.0T Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_30t", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_30t", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_30t_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_30tdi": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.0 TDI Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_30tdi", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_30tdi", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_30tdi_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_32": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"3.2 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_32", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_32", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_32_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+},
+"audi6_lettering_42": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4.2 Lettering",
+        "value":340
+    },
+    "slotType":"audi6_lettering_eng",
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        {"disable":"$=$components.bodySpecifics.trunkType == 1 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_42", ["audi6_trunk"]],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 2"},
+        ["audi6_lettering_42", ["audi6_trunk"],[],{"pos":{"x":0.0,"y":0.002,"z":0.02}}],
+        {"disable":"$=$components.bodySpecifics.trunkType == 0 or $components.bodySpecifics.trunkType == 1"},
+        ["audi6_lettering_42_avant", ["audi6_trunk"]],
+        {"disable":""}
+    ]
+}
+}

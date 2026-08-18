@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 Quattro [180] (Tiptronic) S-Line High-Spec (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.7L TDI V6 (180 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 19-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Aurora Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 61.94444444444444,
+      "Weight": 1825,
+      "Value": 49020,
+      "0-100 km/h": 9.1,
+      "0-60 mph": 8.6,
+      "defaultPaintName1": "Aurora Blue"
+}

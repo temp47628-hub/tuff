@@ -1,0 +1,35 @@
+{
+"audi6_gauges_imperial_gasoline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Imperial Gasoline Pre-Facelift Gauges",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_gauges_screen_pfl","audi6_gauges_screen_pfl", "Gauge Screen", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_gauges", ["audi6_dash"], [],{"materialOverride":[["audi6_gauges","audi6_gauges_mph_gasoline"]]}],
+        ["audi6_decals_gauges", ["audi6_dash"]],
+
+
+
+    ],
+    "glowMap":{
+        "audi6_gauges_mph_gasoline":{"simpleFunction":{"lowhighbeam_auto":1}, "off":"audi6_gauges_mph_gasoline", "on":"audi6_gauges_mph_gasoline_on", "on_intense":"audi6_gauges_mph_gasoline_on"},
+		"audi6_needles":{"simpleFunction":{"ignitionLevel":1}, "off":"audi6_gauges_mph_gasoline", "on":"audi6_gauges_mph_gasoline_on", "on_intense":"audi6_gauges_mph_gasoline_on"},
+
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed_sweep", "audi6_needle_speedo", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":-5}, {"x":0, "y":0, "z":-3.4}     , {"x":0, "y":0, "z":0}, 0, 77.77, -0.5, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_mph_gasoline"]]}],
+        ["rpm_sweep",         "audi6_needle_tacho", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":5}, {"x":0, "y":0, "z":-0.032}     , {"x":0, "y":0, "z":0}, 0, 8000, 0, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_mph_gasoline"]]}],
+        ["fuel",         "audi6_needle_fuel", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":-95}     , {"x":0, "y":0, "z":0}, 0, 1, 0.17, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_mph_gasoline"]]}],
+        ["watertemp",      "audi6_needle_temp", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":1.1}     , {"x":0, "y":0, "z":0}, 50, 130, -93, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_mph_gasoline"]]}],
+    ],
+},
+}

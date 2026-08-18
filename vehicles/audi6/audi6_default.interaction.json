@@ -1,0 +1,836 @@
+{
+	"fileversion": 2,
+	"actions": {
+		"wipers_F": {
+			"order": 1.001,
+			"onDown": "controller.getControllerSafe('audi6_workingWipers').toggleMode()",
+			"title": "Front Wipers Up",
+			"desc": "Increases the front wiper mode"
+		},		
+		"wipers_F_down": {
+			"order": 1.001,
+			"onDown": "controller.getControllerSafe('audi6_workingWipers').toggleModeDown()",
+			"title": "Front Wipers Down",
+			"desc": "Decreases the front wiper mode"
+		},
+		"wiper_R": {
+			"order": 1.001,
+			"onDown": "controller.getControllerSafe('audi6_workingWipers').toggleModeR()",
+			"title": "Toggle Rear Wiper",
+			"desc": "Toggles the rear wiper"
+		},		
+		"audi6_door_FL": {
+			"order": 1.001,
+			"onDown": "if electrics.values.doorLocked_FL == 0 then controller.getControllerSafe('door_FL_coupler').toggleGroup() else guihooks.message('Unlock front left door first', 2) end",
+			"title": "Toggle Driver Door",
+			"desc": "Opens or closes the front left door"
+		},
+		"audi6_door_FR": {
+			"order": 1.002,
+			"onDown": "if electrics.values.doorLocked_FR == 0 then controller.getControllerSafe('door_FR_coupler').toggleGroup() else guihooks.message('Unlock front right door first', 2) end",
+			"title": "Toggle Passenger Door",
+			"desc": "Opens or closes the front right door"
+		},
+		"audi6_door_RL": {
+			"order": 1.003,
+			"onDown": "if electrics.values.doorLocked_RL == 0 then controller.getControllerSafe('door_RL_coupler').toggleGroup() else guihooks.message('Unlock rear left door first', 2) end",
+			"title": "Toggle Rear Left Door",
+			"desc": "Opens or closes the rear left door"
+		},
+		"audi6_door_RR": {
+			"order": 1.004,
+			"onDown": "if electrics.values.doorLocked_RR == 0 then controller.getControllerSafe('door_RR_coupler').toggleGroup() else guihooks.message('Unlock rear right door first', 2) end",
+			"title": "Toggle Rear Right Door",
+			"desc": "Opens or closes the rear right door"
+		},
+		"audi6_trunk": {
+			"order": 1.005,
+			"onDown": "if electrics.values.doorLocked_trunk == 0 then controller.getControllerSafe('trunkCoupler').toggleGroup() else guihooks.message('Unlock trunk first', 2) end",
+			"title": "Toggle Trunk",
+			"desc": "Opens or closes the trunk"
+		},
+		"audi6_lock_FL": {
+			"order": 1.006,
+			"onDown": "electrics.values.doorLocked_FL = 1 - (electrics.values.doorLocked_FL or 0)",
+			"title": "Toggle Front Left Door Lock",
+			"desc": "Locks or unlocks the front left door"
+		},		
+		"audi6_lock_FR": {
+			"order": 1.0061,
+			"onDown": "electrics.values.doorLocked_FR = 1 - (electrics.values.doorLocked_FR or 0)",
+			"title": "Toggle Front Right Door Lock",
+			"desc": "Locks or unlocks the front right door"
+		},
+		"audi6_lock_RL": {
+			"order": 1.0062,
+			"onDown": "electrics.values.doorLocked_RL = 1 - (electrics.values.doorLocked_RL or 0)",
+			"title": "Toggle Rear Left Door Lock",
+			"desc": "Locks or unlocks the rear left door"
+		},
+		"audi6_lock_RR": {
+			"order": 1.0063,
+			"onDown": "electrics.values.doorLocked_RR = 1 - (electrics.values.doorLocked_RR or 0)",
+			"title": "Toggle Rear Right Door Lock",
+			"desc": "Locks or unlocks the rear right door"
+		},
+		"audi6_lock_trunk": {
+			"order": 1.009,
+			"onDown": "electrics.values.doorLocked_trunk = 1 - (electrics.values.doorLocked_trunk or 0)",
+			"title": "Toggle Boot Lock",
+			"desc": "Locks or unlocks the boot lid or tailgate"
+		},
+		"audi6_lockAll": {
+			"order": 1.0091,
+			"onDown": "autolocking.lockAll()",
+			"title": "Lock all vehicle doors",
+			"desc": "Locks all vehicle doors"
+		},		
+		"audi6_unlockAll": {
+			"order": 1.0092,
+			"onDown": "autolocking.unlockAll()",
+			"title": "Unlock all vehicle doors",
+			"desc": "Unlocks all vehicle doors"
+		},		
+		"audi6_toggleLock": {
+			"order": 1.0093,
+			"onDown": "autolocking.toggleLockAll()",
+			"title": "Toggle All Doors Lock",
+			"desc": "Locks or unlocks all vehicle doors"
+		},		
+		"gauges_screen_menu": {
+			"order": 1.01,
+			"onDown": "if electrics.values.gaugesMenu < 4 then electrics.values.gaugesMenu = electrics.values.gaugesMenu + 1 else electrics.values.gaugesMenu = 1 end",
+			"title": "Gauges Screen Menu",
+			"desc": "Cycles through the digital gauge cluster display modes"
+		},
+		"audi6_startEngine": {
+			"order": 1.02,
+			"onDown": "if electrics.values.ignitionLevel == 0 then electrics.setIgnitionLevel(2) else electrics.setIgnitionLevel(3) end",
+			"onUp": "if electrics.values.ignitionLevel > 0 then electrics.setIgnitionLevel(2)",
+			"title": "Start Engine",
+			"desc": "Engages the starter motor to start the engine"
+		},
+		"audi6_stopEngine": {
+			"order": 1.03,
+			"onDown": "electrics.setIgnitionLevel(0)",
+			"title": "Stop Engine",
+			"desc": "Turns off the engine and ignition"
+		},
+		"resetTrip": {
+			"order": 1.04,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.resetTrip = electrics.values.resetTrip + 1 end",
+			"title": "Reset Trip Meter",
+			"desc": "Resets the odometer trip distance"
+		},
+		"audi6_cycle_headlights": {
+			"order": 1.05,
+			"onDown": "lightbutton.cycleHeadlights()",
+			"title": "Cycle Headlights",
+			"desc": "Cycles headlights through off, auto, and low beam"
+		},
+		"mmi_nav": {
+			"order": 2.01,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 1 end",
+			"title": "MMI Navigation Menu",
+			"desc": "Switches the MMI display to the Navigation screen"
+		},
+		"mmi_cd": {
+			"order": 2.02,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 2 end",
+			"title": "MMI Media/CD Menu",
+			"desc": "Switches the MMI display to the Media/CD screen"
+		},
+		"mmi_car": {
+			"order": 2.03,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 5 end",
+			"title": "MMI Car Menu",
+			"desc": "Switches the MMI display to the Car screen"
+		},		
+		"mmi_name": {
+			"order": 2.04,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 6 end",
+			"title": "MMI Name Menu",
+			"desc": "Switches the MMI display to the Name screen"
+		},		
+		"mmi_tel": {
+			"order": 2.05,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 7 end",
+			"title": "MMI Telephone Menu",
+			"desc": "Switches the MMI display to the Telephone screen"
+		},
+		"button_setup": {
+			"order": 2.06,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiMenu = 4 end",
+			"title": "MMI Setup AC",
+			"desc": "Switches the MMI display to the Setup AC screen"
+		},
+		
+		"submenu1": {
+			"order": 2.07,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.submenu = 1 end",
+			"title": "MMI Submenu",
+			"desc": "Switches the MMI to the Submenu"
+		},		
+		"submenu2": {
+			"order": 2.08,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.submenu = 2 end",
+			"title": "MMI Submenu",
+			"desc": "Switches the MMI to the Submenu"
+		},		
+		"submenu3": {
+			"order": 2.09,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.submenu = 3 end",
+			"title": "MMI Submenu",
+			"desc": "Switches the MMI to the Submenu"
+		},		
+		"submenu4": {
+			"order": 2.10,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.submenu = 4 end",
+			"title": "MMI Submenu",
+			"desc": "Switches the MMI to the Submenu"
+		},
+		"mmi_return": {
+			"order": 2.11,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.submenu = 0 end",
+			"title": "MMI Return",
+			"desc": "Switches the MMI to the parent Menu"
+		},
+		"mmi_ok": {
+			"order": 2.12,
+			"onDown": "button_sounds.playKnobSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmi_ok = 1 end",
+			"title": "MMI OK",
+			"desc": "Presses OK on the MMI"
+		},
+		"mmi_scrollup": {
+		  "order": 2.13,
+			  "onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiscroll = math.max((electrics.values.mmiscroll or 1) - 1, 1) end",
+		  "title": "MMI Scroll Up",
+		  "desc": "MMI Scroll Up"
+		},
+		"mmi_scrolldown": {
+		  "order": 2.14,
+			  "onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then electrics.values.mmiscroll = math.min((electrics.values.mmiscroll or 1) + 1, electrics.values.mmimax or 6) end",
+		  "title": "MMI Scroll Down",
+		  "desc": "MMI Scroll Down"
+		},
+		
+		
+		"screen2_state": {
+			"order": 2.15,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then music.togglePower() end",
+			"title": "MMI Power",
+			"desc": "Toggles the MMI screen and resets playback states"
+		},
+		"musicPause_state": {
+			"order": 2.16,
+			"onDown": "button_sounds.playKnobSound(); if electrics.values.ignitionLevel > 0 then music.togglePause() end",
+			"title": "Play/Pause",
+			"desc": "Toggles between playing and pausing the current track"
+		},
+		"musicVolume_down": {
+			"order": 2.18,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then music.adjustVolume(-0.5) end",
+			"title": "Volume Down",
+			"desc": "Decreases the audio volume"
+		},
+		"musicVolume_up": {
+			"order": 2.19,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then music.adjustVolume(0.5) end",
+			"title": "Volume Up",
+			"desc": "Increases the audio volume"
+		},		
+		"musicVolume_mute": {
+			"order": 2.19,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then music.toggleMute() end",
+			"title": "Volume Up",
+			"desc": "Increases the audio volume"
+		},
+		"musicSkipNext": {
+			"order": 2.20,
+			"onDown": "button_sounds.playPressSound(); music.changeTrack(1); if electrics.values.ignitionLevel > 0 then if electrics.values.mmiMenu == 2 and electrics.values.submenu == 0 then electrics.values.mmiscroll = electrics.values.current_music_index end end",
+			"title": "Skip Next Track",
+			"desc": "Skips to the next song in the playlist"
+		},
+		"musicSkipPrevious": {
+			"order": 2.21,
+			"onDown": "button_sounds.playPressSound(); music.changeTrack(-1); if electrics.values.ignitionLevel > 0 then if electrics.values.mmiMenu == 2 and electrics.values.submenu == 0 then electrics.values.mmiscroll = electrics.values.current_music_index end end",
+			"title": "Skip Previous Track",
+			"desc": "Skips to the previous song in the playlist"
+		},
+		"button_onoff": {
+			"order": 3.01,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_onoff = 1 - (electrics.values.button_onoff or 0) end",
+			"title": "Climate Control Power",
+			"desc": "Toggles the entire HVAC system on or off"
+		},
+		"button_econ": {
+			"order": 3.02,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then hvac.toggleEcon() end",
+			"title": "Economy Mode",
+			"desc": "Disables the AC compressor to save fuel"
+		},
+		"button_recirculation": {
+			"order": 3.03,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_recirculation = 1 - (electrics.values.button_recirculation or 0) end",
+			"title": "Air Recirculation",
+			"desc": "Toggles between fresh air and recirculated cabin air"
+		},
+		"button_auto1": {
+			"order": 3.04,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_auto1 = 1 - (electrics.values.button_auto1 or 0); hvac.triggerPulse('button_auto1') end;",
+			"title": "Left Auto Climate",
+			"desc": "Sets the driver side climate control to automatic mode"
+		},
+		"button_auto2": {
+			"order": 3.05,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_auto2 = 1 - (electrics.values.button_auto2 or 0); hvac.triggerPulse('button_auto2') end;",
+			"title": "Right Auto Climate",
+			"desc": "Sets the passenger side climate control to automatic mode"
+		},
+		"tempLeftLower": {
+			"order": 3.06,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then hvac.changeValue('left', -1) end",
+			"title": "Decrease Driver Side"
+		},
+		"tempLeftHigher": {
+			"order": 3.07,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then hvac.changeValue('left', 1) end",
+			"title": "Increase Driver Side"
+		},
+		"tempRightLower": {
+			"order": 3.08,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then hvac.changeValue('right', -1) end",
+			"title": "Decrease Passenger Side"
+		},
+		"tempRightHigher": {
+			"order": 3.081,
+			"onDown": "button_sounds.playRotateSound(); if electrics.values.ignitionLevel > 0 then hvac.changeValue('right', 1) end",
+			"title": "Increase Passenger Side"
+		},		
+		"directTempLeftHigher": {
+			"order": 3.082,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directTempLeftHigher() end",
+			"title": "Decrease Driver Side"
+		},
+		"directTempLeftLower": {
+			"order": 3.083,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directTempLeftLower() end",
+			"title": "Increase Driver Side"
+		},
+		"directTempRightHigher": {
+			"order": 3.084,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directTempRightHigher() end",
+			"title": "Decrease Passenger Side"
+		},
+		"directTempRightLower": {
+			"order": 3.085,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directTempRightLower() end",
+			"title": "Increase Passenger Side"
+		},
+		"directFanHigher": {
+			"order": 3.09,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directFanHigher() end",
+			"title": "Fan Speed Up",
+			"desc": "Increase fan speed"
+		},
+		"directFanLower": {
+			"order": 3.091,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directFanLower() end",
+			"title": "Fan Speed Down",
+			"desc": "Decrease fan speed"
+		},
+		"directAirflowHigher": {
+			"order": 3.092,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directAirflowHigher() end",
+			"title": "Airflow Up",
+			"desc": "Cycle airflow direction forward"
+		},
+		"directAirflowLower": {
+			"order": 3.093,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.directAirflowLower() end",
+			"title": "Airflow Down",
+			"desc": "Cycle airflow direction backward"
+		},
+		"button_frontdemister": {
+			"order": 3.10,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_frontdemister = 1 - (electrics.values.button_frontdemister or 0); hvac.triggerPulse('button_frontdemister') end",
+			"title": "Front Defrost",
+			"desc": "Directs maximum airflow to the windshield"
+		},
+		"button_reardemister": {
+			"order": 3.11,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_reardemister = 1 - (electrics.values.button_reardemister or 0) end",
+			"title": "Rear Defrost",
+			"desc": "Activates the electric rear window heating element"
+		},
+		"button_fan": {
+			"order": 3.12,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.triggerPulse('button_fan') end",
+			"title": "Fan Speed Control",
+			"desc": "Fan speed control"
+		},
+		"button_airflow1": {
+			"order": 3.13,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.triggerPulse('button_airflow1') end",
+			"title": "Driver Air Flow Direction Mode",
+			"desc": "Toggles air flow direction mode for the driver"
+		},
+		"button_airflow2": {
+			"order": 3.14,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.triggerPulse('button_airflow2') end",
+			"title": "Passenger Air Flow Direction Mode",
+			"desc": "Toggles air flow direction mode for the passenger"
+		},
+		"button_heatedseat1": {
+			"order": 3.15,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.triggerPulse('button_heatedseat1') end",
+			"title": "Driver Heated Seat",
+			"desc": "Signals the climate system to show seat settings"
+		},
+		"button_heatedseat2": {
+			"order": 3.16,
+			"onDown": "if electrics.values.ignitionLevel > 0 then hvac.triggerPulse('button_heatedseat2') end",
+			"title": "Passenger Heated Seat",
+			"desc": "Signals the climate system to show seat settings"
+		},
+		"button_rearsunshade": {
+			"order": 3.17,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_rearsunshade = 1 - (electrics.values.button_rearsunshade or 0) end",
+			"title": "Rear Sunshade",
+			"desc": "Deploys or retracts the electric rear window sunshade"
+		},		
+		"rearsunshade_manual": {
+			"order": 3.171,
+			"onDown": "electrics.values.rearsunshade_manual = 1 - (electrics.values.rearsunshade_manual or 0)",
+			"title": "Rear Sunshade",
+			"desc": "Deploys or retracts the manual rear window sunshade"
+		},
+		"button_blis": {
+			"order": 3.18,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_blis = 1 - (electrics.values.button_blis or 0) end",
+			"title": "BLIS Toggle",
+			"desc": "Toggles the Blind Spot Information System"
+		},
+		"button_parkingsensors": {
+			"order": 3.19,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_parkingsensors = 1 - (electrics.values.button_parkingsensors or 0); electrics.values.button_pdc = 1 - (electrics.values.button_pdc or 0) end",
+			"title": "Parking Sensors",
+			"desc": "Toggles the ultrasonic parking distance sensors"
+		},		
+		"laneAssistSwitch": {
+			"order": 3.191,
+			"onDown": "if electrics.values.ignitionLevel > 0 then electrics.values.laneAssistSwitch = 1 - (electrics.values.laneAssistSwitch or 0) end",
+			"title": "Toggle Lane Assist",
+			"desc": "Toggles the lane assist system"
+		},
+		"button_memseats": {
+			"order": 3.20,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_memseats = 1 - (electrics.values.button_memseats or 0) end",
+			"title": "Driver's Memory Seat",
+			"desc": "Toggles the driver's memory seat"
+		},		
+		"button_memseats_alt": {
+			"order": 3.201,
+			"onDown": "button_sounds.playPressSound(); if electrics.values.ignitionLevel > 0 then electrics.values.button_memseats_alt = 1 - (electrics.values.button_memseats_alt or 0) end",
+			"title": "Passenger's Memory Seat",
+			"desc": "Toggles the passenger's memory seat"
+		},
+		"increaseHeatedSeatLevel": {
+			"order": 3.21,
+			"onDown": "if electrics.values.ignitionLevel > 0 then heated_seats.increaseHeatedSeat() end",
+			"title": "Increase Driver Heat Level",
+			"desc": "Increases the intensity of the driver's heated seat"
+		},
+		"decreaseHeatedSeatLevel": {
+			"order": 3.22,
+			"onDown": "if electrics.values.ignitionLevel > 0 then heated_seats.decreaseHeatedSeat() end",
+			"title": "Decrease Driver Heat Level",
+			"desc": "Decreases the intensity of the driver's heated seat"
+		},
+		"increaseHeatedSeatPLevel": {
+			"order": 3.23,
+			"onDown": "if electrics.values.ignitionLevel > 0 then heated_seats.increaseHeatedSeatP() end",
+			"title": "Increase Passenger Heat Level",
+			"desc": "Increases the intensity of the passenger's heated seat"
+		},
+		"decreaseHeatedSeatPLevel": {
+			"order": 3.24,
+			"onDown": "if electrics.values.ignitionLevel > 0 then heated_seats.decreaseHeatedSeatP() end",
+			"title": "Decrease Passenger Heat Level",
+			"desc": "Decreases the intensity of the passenger's heated seat"
+		},
+
+		"domelight_FL": {
+			"order": 4.01,
+			"onDown": "button_sounds.playPressSound(); electrics.values.domelight_FL = 1 - (electrics.values.domelight_FL or 0)",
+			"title": "Front Left Dome Light",
+			"desc": "Toggles the driver side reading light"
+		},
+		"domelight_FR": {
+			"order": 4.02,
+			"onDown": "button_sounds.playPressSound(); electrics.values.domelight_FR = 1 - (electrics.values.domelight_FR or 0)",
+			"title": "Front Right Dome Light",
+			"desc": "Toggles the passenger side reading light"
+		},
+		"domelight_RL": {
+			"order": 4.03,
+			"onDown": "button_sounds.playPressSound(); electrics.values.domelight_RL = 1 - (electrics.values.domelight_RL or 0)",
+			"title": "Rear Left Dome Light",
+			"desc": "Toggles the rear left reading light"
+		},
+		"domelight_RR": {
+			"order": 4.04,
+			"onDown": "button_sounds.playPressSound(); electrics.values.domelight_RR = 1 - (electrics.values.domelight_RR or 0)",
+			"title": "Rear Right Dome Light",
+			"desc": "Toggles the rear right reading light"
+		},
+		"domelight_R": {
+			"order": 4.05,
+			"onDown": "button_sounds.playPressSound(); electrics.values.domelight_R = 1 - (electrics.values.domelight_R or 0)",
+			"title": "Rear Center Dome Light",
+			"desc": "Toggles the main rear interior light"
+		},
+		"taxi_light_R": {
+			"order": 4.06,
+			"onDown": "button_sounds.playPressSound(); electrics.values.taxi_light_R = 1 - (electrics.values.taxi_light_R or 0)",
+			"title": "Taxi Light Mode",
+			"desc": "Toggles between the taxi light modes (red/green)"
+		},
+		"tiltUp": {
+			"order": 6.01,
+			"onChange": "custom_input.tiltBed( 0.5 * VALUE)",
+			"title": "Tilt Up Driver Seat",
+			"desc": "Tilts the front of the driver seat cushion upward"
+		},
+		"tiltDown": {
+			"order": 6.02,
+			"onChange": "custom_input.tiltBed(-0.5 * VALUE)",
+			"title": "Tilt Down Driver Seat",
+			"desc": "Tilts the front of the driver seat cushion downward"
+		},
+		"reclineUp": {
+			"order": 6.03,
+			"onChange": "custom_input.reclineseat( 0.5 * VALUE)",
+			"title": "Recline Forward Driver Seat",
+			"desc": "Moves the driver seat backrest to a more upright position"
+		},
+		"reclineDown": {
+			"order": 6.04,
+			"onChange": "custom_input.reclineseat(-0.5 * VALUE)",
+			"title": "Recline Backward Driver Seat",
+			"desc": "Tilts the driver seat backrest further back"
+		},
+		"tiltUpa": {
+			"order": 6.05,
+			"onChange": "custom_input.tiltBeda( 0.5 * VALUE)",
+			"title": "Tilt Up Passenger Seat",
+			"desc": "Tilts the front of the passenger seat cushion upward"
+		},
+		"tiltDowna": {
+			"order": 6.06,
+			"onChange": "custom_input.tiltBeda(-0.5 * VALUE)",
+			"title": "Tilt Down Passenger Seat",
+			"desc": "Tilts the front of the passenger seat cushion downward"
+		},
+		"reclineUpa": {
+			"order": 6.07,
+			"onChange": "custom_input.reclineseata( 0.5 * VALUE)",
+			"title": "Recline Forward Passenger Seat",
+			"desc": "Moves the passenger seat backrest to a more upright position"
+		},
+		"reclineDowna": {
+			"order": 6.08,
+			"onChange": "custom_input.reclineseata(-0.5 * VALUE)",
+			"title": "Recline Backward Passenger Seat",
+			"desc": "Tilts the passenger seat backrest further back"
+		},
+		"moveHeadrestFLUp": {
+			"order": 6.09,
+			"onChange": "custom_input.moveSeatHeadrestFL(-0.5 * VALUE)",
+			"title": "Headrest Up (Front Left)",
+			"desc": "Raises the front left seat headrest"
+		},
+		"moveHeadrestFLDown": {
+			"order": 6.10,
+			"onChange": "custom_input.moveSeatHeadrestFL(0.5 * VALUE)",
+			"title": "Headrest Down (Front Left)",
+			"desc": "Lowers the front left seat headrest"
+		},
+		"moveHeadrestFRUp": {
+			"order": 6.11,
+			"onChange": "custom_input.moveSeatHeadrestFR(-0.5 * VALUE)",
+			"title": "Headrest Up (Front Right)",
+			"desc": "Raises the front right seat headrest"
+		},
+		"moveHeadrestFRDown": {
+			"order": 6.12,
+			"onChange": "custom_input.moveSeatHeadrestFR(0.5 * VALUE)",
+			"title": "Headrest Down (Front Right)",
+			"desc": "Lowers the front right seat headrest"
+		},
+		"moveHeadrestRLUp": {
+			"order": 6.13,
+			"onChange": "custom_input.moveSeatHeadrestRL(-0.5 * VALUE)",
+			"title": "Headrest Up (Rear Left)",
+			"desc": "Raises the rear left seat headrest"
+		},
+		"moveHeadrestRLDown": {
+			"order": 6.14,
+			"onChange": "custom_input.moveSeatHeadrestRL(0.5 * VALUE)",
+			"title": "Headrest Down (Rear Left)",
+			"desc": "Lowers the rear left seat headrest"
+		},
+		"moveHeadrestRRUp": {
+			"order": 6.15,
+			"onChange": "custom_input.moveSeatHeadrestRR(-0.5 * VALUE)",
+			"title": "Headrest Up (Rear Right)",
+			"desc": "Raises the rear right seat headrest"
+		},
+		"moveHeadrestRRDown": {
+			"order": 6.16,
+			"onChange": "custom_input.moveSeatHeadrestRR(0.5 * VALUE)",
+			"title": "Headrest Down (Rear Right)",
+			"desc": "Lowers the rear right seat headrest"
+		},		
+		"moveHeadrestRUp": {
+			"order": 6.17,
+			"onChange": "custom_input.moveSeatHeadrestR(-0.5 * VALUE)",
+			"title": "Headrest Up (Rear Center)",
+			"desc": "Raises the rear center seat headrest"
+		},
+		"moveHeadrestRDown": {
+			"order": 6.18,
+			"onChange": "custom_input.moveSeatHeadrestR(0.5 * VALUE)",
+			"title": "Headrest Down (Rear Center)",
+			"desc": "Lowers the rear center seat headrest"
+		},
+		"sunvisor_mirrorcover_L": {
+			"order": 7.001,
+			"onDown": "electrics.values.sunvisor_mirrorcover_L = 1 - (electrics.values.sunvisor_mirrorcover_L or 0)",
+			"title": "Open/Close Left Sunvisor Mirror Cover",
+			"desc": "Opens or closes Left Sunvisor Mirror Cover"
+		},		
+		"sunvisor_mirrorcover_R": {
+			"order": 7.002,
+			"onDown": "electrics.values.sunvisor_mirrorcover_R = 1 - (electrics.values.sunvisor_mirrorcover_R or 0)",
+			"title": "Open/Close Right Sunvisor Mirror Cover",
+			"desc": "Opens or closes Right Sunvisor Mirror Cover"
+		},
+		"sunvisor_lOPEN": {
+			"order": 7.01,
+			"onChange": "custom_input.open_sunvisor_l(VALUE)",
+			"title": "Open Left Sunvisor",
+			"desc": "Folds down the driver side sunvisor"
+		},
+		"sunvisor_lCLOSE": {
+			"order": 7.02,
+			"onChange": "custom_input.close_sunvisor_l(VALUE)",
+			"title": "Close Left Sunvisor",
+			"desc": "Folds up the driver side sunvisor"
+		},
+		"sunvisor_rOPEN": {
+			"order": 7.03,
+			"onChange": "custom_input.open_sunvisor_r(VALUE)",
+			"title": "Open Right Sunvisor",
+			"desc": "Folds down the passenger side sunvisor"
+		},
+		"sunvisor_rCLOSE": {
+			"order": 7.04,
+			"onChange": "custom_input.close_sunvisor_r(VALUE)",
+			"title": "Close Right Sunvisor",
+			"desc": "Folds up the passenger side sunvisor"
+		},
+		"window_unlock_R": {
+			"order": 7.041,
+			"onChange": "if electrics.values.ignitionLevel > 0 then electrics.values.window_lock_RL = 0 electrics.values.window_lock_RR = 0 end",
+			"title": "Unlock Rear Windows",
+			"desc": "Unlocks both rear windows"
+		},
+		"window_lock_R": {
+			"order": 7.042,
+			"onChange": "if electrics.values.ignitionLevel > 0 then electrics.values.window_lock_RL = 1 electrics.values.window_lock_RR = 1 end",
+			"title": "Lock Rear Windows",
+			"desc": "Locks both rear windows"
+		},
+		"window_lock_toggle_RL": {
+			"order": 7.042,
+			"onDown": "if electrics.values.ignitionLevel > 0 then electrics.values.window_lock_RL = 1 - (electrics.values.window_lock_RL or 0) end",
+			"title": "Toggle Rear Left Window Lock",
+			"desc": "Locks or unlocks the rear left window"
+		},
+		"window_lock_toggle_RR": {
+			"order": 7.043,
+			"onDown": "if electrics.values.ignitionLevel > 0 then electrics.values.window_lock_RR = 1 - (electrics.values.window_lock_RR or 0) end",
+			"title": "Toggle Rear Right Window Lock",
+			"desc": "Locks or unlocks the rear right window"
+		},
+		"open_window_FL": {
+			"order": 7.05,
+			"onChange": "if electrics.values.ignitionLevel > 0 then custom_input.open_window_FL(VALUE) end",
+			"title": "Open Front Left Window",
+			"desc": "Lowers the front left side window"
+		},
+		"close_window_FL": {
+			"order": 7.06,
+			"onChange": "if electrics.values.ignitionLevel > 0 then custom_input.close_window_FL(VALUE) end",
+			"title": "Close Front Left Window",
+			"desc": "Raises the front left side window"
+		},
+		"open_window_FR": {
+			"order": 7.07,
+			"onChange": "if electrics.values.ignitionLevel > 0 then custom_input.open_window_FR(VALUE) end",
+			"title": "Open Front Right Window",
+			"desc": "Lowers the front right side window"
+		},
+		"close_window_FR": {
+			"order": 7.08,
+			"onChange": "if electrics.values.ignitionLevel > 0 then custom_input.close_window_FR(VALUE) end",
+			"title": "Close Front Right Window",
+			"desc": "Raises the front right side window"
+		},
+		"open_window_RL": {
+			"order": 7.09,
+			"onChange": "if electrics.values.ignitionLevel > 0 and (electrics.values.window_lock_RL or 0) == 0 then custom_input.open_window_RL(VALUE) end",
+			"title": "Open Rear Left Window",
+			"desc": "Lowers the rear left side window"
+		},
+		"close_window_RL": {
+			"order": 7.10,
+			"onChange": "if electrics.values.ignitionLevel > 0 and (electrics.values.window_lock_RL or 0) == 0 then custom_input.close_window_RL(VALUE) end",
+			"title": "Close Rear Left Window",
+			"desc": "Raises the rear left side window"
+		},
+		"open_window_RR": {
+			"order": 7.11,
+			"onChange": "if electrics.values.ignitionLevel > 0 and (electrics.values.window_lock_RR or 0) == 0 then custom_input.open_window_RR(VALUE) end",
+			"title": "Open Rear Right Window",
+			"desc": "Lowers the rear right side window"
+		},
+		"close_window_RR": {
+			"order": 7.12,
+			"onChange": "if electrics.values.ignitionLevel > 0 and (electrics.values.window_lock_RR or 0) == 0 then custom_input.close_window_RR(VALUE) end",
+			"title": "Close Rear Right Window",
+			"desc": "Raises the rear right side window"
+		},
+		"toggle_sunroof_shade": {
+			"order": 7.13,
+			"onDown": "sunroof_shade.toggleRoof()",
+			"title": "Toggle Sunroof Shade",
+			"desc": "Opens or closes the sunroof shade"
+		},
+		"sunroof_tilt": {
+			"order": 7.15,
+			"onDown": "electrics.values.sunroof_tilt = ((electrics.values.sunroof_tilt or 0) > 0) and 0 or 1",
+			"title": "Tilt Sunroof Glass",
+			"desc": "Tilts the sunroof glass"
+		},
+		"sunroof_slide": {
+			"order": 7.16,
+			"onDown": "electrics.values.sunroof_slide = 1 - (electrics.values.sunroof_slide or 0); if electrics.values.sunroof_slide == 1 then sunroof_shade.openRoof() end",
+			"title": "Slide Sunroof Glass",
+			"desc": "Slides the sunroof glass"
+		},
+		"audi6_fold_mirror": {
+			"order": 8.01,
+			"onDown": "electrics.values.audi6_fold_mirror = 1 - (electrics.values.audi6_fold_mirror or 0)",
+			"title": "Fold/Unfold Mirrors",
+			"desc": "Folds or unfolds the mirrors"
+		},		
+		"armrest_door": {
+			"order": 9.01,
+			"onDown": "electrics.values.armrest_door = 1 - (electrics.values.armrest_door or 0)",
+			"title": "Open/Close Armrest Door",
+			"desc": "Opens or closes the armrest door"
+		},			
+		"ashtray_door": {
+			"order": 9.02,
+			"onDown": "electrics.values.ashtray_door = 1 - (electrics.values.ashtray_door or 0)",
+			"title": "Open/Close Ash Tray Door",
+			"desc": "Opens or closes the ash tray door"
+		},				
+		"ashtray_door_RL": {
+			"order": 9.021,
+			"onDown": "electrics.values.ashtray_door_RL = 1 - (electrics.values.ashtray_door_RL or 0)",
+			"title": "Open/Close Rear Left Ash Tray Door",
+			"desc": "Opens or closes the rear left ash tray door"
+		},				
+		"ashtray_door_RR": {
+			"order": 9.022,
+			"onDown": "electrics.values.ashtray_door_RR = 1 - (electrics.values.ashtray_door_RR or 0)",
+			"title": "Open/Close Ash Rear Right Tray Door",
+			"desc": "Opens or closes the rear right ash tray door"
+		},		
+		"cupholder_door": {
+			"order": 9.03,
+			"onDown": "electrics.values.cupholder_door = 1 - (electrics.values.cupholder_door or 0)",
+			"title": "Open/Close Cup Holder Door",
+			"desc": "Opens or closes the cup holder door"
+		},		
+		"glovebox_door": {
+			"order": 9.04,
+			"onDown": "electrics.values.glovebox_door = 1 - (electrics.values.glovebox_door or 0)",
+			"title": "Open/Close Glove Box Door",
+			"desc": "Opens or closes the glove box door"
+		},		
+		"curtain_RL": {
+			"order": 10.01,
+			"onDown": "electrics.values.curtain_RL = 1 - (electrics.values.curtain_RL or 0)",
+			"title": "Open/Close Rear Left Curtain",
+			"desc": "Opens or closes the rear left curtain"
+		},		
+		"curtain_RR": {
+			"order": 10.02,
+			"onDown": "electrics.values.curtain_RR = 1 - (electrics.values.curtain_RR or 0)",
+			"title": "Open/Close Rear Right Curtain",
+			"desc": "Opens or closes the rear right curtain"
+		},
+		"armrest": {
+			"order": 11.01,
+			"onDown": "button_sounds.playPressSound(); electrics.values.armrest = 1 - (electrics.values.armrest or 0)",
+			"title": "Center Armrest",
+			"desc": "Opens or closes the center console armrest"
+		},		
+		"armrest_r": {
+			"order": 11.02,
+			"onDown": "if electrics.values.seatfold_RR == 0 then electrics.values.armrest_r = 1 - (electrics.values.armrest_r or 0) else guihooks.message('Unfold rear right seat first', 2) end",
+			"title": "Rear Armrest",
+			"desc": "Opens or closes the rear seats armrest"
+		},
+		"seatfold_RR": {
+			"order": 12.01,
+			"onDown": "if electrics.values.armrest_r == 0 then electrics.values.seatfold_RR = 1 - (electrics.values.seatfold_RR or 0) else guihooks.message('Close rear armrest first', 2) end",
+			"title": "Fold/Unfold Rear Right Seat",
+			"desc": "Folds or unfolds the rear right seat"
+		},				
+		"seatfold_RL": {
+			"order": 12.02,
+			"onDown": "electrics.values.seatfold_RL = 1 - (electrics.values.seatfold_RL or 0)",
+			"title": "Fold/Unfold Rear Left Seat",
+			"desc": "Folds or unfolds the rear left seat"
+		},			
+		"fueldoor": {
+			"order": 13.01,
+			"onDown": "electrics.values.fueldoor = 1 - (electrics.values.fueldoor or 0)",
+			"title": "Open/Close Fuel Door",
+			"desc": "Opens or closes the fuel door"
+		},		
+		"mirror_dimming": {
+			"order": 14.01,
+			"onDown": "button_sounds.playPressSound(); electrics.values.mirror_dimming = 1 - (electrics.values.mirror_dimming or 0)",
+			"title": "Toggle Mirror Dimming",
+			"desc": "Turns on or off the mirror dimming system"
+		},		
+		"partitionnet": {
+			"order": 15.01,
+			"onDown": "electrics.values.partitionnet = 1 - (electrics.values.partitionnet or 0)",
+			"title": "Toggle Partition Net",
+			"desc": "Opens or closes the partition net"
+		},		
+		"parcelshelf": {
+			"order": 16.01,
+			"onDown": "electrics.values.parcelshelf = 1 - (electrics.values.parcelshelf or 0)",
+			"title": "Toggle Parcel Shelf",
+			"desc": "Opens or closes the parcel shelf"
+		},
+	}
+}

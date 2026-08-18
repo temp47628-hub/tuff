@@ -1,0 +1,68 @@
+{
+"audi6_gauges_metric": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Metric Diesel Pre-Facelift Gauges",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_gauges_screen_pfl","audi6_gauges_screen_pfl", "Gauge Screen", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_gauges", ["audi6_dash"]],
+        ["audi6_decals_gauges", ["audi6_dash"]],
+
+
+
+    ],
+    "glowMap":{
+        "audi6_gauges":{"simpleFunction":{"lowhighbeam_auto":1}, "off":"audi6_gauges", "on":"audi6_gauges_on", "on_intense":"audi6_gauges_on"},
+        "audi6_needles":{"simpleFunction":{"ignitionLevel":1}, "off":"audi6_gauges", "on":"audi6_gauges_on", "on_intense":"audi6_gauges_on"},
+
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed_sweep_kmh", "audi6_needle_speedo", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":-5}, {"x":0, "y":0, "z":-3.51}     , {"x":0, "y":0, "z":0}, 0, 77.77, 0, 0.75],
+        ["rpm_diesel_sweep",         "audi6_needle_tacho", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":5}, {"x":0, "y":0, "z":-0.042}     , {"x":0, "y":0, "z":0}, 0, 6000, 0, 1],
+        ["fuel",         "audi6_needle_fuel", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":-95}     , {"x":0, "y":0, "z":0}, 0, 1, 0.17, 1],
+        ["watertemp",      "audi6_needle_temp", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":1.1}     , {"x":0, "y":0, "z":0}, 50, 130, -93, 1],
+    ],
+},
+"audi6_gauges_metric_gasoline": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Metric Gasoline Pre-Facelift Gauges",
+        "value":200,
+    },
+    "slotType" : "audi6_gauges",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_gauges_screen_pfl","audi6_gauges_screen_pfl", "Gauge Screen", {"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["audi6_gauges", ["audi6_dash"], [],{"materialOverride":[["audi6_gauges","audi6_gauges_gasoline"]]}],
+        ["audi6_decals_gauges", ["audi6_dash"]],
+
+
+
+    ],
+    "glowMap":{
+        "audi6_gauges_gasoline":{"simpleFunction":{"lowhighbeam_auto":1}, "off":"audi6_gauges_gasoline", "on":"audi6_gauges_gasoline_on", "on_intense":"audi6_gauges_gasoline_on"},
+        "audi6_needles":{"simpleFunction":{"ignitionLevel":1}, "off":"audi6_gauges_gasoline", "on":"audi6_gauges_gasoline_on", "on_intense":"audi6_gauges_gasoline_on"},
+
+    },
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //needles
+        ["wheelspeed_sweep_kmh", "audi6_needle_speedo", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":-5}, {"x":0, "y":0, "z":-3.51}     , {"x":0, "y":0, "z":0}, 0, 77.77, 0, 0.75,{"materialOverride":[["audi6_gauges","audi6_gauges_gasoline"]]}],
+        ["rpm_sweep",         "audi6_needle_tacho", "dsh2", "dsh2l", "dsh1", {"x":-85, "y":0, "z":5}, {"x":0, "y":0, "z":-0.032}     , {"x":0, "y":0, "z":0}, 0, 8000, 0, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_gasoline"]]}],
+        ["fuel",         "audi6_needle_fuel", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":-95}     , {"x":0, "y":0, "z":0}, 0, 1, 0.17, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_gasoline"]]}],
+        ["watertemp",      "audi6_needle_temp", "dsh2", "dsh2l", "dsh1", {"x":-90, "y":0, "z":0}, {"x":0, "y":0, "z":1.1}     , {"x":0, "y":0, "z":0}, 50, 130, -93, 1,{"materialOverride":[["audi6_gauges","audi6_gauges_gasoline"]]}],
+    ],
+},
+}

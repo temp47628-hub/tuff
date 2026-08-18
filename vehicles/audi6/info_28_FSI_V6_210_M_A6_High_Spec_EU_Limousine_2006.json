@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.8L FSI V6 [210] (M) A6 High-Spec (EU) [Limousine] 2006",
+      "Description": "2006 Limousine 2.8L FSI V6 (210 HP) with 6-Speed Manual Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, advanced audi parking system, start-stop system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, rear electric window blind, climate control, DSP audio system, tan and cardamom beige interior, brown walnut inlay finish, cardamom beige mondial cloth seats. Exterior painted in Dakar Beige",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 210,
+      "Torque": 280,
+      "Top Speed": 67.50304,
+      "Weight": 1540,
+      "Value": 56010,
+      "0-100 km/h": 7.9,
+      "0-60 mph": 7.6,
+      "defaultPaintName1": "Dakar Beige [A6]"
+}

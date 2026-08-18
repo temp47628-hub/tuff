@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.4L V6 (Multitronic) S-Line High-Spec (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.4L V6 (177 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, electrically adjustable seats, lighting pacakge, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black volterra leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "7-Speed Multitronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power":177,
+      "Torque":230,
+      "Top Speed":61.55988857938719,
+      "Weight":1625,
+      "Value":34570,
+      "0-100 km/h":9.5,
+      "0-60 mph":9.0,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

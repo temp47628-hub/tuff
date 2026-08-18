@@ -1,0 +1,86 @@
+{
+"audi6_skin_interior": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black/Black",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet", "Carpet", {"coreSlot":true}],
+        ["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : ""
+},
+"audi6_skin_interior_beige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tan Beige/Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet_beige", "Carpet", {"coreSlot":true}],
+		["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : "beige_interior"
+},
+"audi6_skin_interior_beige2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Taupe Beige/Cardamom Beige",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet_beige", "Carpet", {"coreSlot":true}],
+		["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : "beige2_interior"
+},
+"audi6_skin_interior_blue": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Deep Blue/Deep Blue",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet_blue", "Carpet", {"coreSlot":true}],
+		["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : "blue_interior"
+},
+"audi6_skin_interior_creambeige": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Cream Beige/Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet_creambeige", "Carpet", {"coreSlot":true}],
+		["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : "creambeige_interior"
+},
+"audi6_skin_interior_grey": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Graphite Grey/Light Grey",
+        "value":500,
+    },
+    "slotType" : "skin_interior",
+    "slots": [
+        ["type", "default", "description"],
+        ["skin_carpet","audi6_skin_carpet_grey", "Carpet", {"coreSlot":true}],
+		["audi6_interior_exclusive","", "Exclusive Interior"],
+    ],
+    "skinName" : "grey_interior"
+},
+}

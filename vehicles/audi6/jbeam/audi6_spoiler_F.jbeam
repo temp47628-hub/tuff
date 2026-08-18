@@ -1,0 +1,14 @@
+{
+"audi6_spoiler_F_a6_pfl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Style Package Spoiler",
+        "value":340,
+    },
+    "slotType" : "audi6_spoiler_F_a6_pfl",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_spoiler_F_a6_pfl", ["audi6_bumper_F"]],
+    ],
+},
+}

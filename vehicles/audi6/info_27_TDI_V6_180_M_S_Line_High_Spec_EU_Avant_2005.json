@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "2.7L TDI V6 [180] (M) S-Line High-Spec (EU) [Avant] 2005",
+      "Description": "2005 Avant 2.7L TDI V6 (180 HP) with 6-Speed Manual Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, advanced audi parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, lighting package, automatically actuated tailgate, load-area fixing kit, rear manual window blind, climate control, BOSE surround sound audio system, black interior, fine-grain grey birch inlay finish, black volterra leather seats. Exterior painted in Daytona Grey",
+      "Drivetrain": "FWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Diesel",
+      "Induction Type": "Turbo",
+      "Propulsion": "ICE",
+      "Power": 180,
+      "Torque": 380,
+      "Top Speed": 62.13856,
+      "Weight": 1710,
+      "Value": 43020,
+      "0-100 km/h": 8.3,
+      "0-60 mph": 7.9,
+      "defaultPaintName1": "Daytona Grey [S-Line and RS6]"
+}

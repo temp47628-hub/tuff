@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.0L TFSI (M) A6 (EU) [Avant] 2005",
+      "Description":"2005 Avant 2.0L TFSI (170 HP) with 6-Speed Manual Transmission. This model is equipped with basic halogen lights, 16-inch alloys, basic infotainment system with a CD player, base climate control, DSP audio system, graphite and light grey interior, grey inlay finish, light grey meridian cloth seats. Exterior painted in Brilliant Black",
+      "Drivetrain":"FWD",
+      "Transmission":  "6-Speed Manual",
+      "Fuel Type":"Gasoline",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":170,
+      "Torque":280,
+      "Top Speed":62.11699164345404,
+      "Weight":1590,
+      "Value":26020,
+      "0-100 km/h":8.7,
+      "0-60 mph":8.3,
+	  "defaultPaintName1":"Brilliant Black",
+}

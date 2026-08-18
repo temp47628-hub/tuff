@@ -1,0 +1,60 @@
+{
+  "audi6_lightglass": {
+    "name": "audi6_lightglass",
+    "mapTo": "audi6_lightglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/glass/glass_ao.data.png",
+        "baseColorMap": "vehicles/audi6/glass/glass_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/glass/glass_m.data.png",
+        "normalMap": "/vehicles/audi6/glass/glass_nm.normal.png",
+        "opacityMap": "/vehicles/audi6/glass/glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/glass/glass_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "audi6_lightglass.skin_lightglass.tint_lightglass": {
+    "name": "audi6_lightglass.skin_lightglass.tint_lightglass",
+    "mapTo": "audi6_lightglass.skin_lightglass.tint_lightglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/audi6/glass/glass_ao.data.png",
+        "baseColorMap": "vehicles/audi6/glass/lightglass_tint_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/audi6/glass/glass_m.data.png",
+        "normalMap": "/vehicles/audi6/glass/glass_nm.normal.png",
+        "opacityMap": "/vehicles/audi6/glass/lightglass_tint_o.data.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/glass/glass_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+}

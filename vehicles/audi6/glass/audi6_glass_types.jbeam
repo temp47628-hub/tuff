@@ -1,0 +1,63 @@
+{
+//stock
+"audi6_skin_glass_heat": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Heat Insulated Glass",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+    "skinName" : ""
+},
+"audi6_skin_glass_acoustic": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Insulated/Acoustic Glass",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+	"components": {
+        "electrics": {
+			"hasAcousticGlass": 1,
+        },
+    },
+    "skinName" : ""
+},
+//tint
+"audi6_skin_glass_tint_rear": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tinted Privacy Glass",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+    "skinName" : "tint_rear"
+},
+"audi6_skin_glass_tint_rear_acoustic": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tinted Privacy Glass (w/ Insulated/Acoustic Glass)",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+    "skinName" : "tint_rear"
+},
+"audi6_skin_glass_tint_all": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Full Tinted Privacy Glass",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+    "skinName" : "tint_all"
+},
+"audi6_skin_glass_tint_all_acoustic": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Full Tinted Privacy Glass (w/ Insulated/Acoustic Glass)",
+        "value":500,
+    },
+    "slotType" : "skin_glass",
+    "skinName" : "tint_all"
+},
+}

@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.2L FSI V6 Quattro (M) A6 High-Spec (EU) [Limousine] 2005",
+      "Description": "2005 Limousine 3.2L V6 FSI (256 HP) with 6-Speed Manual Transmission and Quattro permanent 50/50 four-wheel-drive and adaptive air suspension. This model is equipped with xenon headlights, LED taillights, adaptive light system, audi advanced parking system, homelink system, power folding auto-dimming mirrors with memory, electric slide and tilt sunroof, 18-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, GSM car telephone, auto-dimming rear view mirror, electrically adjustable seats with memory, luggage compartment package, lighting package, rear electric and side manual window blinds, climate control, BOSE surround sound audio system, graphite and light grey interior, brown walnut inlay finish, light grey valcona leather seats. Exterior painted in Stratos Blue",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Manual",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 256,
+      "Torque": 330,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1680,
+      "Value": 84010,
+      "0-100 km/h": 6.8,
+      "0-60 mph": 6.4,
+      "defaultPaintName1": "Stratos Blue"
+}

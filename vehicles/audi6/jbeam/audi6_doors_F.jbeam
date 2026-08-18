@@ -1,0 +1,2397 @@
+{
+"audi6_doordetent_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Right Door Detent",
+        "value":30,
+    },
+    "slotType" : "audi6_doordetent_FR",
+     "beams": [
+          ["id1:", "id2:"],
+          //door detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.2,"beamShortBound":0.1},
+          {"beamPrecompression":1.6,"beamSpring":170,"beamDamp":30,"beamStrength":8000},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d5r", "f7r",{"boundZone":0.01}],
+          {"beamPrecompression":1.6},
+          ["d5r", "f7r",{"boundZone":0.01,"beamSpring":900}],
+          {"beamType":"|BOUNDED","beamLongBound":0.7,"beamShortBound":0.2},
+          {"beamPrecompression":1.0,"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":16000,"beamLimitDamp":300},
+          {"boundZone":0.1},
+          ["d5r", "f7r"],
+          {"boundZone":""},
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+
+}
+"audi6_doordetent_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Left Door Detent",
+        "value":30,
+    },
+    "slotType" : "audi6_doordetent_FL",
+     "beams": [
+          ["id1:", "id2:"],
+          //door detent
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamType":"|BOUNDED","beamLongBound":0.2,"beamShortBound":0.1},
+          {"beamPrecompression":1.6,"beamSpring":170,"beamDamp":30,"beamStrength":8000},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d5l", "f7l",{"boundZone":0.01}],
+          {"beamPrecompression":1.6},
+          ["d5l", "f7l",{"boundZone":0.01,"beamSpring":900}],
+          {"beamType":"|BOUNDED","beamLongBound":0.7,"beamShortBound":0.2},
+          {"beamPrecompression":1.0,"beamSpring":0,"beamDamp":0},
+          {"beamLimitSpring":16000,"beamLimitDamp":300},
+          {"boundZone":0.1},
+          ["d5l", "f7l"],
+          {"boundZone":""},
+          {"breakGroup":""},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+
+},
+"audi6_door_FR_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front RS6 Right Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FR",
+	"components": {
+        "electrics": {
+			"FRDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_R","audi6_mirror_R", "Right Mirror"],
+        ["audi6_doorglass_FR","audi6_doorglass_FR", "Front Right Door Glass"],
+        
+        ["audi6_doordetent_FR","audi6_doordetent_FR", "Front Right Door Detent"],
+        ["audi6_doorpanel_FR","audi6_doorpanel_FR", "Front Right Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_R", ["audi6_door_FR"]],
+         ["audi6_door_FR_rs6", ["audi6_door_FR"]],
+         ["audi6_doorframe_FR", ["audi6_door_FR"]],
+         ["audi6_doorframe_seal_FR", ["audi6_door_FR"]],
+         ["audi6_doorglass_frame_FR", ["audi6_door_FR"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FR_coupler"}],
+    ]
+    "door_FR_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5r",     "d14rr",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFR_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14rr"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FR"},
+         {"nodeWeight":1.3},
+         ["d1r",-0.8937,-0.8564, 0.3147],
+         ["d2r",-0.8937,-0.3464, 0.3147],
+         ["d3r",-0.8937,0.2183, 0.3147],
+
+         ["d4r",-0.929,-0.8664, 0.6847],
+         ["d5r",-0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6r",-0.929,0.2033, 0.7047],
+
+         ["d7r",-0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8r",-0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9r",-0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10r",-0.73, -0.4079, 1.2447],
+         ["d11r",-0.65, -0.0764, 1.3747],
+         ["d12r",-0.63, 0.3434, 1.4147],
+         ["d13r",-0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14r",-0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14rr",-0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1r","d2r"],
+          ["d2r","d3r"],
+          ["d4r","d5r"],
+          ["d5r","d6r"],
+          ["d7r","d8r"],
+          ["d8r","d9r"],
+
+          ["d7r","d10r"],
+          ["d13r","d9r"],
+
+          ["d10r","d11r"],
+          ["d11r","d12r"],
+          ["d12r","d13r"],
+          ["d1r","d4r"],
+          ["d2r","d5r"],
+          ["d3r","d6r"],
+          ["d4r","d7r"],
+          ["d5r","d8r"],
+          ["d6r","d9r"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1r","d5r"],
+          ["d2r","d4r"],
+          ["d2r","d6r"],
+          ["d3r","d5r"],
+          ["d4r","d8r"],
+          ["d5r","d7r"],
+          ["d5r","d9r"],
+          ["d6r","d8r"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12r","d10r"],
+          ["d13r","d11r"],
+          ["d8r","d10r"],
+          ["d8r","d13r"],
+          ["d5r","d10r"],
+          ["d5r","d13r"],
+          ["d6r","d13r"],
+          ["d4r","d10r"],
+          ["d7r","d9r"],
+
+          ["d1r","d7r"],
+          ["d2r","d8r"],
+          ["d3r","d9r"],
+
+          //lengthwise
+          ["d1r","d3r"],
+          ["d4r","d6r"],
+          //["d4r","d3r"],
+
+          //window frame
+          ["d12r", "d6r"],
+          ["d11r", "d5r"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FR_break", "deformationTriggerRatio":0.05},
+          ["d1r","d14r"],
+          ["d2r","d14r"],
+          ["d3r","d14r"],
+          ["d4r","d14r"],
+          ["d5r","d14r"],
+          ["d6r","d14r"],
+          ["d7r","d14r"],
+          ["d8r","d14r"],
+          ["d9r","d14r"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10r","d14r"],
+          ["d13r","d14r"],
+          ["d11r","d14r"],
+          ["d12r","d14r"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14rr","d6r"],
+          ["d14rr","d5r"],
+          ["d14rr","d9r"],
+          ["d14rr","d14r"],
+          ["d14rr","d3r"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d1r","f1rr"],
+          ["d1r","f1r"],
+          ["d7r","f1rr"],
+          ["d7r","f1r"],
+          ["d1r","f5rr"],
+          ["d1r","f5r"],
+
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d7r","f6rr"],
+          ["d7r","f6r"],
+          ["d1r","f6rr"],
+          ["d1r","f6r"],
+          ["d7r","f5rr"],
+          ["d7r","f5r"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FR"},
+          //["d14r","p3r"],
+          //["d14r","p4r"],
+          //["d14r","p5r"],
+          //["d6r","p3r"],
+          //["d6r","p4r"],
+          //["d6r","p5r"],
+          //["d3r","f3rr"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d14r","f7r"],
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d6r","f8r"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_R_supportBeams"},
+          ["d8r","p6r"],
+          ["d5r","p3r"],
+          ["d8r","p5r"],
+          ["d9r","rf2r"],
+          ["d12r","rf2"],
+          ["d1r","f3rr"],
+          ["d9r","f3rr"],
+          ["d12r","rf1r"],
+          ["d11r","rf1"],
+          ["d10r","rf1r"],
+          ["d2r","f2r"],
+          ["d3r","f7r"],
+          ["d3r","f4rr"],
+          ["d3r","f2rr"],
+          //["d10r","f6rr"],
+          ["d4r","f5r", {"beamPrecompression":0.8}],
+          ["d5r","f5rr", {"beamPrecompression":0.8}],
+          //["d8r","f6rr"],
+          ["d6r","f3rr"],
+          ["d7r","f14rr"],
+          ["d7r","f14r"],
+          ["d1r","f1rr"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6r","p3r"],
+          ["d6r","p4r"],
+          ["d9r","p5r"],
+          ["d9r","p6r"],
+          ["d6r","f8r"],
+          ["d12r","rf3r", {"beamPrecompression":0.95}],
+          ["d12r","rf2r", {"beamPrecompression":0.65}],
+          ["d13r","rf2r", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1r", "f14r"],
+          ["d7r", "f6r"],
+          ["d1r", "f5r"],
+          ["d7r", "f5r"],
+          ["d3r", "f3r"],
+          ["d3r", "f8r"],
+          //["p4r", "f8r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front right door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FR"},
+            {"dragCoef":17.5},
+            ["d4r","d2r","d1r"],
+            ["d4r","d5r","d2r"],
+            ["d5r","d3r","d2r"],
+            ["d5r","d6r","d3r"],
+            ["d7r","d5r","d4r"],
+            ["d7r","d8r","d5r"],
+            ["d8r","d6r","d5r"],
+            ["d8r","d9r","d6r"],
+            ["d13r", "d9r", "d8r"],
+            ["d8r", "d7r", "d10r"],
+            ["d10r", "d13r", "d8r"],
+            ["d10r", "d11r", "d13r"],
+            ["d13r", "d11r", "d12r"],
+            {"group":""},
+    ],
+},
+"audi6_door_FL_rs6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front RS6 Left Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FL",
+	"components": {
+        "electrics": {
+			"FLDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_L","audi6_mirror_L", "Left Mirror"],
+        ["audi6_doorglass_FL","audi6_doorglass_FL", "Front Left Door Glass"],
+        
+        ["audi6_doordetent_FL","audi6_doordetent_FL", "Front Left Door Detent"],
+		["audi6_doorpanel_FL","audi6_doorpanel_FL", "Front Left Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_L", ["audi6_door_FL"]],
+         ["audi6_door_FL_rs6", ["audi6_door_FL"]],
+         ["audi6_doorframe_FL", ["audi6_door_FL"]],
+         ["audi6_doorframe_seal_FL", ["audi6_door_FL"]],
+		 
+         
+         ["audi6_doorglass_frame_FL", ["audi6_door_FL"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FL_coupler"}],
+    ]
+    "door_FL_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5l",     "d14ll",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFL_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14ll"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FL"},
+         {"nodeWeight":1.3},
+         ["d1l",0.8937,-0.8564, 0.3147],
+         ["d2l",0.8937,-0.3464, 0.3147],
+         ["d3l",0.8937,0.2183, 0.3147],
+
+         ["d4l",0.929,-0.8664, 0.6847],
+         ["d5l",0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6l",0.929,0.2033, 0.7047],
+
+         ["d7l",0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8l",0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9l",0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10l",0.73, -0.4079, 1.2447],
+         ["d11l",0.65, -0.0764, 1.3747],
+         ["d12l",0.63, 0.3434, 1.4147],
+         ["d13l",0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14l",0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14ll",0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1l","d2l"],
+          ["d2l","d3l"],
+          ["d4l","d5l"],
+          ["d5l","d6l"],
+          ["d7l","d8l"],
+          ["d8l","d9l"],
+
+          ["d7l","d10l"],
+          ["d13l","d9l"],
+
+          ["d10l","d11l"],
+          ["d11l","d12l"],
+          ["d12l","d13l"],
+          ["d1l","d4l"],
+          ["d2l","d5l"],
+          ["d3l","d6l"],
+          ["d4l","d7l"],
+          ["d5l","d8l"],
+          ["d6l","d9l"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1l","d5l"],
+          ["d2l","d4l"],
+          ["d2l","d6l"],
+          ["d3l","d5l"],
+          ["d4l","d8l"],
+          ["d5l","d7l"],
+          ["d5l","d9l"],
+          ["d6l","d8l"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12l","d10l"],
+          ["d13l","d11l"],
+          ["d8l","d10l"],
+          ["d8l","d13l"],
+          ["d5l","d10l"],
+          ["d5l","d13l"],
+          ["d6l","d13l"],
+          ["d4l","d10l"],
+          ["d7l","d9l"],
+
+          ["d1l","d7l"],
+          ["d2l","d8l"],
+          ["d3l","d9l"],
+
+          //lengthwise
+          ["d1l","d3l"],
+          ["d4l","d6l"],
+          //["d4l","d3l"],
+
+          //window frame
+          ["d12l", "d6l"],
+          ["d11l", "d5l"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FL_break", "deformationTriggerRatio":0.05},
+          ["d1l","d14l"],
+          ["d2l","d14l"],
+          ["d3l","d14l"],
+          ["d4l","d14l"],
+          ["d5l","d14l"],
+          ["d6l","d14l"],
+          ["d7l","d14l"],
+          ["d8l","d14l"],
+          ["d9l","d14l"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10l","d14l"],
+          ["d13l","d14l"],
+          ["d11l","d14l"],
+          ["d12l","d14l"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14ll","d6l"],
+          ["d14ll","d5l"],
+          ["d14ll","d9l"],
+          ["d14ll","d14l"],
+          ["d14ll","d3l"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d1l","f1ll"],
+          ["d1l","f1l"],
+          ["d7l","f1ll"],
+          ["d7l","f1l"],
+          ["d1l","f5ll"],
+          ["d1l","f5l"],
+
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d7l","f6ll"],
+          ["d7l","f6l"],
+          ["d1l","f6ll"],
+          ["d1l","f6l"],
+          ["d7l","f5ll"],
+          ["d7l","f5l"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FL"},
+          //["d14l","p3l"],
+          //["d14l","p4l"],
+          //["d14l","p5l"],
+          //["d6l","p3l"],
+          //["d6l","p4l"],
+          //["d6l","p5l"],
+          //["d3l","f3ll"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d14l","f7l"],
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d6l","f8l"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_L_supportBeams"},
+          ["d8l","p6l"],
+          ["d5l","p3l"],
+          ["d8l","p5l"],
+          ["d9l","rf2l"],
+          ["d12l","rf2"],
+          ["d1l","f3ll"],
+          ["d9l","f3ll"],
+          ["d12l","rf1l"],
+          ["d11l","rf1"],
+          ["d10l","rf1l"],
+          ["d2l","f2l"],
+          ["d3l","f7l"],
+          ["d3l","f4ll"],
+          ["d3l","f2ll"],
+          //["d10l","f6ll"],
+          ["d4l","f5l", {"beamPrecompression":0.8}],
+          ["d5l","f5ll", {"beamPrecompression":0.8}],
+          //["d8l","f6ll"],
+          ["d6l","f3ll"],
+          ["d7l","f14ll"],
+          ["d7l","f14l"],
+          ["d1l","f1ll"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6l","p3l"],
+          ["d6l","p4l"],
+          ["d9l","p5l"],
+          ["d9l","p6l"],
+          ["d6l","f8l"],
+          ["d12l","rf3l", {"beamPrecompression":0.95}],
+          ["d12l","rf2l", {"beamPrecompression":0.65}],
+          ["d13l","rf2l", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1l", "f14l"],
+          ["d7l", "f6l"],
+          ["d1l", "f5l"],
+          ["d7l", "f5l"],
+          ["d3l", "f3l"],
+          ["d3l", "f8l"],
+          //["p4l", "f8l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front left door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FL"},
+            {"dragCoef":17.5},
+            ["d4l","d1l","d2l"],
+            ["d4l","d2l","d5l"],
+            ["d5l","d2l","d3l"],
+            ["d5l","d3l","d6l"],
+            ["d7l","d4l","d5l"],
+            ["d7l","d5l","d8l"],
+            ["d8l","d5l","d6l"],
+            ["d8l","d6l","d9l"],
+            ["d9l", "d13l", "d8l"],
+            ["d7l", "d8l", "d10l"],
+            ["d13l", "d10l", "d8l"],
+            ["d11l", "d10l", "d13l"],
+            ["d11l", "d13l", "d12l"],
+            {"group":""},
+    ],
+},
+"audi6_door_FR_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front S6 Right Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FR",
+	"components": {
+        "electrics": {
+			"FRDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_R","audi6_mirror_R", "Right Mirror"],
+        ["audi6_doorglass_FR","audi6_doorglass_FR", "Front Right Door Glass"],
+        
+        ["audi6_doordetent_FR","audi6_doordetent_FR", "Front Right Door Detent"],
+        ["audi6_doorpanel_FR","audi6_doorpanel_FR", "Front Right Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_R", ["audi6_door_FR"]],
+         ["audi6_door_FR_s6", ["audi6_door_FR"]],
+         ["audi6_doorframe_FR", ["audi6_door_FR"]],
+         ["audi6_doorframe_seal_FR", ["audi6_door_FR"]],
+		 
+         
+         ["audi6_doorglass_frame_FR", ["audi6_door_FR"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FR_coupler"}],
+    ]
+    "door_FR_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5r",     "d14rr",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFR_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14rr"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FR"},
+         {"nodeWeight":1.3},
+         ["d1r",-0.8937,-0.8564, 0.3147],
+         ["d2r",-0.8937,-0.3464, 0.3147],
+         ["d3r",-0.8937,0.2183, 0.3147],
+
+         ["d4r",-0.929,-0.8664, 0.6847],
+         ["d5r",-0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6r",-0.929,0.2033, 0.7047],
+
+         ["d7r",-0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8r",-0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9r",-0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10r",-0.73, -0.4079, 1.2447],
+         ["d11r",-0.65, -0.0764, 1.3747],
+         ["d12r",-0.63, 0.3434, 1.4147],
+         ["d13r",-0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14r",-0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14rr",-0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1r","d2r"],
+          ["d2r","d3r"],
+          ["d4r","d5r"],
+          ["d5r","d6r"],
+          ["d7r","d8r"],
+          ["d8r","d9r"],
+
+          ["d7r","d10r"],
+          ["d13r","d9r"],
+
+          ["d10r","d11r"],
+          ["d11r","d12r"],
+          ["d12r","d13r"],
+          ["d1r","d4r"],
+          ["d2r","d5r"],
+          ["d3r","d6r"],
+          ["d4r","d7r"],
+          ["d5r","d8r"],
+          ["d6r","d9r"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1r","d5r"],
+          ["d2r","d4r"],
+          ["d2r","d6r"],
+          ["d3r","d5r"],
+          ["d4r","d8r"],
+          ["d5r","d7r"],
+          ["d5r","d9r"],
+          ["d6r","d8r"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12r","d10r"],
+          ["d13r","d11r"],
+          ["d8r","d10r"],
+          ["d8r","d13r"],
+          ["d5r","d10r"],
+          ["d5r","d13r"],
+          ["d6r","d13r"],
+          ["d4r","d10r"],
+          ["d7r","d9r"],
+
+          ["d1r","d7r"],
+          ["d2r","d8r"],
+          ["d3r","d9r"],
+
+          //lengthwise
+          ["d1r","d3r"],
+          ["d4r","d6r"],
+          //["d4r","d3r"],
+
+          //window frame
+          ["d12r", "d6r"],
+          ["d11r", "d5r"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FR_break", "deformationTriggerRatio":0.05},
+          ["d1r","d14r"],
+          ["d2r","d14r"],
+          ["d3r","d14r"],
+          ["d4r","d14r"],
+          ["d5r","d14r"],
+          ["d6r","d14r"],
+          ["d7r","d14r"],
+          ["d8r","d14r"],
+          ["d9r","d14r"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10r","d14r"],
+          ["d13r","d14r"],
+          ["d11r","d14r"],
+          ["d12r","d14r"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14rr","d6r"],
+          ["d14rr","d5r"],
+          ["d14rr","d9r"],
+          ["d14rr","d14r"],
+          ["d14rr","d3r"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d1r","f1rr"],
+          ["d1r","f1r"],
+          ["d7r","f1rr"],
+          ["d7r","f1r"],
+          ["d1r","f5rr"],
+          ["d1r","f5r"],
+
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d7r","f6rr"],
+          ["d7r","f6r"],
+          ["d1r","f6rr"],
+          ["d1r","f6r"],
+          ["d7r","f5rr"],
+          ["d7r","f5r"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FR"},
+          //["d14r","p3r"],
+          //["d14r","p4r"],
+          //["d14r","p5r"],
+          //["d6r","p3r"],
+          //["d6r","p4r"],
+          //["d6r","p5r"],
+          //["d3r","f3rr"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d14r","f7r"],
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d6r","f8r"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_R_supportBeams"},
+          ["d8r","p6r"],
+          ["d5r","p3r"],
+          ["d8r","p5r"],
+          ["d9r","rf2r"],
+          ["d12r","rf2"],
+          ["d1r","f3rr"],
+          ["d9r","f3rr"],
+          ["d12r","rf1r"],
+          ["d11r","rf1"],
+          ["d10r","rf1r"],
+          ["d2r","f2r"],
+          ["d3r","f7r"],
+          ["d3r","f4rr"],
+          ["d3r","f2rr"],
+          //["d10r","f6rr"],
+          ["d4r","f5r", {"beamPrecompression":0.8}],
+          ["d5r","f5rr", {"beamPrecompression":0.8}],
+          //["d8r","f6rr"],
+          ["d6r","f3rr"],
+          ["d7r","f14rr"],
+          ["d7r","f14r"],
+          ["d1r","f1rr"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6r","p3r"],
+          ["d6r","p4r"],
+          ["d9r","p5r"],
+          ["d9r","p6r"],
+          ["d6r","f8r"],
+          ["d12r","rf3r", {"beamPrecompression":0.95}],
+          ["d12r","rf2r", {"beamPrecompression":0.65}],
+          ["d13r","rf2r", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1r", "f14r"],
+          ["d7r", "f6r"],
+          ["d1r", "f5r"],
+          ["d7r", "f5r"],
+          ["d3r", "f3r"],
+          ["d3r", "f8r"],
+          //["p4r", "f8r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front right door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FR"},
+            {"dragCoef":17.5},
+            ["d4r","d2r","d1r"],
+            ["d4r","d5r","d2r"],
+            ["d5r","d3r","d2r"],
+            ["d5r","d6r","d3r"],
+            ["d7r","d5r","d4r"],
+            ["d7r","d8r","d5r"],
+            ["d8r","d6r","d5r"],
+            ["d8r","d9r","d6r"],
+            ["d13r", "d9r", "d8r"],
+            ["d8r", "d7r", "d10r"],
+            ["d10r", "d13r", "d8r"],
+            ["d10r", "d11r", "d13r"],
+            ["d13r", "d11r", "d12r"],
+            {"group":""},
+    ],
+},
+"audi6_door_FL_s6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front S6 Left Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FL",
+	"components": {
+        "electrics": {
+			"FLDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_L","audi6_mirror_L", "Left Mirror"],
+        ["audi6_doorglass_FL","audi6_doorglass_FL", "Front Left Door Glass"],
+        
+        ["audi6_doordetent_FL","audi6_doordetent_FL", "Front Left Door Detent"],
+		["audi6_doorpanel_FL","audi6_doorpanel_FL", "Front Left Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_L", ["audi6_door_FL"]],
+         ["audi6_door_FL_s6", ["audi6_door_FL"]],
+         ["audi6_doorframe_FL", ["audi6_door_FL"]],
+         ["audi6_doorframe_seal_FL", ["audi6_door_FL"]],
+		 
+         
+         ["audi6_doorglass_frame_FL", ["audi6_door_FL"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FL_coupler"}],
+    ]
+    "door_FL_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5l",     "d14ll",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFL_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14ll"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FL"},
+         {"nodeWeight":1.3},
+         ["d1l",0.8937,-0.8564, 0.3147],
+         ["d2l",0.8937,-0.3464, 0.3147],
+         ["d3l",0.8937,0.2183, 0.3147],
+
+         ["d4l",0.929,-0.8664, 0.6847],
+         ["d5l",0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6l",0.929,0.2033, 0.7047],
+
+         ["d7l",0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8l",0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9l",0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10l",0.73, -0.4079, 1.2447],
+         ["d11l",0.65, -0.0764, 1.3747],
+         ["d12l",0.63, 0.3434, 1.4147],
+         ["d13l",0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14l",0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14ll",0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1l","d2l"],
+          ["d2l","d3l"],
+          ["d4l","d5l"],
+          ["d5l","d6l"],
+          ["d7l","d8l"],
+          ["d8l","d9l"],
+
+          ["d7l","d10l"],
+          ["d13l","d9l"],
+
+          ["d10l","d11l"],
+          ["d11l","d12l"],
+          ["d12l","d13l"],
+          ["d1l","d4l"],
+          ["d2l","d5l"],
+          ["d3l","d6l"],
+          ["d4l","d7l"],
+          ["d5l","d8l"],
+          ["d6l","d9l"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1l","d5l"],
+          ["d2l","d4l"],
+          ["d2l","d6l"],
+          ["d3l","d5l"],
+          ["d4l","d8l"],
+          ["d5l","d7l"],
+          ["d5l","d9l"],
+          ["d6l","d8l"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12l","d10l"],
+          ["d13l","d11l"],
+          ["d8l","d10l"],
+          ["d8l","d13l"],
+          ["d5l","d10l"],
+          ["d5l","d13l"],
+          ["d6l","d13l"],
+          ["d4l","d10l"],
+          ["d7l","d9l"],
+
+          ["d1l","d7l"],
+          ["d2l","d8l"],
+          ["d3l","d9l"],
+
+          //lengthwise
+          ["d1l","d3l"],
+          ["d4l","d6l"],
+          //["d4l","d3l"],
+
+          //window frame
+          ["d12l", "d6l"],
+          ["d11l", "d5l"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FL_break", "deformationTriggerRatio":0.05},
+          ["d1l","d14l"],
+          ["d2l","d14l"],
+          ["d3l","d14l"],
+          ["d4l","d14l"],
+          ["d5l","d14l"],
+          ["d6l","d14l"],
+          ["d7l","d14l"],
+          ["d8l","d14l"],
+          ["d9l","d14l"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10l","d14l"],
+          ["d13l","d14l"],
+          ["d11l","d14l"],
+          ["d12l","d14l"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14ll","d6l"],
+          ["d14ll","d5l"],
+          ["d14ll","d9l"],
+          ["d14ll","d14l"],
+          ["d14ll","d3l"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d1l","f1ll"],
+          ["d1l","f1l"],
+          ["d7l","f1ll"],
+          ["d7l","f1l"],
+          ["d1l","f5ll"],
+          ["d1l","f5l"],
+
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d7l","f6ll"],
+          ["d7l","f6l"],
+          ["d1l","f6ll"],
+          ["d1l","f6l"],
+          ["d7l","f5ll"],
+          ["d7l","f5l"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FL"},
+          //["d14l","p3l"],
+          //["d14l","p4l"],
+          //["d14l","p5l"],
+          //["d6l","p3l"],
+          //["d6l","p4l"],
+          //["d6l","p5l"],
+          //["d3l","f3ll"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d14l","f7l"],
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d6l","f8l"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_L_supportBeams"},
+          ["d8l","p6l"],
+          ["d5l","p3l"],
+          ["d8l","p5l"],
+          ["d9l","rf2l"],
+          ["d12l","rf2"],
+          ["d1l","f3ll"],
+          ["d9l","f3ll"],
+          ["d12l","rf1l"],
+          ["d11l","rf1"],
+          ["d10l","rf1l"],
+          ["d2l","f2l"],
+          ["d3l","f7l"],
+          ["d3l","f4ll"],
+          ["d3l","f2ll"],
+          //["d10l","f6ll"],
+          ["d4l","f5l", {"beamPrecompression":0.8}],
+          ["d5l","f5ll", {"beamPrecompression":0.8}],
+          //["d8l","f6ll"],
+          ["d6l","f3ll"],
+          ["d7l","f14ll"],
+          ["d7l","f14l"],
+          ["d1l","f1ll"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6l","p3l"],
+          ["d6l","p4l"],
+          ["d9l","p5l"],
+          ["d9l","p6l"],
+          ["d6l","f8l"],
+          ["d12l","rf3l", {"beamPrecompression":0.95}],
+          ["d12l","rf2l", {"beamPrecompression":0.65}],
+          ["d13l","rf2l", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1l", "f14l"],
+          ["d7l", "f6l"],
+          ["d1l", "f5l"],
+          ["d7l", "f5l"],
+          ["d3l", "f3l"],
+          ["d3l", "f8l"],
+          //["p4l", "f8l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front left door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FL"},
+            {"dragCoef":17.5},
+            ["d4l","d1l","d2l"],
+            ["d4l","d2l","d5l"],
+            ["d5l","d2l","d3l"],
+            ["d5l","d3l","d6l"],
+            ["d7l","d4l","d5l"],
+            ["d7l","d5l","d8l"],
+            ["d8l","d5l","d6l"],
+            ["d8l","d6l","d9l"],
+            ["d9l", "d13l", "d8l"],
+            ["d7l", "d8l", "d10l"],
+            ["d13l", "d10l", "d8l"],
+            ["d11l", "d10l", "d13l"],
+            ["d11l", "d13l", "d12l"],
+            {"group":""},
+    ],
+},
+"audi6_door_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front A6 Right Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FR",
+	"components": {
+        "electrics": {
+			"FRDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_R","audi6_mirror_R", "Right Mirror"],
+        ["audi6_doorglass_FR","audi6_doorglass_FR", "Front Right Door Glass"],
+        
+        ["audi6_doordetent_FR","audi6_doordetent_FR", "Front Right Door Detent"],
+		["audi6_doorpanel_FR","audi6_doorpanel_FR", "Front Right Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_R", ["audi6_door_FR"]],
+         ["audi6_door_FR", ["audi6_door_FR"]],
+         ["audi6_doorframe_FR", ["audi6_door_FR"]],
+         ["audi6_doorframe_seal_FR", ["audi6_door_FR"]],
+         
+         ["audi6_doorglass_frame_FR", ["audi6_door_FR"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FR_coupler"}],
+    ]
+    "door_FR_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5r",     "d14rr",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFR_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14rr"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FR"},
+         {"nodeWeight":1.3},
+         ["d1r",-0.8937,-0.8564, 0.3147],
+         ["d2r",-0.8937,-0.3464, 0.3147],
+         ["d3r",-0.8937,0.2183, 0.3147],
+
+         ["d4r",-0.929,-0.8664, 0.6847],
+         ["d5r",-0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6r",-0.929,0.2033, 0.7047],
+
+         ["d7r",-0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8r",-0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9r",-0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10r",-0.73, -0.4079, 1.2447],
+         ["d11r",-0.65, -0.0764, 1.3747],
+         ["d12r",-0.63, 0.3434, 1.4147],
+         ["d13r",-0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14r",-0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14rr",-0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1r","d2r"],
+          ["d2r","d3r"],
+          ["d4r","d5r"],
+          ["d5r","d6r"],
+          ["d7r","d8r"],
+          ["d8r","d9r"],
+
+          ["d7r","d10r"],
+          ["d13r","d9r"],
+
+          ["d10r","d11r"],
+          ["d11r","d12r"],
+          ["d12r","d13r"],
+          ["d1r","d4r"],
+          ["d2r","d5r"],
+          ["d3r","d6r"],
+          ["d4r","d7r"],
+          ["d5r","d8r"],
+          ["d6r","d9r"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1r","d5r"],
+          ["d2r","d4r"],
+          ["d2r","d6r"],
+          ["d3r","d5r"],
+          ["d4r","d8r"],
+          ["d5r","d7r"],
+          ["d5r","d9r"],
+          ["d6r","d8r"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12r","d10r"],
+          ["d13r","d11r"],
+          ["d8r","d10r"],
+          ["d8r","d13r"],
+          ["d5r","d10r"],
+          ["d5r","d13r"],
+          ["d6r","d13r"],
+          ["d4r","d10r"],
+          ["d7r","d9r"],
+
+          ["d1r","d7r"],
+          ["d2r","d8r"],
+          ["d3r","d9r"],
+
+          //lengthwise
+          ["d1r","d3r"],
+          ["d4r","d6r"],
+          //["d4r","d3r"],
+
+          //window frame
+          ["d12r", "d6r"],
+          ["d11r", "d5r"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FR_break", "deformationTriggerRatio":0.05},
+          ["d1r","d14r"],
+          ["d2r","d14r"],
+          ["d3r","d14r"],
+          ["d4r","d14r"],
+          ["d5r","d14r"],
+          ["d6r","d14r"],
+          ["d7r","d14r"],
+          ["d8r","d14r"],
+          ["d9r","d14r"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10r","d14r"],
+          ["d13r","d14r"],
+          ["d11r","d14r"],
+          ["d12r","d14r"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14rr","d6r"],
+          ["d14rr","d5r"],
+          ["d14rr","d9r"],
+          ["d14rr","d14r"],
+          ["d14rr","d3r"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d1r","f1rr"],
+          ["d1r","f1r"],
+          ["d7r","f1rr"],
+          ["d7r","f1r"],
+          ["d1r","f5rr"],
+          ["d1r","f5r"],
+
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d7r","f6rr"],
+          ["d7r","f6r"],
+          ["d1r","f6rr"],
+          ["d1r","f6r"],
+          ["d7r","f5rr"],
+          ["d7r","f5r"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FR"},
+          //["d14r","p3r"],
+          //["d14r","p4r"],
+          //["d14r","p5r"],
+          //["d6r","p3r"],
+          //["d6r","p4r"],
+          //["d6r","p5r"],
+          //["d3r","f3rr"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FR"},
+          ["d14r","f7r"],
+          {"breakGroup":"doorhinge_b_FR"},
+          ["d6r","f8r"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_R_supportBeams"},
+          ["d8r","p6r"],
+          ["d5r","p3r"],
+          ["d8r","p5r"],
+          ["d9r","rf2r"],
+          ["d12r","rf2"],
+          ["d1r","f3rr"],
+          ["d9r","f3rr"],
+          ["d12r","rf1r"],
+          ["d11r","rf1"],
+          ["d10r","rf1r"],
+          ["d2r","f2r"],
+          ["d3r","f7r"],
+          ["d3r","f4rr"],
+          ["d3r","f2rr"],
+          //["d10r","f6rr"],
+          ["d4r","f5r", {"beamPrecompression":0.8}],
+          ["d5r","f5rr", {"beamPrecompression":0.8}],
+          //["d8r","f6rr"],
+          ["d6r","f3rr"],
+          ["d7r","f14rr"],
+          ["d7r","f14r"],
+          ["d1r","f1rr"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6r","p3r"],
+          ["d6r","p4r"],
+          ["d9r","p5r"],
+          ["d9r","p6r"],
+          ["d6r","f8r"],
+          ["d12r","rf3r", {"beamPrecompression":0.95}],
+          ["d12r","rf2r", {"beamPrecompression":0.65}],
+          ["d13r","rf2r", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1r", "f14r"],
+          ["d7r", "f6r"],
+          ["d1r", "f5r"],
+          ["d7r", "f5r"],
+          ["d3r", "f3r"],
+          ["d3r", "f8r"],
+          //["p4r", "f8r"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front right door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FR"},
+            {"dragCoef":17.5},
+            ["d4r","d2r","d1r"],
+            ["d4r","d5r","d2r"],
+            ["d5r","d3r","d2r"],
+            ["d5r","d6r","d3r"],
+            ["d7r","d5r","d4r"],
+            ["d7r","d8r","d5r"],
+            ["d8r","d6r","d5r"],
+            ["d8r","d9r","d6r"],
+            ["d13r", "d9r", "d8r"],
+            ["d8r", "d7r", "d10r"],
+            ["d10r", "d13r", "d8r"],
+            ["d10r", "d11r", "d13r"],
+            ["d13r", "d11r", "d12r"],
+            {"group":""},
+    ],
+},
+"audi6_door_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front A6 Left Door",
+        "value":550,
+    },
+    "slotType" : "audi6_door_FL",
+	"components": {
+        "electrics": {
+			"FLDoorMesh": 1,
+        },
+    },
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_mirror_L","audi6_mirror_L", "Left Mirror"],
+        ["audi6_doorglass_FL","audi6_doorglass_FL", "Front Left Door Glass"],
+        
+        ["audi6_doordetent_FL","audi6_doordetent_FL", "Front Left Door Detent"],
+		["audi6_doorpanel_FL","audi6_doorpanel_FL", "Front Left Door Panel"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_mirror_frame_L", ["audi6_door_FL"]],
+         ["audi6_door_FL", ["audi6_door_FL"]],
+         ["audi6_doorframe_FL", ["audi6_door_FL"]],
+         ["audi6_doorframe_seal_FL", ["audi6_door_FL"]],
+         
+         ["audi6_doorglass_frame_FL", ["audi6_door_FL"]],
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "controller": [
+        ["fileName"],
+        ["advancedCouplerControl", {"name":"door_FL_coupler"}],
+    ]
+    "door_FL_coupler":{
+        "couplerNodes":[
+            ["cid1",    "cid2",     "autoCouplingStrength",    "autoCouplingRadius",   "autoCouplingLockRadius",   "autoCouplingSpeed", "couplingStartRadius",  "breakGroup"]
+            ["p5l",     "d14ll",     35000,                     0.01,                   0.005,                      0.2,                 0.1,                   "doorFL_latch"]
+        ]
+        "groupType": "autoCoupling",
+        "attachSoundVolume":1,
+        "detachSoundVolume":1,
+        "soundNode:":["d14ll"]
+        "attachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_close",
+        "detachSoundEvent": "event:>Vehicle>Latches>Door>modern_03_open",
+        "breakSoundEvent":""
+        "openForceMagnitude": 65,
+        "openForceDuration": 0.6,
+        "closeForceMagnitude": 35,
+        "closeForceDuration": 3
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"audi6_door_FL"},
+         {"nodeWeight":1.3},
+         ["d1l",0.8937,-0.8564, 0.3147],
+         ["d2l",0.8937,-0.3464, 0.3147],
+         ["d3l",0.8937,0.2183, 0.3147],
+
+         ["d4l",0.929,-0.8664, 0.6847],
+         ["d5l",0.929,-0.3464, 0.6947, {"selfCollision":false}],
+         ["d6l",0.929,0.2033, 0.7047],
+
+         ["d7l",0.85,-0.8364, 0.9747, {"nodeWeight":1.5}],
+         ["d8l",0.85,-0.3464, 0.9947, {"selfCollision":false}],
+         ["d9l",0.85,0.2434, 1.0147],
+
+         {"nodeWeight":1.0},
+         ["d10l",0.73, -0.4079, 1.2447],
+         ["d11l",0.65, -0.0764, 1.3747],
+         ["d12l",0.63, 0.3434, 1.4147],
+         ["d13l",0.74, 0.2922, 1.2247],
+
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":1.43},
+         ["d14l",0.50, -0.1664, 0.8347],
+         {"group":""},
+
+         //latch node
+         {"nodeWeight":1.0},
+         {"group":""},
+         ["d14ll",0.78, 0.17, 0.90],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--DOORS--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1401000,"beamDamp":60},
+          {"beamDeform":28950,"beamStrength":"FLT_MAX"},
+          //front door main shape
+          {"deformLimitExpansion":1.1},
+          ["d1l","d2l"],
+          ["d2l","d3l"],
+          ["d4l","d5l"],
+          ["d5l","d6l"],
+          ["d7l","d8l"],
+          ["d8l","d9l"],
+
+          ["d7l","d10l"],
+          ["d13l","d9l"],
+
+          ["d10l","d11l"],
+          ["d11l","d12l"],
+          ["d12l","d13l"],
+          ["d1l","d4l"],
+          ["d2l","d5l"],
+          ["d3l","d6l"],
+          ["d4l","d7l"],
+          ["d5l","d8l"],
+          ["d6l","d9l"],
+
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":4500,"beamStrength":"FLT_MAX"},
+          ["d1l","d5l"],
+          ["d2l","d4l"],
+          ["d2l","d6l"],
+          ["d3l","d5l"],
+          ["d4l","d8l"],
+          ["d5l","d7l"],
+          ["d5l","d9l"],
+          ["d6l","d8l"],
+
+          //corner rigids
+          {"beamSpring":1101000,"beamDamp":90},
+          {"beamDeform":3200,"beamStrength":"FLT_MAX"},
+          ["d12l","d10l"],
+          ["d13l","d11l"],
+          ["d8l","d10l"],
+          ["d8l","d13l"],
+          ["d5l","d10l"],
+          ["d5l","d13l"],
+          ["d6l","d13l"],
+          ["d4l","d10l"],
+          ["d7l","d9l"],
+
+          ["d1l","d7l"],
+          ["d2l","d8l"],
+          ["d3l","d9l"],
+
+          //lengthwise
+          ["d1l","d3l"],
+          ["d4l","d6l"],
+          //["d4l","d3l"],
+
+          //window frame
+          ["d12l", "d6l"],
+          ["d11l", "d5l"],
+
+          //rigidifier
+          {"beamSpring":1401000,"beamDamp":90},
+          {"beamDeform":4600,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"doorglass_FL_break", "deformationTriggerRatio":0.05},
+          ["d1l","d14l"],
+          ["d2l","d14l"],
+          ["d3l","d14l"],
+          ["d4l","d14l"],
+          ["d5l","d14l"],
+          ["d6l","d14l"],
+          ["d7l","d14l"],
+          ["d8l","d14l"],
+          ["d9l","d14l"],
+
+          {"beamDeform":3400,"beamStrength":"FLT_MAX"},
+          ["d10l","d14l"],
+          ["d13l","d14l"],
+          ["d11l","d14l"],
+          ["d12l","d14l"],
+          {"deformGroup":"", "deformationTriggerRatio":""},
+
+          //latch node
+          {"beamDeform":4000,"beamStrength":"FLT_MAX"},
+          ["d14ll","d6l"],
+          ["d14ll","d5l"],
+          ["d14ll","d9l"],
+          ["d14ll","d14l"],
+          ["d14ll","d3l"],
+
+          //front door hinge
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":33000,"beamStrength":93000},
+          {"disableTriangleBreaking":true},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d1l","f1ll"],
+          ["d1l","f1l"],
+          ["d7l","f1ll"],
+          ["d7l","f1l"],
+          ["d1l","f5ll"],
+          ["d1l","f5l"],
+
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d7l","f6ll"],
+          ["d7l","f6l"],
+          ["d1l","f6ll"],
+          ["d1l","f6l"],
+          ["d7l","f5ll"],
+          ["d7l","f5l"],
+          {"breakGroup":""},
+
+          //--FRONT DOOR LATCH--
+          {"beamSpring":2201000,"beamDamp":110},
+          {"beamDeform":21000,"beamStrength":42000},
+          {"breakGroup":"doorlatch_FL"},
+          //["d14l","p3l"],
+          //["d14l","p4l"],
+          //["d14l","p5l"],
+          //["d6l","p3l"],
+          //["d6l","p4l"],
+          //["d6l","p5l"],
+          //["d3l","f3ll"],
+          {"breakGroup":""},
+
+          //damping
+          {"beamDeform":27600,"beamStrength":225000},
+          {"beamSpring":0,"beamDamp":20},
+          {"breakGroup":"doorhinge_a_FL"},
+          ["d14l","f7l"],
+          {"breakGroup":"doorhinge_b_FL"},
+          ["d6l","f8l"],
+          {"breakGroup":""},
+
+          //front door support beams
+          {"beamType":"|SUPPORT","beamLongBound":16},
+          {"beamSpring":901000,"beamDamp":90},
+          {"beamDeform":9000,"beamStrength":100000},
+          {"breakGroup":"door_L_supportBeams"},
+          ["d8l","p6l"],
+          ["d5l","p3l"],
+          ["d8l","p5l"],
+          ["d9l","rf2l"],
+          ["d12l","rf2"],
+          ["d1l","f3ll"],
+          ["d9l","f3ll"],
+          ["d12l","rf1l"],
+          ["d11l","rf1"],
+          ["d10l","rf1l"],
+          ["d2l","f2l"],
+          ["d3l","f7l"],
+          ["d3l","f4ll"],
+          ["d3l","f2ll"],
+          //["d10l","f6ll"],
+          ["d4l","f5l", {"beamPrecompression":0.8}],
+          ["d5l","f5ll", {"beamPrecompression":0.8}],
+          //["d8l","f6ll"],
+          ["d6l","f3ll"],
+          ["d7l","f14ll"],
+          ["d7l","f14l"],
+          ["d1l","f1ll"],
+
+          {"beamType":"|SUPPORT","beamLongBound":70},
+          ["d6l","p3l"],
+          ["d6l","p4l"],
+          ["d9l","p5l"],
+          ["d9l","p6l"],
+          ["d6l","f8l"],
+          ["d12l","rf3l", {"beamPrecompression":0.95}],
+          ["d12l","rf2l", {"beamPrecompression":0.65}],
+          ["d13l","rf2l", {"beamPrecompression":0.90}],
+
+          {"beamType":"|SUPPORT","beamLongBound":8},
+          {"beamDeform":18000,"beamStrength":100000},
+          ["d1l", "f14l"],
+          ["d7l", "f6l"],
+          ["d1l", "f5l"],
+          ["d7l", "f5l"],
+          ["d3l", "f3l"],
+          ["d3l", "f8l"],
+          //["p4l", "f8l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1.0},
+          {"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //front left door
+            {"groundModel":"metal"},
+            {"group":"audi6_door_FL"},
+            {"dragCoef":17.5},
+            ["d4l","d1l","d2l"],
+            ["d4l","d2l","d5l"],
+            ["d5l","d2l","d3l"],
+            ["d5l","d3l","d6l"],
+            ["d7l","d4l","d5l"],
+            ["d7l","d5l","d8l"],
+            ["d8l","d5l","d6l"],
+            ["d8l","d6l","d9l"],
+            ["d9l", "d13l", "d8l"],
+            ["d7l", "d8l", "d10l"],
+            ["d13l", "d10l", "d8l"],
+            ["d11l", "d10l", "d13l"],
+            ["d11l", "d13l", "d12l"],
+            {"group":""},
+    ],
+},
+"audi6_doorpanel_lockbutton_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Right Door Panel Lock Button",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_lockbutton_FR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorpanel_lockbutton_FR", ["audi6_door_FR"]],
+    ],
+},
+"audi6_doorpanel_arm_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Right Door Panel Arm",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_arm_FR",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_doorpanel_armbuttons_FR","", "Front Right Door Panel Arm Buttons"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= 1"},
+         ["audi6_doorpanel_arm_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_leather_color","audi6_interior_exclusive"],["invis","audi6_stitching_exclusive"]]}],	 		 		 
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= nil"},
+         ["audi6_doorpanel_arm_FR", ["audi6_door_FR"]],
+		 {"disable":""},
+		 
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 0"},
+         ["audi6_doorpanel_inlay_FR", ["audi6_door_FR"]],
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 1"},
+         ["audi6_doorpanel_inlay_alt_FR", ["audi6_door_FR"]],   		 
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 2"},
+         ["audi6_doorpanel_inlay_alt_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_inlay","audi6_radial_aluminium"]]}],   
+		 {"disable":""},
+    ],
+},
+"audi6_doorpanel_armbuttons_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Right Door Panel Arm Buttons",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_armbuttons_FR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= 1"},
+         ["audi6_doorpanel_armbutton_frame_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_plastic_detailed_color2","audi6_plastic_detailed_exclusive"]]}],	
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= nil"},
+         ["audi6_doorpanel_armbutton_frame_FR", ["audi6_door_FR"]],	
+		 {"disable":""},		 
+		 
+         ["audi6_doorpanel_armbuttons_FR", ["audi6_door_FR"]],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["window_FR2",  "d7r","d8r","d4r", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":-12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5276, "y":0.1869, "z":0.1983}],
+    ],
+    "actionsEnabled": [
+        ["id"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+        ["window_FR2", "action0", "open_window_FR"],
+        ["window_FR2", "action2", "close_window_FR"],
+    ],
+},
+"audi6_doorpanel_alarmbutton_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Left Door Panel Alarm Button",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_alarmbutton_FL",
+    "glowMap":{
+	    "audi6_button_alarm1": {"simpleFunction":"ignitionLevel2"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+	    "audi6_button_alarm2": {"simpleFunction":"ignitionLevel2"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorpanel_alarmbutton_FL", ["audi6_door_FL"]],
+    ],
+},
+"audi6_doorpanel_lockbutton_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Left Door Panel Lock Button",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_lockbutton_FL",
+    "glowMap":{
+	    "audi6_button_lock": {"simpleFunction":"allLocked"    ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorpanel_lockbutton_FL", ["audi6_door_FL"]],
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+		
+		["lock_button",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":320, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3816, "y":0.0475, "z":-0.1820}],
+		["unlock_button",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":320, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3620, "y":0.0253, "z":-0.1800}],
+		
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_lockAll"],
+        ["audi6_unlockAll"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		//locking
+        ["lock_button", "action0", "audi6_lockAll"],
+        ["unlock_button", "action0", "audi6_unlockAll"],
+    ],
+},
+"audi6_doorpanel_arm_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Left Door Panel Arm",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_arm_FL",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_doorpanel_armbuttons_FL","", "Front Left Door Panel Arm Buttons"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= 1"},
+         ["audi6_doorpanel_arm_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_leather_color","audi6_interior_exclusive"],["invis","audi6_stitching_exclusive"]]}],	
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= nil"},
+         ["audi6_doorpanel_arm_FL", ["audi6_door_FL"]],
+		 {"disable":""},
+		 
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 0"},
+         ["audi6_doorpanel_inlay_FL", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 1"},
+         ["audi6_doorpanel_inlay_alt_FL", ["audi6_door_FL"]],   		 
+		 {"disable":"$=$components.electrics.alternativeInlay ~= 2"},
+         ["audi6_doorpanel_inlay_alt_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_inlay","audi6_radial_aluminium"]]}],   
+		 {"disable":""},
+    ],
+},
+"audi6_doorpanel_armbuttons_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Left Door Panel Arm Pre-Facelift Buttons",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_armbuttons_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= 1"},
+         ["audi6_doorpanel_armbutton_frame_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_plastic_detailed_color2","audi6_plastic_detailed_exclusive"]]}],		
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= nil"},
+         ["audi6_doorpanel_armbutton_frame_FL", ["audi6_door_FL"]],	
+		 {"disable":""},		 
+		 
+         ["audi6_doorpanel_armbuttons_FL", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.foldingMirrors ~= 1"},
+		 ["audi6_button_mirrorfold_FL", ["audi6_door_FL"]],
+		 {"disable":""},
+    ],
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["window_FL1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5258, "y":0.1910, "z":-0.2050}],
+        ["window_FR1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5258, "y":0.1860, "z":-0.2292}],
+        ["window_RL1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5690, "y":0.1910, "z":-0.2050}],
+        ["window_RR1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5690, "y":0.1860, "z":-0.2292}],
+		
+        ["window_unlock_R",  "d7l","d8l","d4l", "box", {"x":0.0115, "y":0.0200, "z":0.0200}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6049, "y":0.1910, "z":-0.2050}],
+        ["window_lock_R",  "d7l","d8l","d4l", "box", {"x":0.0115, "y":0.0200, "z":0.0200}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6049, "y":0.1860, "z":-0.2292}],
+		
+		{"disable":"$=$components.electrics.foldingMirrors ~= 1"},
+		["fold_mirror",  "d7l","d8l","d4l", "sphere", 0.012, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3719, "y":0.1035, "z":-0.2099}],
+		{"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_fold_mirror"],
+        ["window_unlock_R"],
+        ["window_lock_R"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		//front
+        ["window_FL1", "action0", "open_window_FL"],
+        ["window_FL1", "action2", "close_window_FL"],
+        ["window_FR1", "action0", "open_window_FR"],
+        ["window_FR1", "action2", "close_window_FR"],
+		//rear
+        ["window_RL1", "action0", "open_window_RL"],
+        ["window_RL1", "action2", "close_window_RL"],
+        ["window_RR1", "action0", "open_window_RR"],
+        ["window_RR1", "action2", "close_window_RR"],
+		//window locks
+        ["window_unlock_R", "action0", "window_unlock_R"],
+        ["window_lock_R", "action0", "window_lock_R"],		
+		//fold mirror
+		["fold_mirror", "action0", "audi6_fold_mirror"],
+    ],
+},
+"audi6_doorpanel_armbuttons_FL_fl": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"[LHD] Front Left Door Panel Arm Facelift Buttons",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_armbuttons_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= 1"},
+         ["audi6_doorpanel_armbutton_frame_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_plastic_detailed_color2","audi6_plastic_detailed_exclusive"]]}],				
+		 {"disable":"$=$components.electrics.doorpanelExclusive ~= nil"},
+         ["audi6_doorpanel_armbutton_frame_FL", ["audi6_door_FL"]],	
+		 {"disable":""},		 
+		 
+         ["audi6_doorpanel_armbuttons_FL_fl", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.foldingMirrors ~= 1"},
+		 ["audi6_button_mirrorfold_FL", ["audi6_door_FL"]],
+		 {"disable":""},
+    ],
+    "glowMap":{
+            "window_lock_toggle_RL":   {"simpleFunction":"windowRL_isLOCKED"   ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+            "window_lock_toggle_RR":   {"simpleFunction":"windowRR_isLOCKED"   ,"off":"audi6_interior_symbs", "on":"audi6_interior_symbs_on"},
+    },
+    "triggers2":[
+        ["id", "idRef:", "idX:", "idY:", "type", "size", "baseRotation", "rotation", "translation", "baseTranslation"],
+        ["window_FL1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5258, "y":0.1910, "z":-0.2050}],
+        ["window_FR1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5258, "y":0.1860, "z":-0.2292}],
+        ["window_RL1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5690, "y":0.1910, "z":-0.2050}],
+        ["window_RR1",  "d7l","d8l","d4l", "box", {"x":0.02, "y":0.02, "z":0.02}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.5690, "y":0.1860, "z":-0.2292}],
+		
+        ["window_lock_toggle_RL",  "d7l","d8l","d4l", "box", {"x":0.0115, "y":0.0200, "z":0.0200}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6049, "y":0.1910, "z":-0.2050}],
+        ["window_lock_toggle_RR",  "d7l","d8l","d4l", "box", {"x":0.0115, "y":0.0200, "z":0.0200}, {"x":12, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.6049, "y":0.1860, "z":-0.2292}],
+		
+		{"disable":"$=$components.electrics.foldingMirrors ~= 1"},
+		["fold_mirror",  "d7l","d8l","d4l", "sphere", 0.012, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0, "y":0, "z":0}, {"x":0.3719, "y":0.1035, "z":-0.2099}],
+		{"disable":""},
+    ],
+    "actionsEnabled": [
+        ["id"],
+        ["audi6_fold_mirror"],
+        ["window_lock_toggle_RL"],
+        ["window_lock_toggle_RR"],
+    ],
+    "triggerEventLinks2":[
+        ["triggerId:triggers2", "triggerInput", "inputAction"],
+		//front
+        ["window_FL1", "action0", "open_window_FL"],
+        ["window_FL1", "action2", "close_window_FL"],
+        ["window_FR1", "action0", "open_window_FR"],
+        ["window_FR1", "action2", "close_window_FR"],
+		//rear
+        ["window_RL1", "action0", "open_window_RL"],
+        ["window_RL1", "action2", "close_window_RL"],
+        ["window_RR1", "action0", "open_window_RR"],
+        ["window_RR1", "action2", "close_window_RR"],
+		//window locks
+        ["window_lock_toggle_RL", "action0", "window_lock_toggle_RL"],
+        ["window_lock_toggle_RR", "action0", "window_lock_toggle_RR"],		
+		//fold mirror
+		["fold_mirror", "action0", "audi6_fold_mirror"],
+    ],
+},
+"audi6_doorpanel_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Right Door Panel",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_FR",
+	"components": {
+        "electrics": {
+			"FRDoorPanelMesh": 1,
+        },
+    },
+	"slots2": [
+        ["name",                           "allowTypes",                       "denyTypes", "default",                        "description"],
+        ["audi6_doorpanel_alarmbutton_FR", ["audi6_doorpanel_alarmbutton_FR"], [],          "",                               "Front Right Door Panel Alarm Button"],
+        ["audi6_doorpanel_lockbutton_FR",  ["audi6_doorpanel_lockbutton_FR"],  [],          "audi6_doorpanel_lockbutton_FR",  "Front Right Door Panel Lock Button"],
+        ["audi6_doorpanel_arm_FR",         ["audi6_doorpanel_arm_FR"],         [],          "audi6_doorpanel_arm_FR",         "Front Right Door Panel Arm"],
+		["audi6_door_FR_ambient1_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"d9r", "$nodeX":"d8r", "$nodeY":"d6r",
+					"$deformGroup":"doorglass_FR_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.702, "$posY":-0.391, "$posZ":0.941,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.055
+				}
+		}],		
+		["audi6_door_FR_ambient2_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"d2r", "$nodeX":"d3r", "$nodeY":"d6r",
+					"$deformGroup":"doorglass_FR_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.723, "$posY":-0.321, "$posZ":0.678,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.25
+				}
+		}],
+		["audi6_door_FR_exterior_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Exterior Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "doorlight_FR_s",
+					"$nodeRef":"d2r", "$nodeX":"d3r", "$nodeY":"d6r",
+					"$deformGroup":"doorglass_FR_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.733, "$posY":-0.228, "$posZ":0.445,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $lightingPackage",
+					"$lightOuterAngle":120,
+					"$lightRange":2
+				}
+		}],
+		["audi6_door_FR_safety_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Safety Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "doorlight_FR_s",
+					"$nodeRef":"d9r", "$nodeX":"d8r", "$nodeY":"d6r",
+					"$deformGroup":"doorglass_FR_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":-0.742, "$posY":0.091, "$posZ":0.605,
+					"$rotX":0, "$rotY":0, "$rotZ":0,
+					"$lightOuterAngle":120,
+					"$lightRange":2
+				}
+		}],	
+    ],
+    "glowMap":{
+            "audi6_doorlight_FR": {"simpleFunction":"doorlight_FR_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorpanel_FR", ["audi6_door_FR"]],
+
+         ["audi6_doorpanel_lightglass_FR", ["audi6_door_FR"]],
+         ["audi6_doorpanel_light_FR", ["audi6_door_FR"]],
+		 {"disable":"$=$components.electrics.lightingPackage ~= 1"},
+		 ["audi6_doorpanel_groundlightglass_FR", ["audi6_door_FR"]],
+         ["audi6_doorpanel_groundlight_FR", ["audi6_door_FR"]],
+		 {"disable":"$=$components.electrics.lightingPackage == 1"},
+         ["audi6_doorpanel_groundlight_FR", ["audi6_door_FR"], [],{"materialOverride":[["audi6_doorlight_FR","audi6_plastic_detailed_color2"]]}], 
+		 {"disable":"$=$components.electrics.audiExclusiveBadge ~= 1"},
+		 ["audi6_doorpanel_badge_audiexclusive_FR", ["audi6_door_FR"]],
+		 {"disable":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_door_FR"},
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":7.0},
+         ["d14r",-0.50, -0.1, 0.75],
+         {"group":""},
+    ],
+},
+"audi6_doorpanel_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Left Door Panel",
+        "value":90,
+    },
+    "slotType" : "audi6_doorpanel_FL",
+	"components": {
+        "electrics": {
+			"FLDoorPanelMesh": 1,
+        },
+    },
+	"slots2": [
+        ["name",                           "allowTypes",                       "denyTypes", "default",                        "description"],
+        ["audi6_doorpanel_alarmbutton_FL", ["audi6_doorpanel_alarmbutton_FL"], [],          "",                               "Front Left Door Panel Alarm Button"],
+        ["audi6_doorpanel_lockbutton_FL",  ["audi6_doorpanel_lockbutton_FL"],  [],          "audi6_doorpanel_lockbutton_FL",  "Front Left Door Panel Lock Button"],
+        ["audi6_doorpanel_arm_FL",         ["audi6_doorpanel_arm_FL"],         [],          "audi6_doorpanel_arm_FL",         "Front Left Door Panel Arm"],
+		["audi6_door_FL_ambient1_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"d9l", "$nodeX":"d8l", "$nodeY":"d6l",
+					"$deformGroup":"doorglass_FL_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.702, "$posY":-0.391, "$posZ":0.941,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.055
+				}
+		}],		
+		["audi6_door_FL_ambient2_bulb", ["incandescent_white_5W"], [], "incandescent_white_5W", "Ambient Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "mmi_bgLightingLevel_s",
+					"$nodeRef":"d2l", "$nodeX":"d3l", "$nodeY":"d6l",
+					"$deformGroup":"doorglass_FL_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.723, "$posY":-0.321, "$posZ":0.678,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $ambientLights",
+					"$lightOuterAngle":120,
+					"$lightRange":0.25
+				}
+		}],
+		["audi6_door_FL_exterior_bulb", ["incandescent_white_21W"], [], "incandescent_white_21W", "Exterior Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "doorlight_FL_s",
+					"$nodeRef":"d2l", "$nodeX":"d3l", "$nodeY":"d6l",
+					"$deformGroup":"doorglass_FL_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.733, "$posY":-0.228, "$posZ":0.445,
+					"$rotX":90, "$rotY":0, "$rotZ":0,
+					"$disable":"$= 1 - $lightingPackage",
+					"$lightOuterAngle":120,
+					"$lightRange":2
+				}
+		}],
+		["audi6_door_FL_safety_bulb", ["incandescent_red_21W"], [], "incandescent_red_21W", "Safety Lighting",
+		{
+				"coreSlot":true,
+				"variables":{
+					"$electric": "doorlight_FL_s",
+					"$nodeRef":"d9l", "$nodeX":"d8l", "$nodeY":"d6l",
+					"$deformGroup":"doorglass_FL_break",
+					"$shadowEnable":1,
+					"$cookieName":"/art/special/BNG_light_cookie_taillight_incandescent.color.png",
+					"$posX":0.742, "$posY":0.091, "$posZ":0.605,
+					"$rotX":0, "$rotY":0, "$rotZ":0,
+					"$lightOuterAngle":120,
+					"$lightRange":2
+				}
+		}],	
+    ],
+    "glowMap":{
+            "audi6_doorlight_FL": {"simpleFunction":"doorlight_FL_s"    ,"off":"audi6_lights", "on":"audi6_lights_on_intense", "materialEmissiveScaling":{"on_max":1}},
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["audi6_doorpanel_FL", ["audi6_door_FL"]],
+		 
+         ["audi6_doorpanel_lightglass_FL", ["audi6_door_FL"]],
+         ["audi6_doorpanel_light_FL", ["audi6_door_FL"]],         
+		 {"disable":"$=$components.electrics.lightingPackage ~= 1"},
+		 ["audi6_doorpanel_groundlightglass_FL", ["audi6_door_FL"]],
+         ["audi6_doorpanel_groundlight_FL", ["audi6_door_FL"]],
+		 {"disable":"$=$components.electrics.lightingPackage == 1"},
+         ["audi6_doorpanel_groundlight_FL", ["audi6_door_FL"], [],{"materialOverride":[["audi6_doorlight_FL","audi6_plastic_detailed_color2"]]}], 		
+		 {"disable":"$=$components.electrics.audiExclusiveBadge ~= 1"},
+		 ["audi6_doorpanel_badge_audiexclusive_FL", ["audi6_door_FL"]],
+		 {"disable":""},
+    ],
+    "sounds": {
+        "$+cabinFilterCoef": 0.03
+    }
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--DOOR--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"audi6_door_FL"},
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"nodeWeight":7.0},
+         ["d14l",0.50, -0.1, 0.75],
+         {"group":""},
+    ],
+},
+}

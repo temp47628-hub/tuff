@@ -1,0 +1,222 @@
+{
+  "audi6_dottedleather": {
+    "name": "audi6_dottedleather",
+    "mapTo": "audi6_dottedleather",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/audi6/textures/dottedleather_b.color.png",
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_dottedleather.skin_interior.beige2_interior": {
+    "name": "audi6_dottedleather.skin_interior.beige2_interior",
+    "mapTo": "audi6_dottedleather.skin_interior.beige2_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.337255001,
+          0.309803993,
+          0.286274999,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_dottedleather.skin_interior.beige_interior": {
+    "name": "audi6_dottedleather.skin_interior.beige_interior",
+    "mapTo": "audi6_dottedleather.skin_interior.beige_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.455873996,
+          0.421979994,
+          0.385374993,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_dottedleather.skin_interior.blue_interior": {
+    "name": "audi6_dottedleather.skin_interior.blue_interior",
+    "mapTo": "audi6_dottedleather.skin_interior.blue_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.173516005,
+          0.190708995,
+          0.226769,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "audi6_dottedleather.skin_interior.creambeige_interior": {
+    "name": "audi6_dottedleather.skin_interior.creambeige_interior",
+    "mapTo": "audi6_dottedleather.skin_interior.creambeige_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },  
+  "audi6_dottedleather.skin_interior.grey_interior": {
+    "name": "audi6_dottedleather.skin_interior.grey_interior",
+    "mapTo": "audi6_dottedleather.skin_interior.grey_interior",
+    "class": "Material",
+    "persistentId": "51c75608-82a6-4334-b18a-558d68d8b4a4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392870009,
+          0.392870009,
+          0.392870009,
+          1
+        ],
+        "normalMap": "/vehicles/audi6/textures/dottedleather_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/audi6/textures/alu_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+}

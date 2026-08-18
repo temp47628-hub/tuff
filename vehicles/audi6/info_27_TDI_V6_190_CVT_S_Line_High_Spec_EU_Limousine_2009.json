@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.7L TDI V6 [190] (Multitronic) S-Line High-Spec (EU) [Limousine] 2009",
+      "Description":"2009 Limousine 2.7L TDI V6 (190 HP) with 7-Speed Multitronic Transmission. This model is equipped with S-Line package, xenon headlights, LED taillights, adaptive light system, audi advanced parking system, lane-assist package, start-stop system, power folding auto-dimming mirrors, 18-inch alloys, high infotainment system with HDD based satellite navigation, AMI audi music interface and a 6-disc CD changer, auto-dimming rear view mirror, lighting package, electrically adjustable seats, luggage compartment package, rear electric window blind, climate control, DSP audio system, black interior, matt-brushed aluminium inlay finish, black milano leather seats. Exterior painted in Monza Silver",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":190,
+      "Torque":400,
+      "Top Speed":63.23119777158774,
+      "Weight":1660,
+      "Value":43260,
+      "0-100 km/h":7.9,
+      "0-60 mph":7.5,
+	  "defaultPaintName1":"Monza Silver [S-Line]",
+}

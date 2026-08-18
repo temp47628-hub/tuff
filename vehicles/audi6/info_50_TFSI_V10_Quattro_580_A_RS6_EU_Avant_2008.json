@@ -1,0 +1,18 @@
+{
+  "Config Type": "Factory",
+  "Configuration": "5.0L TFSI V10 Quattro (Tiptronic) RS6 (EU) [Avant] 2008",
+  "Description": "2008 Avant 5.0L TFSI V10 (580 HP) with 6-Speed Tiptronic Transmission, Quattro permanent 40/60 four-wheel-drive and RS6 sport suspension. This model is equipped with RS6 package, xenon headlights, LED taillights, adaptive lights, audi advanced parking system, insulated and acoustic glass, side-assist package, lane-assist package, high-beam assistant, start-stop system, key-less system, homelink system, power folding auto-dimming mirrors, 19-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats, automatically actuated tailgate, load-area fixing kit, load-area lockable side compartment, partition net, storage package, smoker package, premium lighting package, rear and side manual window blind, climate control, BOSE surround sound audio system, black interior, matt-brushed aluminium inlay finish, black alcantara and leather seats. Exterior painted in Mugello Blue",
+  "Drivetrain": "AWD",
+  "Transmission": "6-Speed Tiptronic",
+  "Fuel Type": "Gasoline",
+  "Induction Type": "Twin Turbo",
+  "Propulsion": "ICE",
+  "Power": 580,
+  "Torque": 650,
+  "Top Speed": 69.44444444444444,
+  "Weight": 1970,
+  "Value": 100020,
+  "0-100 km/h": 4.6,
+  "0-60 mph": 4.4,
+  "defaultPaintName1": "Mugello Blue [RS6]"
+}

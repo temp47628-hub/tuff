@@ -1,0 +1,18 @@
+{
+      "Config Type":"Factory",
+      "Configuration":"2.7L TDI V6 [190] (Multitronic) A6 (EU) [Avant] 2009",
+      "Description":"2009 Avant 2.7L TDI V6 (190 HP) with 7-Speed Multitronic Transmission. This model is equipped with xenon headlights, LED taillights, adaptive light system, acoustic front and rear parking system, start-stop system, power folding mirrors, 17-inch alloys, basic infotainment system with DVD based satellite navigation and a 6-disc CD changer, auto-dimming rear view mirror, automatically actuated tailgate, load-area fixing kit, climate control, DSP audio system, taupe and cardamom beige interior, brown walnut inlay finish, cardamom beige arkana cloth seats. Exterior painted in Oyster Grey",
+      "Drivetrain":"FWD",
+      "Transmission":  "7-Speed Multitronic",
+      "Fuel Type":"Diesel",
+      "Induction Type":"Turbo",
+      "Propulsion":  "ICE",
+      "Power":190,
+      "Torque":400,
+      "Top Speed":62.11699164345404,
+      "Weight":1735,
+      "Value":39270,
+      "0-100 km/h":8.2,
+      "0-60 mph":7.8,
+	  "defaultPaintName1":"Oyster Grey [A6]",
+}

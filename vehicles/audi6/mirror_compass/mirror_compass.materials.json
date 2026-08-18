@@ -1,0 +1,49 @@
+{
+	  "audi6_mirror_compass": {
+    "name": "audi6_mirror_compass",
+    "mapTo": "audi6_mirror_compass",
+    "class": "Material",
+    "persistentId": "5fdc70cb-4aa0-4f73-887c-2e0e1485ad60",
+    "Stages": [
+      {
+        "colorMap": "@audi6_mirror_compass",
+        "diffuseColor": [
+          1.96078396,
+          1.96078396,
+          1.96078396,
+          1
+        ],
+        "emissive": true,
+        "opacityMap": "vehicles/audi6/mirror_compass/audi6_mirror_compass.png",
+        "roughnessFactor": 0.607767701,
+        "specularMap": "vehicles/common/null.png",
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null
+      }
+    ],
+    "alphaRef": 100,
+    "alphaTest": true,
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },
+}

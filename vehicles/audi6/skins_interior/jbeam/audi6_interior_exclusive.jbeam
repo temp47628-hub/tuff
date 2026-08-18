@@ -1,0 +1,124 @@
+{
+"audi6_interior_exclusive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Interior",
+        "value":500,
+    },
+    "slotType" : "audi6_interior_exclusive",
+    "slots": [
+        ["type", "default", "description"],
+        ["audi6_doorpanel_exclusive","audi6_doorpanel_exclusive", "Exclusive Door Panels"],
+        ["audi6_steer_exclusive","", "Exclusive Steering Wheel"],
+        ["audi6_shifter_exclusive","", "Exclusive Shifter"],
+        ["audi6_dash_exclusive","", "Exclusive Dashboard"],
+        ["skin_interior_exclusive","audi6_skin_interior_exclusive", "Exclusive Interior Color", {"coreSlot":true}],
+        ["skin_stitching_exclusive","audi6_skin_stitching_exclusive", "Exclusive Stitching Color", {"coreSlot":true}],
+    ],
+},
+"audi6_doorpanel_exclusive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Door Panels",
+        "value":500,
+    },
+    "slotType" : "audi6_doorpanel_exclusive",
+	"components": {
+        "electrics": {
+			"doorpanelExclusive": 1,
+        },
+    },
+},
+"audi6_steer_exclusive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Steering Wheel (Full)",
+        "value":500,
+    },
+    "slotType" : "audi6_steer_exclusive",
+	"components": {
+        "electrics": {
+			"steerExclusive": 1,
+        },
+    },
+},
+"audi6_steer_exclusive_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Steering Wheel (Top & Bottom)",
+        "value":500,
+    },
+    "slotType" : "audi6_steer_exclusive",
+	"components": {
+        "electrics": {
+			"steerExclusive": 2,
+        },
+    },
+},
+"audi6_steer_exclusive_c": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Steering Wheel (Bottom)",
+        "value":500,
+    },
+    "slotType" : "audi6_steer_exclusive",
+	"components": {
+        "electrics": {
+			"steerExclusive": 3,
+        },
+    },
+},
+"audi6_shifter_exclusive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Shifter",
+        "value":500,
+    },
+    "slotType" : "audi6_shifter_exclusive",
+	"components": {
+        "electrics": {
+			"shifterExclusive": 1,
+        },
+    },
+},
+"audi6_dash_exclusive": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Dashboard",
+        "value":500,
+    },
+    "slotType" : "audi6_dash_exclusive",
+    "components": {
+        "electrics": {
+            "leatherDash": 1,
+        },
+    },
+},
+"audi6_dash_exclusive_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Dashboard (w/ Dashboard Bottom)",
+        "value":500,
+    },
+    "slotType" : "audi6_dash_exclusive",
+    "components": {
+        "electrics": {
+			"dashBottomExclusive": 1,
+            "leatherDash": 1,
+        },
+    },
+},
+"audi6_dash_exclusive_c": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exclusive Dashboard (Only Dashboard Bottom)",
+        "value":500,
+    },
+    "slotType" : "audi6_dash_exclusive",
+    "components": {
+        "electrics": {
+			"dashBottomExclusive": 1,
+        },
+    },
+},
+}

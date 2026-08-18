@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Cairo;
+  src: url(/ui/common/Cairo-Light.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Cairo;
+  font-size: 10px;
+}
+
+#mapContainer {
+  overflow: visible;
+}
+#mapContainer > svg {
+  overflow: visible;
+}
+
+#mapPerspective {
+  transform: rotateX(50deg);
+}
+
+#map {
+  max-width: 256px;
+  max-height: 128px;
+  overflow: visible;
+}
+
+#pointer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 20px 6px;
+  border-color: transparent transparent #2568B0 transparent;
+  stroke: 2px solid white;
+}

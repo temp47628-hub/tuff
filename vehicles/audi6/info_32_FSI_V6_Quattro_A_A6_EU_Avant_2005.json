@@ -1,0 +1,18 @@
+{
+      "Config Type": "Factory",
+      "Configuration": "3.2L FSI V6 Quattro (Tiptronic) A6 (EU) [Avant] 2005",
+      "Description": "2005 Avant 3.2L V6 FSI (256 HP) with 6-Speed Tiptronic Transmission and Quattro permanent 50/50 four-wheel-drive. This model is equipped with xenon headlights, LED taillights, adaptive light system, front and rear parking system, power folding auto-dimming mirrors, electric slide and tilt sunroof, 17-inch alloys, high infotainment system with DVD based satellite navigation and a 6-disc CD changer, DAB digital radio module, auto-dimming rear view mirror, electrically adjustable seats with memory, automatically actuated tailgate, load-area fixing kit, lighting package, rear electric window blind, climate control, BOSE surround sound audio system, deep blue interior, brown walnut inlay finish, deep blue volterra leather seats. Exterior painted in Light Silver",
+      "Drivetrain": "AWD",
+      "Transmission": "6-Speed Tiptronic",
+      "Fuel Type": "Gasoline",
+      "Induction Type": "NA",
+      "Propulsion": "ICE",
+      "Power": 256,
+      "Torque": 330,
+      "Top Speed": 69.44444444444444,
+      "Weight": 1770,
+      "Value": 83070,
+      "0-100 km/h": 7.4,
+      "0-60 mph": 7.0,
+      "defaultPaintName1": "Light Silver"
+}
